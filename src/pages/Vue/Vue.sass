@@ -1,0 +1,65 @@
+@import "~stylesheets/utils/helpers"
+
+.vue__landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Vue/landing__bg.svg")
+  background-size: cover
+
+.vue__qualities
+  background-position: center top
+  background-image: url("~assets/images/qualities__bg.svg")
+  background-size: 100% 100%
+
+.vue__why-we-chose
+  background-color: $c-alabaster
+
+.vue__inventi-plus-vue
+  position: relative
+  background-position: center bottom
+  background-image: url("~assets/images/Vue/inventi__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 120px
+    background-position: center top
+    background-image: url("~assets/images/Vue/inventi__wave.svg")
+    background-size: 800px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 170px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 250px
+
+  &::after
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 60px
+    background-position: center bottom
+    background-image: url("~assets/images/Vue/inventi__bottom-wave.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 80px
+
+    @media #{$large-up}
+      height: 100px
+
+.vue__technologies
+  position: relative
+  background-color: $c-alabaster
+  background-position: center bottom
+  background-image: url("~assets/images/Vue/technologies__wave.svg")
+  background-size: cover

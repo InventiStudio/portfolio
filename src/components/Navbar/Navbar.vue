@@ -23,6 +23,12 @@
               :exact="true",
               active-class="navbar__link--active",
             ) Services
+          ul.navbar__links
+            router-link.navbar__link(
+              :to="{ name: 'Vue' }",
+              :exact="true",
+              active-class="navbar__link--active",
+            ) Vue
 </template>
 
 <script>

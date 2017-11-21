@@ -21,6 +21,13 @@ const routes = [
       require(['pages/Services/Services'], resolve)
     },
   },
+  {
+    path: '/services/vue',
+    name: 'Vue',
+    component(resolve) {
+      require(['pages/Vue/Vue'], resolve)
+    },
+  },
 ]
 /* eslint-enable global-require */
 /* eslint-enable import/no-dynamic-require */

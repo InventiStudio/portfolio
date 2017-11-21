@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="950px" viewBox="0 0 1440 950" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>InventiStudio + Vue.js =</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="46.7716263%" cy="118.410522%" fx="46.7716263%" fy="118.410522%" r="141.421356%" gradientTransform="translate(0.467716,1.184105),scale(0.659722,1.000000),rotate(33.413723),translate(-0.467716,-1.184105)" id="radialGradient-1">
+            <stop stop-color="#47B784" offset="0%"></stop>
+            <stop stop-color="#009D90" offset="26.4409279%"></stop>
+            <stop stop-color="#00818E" offset="50.2969547%"></stop>
+            <stop stop-color="#25647B" offset="73.9736129%"></stop>
+            <stop stop-color="#36495D" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="950"></rect>
+        <linearGradient x1="15.1500267%" y1="139.496307%" x2="98.1114113%" y2="-25.7422032%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-/-Vue" transform="translate(0.000000, -1769.000000)">
+            <g id="InventiStudio-+-Vue.js-=" transform="translate(0.000000, 1769.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="IS+Vue/bg" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                <g id="Ovals" mask="url(#mask-3)" fill="url(#linearGradient-4)">
+                    <g transform="translate(27.000000, 335.000000)">
+                        <ellipse id="Oval-Copy-2" opacity="0.0600000024" cx="693.5" cy="558.5" rx="693.5" ry="558.5"></ellipse>
+                        <ellipse id="Oval-Copy" opacity="0.0599999987" cx="693" cy="619" rx="462" ry="431"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
