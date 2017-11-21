@@ -1,6 +1,6 @@
 <template lang="pug">
   article.homepage
-    section.homepage__landing
+    section.homepage__landing.common__wave
       - var n = 0;
       while n < 60
         br
