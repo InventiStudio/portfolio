@@ -28,6 +28,13 @@ const routes = [
       require(['pages/Vue/Vue'], resolve)
     },
   },
+  {
+    path: '/services/node',
+    name: 'Node',
+    component(resolve) {
+      require(['pages/Node/Node'], resolve)
+    },
+  },
 ]
 /* eslint-enable global-require */
 /* eslint-enable import/no-dynamic-require */

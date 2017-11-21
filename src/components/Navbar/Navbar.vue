@@ -29,6 +29,12 @@
               :exact="true",
               active-class="navbar__link--active",
             ) Vue
+          ul.navbar__links
+            router-link.navbar__link(
+              :to="{ name: 'Node' }",
+              :exact="true",
+              active-class="navbar__link--active",
+            ) Node
 </template>
 
 <script>
