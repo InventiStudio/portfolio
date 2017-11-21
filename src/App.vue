@@ -3,14 +3,17 @@
     Navbar
     transition(name="fade")
       router-view
+    Foot
 </template>
 
 <script>
   import Navbar from 'components/Navbar/Navbar'
+  import Foot from 'components/Foot/Foot'
 
   export default {
     components: {
       Navbar,
+      Foot,
     },
     watch: {
       $route(newRoute, oldRoute) {
