@@ -35,4 +35,4 @@
   }
 </script>
 
-<style src="./Modal.sass" lang="sass"></style>
+<style src="./Modal.sass" lang="sass" scoped></style>

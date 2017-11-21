@@ -40,4 +40,4 @@
   }
 </script>
 
-<style src="./ScrollForMore.sass" lang="sass"></style>
+<style src="./ScrollForMore.sass" lang="sass" scoped></style>

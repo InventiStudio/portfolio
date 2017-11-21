@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import head from 'src/head';
+  import head from 'src/head'
 
   export default {
     head: head.set({

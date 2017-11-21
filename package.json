@@ -32,21 +32,15 @@
     "test": "yarn test:unit"
   },
   "dependencies": {
-    "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
     "foundation-sites": "6.2.4",
     "normalize.css": "^5.0.0",
     "ramda": "^0.24.1",
     "scroll-to": "^0.0.2",
-    "store": "^2.0.4",
     "vue": "^2.4.2",
-    "vue-async-data": "^1.0.2",
     "vue-head": "^2.0.10",
     "vue-router": "^2.2.0",
-    "vuelidate": "^0.4.3",
-    "vuex": "^2.3.1",
-    "vuex-router-sync": "^4.1.2",
-    "whatwg-fetch": "^2.0.3"
+    "vuelidate": "^0.4.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

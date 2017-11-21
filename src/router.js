@@ -9,35 +9,10 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Homepage',
     component(resolve) {
-      require(['pages/Home/Home'], resolve)
+      require(['pages/Homepage/Homepage'], resolve)
     },
-  },
-  {
-    path: '_button',
-    name: 'Button',
-    component(resolve) {
-      require(['src/example-components/Button/Button'], resolve)
-    },
-  },
-  {
-    path: '_form',
-    name: 'Form',
-    component(resolve) {
-      require(['src/example-components/Form/Form'], resolve)
-    },
-  },
-  {
-    path: '_typography',
-    name: 'Typography',
-    component(resolve) {
-      require(['src/example-components/Typography/Typography'], resolve)
-    },
-  },
-  {
-    path: '*',
-    name: 'Error404',
   },
 ]
 /* eslint-enable global-require */

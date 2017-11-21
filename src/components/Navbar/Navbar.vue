@@ -69,4 +69,4 @@
   }
 </script>
 
-<!-- <style src="./Navbar.sass" lang="sass" scoped></style> -->
+<style src="./Navbar.sass" lang="sass" scoped></style>

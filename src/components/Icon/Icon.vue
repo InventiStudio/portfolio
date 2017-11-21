@@ -29,4 +29,4 @@
   }
 </script>
 
-<style src="./Icon.sass" lang="sass"></style>
+<style src="./Icon.sass" lang="sass" scoped></style>

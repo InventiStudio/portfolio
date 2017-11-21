@@ -3,14 +3,15 @@
     Navbar
     transition(name="fade")
       router-view
-    img(src="~src/assets/images/img.jpg", alt="")
 </template>
 
 <script>
-  import store from 'src/store'
+  import Navbar from 'components/Navbar/Navbar'
 
   export default {
-    store,
+    components: {
+      Navbar,
+    },
     watch: {
       $route(newRoute, oldRoute) {
         if (newRoute.path !== oldRoute.path) {
