@@ -1,8 +1,8 @@
 # Documentation of Sass-lint: https://github.com/sasstools/sass-lint/tree/master/docs
 files:
-  include: 'app/**/*.s+(a|c)ss'
+  include: 'src/**/*.s+(a|c)ss'
   ignore:
-    - 'app/stylesheets/foundation/_button-group.sass' # have to disable it, cause of 'zero-unit' warning we cannot turn off
+    - 'src/stylesheets/foundation/_button-group.sass' # have to disable it, cause of 'zero-unit' warning we cannot turn off
 
 rules:
   class-name-format:
