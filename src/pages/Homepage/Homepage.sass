@@ -1,0 +1,56 @@
+@import "~stylesheets/utils/helpers"
+
+.homepage__landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Homepage/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-position: center top
+    background-image: url("~assets/images/confetti--white.svg")
+    background-size: 200px
+    content: ""
+    opacity: 0.1
+
+  &::after
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 80px
+    background-position: left bottom
+    background-image: url("~assets/images/Homepage/landing__wave.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 140px
+
+    @media #{$large-up}
+      height: 190px
+
+.homepage__testimonials
+  position: relative
+  z-index: 1
+  background-position: center bottom
+  background-image: url("~assets/images/Homepage/testimonials__bg.svg")
+  background-size: 170% 170%
+  background-repeat: no-repeat
+
+  @media #{$medium-up}
+    background-size: 100% 170%
+
+  @media #{$large-up}
+    background-size: 100% 200%
+
+.homepage__contact
+  position: relative
+  margin-top: -100px
+  background-color: rgba($c-black-light, 0.1)

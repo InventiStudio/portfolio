@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Land/Wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(0.000000, -969.000000)">
+            <g id="Landing">
+                <g id="Land/Wave" transform="translate(0.000000, 969.000000)">
+                    <path d="M1,71.1690977 C105.064263,131.169098 243.827735,161.169098 417.290415,161.169098 C677.484436,161.169098 777.876495,2.94528052 1028.24093,0.301255584 C1195.15055,-1.46142771 1332.73691,22.1611863 1441,71.1690977 L1441,171.169098 L1,171.169098 L1,71.1690977 Z" id="Rectangle-2" fill="#FFFFFF" opacity="0.288496377"></path>
+                    <path d="M0,72.0758872 C104.064263,132.025296 242.827735,162 416.290415,162 C676.484436,162 750,34.76982 1025.32203,32.1517744 C1208.87005,30.4064107 1347.09604,43.7144483 1440,72.0758872 L1440,190.327332 L0,190.327332 L0,72.0758872 Z" id="Rectangle-2-Copy" fill="#FAFAFA"></path>
+                    <path d="M417.122665,160.839497 C677.234964,160.839497 750.76444,33.6177594 1026,31 C703.838524,42.7529933 628.373116,188.178187 417.122665,187.99975 C276.289031,187.880792 137.581476,148.854125 1,70.9197485 C105.006911,130.866247 243.714466,160.839497 417.122665,160.839497 Z" id="Rectangle-2-Copy-2" fill="#F1F1F1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

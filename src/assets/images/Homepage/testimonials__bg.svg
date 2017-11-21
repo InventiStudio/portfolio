@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 1798" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>testimonials__bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L1440,7.26502192e-15 L1440,650 C1236.9119,682 996.911902,698 720,698 C443.088098,698 203.088098,682 0,650 L0,0 Z" id="path-1"></path>
+        <linearGradient x1="11.7927981%" y1="100%" x2="94.538112%" y2="25.0964061%" id="linearGradient-3">
+            <stop stop-color="#000000" offset="3.13297194%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.6398333%" y1="100%" x2="95.8821223%" y2="25.0964061%" id="linearGradient-4">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.383701423" offset="61.6298577%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="testimonials__bg">
+            <g id="Testi/gradient" transform="translate(720.000000, 899.000000) scale(-1, 1) translate(-720.000000, -899.000000) ">
+                <path d="M0,0 L1440,0 L1440,1750 C1236.9119,1782 996.911902,1798 720,1798 C443.088098,1798 203.088098,1782 0,1750 L0,0 Z" id="Testim/gradient-Copy" fill="#FAFAFA" fill-rule="nonzero" transform="translate(720.000000, 899.000000) scale(-1, 1) translate(-720.000000, -899.000000) "></path>
+                <g id="Group-Clipped" transform="translate(0.000000, 1100.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-27.000000, 24.000000)">
+                            <g>
+                                <path d="M745.5,1469 C1157.22828,1469 1491,1157.22828 1491,745.5 C1491,333.771719 1157.22828,0 745.5,0 C333.771719,0 0,333.771719 0,745.5 C0,1157.22828 333.771719,1469 745.5,1469 Z" id="Oval-6-Copy-2" fill="url(#linearGradient-3)" opacity="0.0230978261" transform="translate(745.500000, 734.500000) scale(-1, 1) rotate(-180.000000) translate(-745.500000, -734.500000) "></path>
+                                <g id="Oval-6-Copy" opacity="0.0199999996" transform="translate(747.000000, 856.000000) scale(-1, 1) rotate(-180.000000) translate(-747.000000, -856.000000) translate(134.000000, 243.000000)" fill="url(#linearGradient-4)">
+                                    <circle id="path-5" cx="613" cy="613" r="613"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
