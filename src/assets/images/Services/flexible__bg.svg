@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="717px" viewBox="0 0 1440 717" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Flex/bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="95.0490003%" id="linearGradient-1">
+            <stop stop-color="#B73DC7" offset="0%"></stop>
+            <stop stop-color="#A740C4" offset="8.46221301%"></stop>
+            <stop stop-color="#714BBB" offset="38.3131378%"></stop>
+            <stop stop-color="#5557CE" offset="64.7054785%"></stop>
+            <stop stop-color="#5358CF" offset="66.2879811%"></stop>
+            <stop stop-color="#5358CF" offset="66.2879811%"></stop>
+            <stop stop-color="#5358CF" offset="66.2879811%"></stop>
+            <stop stop-color="#5358CF" offset="66.4500957%"></stop>
+            <stop stop-color="#3F64D4" offset="84.5583546%"></stop>
+            <stop stop-color="#2B69DD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services" transform="translate(0.000000, -1220.000000)" fill="url(#linearGradient-1)">
+            <g id="Flex" transform="translate(0.000000, 1182.000000)">
+                <rect id="Flex/bg" x="0" y="38" width="1440" height="717"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

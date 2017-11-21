@@ -14,6 +14,13 @@ const routes = [
       require(['pages/Homepage/Homepage'], resolve)
     },
   },
+  {
+    path: '/services',
+    name: 'Services',
+    component(resolve) {
+      require(['pages/Services/Services'], resolve)
+    },
+  },
 ]
 /* eslint-enable global-require */
 /* eslint-enable import/no-dynamic-require */

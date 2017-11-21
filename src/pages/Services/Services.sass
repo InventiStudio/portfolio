@@ -1,0 +1,35 @@
+@import "~stylesheets/utils/helpers"
+
+.services__landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Homepage/landing__bg.svg") // TODO: Replace with proper image
+  background-size: cover
+
+.services__what-we-do
+  background-color: $c-alabaster
+
+.services__flexible
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Services/flexible__bg.svg")
+  background-size: cover
+
+  &::after
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 120px
+    background-position: center top
+    background-image: url("~assets/images/Services/flexible__wave.svg")
+    background-size: 600px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 170px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 250px

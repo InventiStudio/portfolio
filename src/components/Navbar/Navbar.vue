@@ -17,6 +17,12 @@
               :exact="true",
               active-class="navbar__link--active",
             ) Home
+          ul.navbar__links
+            router-link.navbar__link(
+              :to="{ name: 'Services' }",
+              :exact="true",
+              active-class="navbar__link--active",
+            ) Services
 </template>
 
 <script>
