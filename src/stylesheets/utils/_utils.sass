@@ -1,0 +1,67 @@
+// Add leading and/or trailing space
+.u-space
+  &::before,
+  &::after
+    content: "\00a0"
+
+.u-space-left
+  &::before
+    content: "\00a0"
+
+.u-space-right
+  &::after
+    content: "\00a0"
+
+.u-t-center
+  text-align: center
+
+.u-t-left
+  text-align: left
+
+.u-t-right
+  text-align: right
+
+.u-t-justify
+  text-align: justify
+
+.u-underline
+  text-decoration: underline
+
+.u-upper
+  text-transform: uppercase
+
+.u-block
+  display: block
+
+.u-inline-block
+  display: inline-block
+
+.u-va-middle
+  vertical-align: middle
+
+.u-va-baseline
+  vertical-align: baseline
+
+.u-va-botton
+  vertical-align: bottom
+
+.u-no-list
+  list-style-type: none
+
+.u-no-margin
+  margin: 0
+
+.u-full-height
+  height: 100%
+
+.u-pointer
+  cursor: pointer
+
+  &:disabled
+    cursor: not-allowed
+
+// for Foundation .row in .row negative margins
+.row
+  &.u-no-nest
+    margin-right: auto
+    margin-left: auto

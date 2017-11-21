@@ -1,0 +1,28 @@
+// Normalize
+@import "~normalize.css"
+
+// Foundation
+@import "foundation"
+
+// Base
+@import "base/variables"
+@import "base/base"
+@import "base/typography"
+@import "base/button"
+@import "base/forms"
+
+// Utils
+@import "utils/fonts"
+@import "utils/utils"
+
+.fade-enter-active,
+.fade-leave-active
+  transition-duration: $g-time
+  transition-property: opacity
+
+.fade-enter-active
+  transition-delay: $g-time
+
+.fade-enter,
+.fade-leave-active
+  opacity: 0

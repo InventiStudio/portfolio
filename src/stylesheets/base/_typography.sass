@@ -1,0 +1,112 @@
+@import "variables"
+
+h1,
+h2,
+h3
+  margin: 0 0 8px
+  font-style: normal
+
+h1
+  font-size: 44px
+  font-weight: $fw-black
+  line-height: 56px
+
+h2
+  font-size: 32px
+  font-weight: $fw-black
+  line-height: 36px
+
+h3
+  font-size: 24px
+  font-weight: $fw-regular
+  line-height: 28px
+
+.t-large
+  font-size: 19px
+  font-style: normal
+  font-weight: $fw-regular
+  line-height: 24px
+
+p,
+a,
+li,
+span,
+blockquote,
+strong,
+em
+  margin: 0
+  font-size: 16px
+  line-height: 23px
+
+p,
+a,
+li,
+span,
+small,
+blockquote
+  font-style: normal
+  font-weight: $fw-regular
+
+a
+  color: $c-primary
+  text-decoration: none
+  transition: color, $g-time, $g-function
+
+  &:hover
+    text-decoration: none
+
+span
+  vertical-align: middle
+
+strong
+  font-weight: $fw-bold
+
+em
+  font-style: italic
+
+cite
+  font-size: 13px
+  font-style: italic
+  line-height: 16px
+
+  &::before
+    content: "\2014\00a0"
+
+hr
+  margin: 24px auto
+  border-top-color: $c-black-light
+
+small
+  display: inline-block
+  font-size: 13px
+  line-height: 16px
+
+ul
+  margin: 0 0 0 24px
+  padding-left: 0
+
+ol
+  margin: 0 0 0 16px
+  padding-left: 0
+
+// Colors
+.c-black
+  color: $c-black
+
+.c-black-medium
+  color: $c-black-medium
+
+.c-black-light
+  color: $c-black-light
+
+.c-white
+  color: $c-white
+
+.c-white-medium
+  color: $c-white-medium
+
+.c-white-light
+  color: $c-white-light
+
+.c-primary
+  color: $c-primary

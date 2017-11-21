@@ -1,0 +1,189 @@
+@import "~stylesheets/utils/helpers"
+
+.navbar
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 900
+  padding-top: 16px
+  padding-bottom: 16px
+  color: $c-white
+  transition-duration: $g-time
+  transition-property: transform, background-color, padding
+
+  @media #{$large-up}
+    padding-top: 24px
+    padding-bottom: 24px
+
+.navbar--hidden:not(:hover)
+  transform: translateY(-85%)
+  background-color: $c-primary
+
+  @media #{$medium-up}
+    transform: translateY(-93%)
+
+.navbar--filled
+  background-color: rgba($c-cod-gray, 0.8)
+
+.navbar__icon
+  width: 35px
+  height: 32px
+  color: $c-white
+  vertical-align: middle
+
+  @media #{$medium-up}
+    width: 43px
+    height: 40px
+
+/* ! autoprefixer: off */
+.navbar__nav-button
+  position: relative
+  z-index: 950
+  display: inline-block
+  width: 35px
+  height: 30px
+  margin: 0
+  padding: 0
+  border: 0
+  background: none
+  font-size: 0
+  text-indent: -9999px
+  box-shadow: none
+  overflow: hidden
+
+  &:focus
+    outline: none
+
+  span
+    position: absolute
+    right: 0
+    left: 0
+    display: block
+    height: 2px
+    background: $c-white
+    transition: background 0s $g-time
+
+    &::before,
+    &::after
+      position: absolute
+      left: 0
+      display: block
+      width: 100%
+      height: 2px
+      background-color: $c-white
+      content: ""
+
+    &::before
+      top: -10px
+      transition: top $g-time, transform $g-time
+      transition-delay: $g-time, 0s
+
+    &::after
+      bottom: -10px
+      transition: bottom $g-time, transform $g-time
+      transition-delay: $g-time, 0s
+
+  @media #{$medium-up}
+    display: none
+
+.navbar__nav-button--active
+  span
+    background: none
+
+    &::before,
+    &::after
+      transition-delay: 0s, $g-time
+
+    &::before
+      top: 0
+      transform: rotate(45deg)
+
+    &::after
+      bottom: 0
+      transform: rotate(-45deg)
+/* ! autoprefixer: on */
+
+.navbar__nav
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: none
+
+  &::before
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    background-color: $c-black
+    content: ""
+    opacity: 0.96
+
+  @media #{$medium-up}
+    position: static
+    display: inline-block
+
+    &::before
+      content: none
+
+.navbar__nav--active
+  display: block
+
+  .navbar__link
+    color: $c-white
+
+.navbar__links
+  position: absolute
+  top: 50%
+  left: 50%
+  margin:
+    bottom: 0
+    left: 0
+  transform: translate(-50%, -50%)
+  text-align: center
+
+  @media #{$medium-up}
+    position: static
+    display: flex
+    align-items: baseline
+    transform: none
+
+.navbar__link
+  display: block
+  margin-bottom: 24px
+  color: inherit
+  transition: opacity, $g-function, $g-time
+
+  &.navbar__link--active
+    cursor: default
+    opacity: 0.7
+
+  &:not(.navbar__link--active):hover
+    color: $c-primary
+
+  @media #{$medium-up}
+    display: inline-block
+    margin-right: 24px
+    margin-bottom: 0
+
+.navbar--black
+  .navbar__nav-button:not(.navbar__nav-button--active)
+    span
+      // TODO: Think about solution for this
+      transition: none
+
+.navbar--black:not(.navbar--filled)
+  color: $c-black
+
+  .navbar__icon
+    color: $c-black
+
+  .navbar__nav-button:not(.navbar__nav-button--active)
+    span,
+    span::before,
+    span::after
+      background-color: $c-black

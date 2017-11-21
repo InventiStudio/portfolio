@@ -1,0 +1,11 @@
+# Ignore those dirs
+node_modules/
+dist/
+
+# Ignore all logfiles and tempfiles
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+# Ignore test reports
+test/unit/coverage

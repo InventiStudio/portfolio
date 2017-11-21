@@ -1,0 +1,42 @@
+@import "~stylesheets/utils/helpers"
+
+.modal__mask
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 950
+  width: 100%
+  height: 100%
+  background-color: rgba($c-black, 0.6)
+  transition: opacity $g-time $g-function
+
+.modal__container
+  position: relative
+  margin-top: 64px
+  padding-top: 64px
+  padding-bottom: 40px
+  background-color: $c-white
+  transition: transform $g-time $g-function
+  box-shadow: 0 3px 12px 0 rgba($c-black, 0.1)
+
+  @media #{$medium-up}
+    padding-bottom: 48px
+
+svg.modal__icon
+  position: absolute
+  top: 16px
+  right: 16px
+  width: 24px
+  height: 24px
+  color: $c-black-medium
+  transition: transform $g-time $g-function
+
+  &:hover
+    transform: scale(1.2)
+
+.modal-enter,
+.modal-leave-active
+  opacity: 0
+
+  .modal__container
+    transform: scale(1.1)

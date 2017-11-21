@@ -1,0 +1,30 @@
+@import "variables"
+
+*
+  box-sizing: border-box
+
+  &::before,
+  &::after
+    box-sizing: inherit
+
+  &:focus
+    outline: none
+
+body
+  min-width: 320px
+  color: $c-black
+  font-family: $ff-lato
+
+table
+  border-spacing: 0
+
+img
+  max-width: 100%
+
+button,
+a
+  > svg:first-child
+    margin-right: 8px
+
+  > svg:last-child
+    margin-left: 8px

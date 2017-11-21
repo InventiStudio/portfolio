@@ -1,0 +1,108 @@
+@import "variables"
+
+[type="color"],
+[type="date"],
+[type="datetime-local"],
+[type="datetime"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea
+  display: block
+  width: 100%
+  height: 36px
+  margin: 0 0 12px
+  padding: 4px 8px
+  border: 1px solid $c-black-light
+  border-radius: $g-radius
+  background: none
+  font-family: inherit
+  font-size: 16px
+  transition: border-color, $g-time, $g-function
+
+  &:focus
+    border-color: $c-black
+
+[type="checkbox"] + label,
+[type="radio"] + label
+  display: inline-block
+  margin-right: 16px
+  margin-bottom: 0
+  margin-left: 8px
+  vertical-align: baseline
+
+  &:hover
+    cursor: pointer
+
+select
+  width: 100%
+  height: 36px
+  margin: 0 0 12px
+  padding: 4px 8px
+  border: 1px solid $c-black-light
+  border-radius: $g-radius
+  background-color: transparent
+  background-position: right 8px center
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: #{$c-black-medium}'></polygon></svg>")
+  background-size: 9px 6px
+  background-repeat: no-repeat
+  font-family: inherit
+  font-size: 16px
+  appearance: none
+
+fieldset
+  margin: 0
+  padding: 0
+  border: 0
+
+label
+  display: block
+  margin: 0
+  margin-bottom: 4px
+  font-size: 14px
+  font-style: normal
+  font-weight: $fw-regular
+  line-height: 19px
+
+textarea
+  min-height: 72px
+  padding-top: 8px
+  resize: none
+
+::-webkit-input-placeholder
+  color: $c-black-light
+
+::-moz-placeholder
+  color: $c-black-light
+
+::-ms-input-placeholder
+  color: $c-black-light
+
+// TODO: Make some kind of input component, and change these
+.input--error
+  margin-bottom: 4px
+  border-color: $c-error
+
+.error
+  display: block
+  margin-bottom: 12px
+  color: $c-error
+
+.input__container
+  position: relative
+
+  input
+    padding-left: 32px
+
+  svg
+    position: absolute
+    top: 50%
+    left: 6px
+    transform: translateY(-50%)

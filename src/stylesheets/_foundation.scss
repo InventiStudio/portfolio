@@ -1,0 +1,21 @@
+@import "utils/helpers";
+@import "~foundation-sites/scss/grid/grid";
+@import "~foundation-sites/scss/components/flex";
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+// @include foundation-grid
+// @include foundation-float-classes
+
+// CUSTOM SHRINK
+@each $breakpoint in $breakpoint-classes {
+  @if $breakpoint == small {
+    // Do nothing
+  } @else {
+    @include breakpoint($breakpoint) {
+      .#{$breakpoint}-shrink {
+        flex: 0 0 auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
