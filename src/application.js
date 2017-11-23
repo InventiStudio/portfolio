@@ -5,6 +5,7 @@ import 'babel-polyfill'
 import Vue from 'vue'
 import Vuelidate from 'vuelidate'
 import VueHead from 'vue-head'
+import VueI18n from 'vue-i18n'
 import App from 'src/App'
 import router from 'src/router'
 import Modal from 'components/Modal/Modal'
@@ -14,6 +15,7 @@ Vue.config.productionTip = false
 
 Vue.use(Vuelidate)
 Vue.use(VueHead)
+Vue.use(VueI18n)
 
 Vue.component('Modal', Modal)
 Vue.component('Icon', Icon)

@@ -22,7 +22,7 @@
 
   export default {
     head: head.set({
-      title: () => 'Home',
+      title() { return this.$t('pages.Homepage.title') },
     }),
   }
 </script>
