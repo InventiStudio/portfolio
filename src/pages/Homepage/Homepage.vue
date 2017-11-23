@@ -11,8 +11,9 @@
         br
         - n++
     section.homepage__contact
+      img.homepage__map(src="~assets/images/Homepage/contact__map.svg")
       - var n = 0;
-      while n < 30
+      while n < 40
         br
         - n++
 </template>
