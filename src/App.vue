@@ -1,5 +1,6 @@
 <template lang="pug">
   #main-app
+    Monster
     Navbar
     transition(name="fade")
       router-view
@@ -9,11 +10,13 @@
 <script>
   import Navbar from 'components/Navbar/Navbar'
   import Foot from 'components/Foot/Foot'
+  import Monster from 'components/Monster/Monster'
 
   export default {
     components: {
       Navbar,
       Foot,
+      Monster,
     },
     watch: {
       $route(newRoute, oldRoute) {
