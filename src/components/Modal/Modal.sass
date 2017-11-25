@@ -1,4 +1,4 @@
-@import "~stylesheets/utils/helpers"
+@import "~stylesheets/helpers"
 
 .modal__mask
   position: fixed
@@ -8,7 +8,7 @@
   width: 100%
   height: 100%
   background-color: rgba($c-black, 0.6)
-  transition: opacity $g-time $g-function
+  transition: opacity $t-duration $t-easing
 
 .modal__container
   position: relative
@@ -16,7 +16,7 @@
   padding-top: 64px
   padding-bottom: 40px
   background-color: $c-white
-  transition: transform $g-time $g-function
+  transition: transform $t-duration $t-easing
   box-shadow: 0 3px 12px 0 rgba($c-black, 0.1)
 
   @media #{$medium-up}
@@ -28,8 +28,8 @@ svg.modal__icon
   right: 16px
   width: 24px
   height: 24px
-  color: $c-black-medium
-  transition: transform $g-time $g-function
+  color: $c-black
+  transition: transform $t-duration $t-easing
 
   &:hover
     transform: scale(1.2)

@@ -4,15 +4,18 @@
 // Foundation
 @import "foundation"
 
+// Variables
+@import "vars/colors"
+@import "vars/fonts"
+@import "vars/transitions"
+
 // Base
-@import "base/variables"
 @import "base/base"
-@import "base/typography"
-@import "base/button"
-@import "base/forms"
 
 // Utils
-@import "utils/fonts"
+@import "utils/colors"
+@import "utils/fw"
+@import "utils/fs"
 @import "utils/utils"
 
 // Common
@@ -20,11 +23,11 @@
 
 .fade-enter-active,
 .fade-leave-active
-  transition-duration: $g-time
+  transition-duration: $t-duration
   transition-property: opacity
 
 .fade-enter-active
-  transition-delay: $g-time
+  transition-delay: $t-duration
 
 .fade-enter,
 .fade-leave-active

@@ -1,4 +1,4 @@
-@import "~stylesheets/utils/helpers"
+@import "~stylesheets/helpers"
 
 .navbar
   position: fixed
@@ -9,7 +9,7 @@
   padding-top: 16px
   padding-bottom: 16px
   color: $c-white
-  transition-duration: $g-time
+  transition-duration: $t-duration
   transition-property: transform, background-color, padding
 
   @media #{$large-up}
@@ -18,13 +18,13 @@
 
 .navbar--hidden:not(:hover)
   transform: translateY(-85%)
-  background-color: $c-primary
+  background-color: $c-black
 
   @media #{$medium-up}
     transform: translateY(-93%)
 
 .navbar--filled
-  background-color: rgba($c-cod-gray, 0.8)
+  background-color: rgba($c-black, 0.8)
 
 .navbar__icon
   width: 35px
@@ -62,7 +62,7 @@
     display: block
     height: 2px
     background: $c-white
-    transition: background 0s $g-time
+    transition: background 0s $t-duration
 
     &::before,
     &::after
@@ -76,13 +76,13 @@
 
     &::before
       top: -10px
-      transition: top $g-time, transform $g-time
-      transition-delay: $g-time, 0s
+      transition: top $t-duration, transform $t-duration
+      transition-delay: $t-duration, 0s
 
     &::after
       bottom: -10px
-      transition: bottom $g-time, transform $g-time
-      transition-delay: $g-time, 0s
+      transition: bottom $t-duration, transform $t-duration
+      transition-delay: $t-duration, 0s
 
   @media #{$medium-up}
     display: none
@@ -93,7 +93,7 @@
 
     &::before,
     &::after
-      transition-delay: 0s, $g-time
+      transition-delay: 0s, $t-duration
 
     &::before
       top: 0
@@ -156,14 +156,14 @@
   display: block
   margin-bottom: 24px
   color: inherit
-  transition: opacity, $g-function, $g-time
+  transition: opacity, $t-easing, $t-duration
 
   &.navbar__link--active
     cursor: default
     opacity: 0.7
 
   &:not(.navbar__link--active):hover
-    color: $c-primary
+    color: $c-black
 
   @media #{$medium-up}
     display: inline-block
