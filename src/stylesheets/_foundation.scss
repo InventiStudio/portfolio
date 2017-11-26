@@ -3,8 +3,6 @@
 @import "~foundation-sites/scss/components/flex";
 @include foundation-flex-classes;
 @include foundation-flex-grid;
-// @include foundation-grid
-// @include foundation-float-classes
 
 // CUSTOM SHRINK
 @each $breakpoint in $breakpoint-classes {
