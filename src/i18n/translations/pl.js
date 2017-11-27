@@ -1,7 +1,5 @@
 export default {
-  pages: {
-    Homepage: {
-      title: 'Strona główna',
-    },
+  home: {
+    title: 'Strona główna',
   },
 }

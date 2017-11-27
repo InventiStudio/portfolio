@@ -9,9 +9,9 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Homepage',
+    name: 'Home',
     component(resolve) {
-      require(['pages/Homepage/Homepage'], resolve)
+      require(['pages/Home/Home'], resolve)
     },
   },
   {

@@ -5,7 +5,7 @@ export default {
   navbar: {
     blog: 'Blog',
   },
-  homepage: {
+  home: {
     title: 'Home',
     landing: {
       title: 'We are Vue.js & Node.js web development agency based in Wrocław',

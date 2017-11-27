@@ -1,17 +1,18 @@
 <template lang="pug">
-  article.homepage
-    section.homepage__landing.common__wave
+  article.home
+    section.home__landing.common__wave
+      p {{ $t('home.title') }}
       - var n = 0;
       while n < 60
         br
         - n++
-    section.homepage__testimonials
+    section.home__testimonials
       - var n = 0;
       while n < 40
         br
         - n++
-    section.homepage__contact
-      img.homepage__map(src="~assets/images/Homepage/contact__map.svg")
+    section.home__contact
+      img.home__map(src="~assets/images/Home/contact__map.svg")
       - var n = 0;
       while n < 40
         br
@@ -23,9 +24,9 @@
 
   export default {
     head: head.set({
-      title() { return this.$t('pages.Homepage.title') },
+      title() { return this.$t('home.title') },
     }),
   }
 </script>
 
-<style src="./Homepage.sass" lang="sass" scoped></style>
+<style src="./Home.sass" lang="sass" scoped></style>

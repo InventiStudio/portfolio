@@ -2,7 +2,7 @@
   header.navbar(:class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }")
     .row.align-middle.align-justify.expanded
       .shrink.columns
-        router-link(:to="{ name: 'Homepage' }")
+        router-link(:to="{ name: 'Home' }")
           span Logo
       .shrink.columns
         button.navbar__nav-button(
@@ -13,7 +13,7 @@
         nav.navbar__nav(:class="{ 'navbar__nav--active': isNavOpen }")
           ul.navbar__links
             router-link.navbar__link(
-              :to="{ name: 'Homepage' }",
+              :to="{ name: 'Home' }",
               :exact="true",
               active-class="navbar__link--active",
             ) Home
