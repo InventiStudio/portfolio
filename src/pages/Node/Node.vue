@@ -1,6 +1,6 @@
 <template lang="pug">
   article.node
-    section.node__landing.common__wave
+    section.node__landing.o-wave
       - var n = 0;
       while n < 20
         br

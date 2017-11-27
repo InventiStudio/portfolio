@@ -1,6 +1,6 @@
 <template lang="pug">
   article.vue
-    section.vue__landing.common__wave
+    section.vue__landing.o-wave
       - var n = 0;
       while n < 20
         br

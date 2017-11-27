@@ -1,6 +1,6 @@
 <template lang="pug">
   article.services
-    section.services__landing.common__wave
+    section.services__landing.o-wave
       - var n = 0;
       while n < 30
         br
