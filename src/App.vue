@@ -1,5 +1,5 @@
 <template lang="pug">
-  #main-app
+  main
     Monster
     Navbar
     transition(name="fade")

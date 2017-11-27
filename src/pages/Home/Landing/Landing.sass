@@ -1,0 +1,23 @@
+@import "~stylesheets/helpers"
+
+.landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Home/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-position: center top
+    background-image: url("~assets/images/confetti--white.svg")
+    background-size: 200px
+    content: ""
+    opacity: 0.1
+
+.landing__heading
+  font-size: 32px
+  line-height: 48px

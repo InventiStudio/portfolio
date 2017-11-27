@@ -1,31 +1,25 @@
 <template lang="pug">
-  article.home
-    section.home__landing.common__wave
-      p {{ $t('home.title') }}
-      - var n = 0;
-      while n < 60
-        br
-        - n++
-    section.home__testimonials
-      - var n = 0;
-      while n < 40
-        br
-        - n++
-    section.home__contact
-      img.home__map(src="~assets/images/Home/contact__map.svg")
-      - var n = 0;
-      while n < 40
-        br
-        - n++
+  article
+    Landing
+    Testimonials
+    Contact
 </template>
 
 <script>
   import head from 'src/head'
+  import Landing from './Landing/Landing'
+  import Testimonials from './Testimonials/Testimonials'
+  import Contact from './Contact/Contact'
 
   export default {
     head: head.set({
       title() { return this.$t('home.title') },
     }),
+    components: {
+      Landing,
+      Testimonials,
+      Contact,
+    },
   }
 </script>
 

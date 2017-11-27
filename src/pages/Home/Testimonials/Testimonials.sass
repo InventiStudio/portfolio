@@ -1,0 +1,15 @@
+@import "~stylesheets/helpers"
+
+.testimonials
+  position: relative
+  z-index: 1
+  background-position: center bottom
+  background-image: url("~assets/images/Home/testimonials__bg.svg")
+  background-size: 170% 170%
+  background-repeat: no-repeat
+
+  @media #{$medium-up}
+    background-size: 100% 170%
+
+  @media #{$large-up}
+    background-size: 100% 200%
