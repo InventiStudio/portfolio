@@ -10,6 +10,7 @@ import App from 'src/App'
 import router from 'src/router'
 import Modal from 'components/Modal/Modal'
 import Icon from 'components/Icon/Icon'
+import SocialLinks from 'components/SocialLinks/SocialLinks'
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,7 @@ Vue.use(VueI18n)
 
 Vue.component('Modal', Modal)
 Vue.component('Icon', Icon)
+Vue.component('SocialLinks', SocialLinks)
 
 // http://varun.ca/icon-component/
 const files = require.context('!svg-sprite-loader!./assets/icons', false, /.*\.svg$/)
