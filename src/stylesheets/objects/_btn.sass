@@ -1,0 +1,46 @@
+// TODO: Move these to some kind of mixins file
+=bgcolor($color)
+  background-color: $color
+
+=border($color)
+  border-color: $color
+
+=box-shadow($color)
+  transition-duration: $t-duration
+  transition-property: box-shadow
+  transition-timing-function: $t-easing
+  box-shadow: 0 2px 12px 0 rgba($color, 0.3)
+
+  &:hover
+    box-shadow: 0 10px 20px 0 rgba($color, 0.3) // TODO: Temporary setting. Adjust that in Sketch
+
+=o-btn($color)
+  +bgcolor($color)
+  +box-shadow($color)
+  +border($color)
+
+.o-btn
+  padding: 7px 24px
+  border-width: 1px
+  border-style: solid
+  border-radius: 20px
+  background: none
+  cursor: pointer
+
+  &:disabled
+    cursor: not-allowed
+
+.o-btn--hollow
+  box-shadow: none
+
+.o-btn--pink
+  +o-btn($c-pink)
+
+.o-btn--green
+  +o-btn($c-green)
+
+.o-btn--blue
+  +o-btn($c-blue)
+
+.o-btn--orange
+  +o-btn($c-orange)
