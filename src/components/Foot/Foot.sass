@@ -3,8 +3,16 @@
 .foot
   padding-top: 40px
   padding-bottom: 48px
-  background-color: $c-black
-  color: $c-white
+  background-color: $c-ship-gray
 
-.foot__img
-  max-width: 64px
+.foot__column
+  text-align: center
+
+  &:not(:first-of-type)
+    margin-top: 32px
+
+  @media #{$medium-up}
+    text-align: left
+
+    &:not(:first-of-type)
+      margin-top: 0

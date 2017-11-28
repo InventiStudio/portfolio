@@ -1,0 +1,11 @@
+.o-social-links
+  a
+    transition-duration: $t-duration
+    transition-property: transform
+    transition-timing-function: $t-easing
+
+    &:not(:first-of-type)
+      margin-left: 8px
+
+    &:hover
+      transform: translateY(-4px)
