@@ -1,6 +1,6 @@
 <template lang="pug">
   header.navbar(:class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }")
-    .row.align-middle.align-justify.expanded
+    .row.align-middle.align-justify
       .shrink.columns
         router-link(:to="{ name: 'Home' }")
           img(src="~assets/inventi__name.svg", alt="TODO")
@@ -32,7 +32,9 @@
               :exact="true",
               active-class="navbar__link--active",
             ) Node
-            a.navbar__button(href="#") {{ $t('common.estimateProject') }}
+            a.navbar__link(href="https://blog.inventi.studio/", rel="nofollow") Blog
+            a.navbar__button(href="#")
+              span.fs-16.c-white {{ $t('common.estimateProject') }}
 </template>
 
 <script>

@@ -12,7 +12,7 @@
   box-shadow: 0 2px 12px 0 rgba($color, 0.3)
 
   &:hover
-    box-shadow: 0 10px 20px 0 rgba($color, 0.3) // TODO: Temporary setting. Adjust that in Sketch
+    box-shadow: 0 6px 18px 0 rgba($color, 0.3) // TODO: Temporary setting. Adjust that in Sketch
 
 =o-btn($color)
   +bgcolor($color)
@@ -25,13 +25,11 @@
   border-style: solid
   border-radius: 20px
   background: none
+  text-decoration: none
   cursor: pointer
 
   &:disabled
     cursor: not-allowed
-
-.o-btn--hollow
-  box-shadow: none
 
 .o-btn--pink
   +o-btn($c-pink)
@@ -44,3 +42,7 @@
 
 .o-btn--orange
   +o-btn($c-orange)
+
+.o-btn--hollow
+  background-color: transparent
+  box-shadow: none
