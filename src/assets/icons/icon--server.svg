@@ -1,6 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-  <line x1="6" y1="6" x2="6" y2="6"></line>
-  <line x1="6" y1="18" x2="6" y2="18"></line>
+<svg viewBox="0 0 36 34" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd"><g><g><g><g transform="translate(1 1)"><rect stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="34" height="12.8" rx="2"/><rect stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" y="19.2" width="34" height="12.8" rx="2"/><ellipse fill="currentColor" cx="6.375" cy="6.4" rx="2.125" ry="2.13333333"/><ellipse fill="currentColor" cx="6.375" cy="25.6" rx="2.125" ry="2.13333333"/></g></g></g></g></g>
 </svg>

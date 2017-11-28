@@ -1,5 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-  <line x1="8" y1="21" x2="16" y2="21"></line>
-  <line x1="12" y1="17" x2="12" y2="21"></line>
+<svg viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g stroke="currentColor" stroke-width="2"><g><g><g transform="translate(1 1)"><rect width="33" height="23.1225806" rx="2"/><path d="M9.9 29.7290323h13.2M16.5 23.1225806v6.6064517"/></g></g></g></g></g>
 </svg>
