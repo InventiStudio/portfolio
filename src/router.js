@@ -35,6 +35,13 @@ const routes = [
       require(['pages/Node/Node'], resolve)
     },
   },
+  {
+    path: '/services/design',
+    name: 'Design',
+    component(resolve) {
+      require(['pages/Design/Design'], resolve)
+    },
+  },
 ]
 /* eslint-enable global-require */
 /* eslint-enable import/no-dynamic-require */

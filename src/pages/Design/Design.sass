@@ -1,0 +1,141 @@
+@import "~stylesheets/helpers"
+
+.design__landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Design/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 550px
+    background-position: left bottom
+    background-image: url("~assets/images/Design/landing__path.svg")
+    background-size: cover
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$xxlarge-up}
+      height: 100%
+      background-size: 100%
+
+  &::after
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 300px
+    background-position: center bottom
+    background-image: url("~assets/images/Design/landing__wave.svg")
+    background-size: 800px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 300px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 375px
+
+.design__responsiveness
+  background-color: $c-alabaster
+
+.design__typography
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Design/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 200px
+    background-position: center top
+    background-image: url("~assets/images/Design/typography__top-wave.svg")
+    background-size: 800px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 200px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 251px
+
+  &::after
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 60px
+    background-position: center bottom
+    background-image: url("~assets/images/inventi__bottom-wave.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 80px
+
+    @media #{$large-up}
+      height: 100px
+
+.design__semantics
+  background-color: $c-alabaster
+
+.design__rhythm
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Design/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100px
+    background-position: center top
+    background-image: url("~assets/images/Design/rhythm__top-wave.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 130px
+
+    @media #{$large-up}
+      height: 180px
+
+  &::after
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 60px
+    background-position: center bottom
+    background-image: url("~assets/images/inventi__bottom-wave.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 80px
+
+    @media #{$large-up}
+      height: 100px
+
+
+.design__tools
+  position: relative
+  background-color: $c-alabaster
+  background-position: center bottom
+  background-image: url("~assets/images/technologies__wave.svg")
+  background-size: cover

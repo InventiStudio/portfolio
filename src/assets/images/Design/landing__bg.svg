@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="988px" viewBox="0 0 1440 988" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Land/bgGradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="47.7053203%" y1="100%" x2="47.7053195%" y2="1.51466837%" id="linearGradient-1">
+            <stop stop-color="#FFAE5B" offset="0%"></stop>
+            <stop stop-color="#E57676" offset="54.8110651%"></stop>
+            <stop stop-color="#DC326C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-/-UI/UX" fill="url(#linearGradient-1)">
+            <rect id="Land/bgGradient" x="0" y="0" width="1440" height="988"></rect>
+        </g>
+    </g>
+</svg>
