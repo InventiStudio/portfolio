@@ -33,7 +33,7 @@
               active-class="navbar__link--active",
             ) Node
             a.navbar__link(href="https://blog.inventi.studio/", rel="nofollow") Blog
-            a.navbar__button(href="#")
+            a.navbar__cta.o-btn.transition(href="#")
               span.fs-16.c-white {{ $t('common.estimateProject') }}
 </template>
 
