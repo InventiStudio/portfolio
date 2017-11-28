@@ -3,7 +3,7 @@
     .row.align-middle.align-justify.expanded
       .shrink.columns
         router-link(:to="{ name: 'Home' }")
-          span Logo
+          img(src="~assets/inventi__name.svg", alt="TODO")
       .shrink.columns
         button.navbar__nav-button(
           :class="{ 'navbar__nav-button--active': isNavOpen }",
@@ -11,30 +11,28 @@
         )
           span Toggle nav
         nav.navbar__nav(:class="{ 'navbar__nav--active': isNavOpen }")
-          ul.navbar__links
+          ul.navbar__links.list-reset
             router-link.navbar__link(
               :to="{ name: 'Home' }",
               :exact="true",
               active-class="navbar__link--active",
-            ) Home
-          ul.navbar__links
+            ) {{ $t('home.title') }}
             router-link.navbar__link(
               :to="{ name: 'Services' }",
               :exact="true",
               active-class="navbar__link--active",
-            ) Services
-          ul.navbar__links
+            ) {{ $t('services.title') }}
             router-link.navbar__link(
               :to="{ name: 'Vue' }",
               :exact="true",
               active-class="navbar__link--active",
             ) Vue
-          ul.navbar__links
             router-link.navbar__link(
               :to="{ name: 'Node' }",
               :exact="true",
               active-class="navbar__link--active",
             ) Node
+            a.navbar__button(href="#") {{ $t('common.estimateProject') }}
 </template>
 
 <script>
