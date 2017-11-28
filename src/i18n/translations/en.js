@@ -1,6 +1,7 @@
 export default {
   common: {
     orContactUs: 'or contact us!',
+    estimateProject: 'Estimate project',
   },
   navbar: {
     blog: 'Blog',
@@ -10,7 +11,6 @@ export default {
     landing: {
       title: 'We are Vue.js & Node.js web development agency based in Wrocław',
       desc: 'We excel at building modern web applications, providing full-stack JavaScript and UI/UX design services for enterprises, companies and startups.',
-      cta: 'Estimate project',
     },
     services: {
       title: 'Services',
@@ -90,6 +90,5 @@ export default {
     title: 'Want to work with us?',
     desc: 'Whether you want to hire us or simply get to know us better - feel free to get in touch!',
     ctaHire: 'Hire us',
-    ctaEstimate: 'Estimate project',
   },
 }
