@@ -16,25 +16,25 @@
           icon.c-ship-gray-15(type="icon--monitor")
           h3.o-heading-3.c-ship-gray {{ $t('vue.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('vue.desc') }}
-          button.o-btn.o-btn--green.mr-8
+          router-link.o-btn.o-btn--green.mr-8(:to="{ name: 'Vue' }")
             span.c-white.fs-16 {{ $t('services.card.cta') }}
-          a(href="#").o-link.c-green {{ $t('common.orContactUs') }}
+          button.o-link.c-green.p0 {{ $t('common.orContactUs') }}
       .small-12.large-4.columns
         .o-card.o-card--max-width.mb-40
           icon.c-ship-gray-15(type="icon--server")
           h3.o-heading-3.c-ship-gray {{ $t('node.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('node.desc') }}
-          button.o-btn.o-btn--blue.mr-8
+          router-link.o-btn.o-btn--blue.mr-8(:to="{ name: 'Node' }")
             span.c-white.fs-16 {{ $t('services.card.cta') }}
-          a(href="#").o-link.c-blue {{ $t('common.orContactUs') }}
+          button.o-link.c-blue.p0 {{ $t('common.orContactUs') }}
       .small-12.large-4.columns
         .o-card.o-card--max-width.mb-40
           icon.c-ship-gray-15(type="icon--grid")
           h3.o-heading-3.c-ship-gray {{ $t('design.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('design.desc') }}
-          button.o-btn.o-btn--orange.mr-8
+          router-link.o-btn.o-btn--orange.mr-8(:to="{ name: 'Design' }")
             span.c-white.fs-16 {{ $t('services.card.cta') }}
-          a(href="#").o-link.c-orange {{ $t('common.orContactUs') }}
+          button.o-link.c-orange.p0 {{ $t('common.orContactUs') }}
 </template>
 
 <style src="./Landing.sass" lang="sass" scoped></style>
