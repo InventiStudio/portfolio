@@ -22,11 +22,16 @@
           | {{ $t('vue.shortTitle') }}
         router-link.o-link.block(:to="{ name: 'Node' }")
           | {{ $t('node.shortTitle') }}
+        router-link.o-link.block(:to="{ name: 'Design' }")
+          | {{ $t('design.shortTitle') }}
       .foot__column.small-8.medium-4.large-2.columns
         span.fs-16.c-white.mb-8.block {{ $t('contact.title') }}
-        a.o-link.block(:href="mailToUrl('content.contact.emailAddress')") {{ $t('content.contact.emailAddress') }}
-        a.o-link.block(:href="phoneToUrl('content.contact.phone1')") {{ $t('content.contact.phone1') }}
-        a.o-link.block(:href="phoneToUrl('content.contact.phone2')") {{ $t('content.contact.phone2') }}
+        a.o-link.block.fw-medium.c-white.underline(:href="mailToUrl('content.contact.emailAddress')")
+          | {{ $t('content.contact.emailAddress') }}
+        a.o-link.block.fw-medium.c-white.underline(:href="phoneToUrl('content.contact.phone1')")
+          | {{ $t('content.contact.phone1') }}
+        a.o-link.block.fw-medium.c-white.underline(:href="phoneToUrl('content.contact.phone2')")
+          | {{ $t('content.contact.phone2') }}
         span.fs-16.block {{ $t('content.contact.place') }}
 </template>
 
