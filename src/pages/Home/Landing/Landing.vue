@@ -1,14 +1,40 @@
 <template lang="pug">
   section.landing.o-wave.text-center
-    h1.landing__heading.c-white-90 {{ $t('home.landing.title') }}
-    p.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
-    button.o-button.bg-pink.border-pink.mr-8
-      span.c-white.fs-16 {{ $t('home.landing.cta') }}
-    a(href="#").c-white.fs-16.underline {{ $t('common.orContactUs') }}
-    - var n = 0;
-    while n < 40
-      br
-      - n++
+    .landing__content.row
+      .small-12.columns
+        img.landing__logo(src="~assets/logo.svg", alt="TODO")
+        h1.landing__heading.c-white-90 {{ $t('home.landing.title') }}
+        p.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
+        button.o-btn.o-btn--pink.mr-8
+          span.c-white.fs-16 {{ $t('common.estimateProject') }}
+        a(href="#").c-white.fs-16.underline {{ $t('common.orContactUs') }}
+      .small-12.columns
+        h1.o-heading-1.c-white-90 {{ $t('home.services.title') }}
+        p.o-paragraph.c-white-60 {{ $t('home.services.desc') }}
+      .small-12.medium-4.columns
+        .o-card
+          icon.c-ship-gray-15(type="icon--monitor")
+          h3.o-heading-3.c-ship-gray {{ $t('vue.shortTitle') }}
+          p.o-paragraph.c-ship-gray-40 {{ $t('vue.desc') }}
+          button.o-btn.o-btn--green.mr-8
+            span.c-white.fs-16 {{ $t('services.card.cta') }}
+          a(href="#").c-green.fs-16 {{ $t('common.orContactUs') }}
+      .small-12.medium-4.columns
+        .o-card
+          icon.c-ship-gray-15(type="icon--server")
+          h3.o-heading-3.c-ship-gray {{ $t('node.shortTitle') }}
+          p.o-paragraph.c-ship-gray-40 {{ $t('node.desc') }}
+          button.o-btn.o-btn--blue.mr-8
+            span.c-white.fs-16 {{ $t('services.card.cta') }}
+          a(href="#").c-blue.fs-16 {{ $t('common.orContactUs') }}
+      .small-12.medium-4.columns
+        .o-card
+          icon.c-ship-gray-15(type="icon--grid")
+          h3.o-heading-3.c-ship-gray {{ $t('design.shortTitle') }}
+          p.o-paragraph.c-ship-gray-40 {{ $t('design.desc') }}
+          button.o-btn.o-btn--orange.mr-8
+            span.c-white.fs-16 {{ $t('services.card.cta') }}
+          a(href="#").c-orange.fs-16 {{ $t('common.orContactUs') }}
 </template>
 
 <style src="./Landing.sass" lang="sass" scoped></style>
