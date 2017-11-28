@@ -1,12 +1,16 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
+import content from './content'
+import en from './i18n/en'
+import pl from './i18n/pl'
 
-import en from './translations/en'
-import pl from './translations/pl'
+function join(translations) {
+  return Object.assign({}, content, translations)
+}
 
 const messages = {
-  en,
-  pl,
+  en: join(en),
+  pl: join(pl),
 }
 
 const defaultLocale  = 'en'

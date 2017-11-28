@@ -11,7 +11,7 @@
   import Navbar from 'components/Navbar/Navbar'
   import Foot from 'components/Foot/Foot'
   import Monster from 'components/Monster/Monster'
-  import i18n from 'src/i18n'
+  import i18n from 'src/content'
 
   export default {
     i18n,

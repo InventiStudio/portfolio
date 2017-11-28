@@ -23,7 +23,24 @@
         router-link.o-link.block(:to="{ name: 'Node' }")
           | {{ $t('node.shortTitle') }}
       .foot__column.small-8.medium-4.large-2.columns
-        span.fs-16.c-white {{ $t('contact.title') }}
+        span.fs-16.c-white.mb-8.block {{ $t('contact.title') }}
+        a.o-link.block(:href="mailToUrl('content.contact.emailAddress')") {{ $t('content.contact.emailAddress') }}
+        a.o-link.block(:href="phoneToUrl('content.contact.phone1')") {{ $t('content.contact.phone1') }}
+        a.o-link.block(:href="phoneToUrl('content.contact.phone2')") {{ $t('content.contact.phone2') }}
+        span.fs-16.block {{ $t('content.contact.place') }}
 </template>
+
+<script>
+  export default {
+    methods: {
+      mailToUrl(mail) {
+        return `mailto:${this.$t(mail)}`
+      },
+      phoneToUrl(phone) {
+        return `tel:${this.$t(phone)}`.replace(/\s/g, '')
+      },
+    },
+  }
+</script>
 
 <style src="./Foot.sass" lang="sass" scoped></style>
