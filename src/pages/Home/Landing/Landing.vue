@@ -2,7 +2,7 @@
   section.landing.o-wave.text-center
     .landing__content.row
       .small-12.columns
-        img.landing__logo(src="~assets/logo.svg", alt="TODO")
+        img.landing__logo(src="~assets/inventi__logo.svg", alt="TODO")
         h1.landing__heading.c-white-90 {{ $t('home.landing.title') }}
         p.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
         button.o-btn.o-btn--pink.mr-8
