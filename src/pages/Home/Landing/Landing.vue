@@ -8,7 +8,7 @@
         button.o-btn.o-btn--pink.mr-8
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
         a(href="#").o-link.c-white {{ $t('common.orContactUs') }}
-      .landing__services.small-12.columns
+      .landing__services.small-12.columns(:id="constants.sectionIds.home.services")
         h1.o-heading-1.c-white-90 {{ $t('home.services.title') }}
         p.o-paragraph.c-white-60.mb-40.md-mb-48 {{ $t('home.services.desc') }}
       .small-12.large-4.columns
@@ -38,3 +38,13 @@
 </template>
 
 <style src="./Landing.sass" lang="sass" scoped></style>
+
+<script>
+  import constants from 'src/constants'
+
+  export default {
+    computed: {
+      constants: () => constants,
+    },
+  }
+</script>

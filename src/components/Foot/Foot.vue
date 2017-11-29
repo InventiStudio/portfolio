@@ -9,11 +9,11 @@
       .foot__column.small-8.medium-4.large-2.columns
         router-link.o-link.c-white.mb-8.block(:to="$routeByName('Home')")
           | {{ $t('home.title') }}
-        router-link.o-link.block(:to="$routeByName('Home', { hash: '#services' })")
+        router-link.o-link.block(@click.native="scrollToSection('services')", :to="$routeByName('Home', { hash: '#services' })")
           | {{ $t('home.services.title') }}
-        router-link.o-link.block(:to="$routeByName('Home', { hash: '#testimonials' })")
+        router-link.o-link.block(@click.native="scrollToSection('testimonials')", :to="$routeByName('Home', { hash: '#testimonials' })")
           | {{ $t('home.testimonials.title') }}
-        router-link.o-link.block(:to="$routeByName('Home', { hash: '#contact' })")
+        router-link.o-link.block(@click.native="scrollToSection('contact')", :to="$routeByName('Home', { hash: '#contact' })")
           | {{ $t('contact.title') }}
       .foot__column.small-8.medium-4.large-2.columns
         router-link.o-link.c-white.mb-8.block(:to="$routeByName('Services')")
@@ -36,8 +36,12 @@
 </template>
 
 <script>
+  import smoothScrollTo from 'services/scroll'
+  import constants from 'src/constants'
+
   export default {
     computed: {
+      constants: () => constants,
       secondLanguageLocale() {
         switch (this.$i18n.locale) {
           case 'en': return 'pl'
@@ -58,6 +62,9 @@
       },
       phoneToUrl(phone) {
         return `tel:${this.$t(phone)}`.replace(/\s/g, '')
+      },
+      scrollToSection(name) {
+        smoothScrollTo(this.constants.sectionIds.home[name])
       },
     },
   }

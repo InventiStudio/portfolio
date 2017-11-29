@@ -1,11 +1,13 @@
 <template lang="pug">
   article
     Landing
-    Testimonials
-    Contact
+    Testimonials(:id="constants.sectionIds.home.testimonials")
+    Contact(:id="constants.sectionIds.home.contact")
 </template>
 
 <script>
+  import smoothScrollTo from 'services/scroll'
+  import constants from 'src/constants'
   import head from 'src/head'
   import Landing from './Landing/Landing'
   import Testimonials from './Testimonials/Testimonials'
@@ -19,6 +21,14 @@
       Landing,
       Testimonials,
       Contact,
+    },
+    computed: {
+      constants: () => constants,
+    },
+    mounted() {
+      if (this.$route.hash) {
+        smoothScrollTo(this.constants.sectionIds.home[this.$route.hash.replace('#', '')])
+      }
     },
   }
 </script>
