@@ -22,7 +22,7 @@
               :exact="true",
               active-class="navbar__link--active",
             ) {{ $t('services.title') }}
-            a.navbar__link(href="https://blog.inventi.studio/", rel="nofollow") Blog
+            a.navbar__link(href="https://blog.inventi.studio/", rel="nofollow") {{ $t('navbar.blog') }}
             a.navbar__cta.o-btn.transition(href="#")
               span.fs-16.transition {{ $t('common.estimateProject') }}
 </template>
