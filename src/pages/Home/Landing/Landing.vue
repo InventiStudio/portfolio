@@ -1,7 +1,7 @@
 <template lang="pug">
   section.landing.o-wave--sinus.text-center
     .landing__content.row
-      .small-12.columns
+      .landing__title.small-12.columns
         img.landing__logo(src="~assets/inventi__logo.svg", alt="TODO")
         h1.landing__heading.c-white-90 {{ $t('home.landing.title') }}
         p.landing__desc.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
