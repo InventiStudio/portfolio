@@ -22,7 +22,7 @@
           | {{ $t('vue.shortTitle') }}
         router-link.o-link.block(:to="$routeByName('Node')")
           | {{ $t('node.shortTitle') }}
-        router-link.o-link.block(:to="{ name: 'Design' }")
+        router-link.o-link.block(:to="$routeByName('Design')")
           | {{ $t('design.shortTitle') }}
       .foot__column.small-8.medium-4.large-2.columns
         span.fs-16.c-white.mb-8.block {{ $t('contact.title') }}
