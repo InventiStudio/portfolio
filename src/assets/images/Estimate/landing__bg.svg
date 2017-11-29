@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="669px" viewBox="0 0 1440 669" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Land/bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#8125D0" offset="0%"></stop>
+            <stop stop-color="#CC41C1" offset="47.6482781%"></stop>
+            <stop stop-color="#EF2CA6" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="669"></rect>
+        <radialGradient cx="37.5868852%" cy="37.4589275%" fx="37.5868852%" fy="37.4589275%" r="61.153708%" id="radialGradient-4">
+            <stop stop-color="#F57F93" offset="0%"></stop>
+            <stop stop-color="#E57689" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="62.5574337%" cy="62.0235188%" fx="62.5574337%" fy="62.0235188%" r="58.2500027%" id="radialGradient-5">
+            <stop stop-color="#E760F8" offset="0%"></stop>
+            <stop stop-color="#DC5AED" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Estimate">
+            <g id="Land/content">
+                <g id="Land/bg">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Rectangle-15" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <circle id="Oval-3" fill="url(#radialGradient-4)" opacity="0.801800272" mask="url(#mask-3)" cx="197" cy="106" r="669"></circle>
+                    <circle id="Oval-3" fill="url(#radialGradient-5)" opacity="0.881850091" mask="url(#mask-3)" cx="1098" cy="552" r="681"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

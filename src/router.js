@@ -47,6 +47,13 @@ const routes = [
           require(['pages/Design/Design'], resolve)
         },
       },
+      {
+        path: 'services/estimate-project',
+        name: 'Estimate',
+        component(resolve) {
+          require(['pages/Estimate/Estimate'], resolve)
+        },
+      },
     ],
   },
   {

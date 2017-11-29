@@ -1,0 +1,40 @@
+@import "~stylesheets/helpers"
+
+.estimate__landing
+  position: relative
+  background-position: center top
+  background-image: url("~assets/images/Estimate/landing__bg.svg")
+  background-size: cover
+
+  &::before
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 120px
+    background-position: center bottom
+    background-image: url("~assets/images/Estimate/landing__wave.svg")
+    background-size: 800px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 130px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 190px
+
+
+.estimate__form
+  background-color: $c-alabaster
+  background-position: center bottom
+  background-image: url("~assets/images/wave--gray.svg")
+  background-size: 300% 500px
+  background-repeat: no-repeat
+
+  @media #{$medium-up}
+    background-size: 100% 350px
+
+  @media #{$large-up}
+    background-size: 100% 550px
