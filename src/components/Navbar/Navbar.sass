@@ -133,6 +133,9 @@
 .navbar__nav--active
   display: block
 
+  &::before
+    background-image: linear-gradient(-225deg, #B73DC7 0%, #A740C4 8%, #714BBB 38%, #5358CF 66%, #3F64D4 84%, #2B69DD 100%);
+
   .navbar__link
     color: $c-white
 
@@ -184,7 +187,7 @@
     background-color: $c-white
 
     span
-      color: $c-pink
+      color: $c-purple
 
 .navbar--black
   .navbar__nav-button:not(.navbar__nav-button--active)

@@ -12,6 +12,7 @@
 @import "objects/card"
 @import "objects/text"
 @import "objects/wave"
+@import "objects/animations"
 
 // Utils
 @import "utils/bgcolor"
@@ -31,9 +32,11 @@
   transition-duration: 250ms
   transition-property: opacity
 
-.fade-enter-active
+.fade-enter-to,
+.fade-leave
   transition-delay: 250ms
+  opacity: 1
 
 .fade-enter,
-.fade-leave-active
+.fade-leave-to
   opacity: 0

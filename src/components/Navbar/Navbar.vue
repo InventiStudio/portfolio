@@ -10,7 +10,7 @@
           @click="toggleNav()",
         )
           span Toggle nav
-        nav.navbar__nav(:class="{ 'navbar__nav--active': isNavOpen }")
+        nav.navbar__nav(:class="{ 'navbar__nav--active a-fade-in': isNavOpen }")
           ul.navbar__links.list-reset
             router-link.navbar__link(
               :to="$routeByName('Home')",

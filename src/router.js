@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/:lang',
-    component: Vue.component('Main', { template: '<router-view></router-view>' }),
+    component: Vue.component('Main', { template: '<transition name="fade"><router-view mode="out-in"></router-view></transition>' }),
     children: [
       {
         path: '',

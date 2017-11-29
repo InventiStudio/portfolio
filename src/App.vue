@@ -2,8 +2,7 @@
   main
     Monster
     Navbar
-    transition(name="fade")
-      router-view
+    router-view
     Foot
 </template>
 
