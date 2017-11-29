@@ -91,4 +91,8 @@ export default {
     desc: 'Whether you want to hire us or simply get to know us better - feel free to get in touch!',
     ctaHire: 'Hire us',
   },
+  errors: {
+    email: 'Sorry, but that doesn\'t seem like a valid email',
+    message: 'Ooops, no message?',
+  },
 }
