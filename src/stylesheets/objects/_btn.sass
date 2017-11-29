@@ -9,9 +9,9 @@
   box-shadow: 0 2px 12px 0 rgba($color, 0.3)
 
 =hover($color)
-  &:hover
-    transform: translateY(-4px) scale(1.02)
-    background-color: lighten($color, 10)
+  &:not(:disabled):hover
+    transform: translateY(-4px)
+    background-color: lighten($color, 5)
     box-shadow: 0 12px 15px 0 rgba($color, 0.2)
 
 =o-btn($color)

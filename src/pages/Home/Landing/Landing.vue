@@ -12,7 +12,7 @@
         h1.o-heading-1.c-white-90 {{ $t('home.services.title') }}
         p.o-paragraph.c-white-60.mb-40.md-mb-48 {{ $t('home.services.desc') }}
       .small-12.large-4.columns
-        .o-card.o-card--max-width.mb-40
+        article.o-card.o-card--max-width.mb-40
           icon.c-ship-gray-15(type="icon--monitor")
           h3.o-heading-3.c-ship-gray {{ $t('vue.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('vue.desc') }}
@@ -20,7 +20,7 @@
             span.c-white.fs-16 {{ $t('services.card.cta') }}
           button.o-link.c-green.p0 {{ $t('common.orContactUs') }}
       .small-12.large-4.columns
-        .o-card.o-card--max-width.mb-40
+        article.o-card.o-card--max-width.mb-40
           icon.c-ship-gray-15(type="icon--server")
           h3.o-heading-3.c-ship-gray {{ $t('node.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('node.desc') }}
@@ -28,7 +28,7 @@
             span.c-white.fs-16 {{ $t('services.card.cta') }}
           button.o-link.c-blue.p0 {{ $t('common.orContactUs') }}
       .small-12.large-4.columns
-        .o-card.o-card--max-width.mb-40
+        article.o-card.o-card--max-width.mb-40
           icon.c-ship-gray-15(type="icon--grid")
           h3.o-heading-3.c-ship-gray {{ $t('design.shortTitle') }}
           p.o-paragraph.c-ship-gray-40.mb-24 {{ $t('design.desc') }}

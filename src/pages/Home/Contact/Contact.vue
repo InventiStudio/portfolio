@@ -2,10 +2,11 @@
   section.contact
     img.contact__map(src="~assets/images/Home/contact__map.svg")
     .contact__content.row
-      h1.o-heading-1.c-white-90 {{ $t('contact.title') }}
-      p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
-      .small-12.large-6.columns
-        .o-card.o-wave--gray.text-center
+      .small-12.columns.mb-40.md-mb-48.text-center
+        h1.o-heading-1.c-white-90 {{ $t('contact.title') }}
+        p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
+      .small-12.medium-8.large-6.columns
+        article.contact__card.o-card.o-wave--gray.text-center
           a.o-link.fw-medium.block.c-purple.underline(:href="mailToUrl('content.contact.emailAddress')")
             | {{ $t('content.contact.emailAddress') }}
           a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone1')")
@@ -13,7 +14,7 @@
           a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone2')")
             | {{ $t('content.contact.phone2') }}
           SocialLinks.mt-32
-          form.mt-48
+          form.contact__form.mt-48
             input.o-input(
               type="text",
               v-model="name",

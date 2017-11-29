@@ -3,11 +3,14 @@
 .contact
   position: relative
   margin-top: -100px
-  padding-top: 100px
-  padding-bottom: 80px
+  padding-top: 160px
+  padding-bottom: 96px
   background-position: center top
   background-image: url("~assets/images/Home/contact__bg.svg")
   background-size: 100% 100%
+
+  @media #{$medium-up}
+    padding-top: 184px
 
 .contact__map
   position: absolute
@@ -19,8 +22,25 @@
   height: 100%
 
   @media #{$medium-up}
+    right: -310px
     display: block
+
+  @media #{$large-up}
+    right: -230px
 
 .contact__content
   position: relative
   z-index: 5
+
+.contact__card
+  max-width: 530px
+  margin-right: auto
+  margin-left: auto
+
+  @media #{$medium-up}
+    margin-left: 0
+
+.contact__form
+  max-width: 370px
+  margin-right: auto
+  margin-left: auto
