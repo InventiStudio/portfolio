@@ -1,5 +1,7 @@
 .o-input,
 .o-textarea
+  display: block
+  width: 100%
   padding: 8px 16px
   border-radius: 4px
   background-color: $c-white
@@ -8,7 +10,26 @@
   font-size: $fs-16
   font-weight: $fw-regular
   line-height: $lh-16
+  transition-duration: $t-duration
+  transition-property: box-shadow
+  transition-timing-function: $t-easing
   box-shadow: 0 4px 0 0 rgba($c-ship-gray, 0.05)
+
+  &:not(.o-input--error):focus
+    box-shadow: 0 4px 0 0 rgba($c-ship-gray, 0.4)
 
 .o-textarea
   resize: none
+
+.o-input--error
+  box-shadow: 0 4px 0 0 rgba($c-pink, 0.5)
+
+.o-form-error
+  display: block
+  height: $lh-11
+  margin-top: 4px
+  padding-left: 8px
+  color: $c-pink
+  font-size: $fs-11
+  line-height: $lh-11
+  text-align: left
