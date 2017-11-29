@@ -1,6 +1,6 @@
 <template lang="pug">
   article.node
-    section.node__landing.o-wave
+    section.node__landing.o-wave--sinus
       - var n = 0;
       while n < 20
         br

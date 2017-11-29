@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing.o-wave.text-center
+  section.landing.o-wave--sinus.text-center
     .landing__content.row
       .small-12.columns
         img.landing__logo(src="~assets/inventi__logo.svg", alt="TODO")

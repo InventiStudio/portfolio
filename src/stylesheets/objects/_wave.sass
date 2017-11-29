@@ -1,4 +1,4 @@
-.o-wave
+.o-wave--sinus
   &::after
     position: absolute
     bottom: 0
@@ -6,7 +6,7 @@
     width: 100%
     height: 80px
     background-position: left bottom
-    background-image: url("~assets/images/wave--simple.svg")
+    background-image: url("~assets/images/wave--sinus.svg")
     background-size: 100% 100%
     background-repeat: no-repeat
     content: ""
@@ -16,3 +16,9 @@
 
     @media #{$large-up}
       height: 190px
+
+.o-wave--gray
+  background-position: left bottom
+  background-image: url("~assets/images/wave--gray.svg")
+  background-size: 100% 100%
+  background-repeat: no-repeat
