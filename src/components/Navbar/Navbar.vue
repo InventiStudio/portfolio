@@ -2,7 +2,7 @@
   header.navbar(:class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }")
     .row.align-middle.align-justify
       .shrink.columns
-        router-link(:to="{ name: 'Home' }")
+        router-link(:to="$routeByName('Home')")
           img(src="~assets/inventi__name.svg", alt="TODO")
       .shrink.columns
         button.navbar__nav-button(
@@ -13,12 +13,12 @@
         nav.navbar__nav(:class="{ 'navbar__nav--active': isNavOpen }")
           ul.navbar__links.list-reset
             router-link.navbar__link(
-              :to="{ name: 'Home' }",
+              :to="$routeByName('Home')",
               :exact="true",
               active-class="navbar__link--active",
             ) {{ $t('home.title') }}
             router-link.navbar__link(
-              :to="{ name: 'Services' }",
+              :to="$routeByName('Services')",
               :exact="true",
               active-class="navbar__link--active",
             ) {{ $t('services.title') }}

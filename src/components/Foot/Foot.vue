@@ -2,25 +2,25 @@
   footer.foot.c-white-60
     .row.align-center
       .foot__column.small-12.large-4.columns
-        router-link.align-middle(:to="{ name: 'Home' }")
+        router-link.align-middle(:to="$routeByName('Home')")
           img(src="~assets/inventi__name.svg", alt="TODO")
-        a.foot__lang.o-link.c-white(href="#") Lang
+        router-link.foot__lang.o-link.c-white(:to="secondLanguageRoute") {{ secondLanguageName }}
         SocialLinks.mt-24
       .foot__column.small-8.medium-4.large-2.columns
-        router-link.o-link.c-white.mb-8.block(:to="{ name: 'Home' }")
+        router-link.o-link.c-white.mb-8.block(:to="$routeByName('Home')")
           | {{ $t('home.title') }}
-        router-link.o-link.block(:to="{ name: 'Home', hash: '#services' }")
+        router-link.o-link.block(:to="$routeByName('Home', { hash: '#services' })")
           | {{ $t('home.services.title') }}
-        router-link.o-link.block(:to="{ name: 'Home', hash: '#testimonials' }")
+        router-link.o-link.block(:to="$routeByName('Home', { hash: '#testimonials' })")
           | {{ $t('home.testimonials.title') }}
-        router-link.o-link.block(:to="{ name: 'Home', hash: '#contact' }")
+        router-link.o-link.block(:to="$routeByName('Home', { hash: '#contact' })")
           | {{ $t('contact.title') }}
       .foot__column.small-8.medium-4.large-2.columns
-        router-link.o-link.c-white.mb-8.block(:to="{ name: 'Services' }")
+        router-link.o-link.c-white.mb-8.block(:to="$routeByName('Services')")
           | {{ $t('services.title') }}
-        router-link.o-link.block(:to="{ name: 'Vue' }")
+        router-link.o-link.block(:to="$routeByName('Vue')")
           | {{ $t('vue.shortTitle') }}
-        router-link.o-link.block(:to="{ name: 'Node' }")
+        router-link.o-link.block(:to="$routeByName('Node')")
           | {{ $t('node.shortTitle') }}
         router-link.o-link.block(:to="{ name: 'Design' }")
           | {{ $t('design.shortTitle') }}
@@ -37,6 +37,21 @@
 
 <script>
   export default {
+    computed: {
+      secondLanguageLocale() {
+        switch (this.$i18n.locale) {
+          case 'en': return 'pl'
+          case 'pl': return 'en'
+          default: throw new Error('Unknown locales')
+        }
+      },
+      secondLanguageName() {
+        return this.$t(`content.languages.${this.secondLanguageLocale}`)
+      },
+      secondLanguageRoute() {
+        return Object.assign({}, this.$route, { params: { lang: this.secondLanguageLocale } })
+      },
+    },
     methods: {
       mailToUrl(mail) {
         return `mailto:${this.$t(mail)}`

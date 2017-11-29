@@ -1,8 +1,8 @@
 export default {
   content: {
     languages: {
-      polski: 'Polski',
-      english: 'English',
+      pl: 'Polski',
+      en: 'English',
     },
     contact: {
       emailAddress: 'hello@inventi.studio',
