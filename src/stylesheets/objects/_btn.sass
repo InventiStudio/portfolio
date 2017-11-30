@@ -1,24 +1,4 @@
-// TODO: Move these to some kind of mixins file
-=bgcolor($color)
-  background-color: $color
-
-=border($color)
-  border-color: $color
-
-=box-shadow($color)
-  box-shadow: 0 2px 12px 0 rgba($color, 0.3)
-
-=hover($color)
-  &:not(:disabled):hover
-    transform: translateY(-4px)
-    background-color: lighten($color, 5)
-    box-shadow: 0 12px 15px 0 rgba($color, 0.2)
-
-=o-btn($color)
-  +bgcolor($color)
-  +box-shadow($color)
-  +border($color)
-  +hover($color)
+@import "~stylesheets/mixins/btn"
 
 .o-btn
   padding: 7px 24px

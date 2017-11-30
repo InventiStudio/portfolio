@@ -1,0 +1,26 @@
+=o-btn--bgcolor($color)
+  background-color: $color
+
+=o-btn--border($color)
+  border-color: $color
+
+=o-btn--shadow($color)
+  box-shadow: 0 2px 12px 0 rgba($color, 0.3)
+
+=o-btn--hover--bgcolor($color)
+  background-color: lighten($color, 5)
+
+=o-btn--hover--shadow($color)
+  box-shadow: 0 12px 15px 0 rgba($color, 0.2)
+
+=o-btn--hover--transform
+  transform: translateY(-4px)
+
+=o-btn($color)
+  +o-btn--bgcolor($color)
+  +o-btn--shadow($color)
+  +o-btn--border($color)
+  &:not(:disabled):hover
+    +o-btn--hover--bgcolor($color)
+    +o-btn--hover--shadow($color)
+    +o-btn--hover--transform
