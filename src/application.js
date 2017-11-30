@@ -8,8 +8,9 @@ import VueHead from 'vue-head'
 import VueI18n from 'vue-i18n'
 import App from 'src/App'
 import router from 'src/router'
-import Modal from 'components/Modal/Modal'
+import Card from 'components/Card/Card'
 import Icon from 'components/Icon/Icon'
+import Modal from 'components/Modal/Modal'
 import SocialLinks from 'components/SocialLinks/SocialLinks'
 
 Vue.config.productionTip = false
@@ -18,8 +19,9 @@ Vue.use(Vuelidate)
 Vue.use(VueHead)
 Vue.use(VueI18n)
 
-Vue.component('Modal', Modal)
+Vue.component('Card', Card)
 Vue.component('Icon', Icon)
+Vue.component('Modal', Modal)
 Vue.component('SocialLinks', SocialLinks)
 
 // http://varun.ca/icon-component/

@@ -1,0 +1,58 @@
+@import "~stylesheets/helpers"
+
+.card
+  max-width: 370px
+
+  @media #{$medium-only}
+    max-width: 620px
+    padding-top: 32px
+    padding-bottom: 40px
+
+  @media #{$large-up}
+    padding-right: 16px
+    padding-left: 16px
+
+  @media #{$xlarge-up}
+    padding-right: 24px
+    padding-left: 24px
+
+svg.card__icon
+  @media #{$medium-only}
+    width: 48px
+    height: 48px
+
+.card__content
+  @media #{$medium-only}
+    text-align: left
+
+.card__title
+  @media #{$medium-only}
+    margin-top: 0
+
+.card__desc
+  @media #{$large-up}
+    min-height: $lh-16 * 4
+
+  @media screen and (min-width: 1055px)
+    min-height: 0
+
+.card__to
+  margin-right: 8px
+
+  @media #{$large-up}
+    margin-right: 0
+
+  @media #{$xlarge-up}
+    margin-right: 8px
+
+.card__contact
+  @media #{$large-up}
+    display: block
+    width: 100%
+    margin-top: 8px
+    text-align: center
+
+  @media #{$xlarge-up}
+    display: inline-block
+    width: auto
+    margin-top: 0
