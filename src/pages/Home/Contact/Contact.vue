@@ -6,7 +6,7 @@
         h1.o-heading-1.c-white {{ $t('contact.title') }}
         p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
       .small-12.large-6.columns
-        article.contact__card.o-card.o-wave--gray.text-center
+        article.contact__card.o-card.o-wave--gray.bg-alabaster.text-center
           a.o-link.fw-medium.block.c-purple.underline(:href="mailToUrl('content.contact.emailAddress')")
             | {{ $t('content.contact.emailAddress') }}
           a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone1')")
