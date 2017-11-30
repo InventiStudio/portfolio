@@ -1,50 +1,34 @@
 // Margins & paddings
-.p0
-  padding: 0
+// [breakpoint-][m|t][t|b|l|r|OR_WITHOUT]-[0|8|16...80]
+// Examples:
+// small-mt-16
+// m-0
+// p-40
+// large-p-0
+@import "~stylesheets/vars/foundation"
 
-.mt-4
-  margin-top: 4px
+$types: "margin" "padding"
+$directions: "" "top" "bottom" "left" "right"
+$values: 0 4 8 16 24 32 40 48 56 64 72 80
 
-.mt-16
-  margin-top: 16px
+@function firstchar($string)
+  @return str-slice($string, 0, 1)
 
-.mt-24
-  margin-top: 24px
+=generate-spacing-class($breakpoint, $type, $direction, $value)
+  $classname-breakpoint: if($breakpoint == "", "", "#{$breakpoint}-")
+  $classname-type: firstchar($type)
+  $classname-direction: firstchar($direction)
+  $property-direction: if($direction == "", "", "-#{$direction}")
+  .#{$classname-breakpoint}#{$classname-type}#{$classname-direction}-#{$value}
+    @if $breakpoint == ""
+      #{$type}#{$property-direction}: #{$value}px
+    @else
+      +breakpoint($breakpoint up)
+        #{$type}#{$property-direction}: #{$value}px
 
-.mt-32
-  margin-top: 32px
-
-.mt-48
-  margin-top: 48px
-
-.mr-8
-  margin-right: 8px
-
-.mb-0
-  margin-bottom: 0
-
-.mb-8
-  margin-bottom: 8px
-
-.mb-16
-  margin-bottom: 16px
-
-.mb-24
-  margin-bottom: 24px
-
-.mb-40
-  margin-bottom: 40px
-
-.mb-48
-  margin-bottom: 48px
-
-.ml-24
-  margin-left: 24px
-
-.md-mb-48
-  @media #{$medium-up}
-    margin-bottom: 48px
-
-.md-ml-40
-  @media #{$medium-up}
-    margin-left: 40px
+@each $type in $types
+  @each $direction in $directions
+    @each $value in $values
+      +generate-spacing-class("", $type, $direction, $value)
+      @each $breakpoint in $breakpoint-classes
+        +generate-spacing-class($breakpoint, $type, $direction, $value)

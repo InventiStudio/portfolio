@@ -10,7 +10,7 @@
         button(type="button").o-link.c-white {{ $t('common.orContactUs') }}
       .landing__services.column.small-12(:id="constants.sectionIds.home.services")
         h1.o-heading-1.c-white {{ $t('home.services.title') }}
-        p.o-paragraph.c-white-60.mb-40.md-mb-48 {{ $t('home.services.desc') }}
+        p.o-paragraph.c-white-60.mb-40.mobile-mb-48 {{ $t('home.services.desc') }}
       .column.small-12.medium-10.large-4
         Card(
           icon-type="icon--monitor",

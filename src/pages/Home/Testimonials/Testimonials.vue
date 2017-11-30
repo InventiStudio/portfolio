@@ -3,7 +3,7 @@
     .row.align-center
       .small-12.columns
         h1.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
-        p.o-paragraph.c-ship-gray-40.mb-40.md-mb-48 {{ $t('home.testimonials.desc') }}
+        p.o-paragraph.c-ship-gray-40.mb-40.medium-mb-48 {{ $t('home.testimonials.desc') }}
       .small-12.medium-8.large-6.columns
         .o-card
           h3.o-heading-3.c-ship-gray.mb-0 John Doe
