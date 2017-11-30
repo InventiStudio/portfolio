@@ -3,7 +3,7 @@
     img.contact__map(src="~assets/images/Home/contact__map.svg")
     .contact__content.row
       .small-12.columns.mb-40.md-mb-48.text-center
-        h1.o-heading-1.c-white-90 {{ $t('contact.title') }}
+        h1.o-heading-1.c-white {{ $t('contact.title') }}
         p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
       .small-12.large-6.columns
         article.contact__card.o-card.o-wave--gray.text-center

@@ -3,13 +3,13 @@
     .landing__content.row.align-center
       .landing__title.column.small-12
         img.landing__logo(src="~assets/inventi__logo.svg", alt="TODO")
-        h1.landing__heading.c-white-90 {{ $t('home.landing.title') }}
+        h1.landing__heading.c-white {{ $t('home.landing.title') }}
         p.landing__desc.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
         button.o-btn.o-btn--pink.mr-8
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
         button(type="button").o-link.c-white {{ $t('common.orContactUs') }}
       .landing__services.column.small-12(:id="constants.sectionIds.home.services")
-        h1.o-heading-1.c-white-90 {{ $t('home.services.title') }}
+        h1.o-heading-1.c-white {{ $t('home.services.title') }}
         p.o-paragraph.c-white-60.mb-40.md-mb-48 {{ $t('home.services.desc') }}
       .column.small-12.medium-10.large-4
         Card(
