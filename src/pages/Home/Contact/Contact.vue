@@ -5,7 +5,7 @@
       .small-12.columns.mb-40.md-mb-48.text-center
         h1.o-heading-1.c-white-90 {{ $t('contact.title') }}
         p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
-      .small-12.medium-8.large-6.columns
+      .small-12.large-6.columns
         article.contact__card.o-card.o-wave--gray.text-center
           a.o-link.fw-medium.block.c-purple.underline(:href="mailToUrl('content.contact.emailAddress')")
             | {{ $t('content.contact.emailAddress') }}
@@ -14,7 +14,7 @@
           a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone2')")
             | {{ $t('content.contact.phone2') }}
           SocialLinks.mt-32
-          form.contact__form.mt-48
+          form.max-w-370.mt-48
             input.o-input(
               type="text",
               v-model="name",
