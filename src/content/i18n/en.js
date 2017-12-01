@@ -106,7 +106,7 @@ export default {
       },
     },
     inventiAndVue: {
-      title: 'InventiStudio + Vue.js =',
+      title: 'Us + Vue.js =',
       desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
       libraries: {
         title: 'Our Vue.js libraries',
