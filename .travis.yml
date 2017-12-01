@@ -7,3 +7,7 @@ install:
 
 script:
   - yarn lint
+
+notifications:
+  email:
+    - hello@inventi.studio
