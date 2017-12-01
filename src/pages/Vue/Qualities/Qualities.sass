@@ -1,8 +1,20 @@
+@import "~stylesheets/helpers"
+
 .qualities
   position: relative
   z-index: 1
+  padding-top: 128px
+  padding-bottom: 128px
+
+  @media #{$medium-up}
+    padding-top: 160px
+    padding-bottom: 200px
+
+  @media #{$large-up}
+    padding-bottom: 220px
 
 .qualities__desc
   max-width: 560px
   margin-right: auto
   margin-left: auto
+
