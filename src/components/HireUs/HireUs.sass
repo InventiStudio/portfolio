@@ -1,11 +1,80 @@
 @import "~stylesheets/helpers"
+@import "~stylesheets/mixins/btn"
 
 .hire-us
-  padding: 64px 0
+  padding: 80px 0
   background-color: $c-alabaster
+
+  .hire-us__title
+    text-align: center
+
+    @media #{$large-up}
+      text-align: left
+
+.hire-us:not(.hire-us--dark)
+  .hire-us__title
+    color: rgba($c-ship-gray, 0.8)
+
+  .hire-us__estimate
+    +o-btn--shadow($c-purple)
+    border: 0
+    background-image: linear-gradient(-226deg, #b73dc7 0%, #a740c4 8%, #714bbb 38%, #5358cf 66%, #3f64d4 84%, #2b69dd 100%) // sass-lint:disable-line no-color-literals
+    color: $c-white
+
+    &:not(:disabled):hover
+      +o-btn--hover--shadow($c-purple)
+      +o-btn--hover--transform
+
+  .hire-us__contact
+    +o-btn--border($c-violet)
+
+    &:not(:disabled):hover
+      +o-btn--hover--transform
+
+    span
+      color: $c-violet
 
 .hire-us--dark
   position: relative
   background-position: center top
   background-image: url("~assets/images/Home/landing__bg.svg")
   background-size: 110%
+
+  .hire-us__title
+    color: rgba($c-white, 0.9)
+
+  .hire-us__estimate
+    +o-btn($c-white)
+    span
+      color: $c-purple
+
+  .hire-us__contact
+    border-color: $c-white
+
+    &:not(:disabled):hover
+      +o-btn--hover--transform
+
+    span
+      color: $c-white
+
+.hire-us__buttons
+  text-align: center
+
+  @media #{$large-up}
+    text-align: right
+
+.hire-us__estimate,
+.hire-us__contact
+  width: 100%
+  max-width: 190px
+  margin: 8px
+  border-color: $c-white
+  &:hover
+    opacity: 0.9
+
+  @media #{$large-up}
+    margin: 0
+
+.hire-us__estimate
+  @media #{$large-up}
+    margin-right: 8px
