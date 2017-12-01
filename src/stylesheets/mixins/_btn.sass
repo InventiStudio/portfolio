@@ -16,6 +16,12 @@
 =o-btn--hover--transform
   transform: translateY(-4px)
 
+=o-btn--active--shadow($color)
+  box-shadow: 0 10px 10px 0 rgba($color, 0.2)
+
+=o-btn--active--transform
+  transform: translateY(-2px)
+
 =o-btn($color)
   +o-btn--bgcolor($color)
   +o-btn--shadow($color)
@@ -24,3 +30,6 @@
     +o-btn--hover--bgcolor($color)
     +o-btn--hover--shadow($color)
     +o-btn--hover--transform
+  &:not(:disabled):active
+    +o-btn--active--shadow($color)
+    +o-btn--active--transform

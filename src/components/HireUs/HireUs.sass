@@ -25,11 +25,18 @@
       +o-btn--hover--shadow($c-purple)
       +o-btn--hover--transform
 
+    &:not(:disabled):active
+      +o-btn--active--shadow($c-purple)
+      +o-btn--active--transform
+
   .hire-us__contact
     +o-btn--border($c-violet)
 
     &:not(:disabled):hover
       +o-btn--hover--transform
+
+    &:not(:disabled):active
+      +o-btn--active--transform
 
     span
       color: $c-violet
@@ -53,6 +60,9 @@
 
     &:not(:disabled):hover
       +o-btn--hover--transform
+
+    &:not(:disabled):active
+      +o-btn--active--transform
 
     span
       color: $c-white
