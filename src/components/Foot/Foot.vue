@@ -3,7 +3,7 @@
     .row.align-center
       .foot__column.small-12.large-4.columns
         router-link.align-middle(:to="$routeByName('Home')")
-          img(src="~assets/inventi__name.svg", alt="TODO")
+          img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
         router-link.foot__lang.o-link.c-white(:to="secondLanguageRoute") {{ secondLanguageName }}
         SocialLinks.mt-24
       .foot__column.small-8.medium-4.large-2.columns

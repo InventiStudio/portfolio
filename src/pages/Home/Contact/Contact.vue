@@ -1,6 +1,6 @@
 <template lang="pug">
   section.contact
-    img.contact__map(src="~assets/images/Home/contact__map.svg")
+    img.contact__map(src="~assets/images/Home/contact__map.svg", :alt="$t('contact.map')")
     .contact__content.row
       .small-12.columns.mb-40.medium-mb-48.text-center
         h1.o-heading-1.c-white {{ $t('contact.title') }}

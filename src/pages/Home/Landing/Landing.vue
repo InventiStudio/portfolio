@@ -2,7 +2,7 @@
   section.landing.o-wave--sinus.text-center
     .landing__content.row.align-center
       .landing__title.column.small-12
-        img.landing__logo(src="~assets/inventi__logo.svg", alt="TODO")
+        img.landing__logo(src="~assets/inventi__logo.svg", :alt="$t('home.landing.logo')")
         h1.landing__heading.c-white {{ $t('home.landing.title') }}
         p.landing__desc.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
         button.o-btn.o-btn--pink.mr-8

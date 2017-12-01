@@ -3,7 +3,7 @@
     .row.align-middle.align-justify
       .shrink.columns
         router-link(:to="$routeByName('Home')")
-          img(src="~assets/inventi__name.svg", alt="TODO")
+          img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
       .shrink.columns
         button.navbar__nav-button(
           :class="{ 'navbar__nav-button--active': isNavOpen }",

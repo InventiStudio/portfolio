@@ -1,5 +1,6 @@
 export default {
   common: {
+    inventiStudio: 'InventiStudio',
     orContactUs: 'or contact us!',
     estimateProject: 'Estimate project',
   },
@@ -11,6 +12,7 @@ export default {
     landing: {
       title: 'We are Vue.js & Node.js web development agency based in Wrocław',
       desc: 'We excel at building modern web applications, providing full-stack JavaScript and UI/UX design services for enterprises, companies and startups.',
+      logo: 'Vue.js & Node.js developers',
     },
     services: {
       title: 'Services',
@@ -79,6 +81,7 @@ export default {
   contact: {
     title: 'Contact',
     desc: 'Whether you want to hire us or simply get to know us better - feel free to get in touch!',
+    map: 'We are from Wrocław, Poland',
     form: {
       namePlaceholder: 'Your name (optional)',
       emailPlaceholder: 'Your e-mail address',
