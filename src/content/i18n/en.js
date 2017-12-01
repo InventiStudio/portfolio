@@ -89,8 +89,8 @@ export default {
       title: 'Why we chose Vue.js',
       desc: 'Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
       component: {
-        title: '',
-        desc: '',
+        title: 'Component based',
+        desc: 'In Vue.js everything is a component. Component-oriented pattern allows to easily reuse already created elements, so that development process takes much less time.',
       },
       fastSmall: {
         title: 'Fast & Small',
