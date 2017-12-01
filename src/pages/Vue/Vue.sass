@@ -3,7 +3,7 @@
 .vue__landing
   position: relative
   background-position: center top
-  background-image: linear-gradient(135deg, #47B784 0%, #009D90 26%, #00818E 50%, #25647B 74%, #36495D 100%)
+  background-image: linear-gradient(135deg, #47b784 0%, #009d90 26%, #00818e 50%, #25647b 74%, #36495d 100%) // sass-lint:disable-line no-color-literals
   background-size: cover
   overflow: hidden
 
@@ -125,4 +125,8 @@
   background-color: $c-alabaster
   background-position: center bottom
   background-image: url("~assets/images/wave--gray.svg")
-  background-size: cover
+  background-size: 100% 300px
+  background-repeat: no-repeat
+
+  @media #{$medium-up}
+    background-size: 100% 500px

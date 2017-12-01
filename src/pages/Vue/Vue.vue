@@ -9,11 +9,7 @@
     .vue__inventi-plus-vue
       InventiAndVue
     .vue__technologies
-      - var n = 0;
-      while n < 35
-        br
-        - n++
-    HireUs.hire-us--dark
+      Technologies
 </template>
 
 <script>
@@ -23,6 +19,7 @@
   import Qualities from './Qualities/Qualities'
   import WhyWeChose from './WhyWeChose/WhyWeChose'
   import InventiAndVue from './InventiAndVue/InventiAndVue'
+  import Technologies from './Technologies/Technologies'
 
   export default {
     components: {
@@ -31,6 +28,7 @@
       HireUs,
       WhyWeChose,
       InventiAndVue,
+      Technologies,
     },
     head: head.set({
       title: () => 'Vue',
