@@ -5,7 +5,14 @@
     .card__content.column.small-12.medium-9.large-12
       h3.card__title.o-heading-3.c-ship-gray {{ $t(title) }}
       p.card__desc.o-paragraph.c-ship-gray-40.mb-24 {{ $t(desc) }}
+      a.card__to.o-btn(
+        v-if="useNativeATag"
+        :href="ctaTo",
+        :class="`o-btn--${color}`",
+      )
+        span.c-white.fs-16 {{ $t(ctaText) }}
       router-link.card__to.o-btn(
+        v-if="!useNativeATag"
         :to="ctaTo",
         :class="`o-btn--${color}`",
       )
@@ -48,6 +55,11 @@
       color: {
         type: String,
         required: true,
+      },
+    },
+    computed: {
+      useNativeATag() {
+        return typeof this.ctaTo === 'string'
       },
     },
     methods: {
