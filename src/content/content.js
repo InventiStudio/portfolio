@@ -34,6 +34,10 @@ export default {
       ngnix:     'Nginx',
       eslint:    'ESlint',
       bulma:     'Bulma',
+      sequelize: 'Sequelize',
+      koa:       'Koa',
+      postgres:  'PostgreSQL',
+      mongodb:   'MongoDB',
     },
   },
 }
