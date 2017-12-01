@@ -22,3 +22,5 @@
         h3.o-heading-3.c-white-90 {{ $t('vue.qualities.technologies.title') }}
         p.o-paragraph.c-white-60.mt-4 {{ $t('vue.qualities.technologies.desc') }}
 </template>
+
+<style src="./Qualities.sass" lang="sass" scoped></style>

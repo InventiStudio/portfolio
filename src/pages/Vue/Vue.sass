@@ -3,8 +3,24 @@
 .vue__landing
   position: relative
   background-position: center top
-  background-image: url("~assets/images/Vue/landing__bg.svg")
+  background-image: linear-gradient(135deg, #47B784 0%, #009D90 26%, #00818E 50%, #25647B 74%, #36495D 100%)
   background-size: cover
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 150%
+    height: 100%
+    background-position: left top
+    background-image: url("~assets/images/qualities__oval.svg")
+    background-size: contain
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      width: 70%
+
 
 .vue__qualities
   position: relative
