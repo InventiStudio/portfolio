@@ -5,10 +5,7 @@
       .vue__qualities
         Qualities
     section.vue__why-we-chose
-      - var n = 0;
-      while n < 30
-        br
-        - n++
+      WhyWeChose
     section.vue__inventi-plus-vue
       - var n = 0;
       while n < 50
@@ -27,12 +24,14 @@
   import HireUs from 'components/HireUs/HireUs'
   import Landing from './Landing/Landing'
   import Qualities from './Qualities/Qualities'
+  import WhyWeChose from './WhyWeChose/WhyWeChose'
 
   export default {
     components: {
       Landing,
       Qualities,
       HireUs,
+      WhyWeChose,
     },
     head: head.set({
       title: () => 'Vue',
