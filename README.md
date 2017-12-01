@@ -1,5 +1,7 @@
 # [InventiStudio Portfolio](https://inventi.studio)
 
+![https://img.shields.io/travis/InventiStudio/portfolio.svg](https://img.shields.io/travis/InventiStudio/portfolio.svg)
+
 #### Table of Contents
 - [Setup](#setup)
 - [Development](#development)
