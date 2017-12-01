@@ -15,7 +15,7 @@
           | {{ $t('home.testimonials.title') }}
         router-link.o-link.block(@click.native="scrollToSection('contact')", :to="$routeByName('Home', { hash: '#contact' })")
           | {{ $t('contact.title') }}
-      .foot__column.small-8.medium-4.large-2.columns
+      .foot__column.small-8.medium-4.large-3.columns
         router-link.o-link.c-white.mb-8.block(:to="$routeByName('Services')")
           | {{ $t('services.title') }}
         router-link.o-link.block(:to="$routeByName('Vue')")
@@ -24,7 +24,7 @@
           | {{ $t('node.shortTitle') }}
         router-link.o-link.block(:to="$routeByName('Design')")
           | {{ $t('design.shortTitle') }}
-      .foot__column.small-8.medium-4.large-2.columns
+      .foot__column.small-8.medium-4.large-3.columns
         span.fs-16.c-white.mb-8.block {{ $t('contact.title') }}
         a.o-link.block.fw-medium.c-white.underline(:href="mailToUrl('content.contact.emailAddress')")
           | {{ $t('content.contact.emailAddress') }}
