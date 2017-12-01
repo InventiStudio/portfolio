@@ -65,6 +65,69 @@ export default {
     desc: 'We are experts at creating beautiful and responsive front-end applications using Vue.js.',
     tags: 'FRONT-END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSIVE',
     ctaEstimate: 'Estimate front-end project',
+    qualities: {
+      title: 'Qualities of our front-end apps',
+      desc: 'We know to how to make great HTML5 applications. These are the highlight features that help us achieve so.',
+      code: {
+        title: 'Modern code',
+        desc: 'Because of our care about code quality, we stick to the newest ECMAScript standards. We also try to keep our code as consistent with functional paradigm as possible, which makes our code modular and maintainable.',
+      },
+      tests: {
+        title: 'Tests',
+        desc: 'We know that proofs are stronger that hunches. That\'s why the code we deliver is battle tested.',
+      },
+      responsiveness: {
+        title: 'Responsiveness',
+        desc: 'These days, people use mobile devices more often than desktops. We know that, so our products are prepared for all kinds of screens.',
+      },
+      technologies: {
+        title: 'Best technologies',
+        desc: 'To deliver best solutions, we use top-notch front-end technologies. Major part of our tech stack is Vue.js framework descripted below. Besides that we use Sass, Webpack, Yarn, Docker, Bootstrap and many more!',
+      },
+    },
+    whyWeChose: {
+      title: 'Why we chose Vue.js',
+      desc: 'Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      component: {
+        title: '',
+        desc: '',
+      },
+      fastSmall: {
+        title: 'Fast & Small',
+        desc: 'Vue.js weights only ~30kb and it\'ll make your app work faster then ever!',
+      },
+      progressive: {
+        title: 'Progressive & Flexible',
+        desc: 'Vue.js itself is focused on the view layer, but you can easily add libraries like Vuex or Vue-router when your app\'s complexity scales up.',
+      },
+      ecosystem: {
+        title: 'Stable ecosystem',
+        desc: 'Vue.js and its related libraries are developed and maintained by the same Vue.js core team.',
+      },
+    },
+    inventiVue: {
+      title: 'InventiStudio + Vue.js =',
+      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      libraries: {
+        title: 'Our Vue.js libraries',
+        desc: 'As part of a wide Vue.js community, we developed some Vue.js-related libraries, that help us and other developers to deliver reliable products.',
+        cta: 'See our GitHub repository',
+      },
+      website: {
+        title: 'Our website',
+        desc: 'Our portfolio has been written using Vue.js and all the other technologies we use in commercial projects. Take a look at our code, the source is open!',
+        cta: 'See this website’s code',
+      },
+      publications: {
+        title: 'Our publications',
+        desc: 'From time to time, we write about the problems we have experienced and the solutions we’ve found. We share our knowladge on the blog.',
+        cta: 'See our blog',
+      },
+    },
+    technologies: {
+      title: 'We use cutting-edge technologies',
+      desc: 'Take a look at the front-end tools we use on daily basis',
+    },
   },
   node: {
     title: 'Node.js back-end development',
