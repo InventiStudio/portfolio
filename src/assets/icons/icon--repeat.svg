@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="34px" viewBox="0 0 29 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>repeat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.2" stroke-linejoin="round">
+        <g id="Services-/-Node" transform="translate(-1154.000000, -1470.000000)" stroke="#000000" stroke-width="2">
+            <g id="Why-we-chose-Vue.js-Copy-2" transform="translate(135.000000, 1296.000000)">
+                <g id="Vue/perks" transform="translate(0.000000, 175.000000)">
+                    <g id="Stable-ecosystem" transform="translate(900.000000, 0.000000)">
+                        <g id="repeat" transform="translate(120.000000, 0.000000)">
+                            <polyline id="Shape" points="20.3636364 0 26.1818182 5.81818182 20.3636364 11.6363636"></polyline>
+                            <path d="M0,14.5454545 L0,11.6363636 C-6.45947942e-16,8.42307055 2.60488873,5.81818182 5.81818182,5.81818182 L26.1818182,5.81818182" id="Shape"></path>
+                            <polyline id="Shape" points="5.81818182 32 0 26.1818182 5.81818182 20.3636364"></polyline>
+                            <path d="M26.1818182,17.4545455 L26.1818182,20.3636364 C26.1818182,23.5769295 23.5769295,26.1818182 20.3636364,26.1818182 L0,26.1818182" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="34px" viewBox="0 0 23 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>watch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.203181612" stroke-linejoin="round">
+        <g id="Services-/-Node" transform="translate(-559.000000, -1471.000000)" stroke="#000000" stroke-width="2">
+            <g id="Why-we-chose-Vue.js-Copy-2" transform="translate(135.000000, 1296.000000)">
+                <g id="Vue/perks" transform="translate(0.000000, 175.000000)">
+                    <g id="Fast-&amp;-Small" transform="translate(300.000000, 1.000000)">
+                        <g id="watch" transform="translate(125.000000, 0.000000)">
+                            <circle id="Oval" cx="10.1818182" cy="16" r="10.1818182"></circle>
+                            <polyline id="Shape" points="10.1818182 11.6363636 10.1818182 16 12.3636364 18.1818182"></polyline>
+                            <path d="M16.7418182,23.7818182 L16.2327273,29.3527273 C16.0968641,30.8563309 14.8333533,32.0061257 13.3236364,32 L7.02545455,32 C5.51573761,32.0061257 4.25222685,30.8563309 4.11636364,29.3527273 L3.60727273,23.7818182 M3.62181818,8.21818182 L4.13090909,2.64727273 C4.26628112,1.14923572 5.52131411,0.00141660828 7.02545455,6.6427373e-16 L13.3527273,6.6427373e-16 C14.8624442,-0.00612571299 16.125955,1.14366908 16.2618182,2.64727273 L16.7709091,8.21818182" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

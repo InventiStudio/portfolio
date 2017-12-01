@@ -134,6 +134,65 @@ export default {
     shortTitle: 'Node.js back-end',
     desc: 'Need a powerful API? We make blazing fast Koa.js applications backed by PostgreSQL databases.',
     tags: 'BACK-END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
+    ctaEstimate: 'Estimate back-end project',
+    qualities: {
+      title: 'Qualities our back-end applications',
+      desc: 'TODO: We know to how to make great HTML5 applications. These are the highlight features that help us achieve so.',
+      security: {
+        title: 'Security',
+        desc: 'We know that making your data safe is absolutely crucial and we take our responsibility seriously.',
+      },
+      code: {
+        title: 'Modern code',
+        desc: 'Due to our care about code quality, we stick to the cutting-edge ECMAScript standards. We also try to keep our code as consistent with functional paradigm as possible, which makes our code modular and maintainable.',
+      },
+      tests: {
+        title: 'Tests',
+        desc: 'We know that proofs are stronger that hunches. That\'s why the code we deliver is battle tested.',
+      },
+      technologies: {
+        title: 'Best technologies',
+        desc: 'Node.js environment is full of great and mature libraries. The most important in our tech stack are Koa.js and Sequelize. Besides that we use PostgreSQL, MongoDB, Docker and much more!',
+      },
+    },
+    whyWeChose: {
+      title: 'Why we chose Node.js',
+      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      ecosystem: {
+        title: 'Largest ecosystem',
+        desc: 'There are more than half a million libraries registered in node packages manager (npm). This world\'s largest software registry gives us an extraordinary ability to find ready-to-use modules that fit our needs.',
+      },
+      async: {
+        title: 'Asynchronous',
+        desc: 'Node.js is asynchronous at all its levels, starting with non-blocking I/O threads, ending on top-level code. Due to that fact, it\'s possible to get rid of idle periods caused by blocking operations and optimize usage of resources.',
+      },
+      modularity: {
+        title: 'Modularity',
+        desc: 'In Node.js every file is a module. With such a trivial encapsulation, it\'s really easy to create reusable services that can be imported in any part of an application.',
+      },
+      javascript: {
+        title: 'JavaScript',
+        desc: 'The same programming language for front-end and back-end allows to reuse common modules on both sides. Because of that, projects are easier to develop and maintain.',
+      },
+    },
+    inventiAndNode: {
+      title: 'Us + Node.js =',
+      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      packages: {
+        title: 'Our Node.js packages',
+        desc: 'As a part of Node.js community, we\'ve created some npm packages, that help us and other programmers to build great products.',
+        cta: 'See our GitHub repository',
+      },
+      publications: {
+        title: 'Our publications',
+        desc: 'We share our knowledge, experienced problems and worked out solutions everytime we found something worth of spread.',
+        cta: 'See our blog',
+      },
+    },
+    technologies: {
+      title: 'We use cutting-edge technologies',
+      desc: 'Take a look at the tools we use on daily basis',
+    },
   },
   design: {
     title: 'UI & UX design',

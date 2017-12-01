@@ -1,40 +1,35 @@
 <template lang="pug">
   article.node
-    section.node__landing.o-wave--sinus
-      - var n = 0;
-      while n < 20
-        br
-        - n++
+    .node__landing.o-wave--sinus
+      Landing
       .node__qualities
-        - var n = 0;
-        while n < 40
-          br
-          - n++
-    section.node__why-we-chose
-      - var n = 0;
-      while n < 30
-        br
-        - n++
-    section.node__inventi-plus-node
-      - var n = 0;
-      while n < 50
-        br
-        - n++
-    section.node__technologies
-      - var n = 0;
-      while n < 35
-        br
-        - n++
+        Qualities
+    .node__why-we-chose
+      WhyWeChose
+    .node__inventi-plus-node
+      InventiAndNode
+    .node__technologies
+      Technologies
     HireUs.hire-us--dark
 </template>
 
 <script>
   import head from 'src/head'
   import HireUs from 'components/HireUs/HireUs'
+  import Landing from './Landing/Landing'
+  import Qualities from './Qualities/Qualities'
+  import WhyWeChose from './WhyWeChose/WhyWeChose'
+  import InventiAndNode from './InventiAndNode/InventiAndNode'
+  import Technologies from './Technologies/Technologies'
 
   export default {
     components: {
+      Landing,
+      Qualities,
       HireUs,
+      WhyWeChose,
+      InventiAndNode,
+      Technologies,
     },
     head: head.set({
       title: () => 'Node',
