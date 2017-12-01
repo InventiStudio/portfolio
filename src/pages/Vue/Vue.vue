@@ -1,15 +1,9 @@
 <template lang="pug">
   article.vue
     section.vue__landing.o-wave--sinus
-      - var n = 0;
-      while n < 20
-        br
-        - n++
+      Landing
       .vue__qualities
-        - var n = 0;
-        while n < 40
-          br
-          - n++
+        Qualities
     section.vue__why-we-chose
       - var n = 0;
       while n < 30
@@ -31,9 +25,13 @@
 <script>
   import head from 'src/head'
   import HireUs from 'components/HireUs/HireUs'
+  import Landing from './Landing/Landing'
+  import Qualities from './Qualities/Qualities'
 
   export default {
     components: {
+      Landing,
+      Qualities,
       HireUs,
     },
     head: head.set({

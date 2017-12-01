@@ -7,9 +7,56 @@
   background-size: cover
 
 .vue__qualities
+  position: relative
+  margin-top: 32px
+  padding-top: 128px
+  padding-bottom: 128px
   background-position: center top
-  background-image: url("~assets/images/qualities__bg.svg")
   background-size: 100% 100%
+  overflow: hidden
+
+  @media #{$medium-up}
+    margin-top: 16px
+    padding-top: 160px
+    padding-bottom: 200px
+
+  @media #{$large-up}
+    margin-top: -16px
+    padding-bottom: 220px
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 250px
+    background-position: center top
+    background-image: url("~assets/images/wave--qualities.svg")
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 350px
+
+    @media #{$large-up}
+      height: 450px
+
+  &::after
+    position: absolute
+    top: 250px
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($c-black, 0.16)
+    content: ""
+
+    @media #{$medium-up}
+      top: 350px
+
+    @media #{$large-up}
+      top: 450px
+
 
 .vue__why-we-chose
   background-color: $c-alabaster
