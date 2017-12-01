@@ -7,28 +7,31 @@
 // large-p-0
 @import "~stylesheets/vars/foundation"
 
-$types: "margin" "padding"
-$directions: "" "top" "bottom" "left" "right"
-$values: 0 4 8 16 24 32 40 48 56 64 72 80
+$spacing-breakpoints: "" "small" "medium" "large"
+$spacing-types: "margin" "padding"
+$spacing-directions: "" "top" "bottom" "left" "right"
+$spacing-values: 0 4 8 16 24 32 40 48 56 64 72 80
 
 @function firstchar($string)
   @return str-slice($string, 0, 1)
 
-=generate-spacing-class($breakpoint, $type, $direction, $value)
+@function classname($breakpoint, $type, $direction, $value)
   $classname-breakpoint: if($breakpoint == "", "", "#{$breakpoint}-")
   $classname-type: firstchar($type)
   $classname-direction: firstchar($direction)
+  @return #{$classname-breakpoint}#{$classname-type}#{$classname-direction}-#{$value}
+
+=generate-spacing-class($breakpoint, $type, $direction, $value)
   $property-direction: if($direction == "", "", "-#{$direction}")
-  .#{$classname-breakpoint}#{$classname-type}#{$classname-direction}-#{$value}
+  .#{classname($breakpoint, $type, $direction, $value)}
     @if $breakpoint == ""
       #{$type}#{$property-direction}: #{$value}px
     @else
       +breakpoint($breakpoint up)
         #{$type}#{$property-direction}: #{$value}px
 
-@each $type in $types
-  @each $direction in $directions
-    @each $value in $values
-      +generate-spacing-class("", $type, $direction, $value)
-      @each $breakpoint in $breakpoint-classes
+@each $breakpoint in $spacing-breakpoints
+  @each $type in $spacing-types
+    @each $direction in $spacing-directions
+      @each $value in $spacing-values
         +generate-spacing-class($breakpoint, $type, $direction, $value)
