@@ -1,10 +1,16 @@
+@import "~stylesheets/helpers"
+
 .o-heading-1
   display: block
   margin-top: 0
   margin-bottom: 0
-  font-size: $fs-36
+  font-size: $fs-36 * 0.75
   font-weight: $fw-black
-  line-height: $lh-36
+  line-height: $lh-36 * 0.75
+
+  @media #{$medium-up}
+    font-size: $fs-36
+    line-height: $lh-36
 
 .o-heading-3
   display: block
