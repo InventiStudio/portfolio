@@ -4,7 +4,11 @@
       .inventi-and-vue__title.column.small-12
         h1.o-heading-1.c-white
           span.mr-8 {{ $t('vue.inventiAndVue.title') }}
-          icon.valign-middle(type="icon--rocket")
+          img.valign-middle(
+            src="~assets/icons/icon--rocket.svg",
+            :alt="$t('vue.inventiAndVue.rocket')",
+            :title="$t('vue.inventiAndVue.rocket')",
+          )
         p.inventi-and-vue__desc.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-64 {{ $t('vue.inventiAndVue.desc') }}
       .column.small-12.medium-10.large-4
         Card(

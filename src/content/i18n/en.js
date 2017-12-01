@@ -108,6 +108,7 @@ export default {
     inventiAndVue: {
       title: 'Us + Vue.js =',
       desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      rocket: 'Awesomeness! 🚀',
       libraries: {
         title: 'Our Vue.js libraries',
         desc: 'As part of a wide Vue.js community, we developed some Vue.js-related libraries, that help us and other developers to deliver reliable products.',
@@ -178,6 +179,7 @@ export default {
     inventiAndNode: {
       title: 'Us + Node.js =',
       desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      rocket: 'Awesomeness! 🚀',
       packages: {
         title: 'Our Node.js packages',
         desc: 'As a part of Node.js community, we\'ve created some npm packages, that help us and other programmers to build great products.',
