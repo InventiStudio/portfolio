@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.200000018" stroke-linejoin="round">
+        <g id="Services-/-Vue" transform="translate(-1078.000000, -2248.000000)" stroke="#363537" stroke-width="2">
+            <g id="InventiStudio-+-Vue.js-=" transform="translate(0.000000, 1769.000000)">
+                <g id="Cards" transform="translate(152.000000, 413.000000)">
+                    <g id="Blog" transform="translate(766.000000, 19.000000)">
+                        <path d="M193,63.1111618 C193.006118,65.4575934 192.4579,67.7722899 191.4,69.8667173 C188.841705,74.9855223 183.611391,78.2200585 177.888889,78.2222729 C175.542457,78.2283906 173.227761,77.6801731 171.133333,76.6222729 L161,80.0000506 L164.377778,69.8667173 C163.319878,67.7722899 162.77166,65.4575934 162.777778,63.1111618 C162.779992,57.3886595 166.014528,52.1583455 171.133333,49.6000506 C173.227761,48.5421505 175.542457,47.9939329 177.888889,48.0000506 L178.777778,48.0000506 C186.450328,48.423339 192.576712,54.5497228 193,62.2222729 L193,63.1111618 L193,63.1111618 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

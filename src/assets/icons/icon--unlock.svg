@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="32px" viewBox="0 0 30 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Unlock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.2" stroke-linejoin="round">
+        <g id="Services-/-Vue" transform="translate(-705.000000, -2250.000000)" stroke="#363537" stroke-width="2">
+            <g id="InventiStudio-+-Vue.js-=" transform="translate(0.000000, 1769.000000)">
+                <g id="Cards" transform="translate(152.000000, 413.000000)">
+                    <g id="Portfolio" transform="translate(362.000000, 0.000000)">
+                        <g id="Unlock" transform="translate(192.000000, 69.000000)">
+                            <rect id="Rectangle-path" x="0" y="13" width="28" height="17" rx="2"></rect>
+                            <path d="M6.00000389,14 L6.00000389,7.78144735 C5.99609236,3.78794646 8.94203694,0.441140565 12.814402,0.0397986904 C16.6867671,-0.361543185 20.2254975,2.31317432 21,6.22680919" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

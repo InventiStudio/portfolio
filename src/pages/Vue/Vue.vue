@@ -1,17 +1,14 @@
 <template lang="pug">
   article.vue
-    section.vue__landing.o-wave--sinus
+    .vue__landing.o-wave--sinus
       Landing
       .vue__qualities
         Qualities
-    section.vue__why-we-chose
+    .vue__why-we-chose
       WhyWeChose
-    section.vue__inventi-plus-vue
-      - var n = 0;
-      while n < 50
-        br
-        - n++
-    section.vue__technologies
+    .vue__inventi-plus-vue
+      InventiAndVue
+    .vue__technologies
       - var n = 0;
       while n < 35
         br
@@ -25,6 +22,7 @@
   import Landing from './Landing/Landing'
   import Qualities from './Qualities/Qualities'
   import WhyWeChose from './WhyWeChose/WhyWeChose'
+  import InventiAndVue from './InventiAndVue/InventiAndVue'
 
   export default {
     components: {
@@ -32,6 +30,7 @@
       Qualities,
       HireUs,
       WhyWeChose,
+      InventiAndVue,
     },
     head: head.set({
       title: () => 'Vue',

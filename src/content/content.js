@@ -10,5 +10,11 @@ export default {
       phone2: '+48 509 723 436',
       place: 'Wrocław, Poland',
     },
+    urls: {
+      github: 'https://github.com/InventiStudio',
+      repository: 'https://github.com/InventiStudio/portfolio',
+      blog: 'https://blog.inventi.studio',
+    },
+
   },
 }
