@@ -41,7 +41,7 @@
         required: true,
       },
       ctaTo: {
-        type: Object,
+        type: [Object, String],
         required: true,
       },
       ctaText: {
