@@ -10,6 +10,7 @@
       InventiAndVue
     .vue__technologies
       Technologies
+    HireUs.hire-us--dark
 </template>
 
 <script>
