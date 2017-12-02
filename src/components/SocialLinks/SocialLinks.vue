@@ -1,11 +1,11 @@
 <template lang="pug">
   nav.social-links
-    a(href="#"): icon(type="icon--facebook")
-    a(href="#"): icon(type="icon--linkedin")
-    a(href="#"): icon(type="icon--dribble")
-    a(href="#"): icon(type="icon--behance")
-    a(href="#"): icon(type="icon--instagram")
-    a(href="#"): icon(type="icon--github")
+    a(:href="$t('content.urls.facebook')"):  icon(type="icon--facebook")
+    a(:href="$t('content.urls.linkedin')"):  icon(type="icon--linkedin")
+    a(:href="$t('content.urls.dribble')"):   icon(type="icon--dribble")
+    a(:href="$t('content.urls.behance')"):   icon(type="icon--behance")
+    a(:href="$t('content.urls.instagram')"): icon(type="icon--instagram")
+    a(:href="$t('content.urls.github')"):    icon(type="icon--github")
 </template>
 
 <style src="./SocialLinks.sass" lang="sass" scoped></style>

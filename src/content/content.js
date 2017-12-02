@@ -11,6 +11,8 @@ export default {
       place: 'Wrocław, Poland',
     },
     urls: {
+      facebook: 'https://www.facebook.com/inventistudio',
+      linkedin: 'https://www.linkedin.com/company/inventistudio',
       github: 'https://github.com/InventiStudio',
       repository: 'https://github.com/InventiStudio/portfolio',
       blog: 'https://blog.inventi.studio',
