@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="234px" height="194px" viewBox="0 0 234 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Browser</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-15.8%" y="-12.2%" width="131.5%" height="139.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.360784314   0 0 0 0 0.360784314   0 0 0 0 0.360784314  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="200" height="144.154058"></rect>
+        <path d="M0,136.429161 L0,-1.42108547e-14 L200,2.2376127e-15 L200,136.429161 L200,136.429161 C200,140.847439 196.418278,144.429161 192,144.429161 L8,144.429161 L8,144.429161 C3.581722,144.429161 5.41083001e-16,140.847439 0,136.429161 Z" id="path-4"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-/-UI/UX" transform="translate(-218.000000, -2637.000000)">
+            <g id="rhythm" transform="translate(235.000000, 2606.000000)">
+                <g id="Browser" filter="url(#filter-1)" transform="translate(0.000000, 36.000000)">
+                    <g id="page" transform="translate(0.000000, 15.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="background" fill="#F5F5F5" opacity="0" xlink:href="#path-2"></use>
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(100.000000, 72.214580) scale(-1, 1) translate(-100.000000, -72.214580) " xlink:href="#path-4"></use>
+                        <path d="M26,0 L44.2837795,0 L44.2837795,144.429161 L26,144.429161 L26,0 Z M52.282933,0 L70.5667125,0 L70.5667125,144.429161 L52.282933,144.429161 L52.282933,0 Z M77.9944979,0 L96.2782774,0 L96.2782774,144.429161 L77.9944979,144.429161 L77.9944979,0 Z M104.277431,0 L122.56121,0 L122.56121,144.429161 L104.277431,144.429161 L104.277431,0 Z M129.988996,0 L148.272775,0 L148.272775,144.429161 L129.988996,144.429161 L129.988996,0 Z M156.271929,0 L174.555708,0 L174.555708,144.429161 L156.271929,144.429161 L156.271929,0 Z" id="Combined-Shape" fill="#F6F6F6" mask="url(#mask-5)"></path>
+                        <g id="Group-8" mask="url(#mask-5)">
+                            <g transform="translate(26.000000, 24.000000)" id="Rectangle-9">
+                                <rect fill="#E57675" x="0" y="0" width="96.5566231" height="44.4908615" rx="8"></rect>
+                                <rect fill="#DCDCDC" x="0" y="51.9060051" width="44.5645953" height="44.4908615" rx="8"></rect>
+                                <rect fill="#DCDCDC" x="51.9920278" y="51.9060051" width="44.5645953" height="44.4908615" rx="8"></rect>
+                                <rect fill="#DCDCDC" x="103.984056" y="51.9060051" width="44.5645953" height="44.4908615" rx="8"></rect>
+                                <rect fill="#DCDCDC" x="103.984056" y="0" width="44.5645953" height="44.4908615" rx="8"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M0,8 C0,10.3333333 0,12.6666667 0,15 C0,15 200,15 200,15 C200,12.6666667 200,10.3333333 200,8 L200,8 C200,3.581722 196.418278,-8.11624501e-16 192,0 L8,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 Z" id="background" fill="#5C5C5C"></path>
+                    <circle id="object" fill="#E57675" cx="13" cy="8" r="2"></circle>
+                    <path d="M19,10 C20.1045695,10 21,9.1045695 21,8 C21,6.8954305 20.1045695,6 19,6 C17.8954305,6 17,6.8954305 17,8 C17,9.1045695 17.8954305,10 19,10 Z" id="object" fill="#F08D6A"></path>
+                    <circle id="object" fill="#6B73AC" cx="26" cy="8" r="2"></circle>
+                    <rect id="search" fill="#898989" opacity="0.85" x="52" y="4" width="97" height="7" rx="3.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

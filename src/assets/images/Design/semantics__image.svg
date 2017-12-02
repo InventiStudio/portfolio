@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="234px" height="204px" viewBox="0 0 234 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>002-presentation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-15.8%" y="-11.4%" width="131.5%" height="136.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.466666667   0 0 0 0 0.466666667   0 0 0 0 0.466666667  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-/-UI/UX" transform="translate(-988.000000, -2107.000000)">
+            <g id="semantics" transform="translate(235.000000, 2105.000000)">
+                <g id="002-presentation" filter="url(#filter-1)" transform="translate(770.000000, 7.000000)">
+                    <path d="M10.8626198,121.865889 C21.7252396,121.865889 177.784878,121.865889 188.647497,121.865889 C195.889244,121.865889 199.510117,125.337668 199.510117,132.281224 L3.69482223e-13,132.281224 C-1.33763643e-12,125.337668 3.62087327,121.865889 10.8626198,121.865889 Z" id="Rectangle-path" fill="#CECECE" fill-rule="nonzero" transform="translate(99.755059, 127.073557) scale(1, -1) translate(-99.755059, -127.073557) "></path>
+                    <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="0" y="10.4956268" width="199.510117" height="111.370262"></rect>
+                    <path d="M10.8626198,0.0802918464 C21.7252396,0.0802918464 177.784878,0.0802918464 188.647497,0.0802918464 C195.889244,0.0802918464 199.510117,3.55207017 199.510117,10.4956268 L3.69482223e-12,10.4956268 C2.14510301e-12,3.55207017 3.62087327,0.0802918464 10.8626198,0.0802918464 Z" id="Rectangle-path" fill="#5C5B5D" fill-rule="nonzero"></path>
+                    <g id="Group-5" transform="translate(34.985423, 36.734694)">
+                        <g id="001-error" transform="translate(70.926518, 0.000000)">
+                            <circle id="Oval" fill="#E57675" fill-rule="nonzero" cx="29.3929712" cy="29.3929712" r="29.3929712"></circle>
+                            <g id="Group-6" transform="translate(18.530351, 18.530351)" stroke-linecap="round" stroke-width="5" stroke="#FFFFFF">
+                                <polyline id="Shape" points="0.28115016 21.4440895 10.8626198 10.8626198 21.4440895 0.28115016"></polyline>
+                                <polyline id="Shape" points="0.28115016 0.28115016 10.8626198 10.8626198 21.4440895 21.4440895"></polyline>
+                            </g>
+                        </g>
+                        <g id="002-success">
+                            <circle id="Oval" fill="#93D5BA" fill-rule="nonzero" cx="29.3929712" cy="29.3929712" r="29.3929712"></circle>
+                            <polyline id="Shape" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="44.6261981 18.5303514 25.8146965 39.6932907 14.057508 30.2875399"></polyline>
+                        </g>
+                    </g>
+                    <path d="M99.6497421,146.645212 C97.7475164,146.645212 96.2099125,145.107608 96.2099125,143.205383 L96.2099125,132.885894 C96.2099125,130.983668 97.7475164,129.446064 99.6497421,129.446064 C101.551968,129.446064 103.089572,130.983668 103.089572,132.885894 L103.089572,143.205383 C103.089572,145.107608 101.551968,146.645212 99.6497421,146.645212 Z" id="Shape" fill="#CECECE" fill-rule="nonzero"></path>
+                    <path d="M99.4736041,170.37578 C91.88534,170.37578 85.7142857,164.204725 85.7142857,156.616461 C85.7142857,149.028197 91.88534,142.857143 99.4736041,142.857143 C107.061868,142.857143 113.232923,149.028197 113.232923,156.616461 C113.232923,164.204725 107.061868,170.37578 99.4736041,170.37578 Z M99.4736041,149.736802 C95.6794721,149.736802 92.5939449,152.822329 92.5939449,156.616461 C92.5939449,160.410593 95.6794721,163.49612 99.4736041,163.49612 C103.267736,163.49612 106.353263,160.410593 106.353263,156.616461 C106.353263,152.822329 103.267736,149.736802 99.4736041,149.736802 Z" id="Shape" fill="#CECECE" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

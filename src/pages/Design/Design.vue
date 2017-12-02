@@ -4,28 +4,32 @@
       Landing
     section.design__responsiveness
       .row.align-center.design__section.design__section--reverse
-        .column.small-12.medium-5.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle.text-right
-          img.design__image.valign-middle(src="~assets/images/Design/responsiveness__image.svg")
-        .column.small-12.medium-7.large-6
+        .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle.text-right
+          img.design__image.valign-middle(src="~assets/images/Design/responsiveness__image.svg", :alt="$t('design.responsiveness.image')")
+        .column.small-12.medium-8.large-6
           h1.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.responsiveness.title') }}
           p.tools__desc.o-paragraph.c-ship-gray-40.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.responsiveness.desc') }}
     section.design__typography
       .row.align-center.design__section
-        .column.small-12.medium-5.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle
-          img.design__image.valign-middle(src="~assets/images/Design/typography__image.svg")
-        .column.small-12.medium-7.large-6
+        .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle
+          img.design__image.valign-middle(src="~assets/images/Design/typography__image.svg",  :alt="$t('design.responsiveness.image')")
+        .column.small-12.medium-8.large-6
           h1.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.typography.title') }}
           p.tools__desc.o-paragraph.c-white-60.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.typography.desc') }}
     section.design__semantics
-      - var n = 0;
-      while n < 20
-        br
-        - n++
+      .row.align-center.design__section.design__section--reverse
+        .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle.text-right
+          img.design__image.valign-middle(src="~assets/images/Design/semantics__image.svg", :alt="$t('design.semantics.image')")
+        .column.small-12.medium-8.large-6
+          h1.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.semantics.title') }}
+          p.tools__desc.o-paragraph.c-ship-gray-40.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.semantics.desc') }}
     section.design__rhythm
-      - var n = 0;
-      while n < 40
-        br
-        - n++
+      .row.align-center.design__section
+        .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle
+          img.design__image.valign-middle(src="~assets/images/Design/rhythm__image.svg",  :alt="$t('design.rhythm.image')")
+        .column.small-12.medium-8.large-6
+          h1.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.rhythm.title') }}
+          p.tools__desc.o-paragraph.c-white-60.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.rhythm.desc') }}
     section.design__tools
       Tools
     HireUs.hire-us--dark

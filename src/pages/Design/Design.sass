@@ -42,7 +42,7 @@
       height: 375px
 
 .design__responsiveness
-  padding-top: 32px
+  padding-top: 40px
   padding-bottom: 48px
   background-color: $c-alabaster
 
@@ -104,13 +104,25 @@
       height: 100px
 
 .design__semantics
+  padding-top: 120px
+  padding-bottom: 80px
   background-color: $c-alabaster
 
 .design__rhythm
   position: relative
+  padding-top: 180px
+  padding-bottom: 120px
   background-position: center top
   background-image: url("~assets/images/Design/landing__bg.svg")
   background-size: cover
+
+  @media #{$medium-up}
+    padding-top: 220px
+    padding-bottom: 140px
+
+  @media #{$large-up}
+    padding-top: 260px
+    padding-bottom: 140px
 
   &::before
     position: absolute
@@ -162,7 +174,6 @@
 
   @media #{$medium-up}
     width: auto
-    margin-top: -5px
     margin-right: -16px
     margin-bottom: -28px
     margin-left: -16px
