@@ -29,12 +29,16 @@ function generateBreadcrumbJson(instance, pages) {
     : ''
 }
 
+function parseTitle(sitename, title) {
+  return title ? `${title} - ${sitename}` : sitename
+}
+
 export default {
   getConfig(customParameters = {}) {
     return R.merge({
       // Default config
-      sitename:    () => 'Default sitename',
-      title:       () => '',
+      sitename:    () => 'IS',
+      title:       () => undefined,
       description: () => 'Default description',
       image:       () => 'https://unsplash.it/810/800?image=10',
       breadcrumb:  () => undefined,
@@ -59,9 +63,9 @@ export default {
     return R.merge({
       title() {
         return {
-          inner:      c.title.call(this),
-          separator:  '-',
-          complement: c.sitename.call(this),
+          inner: parseTitle(c.sitename.call(this), c.title.call(this)),
+          separator: ' ',
+          complement: '',
         }
       },
       meta() {
@@ -72,11 +76,11 @@ export default {
           { name: 'apple-mobile-web-app-title', content: c.sitename.call(this) },
           { name: 'lang',                       content: 'pl' },
           // Twitter
-          { name: 'twitter:title',              content: `${c.title.call(this)} - ${c.sitename.call(this)}` },
+          { name: 'twitter:title',              content: parseTitle(c.sitename.call(this), c.title.call(this)) },
           { name: 'twitter:image',              content: c.image.call(this) },
           { name: 'twitter:description',        content: c.description.call(this) },
           // Google+
-          { itemprop: 'name',                   content: `${c.title.call(this)} - ${c.sitename.call(this)}` },
+          { itemprop: 'name',                   content: parseTitle(c.sitename.call(this), c.title.call(this)) },
           { itemprop: 'description',            content: c.description.call(this) },
           { itemprop: 'image',                  content: c.image.call(this) },
           // Facebook
