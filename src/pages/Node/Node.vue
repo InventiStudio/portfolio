@@ -32,7 +32,9 @@
       Technologies,
     },
     head: head.set({
-      title: () => 'Node',
+      title() {
+        return this.$t('node.title')
+      },
     }),
   }
 </script>

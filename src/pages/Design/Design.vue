@@ -48,7 +48,9 @@
       HireUs,
     },
     head: head.set({
-      title: () => this.$t('design.title'),
+      title() {
+        return this.$t('design.title')
+      },
       breadcrumb() {
         return [
           { name: this.$t('home.title'),     route: this.$router.resolve(this.$routeByName('Home')) },

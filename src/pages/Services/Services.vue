@@ -21,7 +21,9 @@
       WeAreFlexible,
     },
     head: head.set({
-      title: () => 'Services',
+      title() {
+        return this.$t('services.title')
+      },
     }),
   }
 </script>

@@ -31,7 +31,9 @@
       Technologies,
     },
     head: head.set({
-      title: () => 'Vue',
+      title() {
+        return this.$t('vue.title')
+      },
     }),
   }
 </script>
