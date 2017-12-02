@@ -5,12 +5,18 @@ import i18n from 'src/content'
 
 Vue.use(VueRouter)
 
+const commonOptions = {
+  // It helps to get rid of slash-ended routes (for SEO purposes)
+  pathToRegexpOptions: { strict: true },
+}
+
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 const routes = [
   {
     path: '/:lang',
     component: Vue.component('Main', { template: '<transition name="fade"><router-view mode="out-in"></router-view></transition>' }),
+    ...commonOptions,
     children: [
       {
         path: '',
@@ -18,6 +24,7 @@ const routes = [
         component(resolve) {
           require(['pages/Home/Home'], resolve)
         },
+        ...commonOptions,
       },
       {
         path: 'services',
@@ -25,6 +32,7 @@ const routes = [
         component(resolve) {
           require(['pages/Services/Services'], resolve)
         },
+        ...commonOptions,
       },
       {
         path: 'services/vue-front-end',
@@ -32,6 +40,7 @@ const routes = [
         component(resolve) {
           require(['pages/Vue/Vue'], resolve)
         },
+        ...commonOptions,
       },
       {
         path: 'services/node-back-end',
@@ -39,6 +48,7 @@ const routes = [
         component(resolve) {
           require(['pages/Node/Node'], resolve)
         },
+        ...commonOptions,
       },
       {
         path: 'services/ui-ux-design',
@@ -46,6 +56,7 @@ const routes = [
         component(resolve) {
           require(['pages/Design/Design'], resolve)
         },
+        ...commonOptions,
       },
       {
         path: 'estimate-project',
@@ -53,6 +64,7 @@ const routes = [
         component(resolve) {
           require(['pages/Estimate/Estimate'], resolve)
         },
+        ...commonOptions,
       },
     ],
   },
@@ -70,6 +82,8 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
+  // Refex for detecting slash-ended path
+  const slashEndedPath = /(?!^)\/(?=(\?|$|#))/
   // Helper for redirections
   const defaultRoute = {
     name: 'Home',
@@ -93,6 +107,10 @@ router.beforeEach((to, from, next) => {
       head.responseCode.code = 404
       next({ ...defaultRoute, params: { lang: i18n.fallbackLocale }, replace: true })
     }
+  } else if (to.path.match(slashEndedPath)) {
+    head.responseCode.code = 301
+    head.responseCode.location = `${window.location.origin}${to.path.replace(slashEndedPath, '')}`
+    next()
   } else {
     next()
   }
@@ -103,7 +121,7 @@ router.beforeEach((to, from, next) => {
 Vue.mixin({
   methods: {
     $routeByName(name, opts = {}) {
-      return Object.assign({}, { name, params: { lang: i18n.locale } }, opts)
+      return Object.assign({}, { name, params: { lang: i18n.locale }, exact: true }, opts)
     },
   },
 })
