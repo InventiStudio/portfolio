@@ -15,7 +15,7 @@
 
   export default {
     head: head.set({
-      title() { return this.$t('home.title') },
+      title() { return '' },
     }),
     components: {
       Landing,
