@@ -72,7 +72,7 @@
         try {
           if (this.$v.contactForm.$touch() || this.$v.contactForm.$error) return null
           const { name, email, message } = this
-          console.log(name, email, message)
+          return { name, email, message }
         } catch (err) {
           console.warn(err)
           throw err
