@@ -201,6 +201,19 @@ export default {
     shortTitle: 'UI & UX design',
     desc: 'We love to design responsive and pixel-perfect user interfaces with top-notch user experience.',
     tags: 'WEB DESIGN · UI · UX · RESPONSIVE · PROTOTYPE · WIREFRAME',
+    ctaEstimate: 'Estimate UI/UX project',
+    ui: {
+      title: 'UI design',
+      desc: 'Modern web application doesn\'t just display things, but also interact with user. We design user interfaces keeping in mind, that it\'s just a static representation of your dynamic product.',
+    },
+    ux: {
+      title: 'UX design',
+      desc: 'User experience has much broader meaning than UI. It\'s sum of all occured events and displayed things that effect user\'s experience. We know that even subtle details count, so we care of them.',
+    },
+    tools: {
+      title: 'Tools',
+      desc: 'Our main design tool is Sketch app. Sometimes we support us with Photoshop for images manipulation. To design\'s presentation we use Marvel.',
+    },
   },
   contact: {
     title: 'Contact',

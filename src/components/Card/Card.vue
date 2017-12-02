@@ -4,15 +4,15 @@
       icon.card__icon.c-ship-gray-15(:type="iconType")
     .card__content.column.small-12.medium-9.large-12
       h3.card__title.o-heading-3.c-ship-gray {{ $t(title) }}
-      p.card__desc.o-paragraph.c-ship-gray-40.mb-24 {{ $t(desc) }}
+      p.card__desc.o-paragraph.c-ship-gray-40(:class="{ 'mb-24': ctaTo }") {{ $t(desc) }}
       a.card__to.o-btn(
-        v-if="useNativeATag"
+        v-if="ctaTo && useNativeATag"
         :href="ctaTo",
         :class="`o-btn--${color}`",
       )
         span.c-white.fs-16 {{ $t(ctaText) }}
       router-link.card__to.o-btn(
-        v-if="!useNativeATag"
+        v-if="ctaTo && !useNativeATag"
         :to="ctaTo",
         :class="`o-btn--${color}`",
       )
@@ -42,11 +42,11 @@
       },
       ctaTo: {
         type: [Object, String],
-        required: true,
+        required: false,
       },
       ctaText: {
         type: String,
-        required: true,
+        required: false,
       },
       contactUs: {
         type: Boolean,
@@ -54,7 +54,7 @@
       },
       color: {
         type: String,
-        required: true,
+        required: false,
       },
     },
     computed: {

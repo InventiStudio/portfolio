@@ -38,6 +38,9 @@ export default {
       koa:       'Koa',
       postgres:  'PostgreSQL',
       mongodb:   'MongoDB',
+      marvel:    'Marvel App',
+      photoshop: 'Photoshop',
+      sketch:    'Sketch',
     },
   },
 }
