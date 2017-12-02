@@ -1,14 +1,32 @@
 import R from 'ramda'
 
 
-function generateAlternateLinks($router, $route, languages, defaultLang) {
+function generateAlternateLinks(instance, languages, defaultLang) {
   return ['x-default', ...languages].map(language => ({
     rel:      'alternate',
     hreflang: language,
-    href:     `${window.location.origin}${$router.resolve(Object.assign({}, $route, {
+    href:     `${window.location.origin}${instance.$router.resolve(Object.assign({}, instance.$route, {
       params: { lang: language === 'x-default' ? defaultLang : language } },
     )).href}`,
   }))
+}
+
+function generateBreadcrumbJson(instance, pages) {
+  return pages
+    ? JSON.stringify({
+      '@context': 'http://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: pages.map(({ name, route, image }, position) => ({
+        '@type': 'ListItem',
+        position: position + 1,
+        item: {
+          '@id': `${window.location.origin}${route.href}`,
+          name,
+          image,
+        },
+      })),
+    })
+    : ''
 }
 
 export default {
@@ -19,6 +37,7 @@ export default {
       title:       () => '',
       description: () => 'Default description',
       image:       () => 'https://unsplash.it/810/800?image=10',
+      breadcrumb:  () => undefined,
     }, customParameters)
   },
 
@@ -71,7 +90,12 @@ export default {
       },
       link() {
         return [
-          ...generateAlternateLinks(this.$router, this.$route, ['en', 'pl'], 'en'),
+          ...generateAlternateLinks(this, ['en', 'pl'], 'en'),
+        ]
+      },
+      script() {
+        return [
+          { type: 'application/ld+json', inner: generateBreadcrumbJson(this, c.breadcrumb.call(this)) },
         ]
       },
     }, additionalMetaTags)
