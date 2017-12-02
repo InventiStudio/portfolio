@@ -38,6 +38,7 @@
     "ramda": "^0.24.1",
     "scroll-to": "^0.0.2",
     "vue": "^2.4.2",
+    "vue-carousel": "^0.6.5",
     "vue-head": "^2.0.10",
     "vue-i18n": "^7.3.2",
     "vue-router": "^2.2.0",

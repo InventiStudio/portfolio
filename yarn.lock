@@ -7281,6 +7281,10 @@ void-elements@^2.0.0, void-elements@^2.0.1, void-elements@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
+vue-carousel@^0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.6.5.tgz#f04e4485ce6ac2404eaff186923f7ad057839205"
+
 vue-head@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/vue-head/-/vue-head-2.0.10.tgz#f863884509d921446c898efa2bad2ed64b8090f1"
