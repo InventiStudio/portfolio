@@ -1,5 +1,16 @@
 import R from 'ramda'
 
+
+function generateAlternateLinks($router, $route, languages, defaultLang) {
+  return ['x-default', ...languages].map(language => ({
+    rel:      'alternate',
+    hreflang: language,
+    href:     `${window.location.origin}${$router.resolve(Object.assign({}, $route, {
+      params: { lang: language === 'x-default' ? defaultLang : language } },
+    )).href}`,
+  }))
+}
+
 export default {
   getConfig(customParameters = {}) {
     return R.merge({
@@ -59,7 +70,9 @@ export default {
         )
       },
       link() {
-        return []
+        return [
+          ...generateAlternateLinks(this.$router, this.$route, ['en', 'pl'], 'en'),
+        ]
       },
     }, additionalMetaTags)
   },
