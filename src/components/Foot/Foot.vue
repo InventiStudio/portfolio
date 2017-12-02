@@ -38,8 +38,12 @@
 <script>
   import smoothScrollTo from 'services/scroll'
   import constants from 'src/constants'
+  import SocialLinks from 'components/SocialLinks/SocialLinks'
 
   export default {
+    components: {
+      SocialLinks,
+    },
     computed: {
       constants: () => constants,
       secondLanguageLocale() {

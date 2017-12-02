@@ -45,8 +45,12 @@
 
 <script>
   import { required, email } from 'vuelidate/lib/validators'
+  import SocialLinks from 'components/SocialLinks/SocialLinks'
 
   export default {
+    components: {
+      SocialLinks,
+    },
     data() {
       return {
         name: '',
