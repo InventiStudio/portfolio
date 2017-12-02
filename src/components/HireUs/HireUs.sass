@@ -45,8 +45,11 @@
   position: relative
   background-position: center top
   background-image: url("~assets/images/Home/landing__bg.svg")
-  background-size: cover
+  background-size: 150%
   background-repeat: no-repeat
+
+  @media #{$large-up}
+    background-size: 110%
 
   .hire-us__title
     color: $c-white
