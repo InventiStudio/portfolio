@@ -214,6 +214,22 @@ export default {
       title: 'Tools',
       desc: 'Our main design tool is Sketch app. Sometimes we support us with Photoshop for images manipulation. To design\'s presentation we use Marvel.',
     },
+    responsiveness: {
+      title: 'Responsiveness',
+      desc: 'TODO: Every subtle detail can carry information. That\'s why it\'s important to use these details carefully and reasonably. For example, green color is associated with successful operation. Considering this, green notification about invalid data can be misleading. We know about all these subtle meanings and so that all possible semantic ambiguities - we turn into our strength.',
+    },
+    semantics: {
+      title: 'Caring for semantics',
+      desc: 'Every subtle detail can carry information. That\'s why it\'s important to use these details carefully and reasonably. For example, green color is associated with successful operation. Considering this, green notification about invalid data can be misleading. We know about all these subtle meanings and so that all possible semantic ambiguities - we turn into our strength.',
+    },
+    rhythm: {
+      title: 'Horizontal and vertical rhythm',
+      desc: 'TODO: In most cases, content defines value of your product. Even most beautiful design is worthless without substance. Design lives for the content, not vice versa. However, just putting text somewhere on your page doesn\'t make it valuable. It\'s important to take care about typography, i.e. give more focus to headlines, set proper line heights, choose best fonts for one-line labels, multi-line paragraphs and much much more.',
+    },
+    typography: {
+      title: 'Refined typography',
+      desc: 'In most cases, content defines value of your product. Even most beautiful design is worthless without substance. Design lives for the content, not vice versa. However, just putting text somewhere on your page doesn\'t make it valuable. It\'s important to take care about typography, i.e. give more focus to headlines, set proper line heights, choose best fonts for one-line labels, multi-line paragraphs and much much more. We put our effort and experience to make your content enjoyable to read.',
+    },
   },
   contact: {
     title: 'Contact',
