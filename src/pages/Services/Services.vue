@@ -1,13 +1,9 @@
 <template lang="pug">
-  article.services
+  article
     Landing
     WhatWeDo
-    section.services__flexible
-      - var n = 0;
-      while n < 40
-        br
-        - n++
-    section.services__hire-us: HireUs
+    WeAreFlexible
+    HireUs
 </template>
 
 <script>
@@ -15,17 +11,17 @@
   import HireUs from 'components/HireUs/HireUs'
   import Landing from './Landing/Landing'
   import WhatWeDo from './WhatWeDo/WhatWeDo'
+  import WeAreFlexible from './WeAreFlexible/WeAreFlexible'
 
   export default {
     components: {
       HireUs,
       Landing,
       WhatWeDo,
+      WeAreFlexible,
     },
     head: head.set({
       title: () => 'Services',
     }),
   }
 </script>
-
-<style src="./Services.sass" lang="sass" scoped></style>

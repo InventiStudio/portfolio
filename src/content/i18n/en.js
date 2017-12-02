@@ -39,17 +39,17 @@ export default {
     },
     whatWeDo: {
       title: 'What we do',
-      desc: 'The services we provide',
+      desc: 'The services we provide.',
     },
     flexible: {
       title: 'We are flexible',
       desc: 'As an experienced developers we are open for different types of cooperation.',
       technology: {
         title: 'Different technology?',
-        desc: 'We\'ve been working with many technologies, so even if your project needs something that is missing in our services - do not hesitate to ask!',
+        desc: 'We\'ve been working with many technologies, so even if your project needs something that\'s missing in our services - do not hesitate to ask!',
       },
       subcontractor: {
-        title: 'Need us as a subcontractor?',
+        title: 'Need a subcontractor?',
         desc: 'We have experience working as subcontractors, so if you need us to do only some part of your project - feel free to contact us!',
       },
       project: {

@@ -3,7 +3,15 @@
 .landing
   position: relative
   padding-top: 120px
-  padding-bottom: 80px
+  padding-bottom: 104px
   background-position: center center
   background-image: url("~assets/images/Services/landing__bg.png")
   background-size: cover
+
+  @media #{$medium-up}
+    padding-top: 144px
+    padding-bottom: 180px
+
+  @media #{$large-up}
+    padding-top: 160px
+    padding-bottom: 240px
