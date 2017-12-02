@@ -4,9 +4,8 @@
       Landing
       .vue__qualities
         Qualities
-    .vue__why-we-chose
-      WhyWeChose
-    .vue__inventi-plus-vue
+    WhyWeChose.bg-alabaster
+    .vue__inventi-and-vue
       InventiAndVue
     .vue__technologies
       Technologies
