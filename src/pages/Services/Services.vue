@@ -1,15 +1,7 @@
 <template lang="pug">
   article.services
-    section.services__landing.o-wave--sinus
-      - var n = 0;
-      while n < 30
-        br
-        - n++
-    section.services__what-we-do
-      - var n = 0;
-      while n < 30
-        br
-        - n++
+    Landing
+    WhatWeDo
     section.services__flexible
       - var n = 0;
       while n < 40
@@ -21,10 +13,14 @@
 <script>
   import head from 'src/head'
   import HireUs from 'components/HireUs/HireUs'
+  import Landing from './Landing/Landing'
+  import WhatWeDo from './WhatWeDo/WhatWeDo'
 
   export default {
     components: {
       HireUs,
+      Landing,
+      WhatWeDo,
     },
     head: head.set({
       title: () => 'Services',
