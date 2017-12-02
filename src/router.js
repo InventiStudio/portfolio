@@ -48,7 +48,7 @@ const routes = [
         },
       },
       {
-        path: 'services/estimate-project',
+        path: 'estimate-project',
         name: 'Estimate',
         component(resolve) {
           require(['pages/Estimate/Estimate'], resolve)
