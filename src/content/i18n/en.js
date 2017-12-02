@@ -112,7 +112,7 @@ export default {
       libraries: {
         title: 'Our Vue.js libraries',
         desc: 'As part of a wide Vue.js community, we developed some Vue.js-related libraries, that help us and other developers to deliver reliable products.',
-        cta: 'See our GitHub repository',
+        cta: 'See our GitHub',
       },
       website: {
         title: 'Our website',
@@ -183,7 +183,7 @@ export default {
       packages: {
         title: 'Our Node.js packages',
         desc: 'As a part of Node.js community, we\'ve created some npm packages, that help us and other programmers to build great products.',
-        cta: 'See our GitHub repository',
+        cta: 'See our GitHub',
       },
       publications: {
         title: 'Our publications',
