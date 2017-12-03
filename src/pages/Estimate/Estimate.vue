@@ -1,21 +1,19 @@
 <template lang="pug">
   article.estimate
-    section.estimate__landing
-      - var n = 0;
-      while n < 30
-        br
-        - n++
-    section.estimate__form
-      - var n = 0;
-      while n < 100
-        br
-        - n++
+    Landing
+    Survey
 </template>
 
 <script>
   import head from 'src/head'
+  import Landing from './Landing/Landing'
+  import Survey from './Survey/Survey'
 
   export default {
+    components: {
+      Landing,
+      Survey,
+    },
     head: head.set({
       title() {
         return this.$t('estimate.title')
@@ -32,5 +30,3 @@
     }),
   }
 </script>
-
-<style src="./Estimate.sass" lang="sass" scoped></style>
