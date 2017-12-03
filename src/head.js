@@ -1,5 +1,15 @@
 import R from 'ramda'
 
+function getConfig(customParameters = {}) {
+  return R.merge({
+    // Default config
+    sitename:    () => 'IS',
+    title:       () => undefined,
+    description: () => 'Default description',
+    image:       () => 'https://unsplash.it/810/800?image=10',
+    breadcrumb:  () => undefined,
+  }, customParameters)
+}
 
 function generateAlternateLinks(instance, languages, defaultLang) {
   return ['x-default', ...languages].map(language => ({
@@ -33,33 +43,23 @@ function parseTitle(sitename, title) {
   return title ? `${title} - ${sitename}` : sitename
 }
 
+function generatePrerenderResponseCodeTags() {
+  const result = []
+  if (this.responseCode.code)     result.push({ name: 'prerender-status-code', content: this.responseCode.code })
+  if (this.responseCode.location) result.push({ name: 'prerender-header',      content: `Location: ${this.responseCode.location}` })
+  return result
+}
+
 export default {
-  getConfig(customParameters = {}) {
-    return R.merge({
-      // Default config
-      sitename:    () => 'IS',
-      title:       () => undefined,
-      description: () => 'Default description',
-      image:       () => 'https://unsplash.it/810/800?image=10',
-      breadcrumb:  () => undefined,
-    }, customParameters)
-  },
 
   responseCode: {
     code:     undefined,
     location: undefined,
   },
 
-  generatePrerenderResponseCodeTags() {
-    const result = []
-    if (this.responseCode.code)     result.push({ name: 'prerender-status-code', content: this.responseCode.code })
-    if (this.responseCode.location) result.push({ name: 'prerender-header',      content: `Location: ${this.responseCode.location}` })
-    return result
-  },
-
   set(customParameters = {}, additionalMetaTags = {}) {
-    const c         = this.getConfig(customParameters)
-    const prerender = this.generatePrerenderResponseCodeTags.bind(this)
+    const c         = getConfig(customParameters)
+    const prerender = generatePrerenderResponseCodeTags.bind(this)
     return R.merge({
       title() {
         return {
