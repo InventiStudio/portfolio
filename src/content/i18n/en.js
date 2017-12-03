@@ -247,7 +247,6 @@ export default {
     survey: {
       q1: {
         title: 'Where do we start?',
-        progress: '1/4',
         answers: {
           a1: 'Start a new project',
           a2: 'Continue an existing project',
@@ -255,7 +254,6 @@ export default {
       },
       q2: {
         title: 'What is the scope of your project?',
-        progress: '2/4',
         answers: {
           a1: 'Front-end',
           a2: 'Back-end',
@@ -264,7 +262,6 @@ export default {
       },
       q3: {
         title: 'What is the platform of your project?',
-        progress: '3/4',
         answers: {
           a1: 'Desktop',
           a2: 'Mobile',
@@ -273,7 +270,6 @@ export default {
       },
       q4: {
         title: 'Any more details about the project?',
-        progress: '4/4',
         form: {
           namePlaceholder: 'Your name',
           emailPlaceholder: 'Your e-mail address',

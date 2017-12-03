@@ -1,0 +1,28 @@
+@import "~stylesheets/helpers"
+
+.survey-progress
+  position: relative
+  width: 100%
+  height: 3px
+  background-color: rgba($c-ship-gray, 0.08)
+
+.survey-progress__step
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  z-index: 5
+  width: 0
+  background-color: rgba($c-ship-gray, 0.2)
+
+.survey-progress__step--1
+  width: 25%
+
+.survey-progress__step--2
+  width: 50%
+
+.survey-progress__step--3
+  width: 75%
+
+.survey-progress__step--4
+  width: 100%
