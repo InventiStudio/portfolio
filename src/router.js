@@ -122,7 +122,11 @@ router.beforeEach((to, from, next) => {
 Vue.mixin({
   methods: {
     $routeByName(name, opts = {}) {
-      return Object.assign({}, { name, params: { lang: i18n.locale }, exact: true }, opts)
+      const { route } = this.$router.resolve({ name, params: { lang: i18n.locale }, exact: true, ...opts })
+      return {
+        path: route.path.replace(constants.regex.lastUrlBackslash, ''),
+        ...opts,
+      }
     },
   },
 })
