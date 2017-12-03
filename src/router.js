@@ -85,19 +85,20 @@ router.beforeEach((to, from, next) => {
   // Refex for detecting slash-ended path
   const slashEndedPath = /(?!^)\/(?=(\?|$|#))/
   // Helper for redirections
-  const defaultRoute = {
+  const defaultRoute = router.resolve({
     name: 'Home',
     params: { lang: to.params.lang || from.params.lang || i18n.fallbackLocale },
-  }
+    exact: true,
+  }).href.replace(slashEndedPath, '')
   // When language is not specified
   if (to.path === '/') {
     head.responseCode.code = 302
-    head.responseCode.location = `${window.location.origin}${router.resolve(defaultRoute).href}`
-    next({ ...defaultRoute, replace: true })
+    head.responseCode.location = `${window.location.origin}${defaultRoute}`
+    next({ path: defaultRoute, replace: true })
   // When page is not found
   } else if (to.name === 'Error404') {
     head.responseCode.code = 404
-    next({ ...defaultRoute, replace: true })
+    next({ path: defaultRoute, replace: true })
   // When language has been changed
   } else if (to.params.lang !== i18n.locale) {
     if (Object.keys(i18n.messages).find(locale => to.params.lang === locale)) {
@@ -105,7 +106,7 @@ router.beforeEach((to, from, next) => {
       next()
     } else {
       head.responseCode.code = 404
-      next({ ...defaultRoute, params: { lang: i18n.fallbackLocale }, replace: true })
+      next({ path: defaultRoute, params: { lang: i18n.fallbackLocale }, replace: true })
     }
   } else if (to.path.match(slashEndedPath)) {
     head.responseCode.code = 301
