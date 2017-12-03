@@ -1,4 +1,7 @@
 export default {
+  regex: {
+    lastUrlBackslash: /(?!^)\/(?=(\?|$|#))/,
+  },
   sectionIds: {
     home: {
       services: 'home__services',

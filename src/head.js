@@ -1,4 +1,5 @@
 import R from 'ramda'
+import constants from 'src/constants'
 
 function getConfig(customParameters = {}) {
   return R.merge({
@@ -17,7 +18,7 @@ function generateAlternateLinks(instance, languages, defaultLang) {
     hreflang: language,
     href:     `${window.location.origin}${instance.$router.resolve(Object.assign({}, instance.$route, {
       params: { lang: language === 'x-default' ? defaultLang : language } },
-    )).href}`,
+    )).href}`.replace(constants.regex.lastUrlBackslash, ''),
   }))
 }
 
@@ -30,7 +31,7 @@ function generateBreadcrumbJson(instance, pages) {
         '@type': 'ListItem',
         position: position + 1,
         item: {
-          '@id': `${window.location.origin}${route.href}`,
+          '@id': `${window.location.origin}${route.href}`.replace(constants.regex.lastUrlBackslash, ''),
           name,
           image,
         },

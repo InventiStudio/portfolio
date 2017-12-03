@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import head from 'src/head'
 import i18n from 'src/content'
+import constants from 'src/constants'
 
 Vue.use(VueRouter)
 
@@ -83,13 +84,12 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   // Refex for detecting slash-ended path
-  const slashEndedPath = /(?!^)\/(?=(\?|$|#))/
   // Helper for redirections
   const defaultRoute = router.resolve({
     name: 'Home',
     params: { lang: to.params.lang || from.params.lang || i18n.fallbackLocale },
     exact: true,
-  }).href.replace(slashEndedPath, '')
+  }).href.replace(constants.regex.lastUrlBackslash, '')
   // When language is not specified
   if (to.path === '/') {
     head.responseCode.code = 302
@@ -108,9 +108,9 @@ router.beforeEach((to, from, next) => {
       head.responseCode.code = 404
       next({ path: defaultRoute, params: { lang: i18n.fallbackLocale }, replace: true })
     }
-  } else if (to.path.match(slashEndedPath)) {
+  } else if (to.path.match(constants.regex.lastUrlBackslash)) {
     head.responseCode.code = 301
-    head.responseCode.location = `${window.location.origin}${to.path.replace(slashEndedPath, '')}`
+    head.responseCode.location = `${window.location.origin}${to.path.replace(constants.regex.lastUrlBackslash, '')}`
     next()
   } else {
     next()
