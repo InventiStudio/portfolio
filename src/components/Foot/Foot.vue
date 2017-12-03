@@ -57,7 +57,9 @@
         return this.$t(`content.languages.${this.secondLanguageLocale}`)
       },
       secondLanguageRoute() {
-        return Object.assign({}, this.$route, { params: { lang: this.secondLanguageLocale } })
+        return this.$route.name
+          ? this.$routeByName(this.$route.name, { params: { lang: this.secondLanguageLocale } })
+          : ''
       },
     },
     methods: {
