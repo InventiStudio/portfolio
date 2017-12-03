@@ -7,7 +7,8 @@ function getConfig(customParameters = {}) {
     sitename()    { return this.$t('meta.sitename') },
     title()       { return '' },
     description() { return this.$t('meta.description') },
-    image()       { return 'https://unsplash.it/810/800?image=10' },
+    image()       { return this.$t('content.meta.image') },
+    language()    { return this.$route.params.lang || 'en' },
     breadcrumb()  { return undefined },
   }, customParameters)
 }
@@ -75,7 +76,7 @@ export default {
           { name: 'description',                content: c.description.call(this), id: '__head-description' },
           { name: 'application-name',           content: c.sitename.call(this) },
           { name: 'apple-mobile-web-app-title', content: c.sitename.call(this) },
-          { name: 'lang',                       content: 'pl' },
+          { name: 'lang',                       content: c.language.call(this) },
           // Twitter
           { name: 'twitter:title',              content: parseTitle(c.sitename.call(this), c.title.call(this)) },
           { name: 'twitter:image',              content: c.image.call(this) },
