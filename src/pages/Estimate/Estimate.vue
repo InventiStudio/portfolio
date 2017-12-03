@@ -17,7 +17,18 @@
 
   export default {
     head: head.set({
-      title: () => 'Estimate',
+      title() {
+        return this.$t('estimate.title')
+      },
+      description() {
+        return this.$t('estimate.desc')
+      },
+      breadcrumb() {
+        return [
+          { name: this.$t('home.title'),     route: this.$router.resolve(this.$routeByName('Home')) },
+          { name: this.$t('estimate.title'), route: this.$router.resolve(this.$routeByName('Estimate')) },
+        ]
+      },
     }),
   }
 </script>

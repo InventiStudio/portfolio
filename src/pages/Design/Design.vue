@@ -51,6 +51,9 @@
       title() {
         return this.$t('design.title')
       },
+      description() {
+        return this.$t('design.desc')
+      },
       breadcrumb() {
         return [
           { name: this.$t('home.title'),     route: this.$router.resolve(this.$routeByName('Home')) },

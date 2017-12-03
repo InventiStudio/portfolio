@@ -34,6 +34,16 @@
       title() {
         return this.$t('vue.title')
       },
+      description() {
+        return this.$t('vue.desc')
+      },
+      breadcrumb() {
+        return [
+          { name: this.$t('home.title'),     route: this.$router.resolve(this.$routeByName('Home')) },
+          { name: this.$t('services.title'), route: this.$router.resolve(this.$routeByName('Services')) },
+          { name: this.$t('vue.title'),      route: this.$router.resolve(this.$routeByName('Vue')) },
+        ]
+      },
     }),
   }
 </script>

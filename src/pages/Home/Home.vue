@@ -16,6 +16,11 @@
   export default {
     head: head.set({
       title() { return '' },
+      breadcrumb() {
+        return [
+          { name: this.$t('home.title'), route: this.$router.resolve(this.$routeByName('Home')) },
+        ]
+      },
     }),
     components: {
       Landing,

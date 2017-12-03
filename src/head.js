@@ -3,11 +3,11 @@ import R from 'ramda'
 function getConfig(customParameters = {}) {
   return R.merge({
     // Default config
-    sitename:    () => 'IS',
-    title:       () => undefined,
-    description: () => 'Default description',
-    image:       () => 'https://unsplash.it/810/800?image=10',
-    breadcrumb:  () => undefined,
+    sitename()    { return this.$t('meta.sitename') },
+    title()       { return '' },
+    description() { return this.$t('meta.description') },
+    image()       { return 'https://unsplash.it/810/800?image=10' },
+    breadcrumb()  { return undefined },
   }, customParameters)
 }
 

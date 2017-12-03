@@ -24,6 +24,15 @@
       title() {
         return this.$t('services.title')
       },
+      description() {
+        return this.$t('services.desc')
+      },
+      breadcrumb() {
+        return [
+          { name: this.$t('home.title'),     route: this.$router.resolve(this.$routeByName('Home')) },
+          { name: this.$t('services.title'), route: this.$router.resolve(this.$routeByName('Services')) },
+        ]
+      },
     }),
   }
 </script>
