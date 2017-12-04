@@ -1,5 +1,6 @@
 <template lang="pug">
   nav.social-links
+    h2.hidden {{ $t('social.title') }}
     a(:href="$t('content.urls.facebook')"):  icon(type="icon--facebook")
     a(:href="$t('content.urls.linkedin')"):  icon(type="icon--linkedin")
     a(:href="$t('content.urls.dribble')"):   icon(type="icon--dribble")

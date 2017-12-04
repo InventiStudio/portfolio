@@ -2,7 +2,7 @@
   section.testimonials.text-center
     .row.align-center
       .column.small-12
-        h1.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
+        h2.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
         p.o-paragraph.c-ship-gray-40.mb-40 {{ $t('home.testimonials.desc') }}
       .column.small-12.medium-8.large-6
         Carousel(

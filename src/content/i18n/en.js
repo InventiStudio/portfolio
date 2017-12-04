@@ -12,6 +12,9 @@ export default {
     title: 'Menu',
     blog: 'Blog',
   },
+  social: {
+    title: 'Our social profiles',
+  },
   home: {
     title: 'Home',
     landing: {

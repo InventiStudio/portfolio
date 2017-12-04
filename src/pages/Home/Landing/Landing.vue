@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing.o-wave--sinus.text-center
+  .landing.o-wave--sinus.text-center
     .landing__content.row.align-center
       .landing__title.column.small-12
         img.landing__logo(src="~assets/inventi__logo.svg", :alt="$t('home.landing.logo')")
@@ -8,8 +8,9 @@
         button.o-btn.o-btn--pink.mr-8
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
         button(type="button").o-link.c-white {{ $t('common.orContactUs') }}
+    section.landing__content.row.align-center
       .landing__services.column.small-12(:id="constants.sectionIds.home.services")
-        h1.o-heading-1.c-white {{ $t('home.services.title') }}
+        h2.o-heading-1.c-white {{ $t('home.services.title') }}
         p.o-paragraph.c-white-60.mb-40.mobile-mb-48 {{ $t('home.services.desc') }}
       .column.small-12.medium-10.large-4
         Card(

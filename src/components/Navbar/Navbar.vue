@@ -11,7 +11,7 @@
         )
           span Toggle nav
         nav.navbar__nav(:class="{ 'navbar__nav--active a-fade-in': isNavOpen }")
-          h2.hidden {{ $t('navbar.title') }}
+          h1.hidden {{ $t('navbar.title') }}
           ul.navbar__links.list-reset
             router-link.navbar__link(
               :to="$routeByName('Home')",
