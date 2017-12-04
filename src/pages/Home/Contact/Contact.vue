@@ -19,8 +19,11 @@
               type="text",
               v-model="name",
               :placeholder="$t('contact.form.namePlaceholder')",
+              :class="{ 'o-input--error': !isNameValid }",
             )
-            input.o-input.mt-24(
+            small.o-form-error
+              span(v-show="!isNameValid") {{ $t('errors.name') }}
+            input.o-input.mt-4(
               type="text",
               v-model="email",
               :placeholder="$t('contact.form.emailPlaceholder')",
@@ -59,10 +62,11 @@
       }
     },
     computed: {
+      isNameValid() { return !this.$v.name.$error },
       isEmailValid() { return !this.$v.email.$error },
       isMessageValid() { return !this.$v.message.$error },
       isFormValid() {
-        return this.isEmailValid && this.isMessageValid
+        return this.isNameValid && this.isEmailValid && this.isMessageValid
       },
     },
     methods: {
@@ -84,9 +88,11 @@
       },
     },
     validations: {
+      name: { required },
       email: { required, email },
       message: { required },
       contactForm: [
+        'name',
         'email',
         'message',
       ],
