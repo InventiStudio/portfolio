@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing
+  .landing
     .row.column.text-center
       icon.c-white-80.mb-32.medium-mb-40(type="icon--monitor")
       p.fs-11.c-white-60.mb-16.medium-mb-8 {{ $t('vue.tags') }}

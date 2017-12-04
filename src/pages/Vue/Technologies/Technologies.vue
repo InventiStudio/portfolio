@@ -2,7 +2,7 @@
   section.technologies.text-center
     .technologies__content.row.align-center
       .technologies__title.column.small-12
-        h1.o-heading-1.c-ship-gray-80 {{ $t('vue.technologies.title') }}
+        h2.o-heading-1.c-ship-gray-80 {{ $t('vue.technologies.title') }}
         p.technologies__desc.o-paragraph.c-ship-gray-40.mt-16.medium-mt-4.mb-72 {{ $t('vue.technologies.desc') }}
       .technologies__icons.column.small-12
           img(src="~assets/icons-technologies/html5.svg",     :title="$t('content.technologies.html5')",     :alt="$t('content.technologies.html5')")
