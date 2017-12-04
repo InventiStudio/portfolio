@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing.text-center
+  .landing.text-center
     .landing__content.row.align-center
       .landing__title.column.small-12
         icon.c-white-80.mb-40(type="icon--grid")

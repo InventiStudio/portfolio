@@ -1,36 +1,36 @@
 <template lang="pug">
-  article.design
-    section.design__landing
+  .design
+    .design__landing
       Landing
-    section.design__responsiveness
+    article.design__responsiveness
       .row.align-center.design__section.design__section--reverse
         .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle.text-right
           img.design__image.valign-middle(src="~assets/images/Design/responsiveness__image.svg", :alt="$t('design.responsiveness.image')")
         .column.small-12.medium-8.large-6
-          h1.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.responsiveness.title') }}
+          h2.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.responsiveness.title') }}
           p.tools__desc.o-paragraph.c-ship-gray-40.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.responsiveness.desc') }}
-    section.design__typography
+    article.design__typography
       .row.align-center.design__section
         .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle
           img.design__image.valign-middle(src="~assets/images/Design/typography__image.svg",  :alt="$t('design.responsiveness.image')")
         .column.small-12.medium-8.large-6
-          h1.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.typography.title') }}
+          h2.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.typography.title') }}
           p.tools__desc.o-paragraph.c-white-60.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.typography.desc') }}
-    section.design__semantics
+    article.design__semantics
       .row.align-center.design__section.design__section--reverse
         .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle.text-right
           img.design__image.valign-middle(src="~assets/images/Design/semantics__image.svg", :alt="$t('design.semantics.image')")
         .column.small-12.medium-8.large-6
-          h1.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.semantics.title') }}
+          h2.o-heading-1.small-only-text-center.c-ship-gray-80 {{ $t('design.semantics.title') }}
           p.tools__desc.o-paragraph.c-ship-gray-40.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.semantics.desc') }}
-    section.design__rhythm
+    article.design__rhythm
       .row.align-center.design__section
         .column.small-12.medium-4.large-4.small-only-text-center.small-mb-32.medium-m-0.align-self-middle
           img.design__image.valign-middle(src="~assets/images/Design/rhythm__image.svg",  :alt="$t('design.rhythm.image')")
         .column.small-12.medium-8.large-6
-          h1.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.rhythm.title') }}
+          h2.o-heading-1.small-only-text-center.text-right.c-white {{ $t('design.rhythm.title') }}
           p.tools__desc.o-paragraph.c-white-60.small-only-text-center.text-justify.mt-16.medium-mt-8 {{ $t('design.rhythm.desc') }}
-    section.design__tools
+    .design__tools
       Tools
     HireUs.hire-us--dark
 </template>
