@@ -1,5 +1,7 @@
 @import "~stylesheets/helpers"
 
+$gradient: #8f2edd 0%, #b03ad1 25%, #c841c0 50%, #da4daa 75%, #eb4b9f 100%
+
 .survey
   padding-top: 40px
   padding-bottom: 120px
@@ -29,20 +31,20 @@
     // height: 192px
 
 .survey__input:checked + .survey__label
-  background-image: linear-gradient(-135deg, #8f2edd 0%, #b03ad1 25%, #c841c0 50%, #da4daa 75%, #eb4b9f 100%)
+  background-image: linear-gradient(-135deg, $gradient)
 
   .survey__icon,
-  .survey__heading-5
+  .survey__heading-3
     color: $c-white
 
 .survey__icon
   width: 100%
   height: 48px
 
-.survey__heading-5
+.survey__heading-3
   margin-top: 0
   margin-bottom: 0
 
 .survey__btn
   width: 320px
-  background-image: linear-gradient(-45deg, #8f2edd 0%, #b03ad1 25%, #c841c0 50%, #da4daa 77%, #eb4b9f 100%);
+  background-image: linear-gradient(-45deg, $gradient)
