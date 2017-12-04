@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing.o-wave--sinus.text-center
+  .landing.o-wave--sinus.text-center
     .row.column
       .mb-32.medium-mb-40
         icon.c-blue(type="icon--monitor")

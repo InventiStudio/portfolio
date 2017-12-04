@@ -1,5 +1,5 @@
 <template lang="pug">
-  article
+  div
     Landing
     WhatWeDo
     WeAreFlexible

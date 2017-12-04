@@ -1,7 +1,7 @@
 <template lang="pug">
   section.what-we-do.bg-alabaster.text-center
     .row.column
-      h1.o-heading-1.c-ship-gray-80 {{ $t('services.whatWeDo.title') }}
+      h2.o-heading-1.c-ship-gray-80 {{ $t('services.whatWeDo.title') }}
       p.o-paragraph.c-ship-gray-40.mb-40 {{ $t('services.whatWeDo.desc') }}
     .row.align-center
       .column.small-12.medium-10.large-4

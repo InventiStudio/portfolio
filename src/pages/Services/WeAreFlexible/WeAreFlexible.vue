@@ -1,7 +1,7 @@
 <template lang="pug">
   section.we-are-flexible.text-center
     .row.column
-      h1.o-heading-1.c-white {{ $t('services.flexible.title') }}
+      h2.o-heading-1.c-white {{ $t('services.flexible.title') }}
       p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-64.max-w-560 {{ $t('services.flexible.desc') }}
     ul.row.align-center.list-reset
       li.column.small-12.medium-6.large-4.mb-48
