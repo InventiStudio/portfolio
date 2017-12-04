@@ -247,7 +247,7 @@ export default {
   },
   estimate: {
     title: 'Estimate project',
-    desc: 'Fill in this form to get a free project estimation. We’ll contact you within 1 week to discuss next steps.',
+    desc: 'Fill in this form to get a free project estimation.<br>We’ll contact you within 1 week to discuss next steps.',
     survey: {
       q1: {
         title: 'Where do we start?',
@@ -281,6 +281,7 @@ export default {
           messagePlaceholder: 'Short description of your project',
         },
       },
+      ctaSend: 'Estimate',
     },
   },
   contact: {
@@ -288,7 +289,7 @@ export default {
     desc: 'Whether you want to hire us or simply get to know us better - feel free to get in touch!',
     map: 'We are from Wrocław, Poland',
     form: {
-      namePlaceholder: 'Your name (optional)',
+      namePlaceholder: 'Your name',
       emailPlaceholder: 'Your e-mail address',
       messagePlaceholder: 'How can we help you?',
       ctaSend: 'Send a message',
@@ -298,7 +299,8 @@ export default {
     title: 'Want to work with us?',
   },
   errors: {
+    name: 'We\'d like to meet you!',
     email: 'Sorry, but that doesn\'t seem like a valid email',
-    message: 'Ooops, no message?',
+    message: 'Oops, no message?',
   },
 }
