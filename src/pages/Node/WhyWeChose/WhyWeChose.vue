@@ -2,7 +2,7 @@
   section.why-we-chose.text-center
     .why-we-chose__content.row.align-center
       .why-we-chose__title.column.small-12
-        h1.o-heading-1.c-ship-gray-80 {{ $t('node.whyWeChose.title') }}
+        h2.o-heading-1.c-ship-gray-80 {{ $t('node.whyWeChose.title') }}
         p.why-we-chose__desc.o-paragraph.c-ship-gray-40.mt-16.medium-mt-4.mb-64 {{ $t('node.whyWeChose.desc') }}
     .why-we-chose__list.row.align-center
       .why-we-chose__element.column.small-12.medium-6.large-3.mb-32

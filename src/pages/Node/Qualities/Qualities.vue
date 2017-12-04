@@ -2,7 +2,7 @@
   section.qualities.text-center
     .qualities__content.row.align-center
       .qualities__title.column.small-12
-        h1.o-heading-1.c-white {{ $t('node.qualities.title') }}
+        h2.o-heading-1.c-white {{ $t('node.qualities.title') }}
         p.qualities__desc.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-64 {{ $t('node.qualities.desc') }}
     .qualities__list.row.align-center
       .qualities__element.column.small-12.medium-6.large-3.mb-32

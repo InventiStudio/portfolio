@@ -2,7 +2,7 @@
   section.inventi-and-node.text-center
     .inventi-and-node__content.row.align-center
       .inventi-and-node__title.column.small-12
-        h1.o-heading-1.c-white
+        h2.o-heading-1.c-white
           span.mr-8 {{ $t('node.inventiAndNode.title') }}
           img.valign-middle(
             src="~assets/icons/icon--rocket.svg",
