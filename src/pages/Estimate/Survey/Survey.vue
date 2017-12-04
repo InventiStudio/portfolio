@@ -3,7 +3,7 @@
     form
       .row.align-center.mb-16
         header.survey__header.column.small-12.large-9
-          h1.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q1.title') }}
+          h2.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q1.title') }}
           span.o-heading-1.c-ship-gray-20 1/4
       .row.align-center.mb-32
         .column.small-12.large-9
@@ -18,7 +18,7 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--play")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q1.answers.a1') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q1.answers.a1') }}
             .column.small-12.medium-4
               input.survey__input(type="radio", v-model="q1", id="q1a2", name="q1", value="a2")
               label.survey__label.o-card(for="q1a2")
@@ -26,11 +26,11 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--fast-forward")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q1.answers.a2') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q1.answers.a2') }}
 
       .row.align-center.mb-16
         header.survey__header.column.small-12.large-9
-          h1.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q2.title') }}
+          h2.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q2.title') }}
           span.o-heading-1.c-ship-gray-20 2/4
       .row.align-center.mb-32
         .column.small-12.large-9
@@ -45,7 +45,7 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--monitor")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q2.answers.a1') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a1') }}
             .column.small-12.medium-4
               input.survey__input(type="checkbox", v-model="q2.a2", id="q2a2", name="q2", value="a2")
               label.survey__label.o-card.mb-24(for="q2a2")
@@ -53,7 +53,7 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--server")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q2.answers.a2') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a2') }}
             .column.small-12.medium-4
               input.survey__input(type="checkbox", v-model="q2.a3", id="q2a3", name="q2", value="a3")
               label.survey__label.o-card.mb-24(for="q2a3")
@@ -61,11 +61,11 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--grid")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q2.answers.a3') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a3') }}
 
       .row.align-center.mb-16
         header.survey__header.column.small-12.large-9
-          h1.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q3.title') }}
+          h2.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q3.title') }}
           span.o-heading-1.c-ship-gray-20 3/4
       .row.align-center.mb-32
         .column.small-12.large-9
@@ -80,7 +80,7 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--monitor")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q3.answers.a1') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a1') }}
             .column.small-12.medium-4
               input.survey__input(type="checkbox", v-model="q3.a2", id="q3a2", name="q3", value="a2")
               label.survey__label.o-card.mb-24(for="q3a2")
@@ -88,7 +88,7 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--smartphone")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q3.answers.a2') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a2') }}
             .column.small-12.medium-4
               input.survey__input(type="checkbox", v-model="q3.a3", id="q3a3", name="q3", value="a3")
               label.survey__label.o-card.mb-24(for="q3a3")
@@ -96,11 +96,11 @@
                   .column.small-4.medium-12.medium-mb-24
                     icon.survey__icon(type="icon--file")
                   .column.small-8.medium-12.text-left.medium-text-center
-                    h5.survey__heading-5.o-heading-3 {{ $t('estimate.survey.q3.answers.a3') }}
+                    h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a3') }}
 
       .row.align-center.mb-16
         header.survey__header.column.small-12.large-9
-          h1.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q4.title') }}
+          h2.o-heading-1.c-ship-gray-80 {{ $t('estimate.survey.q4.title') }}
           span.o-heading-1.c-ship-gray-20 4/4
       .row.align-center.mb-32
         .column.small-12.large-9
