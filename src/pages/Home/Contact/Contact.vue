@@ -7,7 +7,6 @@
         p.o-paragraph.c-white-60 {{ $t('contact.desc') }}
       .small-12.large-6.columns
         article.contact__card.o-card.o-wave--gray.bg-alabaster.text-center
-          h3.hidden {{ $t('contact.title') }}
           a.o-link.fw-medium.block.c-purple.underline(:href="mailToUrl('content.contact.emailAddress')")
             | {{ $t('content.contact.emailAddress') }}
           a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone1')")
@@ -41,7 +40,7 @@
               :disabled="!isFormValid",
               @click="submit()",
             )
-              span.fs-16.c-white {{ $t('contact.form.ctaSend') }}
+              h3.m-0.fw-regular.fs-16.c-white {{ $t('contact.form.ctaSend') }}
 </template>
 
 <script>
