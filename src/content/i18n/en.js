@@ -9,6 +9,7 @@ export default {
     estimateProject: 'Estimate project',
   },
   navbar: {
+    title: 'Menu',
     blog: 'Blog',
   },
   home: {

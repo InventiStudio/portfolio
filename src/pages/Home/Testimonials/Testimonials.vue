@@ -18,10 +18,11 @@
             v-for="testimonial in testimonials",
             key="testimonial.key",
           )
-            img.testimonials__avatar(:src="testimonial.avatarSrc")
-            h3.o-heading-3.c-ship-gray.mb-0 {{ getTranslation(testimonial, 'author') }}
-            span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
-            p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
+            article
+              img.testimonials__avatar(:src="testimonial.avatarSrc")
+              h3.o-heading-3.c-ship-gray.mb-0 {{ getTranslation(testimonial, 'author') }}
+              span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
+              p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  article
+  div
     Landing
     Testimonials(:id="constants.sectionIds.home.testimonials")
     Contact(:id="constants.sectionIds.home.contact")
