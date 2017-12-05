@@ -2,22 +2,31 @@
   main
     Monster
     Navbar
+    Modal(v-show="openedModal === 'contact'")
     router-view
     Foot
 </template>
 
 <script>
   import Navbar from 'components/Navbar/Navbar'
+  import Modal from 'components/Modal/Modal'
   import Foot from 'components/Foot/Foot'
   import Monster from 'components/Monster/Monster'
   import i18n from 'src/content'
+  import eventBus from 'services/eventBus'
 
   export default {
     i18n,
     components: {
       Navbar,
+      Modal,
       Foot,
       Monster,
+    },
+    data() {
+      return {
+        openedModal: '',
+      }
     },
     watch: {
       $route(newRoute, oldRoute) {
@@ -25,6 +34,10 @@
           window.scrollTo(0, 0)
         }
       },
+    },
+    mounted() {
+      eventBus.$on('open-modal', modalName => (this.openedModal = modalName))
+      eventBus.$on('close-modal', () => (this.openedModal = ''))
     },
   }
 </script>

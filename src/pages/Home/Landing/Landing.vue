@@ -7,7 +7,7 @@
         p.landing__desc.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
         button.o-btn.o-btn--pink.mr-8
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
-        button(type="button").o-link.c-white {{ $t('common.orContactUs') }}
+        button.o-link.c-white(type="button", @click="openContactModal()") {{ $t('common.orContactUs') }}
     section.landing__content.row.align-center
       .landing__services.column.small-12(:id="constants.sectionIds.home.services")
         h2.o-heading-1.c-white {{ $t('home.services.title') }}
@@ -48,10 +48,14 @@
 
 <script>
   import constants from 'src/constants'
+  import { openContactModal } from 'services/ui'
 
   export default {
     computed: {
       constants: () => constants,
+    },
+    methods: {
+      openContactModal,
     },
   }
 </script>

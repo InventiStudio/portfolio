@@ -26,6 +26,8 @@
 </template>
 
 <script>
+  import { openContactModal } from 'services/ui'
+
   export default {
     props: {
       iconType: {
@@ -63,7 +65,7 @@
       },
     },
     methods: {
-      openContactModal() {},
+      openContactModal,
     },
   }
 </script>

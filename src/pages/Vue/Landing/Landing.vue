@@ -7,7 +7,17 @@
       p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40.max-w-560 {{ $t('vue.desc') }}
       button.o-btn.o-btn--navy.mr-8
         span.c-white.fs-16 {{ $t('vue.ctaEstimate') }}
-      button(type="button").o-link.c-white.mt-16.mb-16 {{ $t('common.orContactUs') }}
+      button(type="button", @click="openContactModal()").o-link.c-white.mt-16.mb-16 {{ $t('common.orContactUs') }}
 </template>
+
+<script>
+  import { openContactModal } from 'services/ui'
+
+  export default {
+    methods: {
+      openContactModal,
+    },
+  }
+</script>
 
 <style src="./Landing.sass" lang="sass" scoped></style>
