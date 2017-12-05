@@ -1,7 +1,7 @@
 <template lang="pug">
   article.row.card.o-card.mb-40.u-no-nest
     .column.small-12.medium-3.large-12.align-middle
-      icon.card__icon.c-ship-gray-15(:type="iconType")
+      icon.card__icon.c-ship-gray-25(:type="iconType")
     .card__content.column.small-12.medium-9.large-12
       h3.card__title.o-heading-3.c-ship-gray {{ $t(title) }}
       p.card__desc.o-paragraph.c-ship-gray-40(:class="{ 'mb-24': ctaTo }") {{ $t(desc) }}

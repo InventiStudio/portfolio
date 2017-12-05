@@ -5,7 +5,7 @@
         img.landing__logo(src="~assets/inventi__logo.svg", :alt="$t('home.landing.logo')")
         h1.landing__heading.c-white {{ $t('home.landing.title') }}
         p.landing__desc.o-paragraph.c-white-60 {{ $t('home.landing.desc') }}
-        button.o-btn.o-btn--pink.mr-8
+        router-link.o-btn.o-btn--pink.mr-8(:to="{ name: 'Estimate' }")
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
         button.o-link.c-white(type="button", @click="openContactModal()") {{ $t('common.orContactUs') }}
     section.landing__content.row.align-center.pb-64
