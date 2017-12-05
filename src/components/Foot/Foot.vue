@@ -8,7 +8,7 @@
           h2.m-0.inline-block: router-link.foot__lang.o-link.c-white(:to="secondLanguageRoute")
             | {{ secondLanguageName }}
         SocialLinks.mt-24
-      nav.foot__column.small-8.medium-4.large-2.columns
+      nav.foot__column.small-8.medium-4.large-2.columns.small-mt-32.large-mt-0
         h2.m-0: router-link.o-link.c-white.mb-8.block(:to="$routeByName('Home')")
           | {{ $t('home.title') }}
         router-link.o-link.block(@click.native="scrollToSection('services')", :to="$routeByName('Home', { hash: '#services' })")
@@ -17,7 +17,7 @@
           | {{ $t('home.testimonials.title') }}
         router-link.o-link.block(@click.native="scrollToSection('contact')", :to="$routeByName('Home', { hash: '#contact' })")
           | {{ $t('contact.title') }}
-      nav.foot__column.small-8.medium-4.large-2.columns
+      nav.foot__column.small-8.medium-4.large-2.columns.small-mt-32.large-mt-0
         h2.m-0: router-link.o-link.c-white.mb-8.block(:to="$routeByName('Services')")
           | {{ $t('services.title') }}
         router-link.o-link.block(:to="$routeByName('Vue')")
@@ -26,7 +26,7 @@
           | {{ $t('node.shortTitle') }}
         router-link.o-link.block(:to="$routeByName('Design')")
           | {{ $t('design.shortTitle') }}
-      nav.foot__column.columns.small-8.medium-4.large-shrink.xlarge-2
+      nav.foot__column.columns.small-8.medium-4.large-shrink.xlarge-2.small-mt-32.large-mt-0
         h2.m-0: span.fs-16.fw-regular.c-white.mb-8.block {{ $t('contact.title') }}
         a.o-link.block.fw-medium.c-white.underline(:href="mailToUrl('content.contact.emailAddress')")
           | {{ $t('content.contact.emailAddress') }}
