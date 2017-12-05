@@ -8,22 +8,11 @@
         SurveyProgress.mb-32(:step="1")
         .row
           .column.small-12.medium-4
-            input.survey__input(type="radio", v-model="q1", id="q1a1", name="q1", value="a1")
-            label.survey__label.o-card.mb-24.medium-mb-0(for="q1a1")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--play")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q1.answers.a1') }}
+            CardInput(type="radio", icon="icon--play", v-model="q1", name="q1", value="a1")
+              | {{ $t('estimate.survey.q1.answers.a1') }}
           .column.small-12.medium-4
-            input.survey__input(type="radio", v-model="q1", id="q1a2", name="q1", value="a2")
-            label.survey__label.o-card(for="q1a2")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--fast-forward")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q1.answers.a2') }}
-
+            CardInput(type="radio", icon="icon--fast-forward", v-model="q1", name="q1", value="a2")
+              | {{ $t('estimate.survey.q1.answers.a2') }}
       fieldset.column.small-12.large-9.mb-64.medium-mb-80
         header.survey__header.mb-16
           h2.o-heading-1.c-ship-gray-80.pr-8 {{ $t('estimate.survey.q2.title') }}
@@ -31,29 +20,14 @@
         SurveyProgress.mb-32(:step="2")
         .row
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q2.a1", id="q2a1", name="q2", value="a1")
-            label.survey__label.o-card.mb-24.medium-mb-0(for="q2a1")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--monitor")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a1') }}
+            CardInput(type="checkbox", icon="icon--monitor", v-model="q2.a1")
+              | {{ $t('estimate.survey.q2.answers.a1') }}
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q2.a2", id="q2a2", name="q2", value="a2")
-            label.survey__label.o-card.mb-24.medium-mb-0(for="q2a2")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--server")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a2') }}
+            CardInput(type="checkbox", icon="icon--server", v-model="q2.a2")
+              | {{ $t('estimate.survey.q2.answers.a2') }}
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q2.a3", id="q2a3", name="q2", value="a3")
-            label.survey__label.o-card(for="q2a3")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--grid")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q2.answers.a3') }}
+            CardInput(type="checkbox", icon="icon--grid", v-model="q2.a3")
+              | {{ $t('estimate.survey.q2.answers.a3') }}
 
       fieldset.column.small-12.large-9.mb-64.medium-mb-80
         header.survey__header.mb-16
@@ -62,30 +36,14 @@
         SurveyProgress.mb-32(:step="3")
         .row
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q3.a1", id="q3a1", name="q3", value="a1")
-            label.survey__label.o-card.mb-24.medium-mb-0(for="q3a1")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--monitor")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a1') }}
+            CardInput(type="checkbox", icon="icon--monitor", v-model="q3.a1")
+              | {{ $t('estimate.survey.q3.answers.a1') }}
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q3.a2", id="q3a2", name="q3", value="a2")
-            label.survey__label.o-card.mb-24.medium-mb-0(for="q3a2")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--smartphone")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a2') }}
+            CardInput(type="checkbox", icon="icon--smartphone", v-model="q3.a2")
+              | {{ $t('estimate.survey.q3.answers.a2') }}
           .column.small-12.medium-4
-            input.survey__input(type="checkbox", v-model="q3.a3", id="q3a3", name="q3", value="a3")
-            label.survey__label.o-card(for="q3a3")
-              .row.align-middle
-                .column.small-4.medium-12.medium-mb-24
-                  icon.survey__icon(type="icon--file")
-                .column.small-8.medium-12.text-left.medium-text-center
-                  h3.survey__heading-3.o-heading-3 {{ $t('estimate.survey.q3.answers.a3') }}
-
+            CardInput(type="checkbox", icon="icon--file", v-model="q3.a3")
+              | {{ $t('estimate.survey.q3.answers.a3') }}
       fieldset.column.small-12.large-9
         header.survey__header.mb-16
           h2.o-heading-1.c-ship-gray-80.pr-8 {{ $t('estimate.survey.q4.title') }}
@@ -136,9 +94,11 @@
 <script>
   import { required, email } from 'vuelidate/lib/validators'
   import SurveyProgress from 'components/SurveyProgress/SurveyProgress'
+  import CardInput from 'components/CardInput/CardInput'
 
   export default {
     components: {
+      CardInput,
       SurveyProgress,
     },
     data() {
@@ -170,6 +130,7 @@
     },
     methods: {
       submit() {
+        console.log(this.q1)
         try {
           if (this.$v.surveyForm.$touch() || this.$v.surveyForm.$error) return null
           const { name, email, phone, message } = this
