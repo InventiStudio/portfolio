@@ -29,6 +29,7 @@
     data() {
       return {
         openedModal: '',
+        estimationScope: '',
       }
     },
     watch: {
@@ -46,6 +47,12 @@
       eventBus.$on('close-modal', () => {
         this.openedModal = ''
         document.body.classList.remove('overflow-hidden')
+      })
+      eventBus.$on('set-estimation-scope', (estimationScope) => {
+        this.estimationScope = estimationScope
+      })
+      eventBus.$on('reset-estimation-scope', () => {
+        this.estimationScope = ''
       })
     },
   }

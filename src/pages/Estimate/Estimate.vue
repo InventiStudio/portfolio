@@ -6,6 +6,7 @@
 
 <script>
   import head from 'src/head'
+  import { resetEstimationScope } from 'services/events'
   import Landing from './Landing/Landing'
   import Survey from './Survey/Survey'
 
@@ -28,5 +29,8 @@
         ]
       },
     }),
+    beforeDestroy() {
+      resetEstimationScope()
+    },
   }
 </script>

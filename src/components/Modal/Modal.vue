@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import { closeModal } from 'services/ui'
+  import { closeModal } from 'services/events'
 
   export default {
     methods: {

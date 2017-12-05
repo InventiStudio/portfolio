@@ -6,7 +6,10 @@
         p.fs-11.c-white-60.mb-16.medium-mb-8 {{ $t('design.tags') }}
         h1.o-heading-1.c-white {{ $t('design.title') }}
         p.landing__desc.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40 {{ $t('design.desc') }}
-        button.o-btn.o-btn--scampi.mr-8
+        router-link.o-btn.o-btn--scampi.mr-8(
+          :to="{ name: 'Estimate' }",
+          @click.native="setEstimationScope('design')",
+        )
           span.c-white.fs-16 {{ $t('design.ctaEstimate') }}
         button(type="button", @click="openContactModal()").o-link.c-white.mt-16.mb-16 {{ $t('common.orContactUs') }}
     .landing__uiux.row.align-center
@@ -27,7 +30,7 @@
 </template>
 
 <script>
-  import { openContactModal } from 'services/ui'
+  import { openContactModal } from 'services/events'
 
   export default {
     methods: {

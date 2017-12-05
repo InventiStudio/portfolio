@@ -48,7 +48,7 @@
 
 <script>
   import constants from 'src/constants'
-  import { openContactModal } from 'services/ui'
+  import { openContactModal } from 'services/events'
 
   export default {
     computed: {
