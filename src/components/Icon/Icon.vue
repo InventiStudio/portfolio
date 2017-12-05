@@ -1,5 +1,5 @@
 <template lang="pug">
-  svg.icon(:class="{ 'u-pointer': isPointer }", @click="onClick")
+  svg.icon(:class="{ 'pointer': isPointer }", @click="onClick")
     use(:xlink:href="href", :href="href")
 </template>
 
