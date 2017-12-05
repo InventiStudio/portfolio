@@ -20,6 +20,8 @@ export default {
       repository: 'https://github.com/InventiStudio/portfolio',
       blog: 'https://blog.inventi.studio',
       dribbble: 'https://dribbble.com/inventistudio',
+      behance: 'https://www.behance.net/inventistudio',
+      instagram: 'https://www.instagram.com/inventistudio',
     },
     technologies: {
       html5:     'HTML 5',
