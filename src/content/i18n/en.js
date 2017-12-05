@@ -1,7 +1,7 @@
 export default {
   meta: {
-    sitename: 'TODO: InventiStudio',
-    description: 'TODO: Lorem ipsum...',
+    sitename: 'InventiStudio: Vue.js & Node.js development agency - Wrocław',
+    description: 'InventiStudio is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front-end, Node.js back-end and UI/UX design services for enterprises, companies and startups. Get in touch with us!',
   },
   common: {
     inventiStudio: 'InventiStudio',
