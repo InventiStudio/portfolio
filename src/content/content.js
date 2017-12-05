@@ -19,6 +19,7 @@ export default {
       github: 'https://github.com/InventiStudio',
       repository: 'https://github.com/InventiStudio/portfolio',
       blog: 'https://blog.inventi.studio',
+      dribbble: 'https://dribbble.com/inventistudio',
     },
     technologies: {
       html5:     'HTML 5',
