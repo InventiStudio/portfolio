@@ -34,7 +34,7 @@ export default {
         smokefree: {
           author: 'Jon Doe',
           position: 'CEO at DoeApp',
-          text: 'Lorem ipsum',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a dictum ex. Aenean vitae consequat purus. Fusce tristique massa sit amet justo feugiat, at ullamcorper lectus euismod. Vestibulum ante metus, placerat non sem ac, suscipit mattis ligula. Quisque elementum tortor mauris, vel scelerisque neque ultrices sit amet. Donec a consequat lorem. Nullam tempor porttitor sem at volutpat.',
         },
       },
     },
