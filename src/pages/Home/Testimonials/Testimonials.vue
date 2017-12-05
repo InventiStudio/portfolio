@@ -23,8 +23,8 @@
               h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
               span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
               p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
-              button.o-btn.o-btn--pink.o-btn--hollow.mt-24(v-if="testimonial.caseUrl")
-                span.c-white.fs-16.c-pink {{ $t('home.testimonials.cta') }}
+              a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
+                span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
 </template>
 
 <script>
@@ -42,6 +42,7 @@
           {
             key: 'smokefree',
             avatarSrc: 'http://lorempixel.com/400/200/',
+            caseUrl: 'https://inventi.studio/',
           },
           {
             key: 'zapytajcoacha',
