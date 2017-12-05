@@ -2,7 +2,8 @@
   main
     Monster
     Navbar
-    Modal(v-show="openedModal === 'contact'")
+    Modal(v-show="openedModal")
+      ContactCard(v-if="openedModal === 'contact'")
     router-view
     Foot
 </template>
@@ -10,6 +11,7 @@
 <script>
   import Navbar from 'components/Navbar/Navbar'
   import Modal from 'components/Modal/Modal'
+  import ContactCard from 'components/ContactCard/ContactCard'
   import Foot from 'components/Foot/Foot'
   import Monster from 'components/Monster/Monster'
   import i18n from 'src/content'
@@ -20,6 +22,7 @@
     components: {
       Navbar,
       Modal,
+      ContactCard,
       Foot,
       Monster,
     },
@@ -36,8 +39,14 @@
       },
     },
     mounted() {
-      eventBus.$on('open-modal', modalName => (this.openedModal = modalName))
-      eventBus.$on('close-modal', () => (this.openedModal = ''))
+      eventBus.$on('open-modal', (modalName) => {
+        this.openedModal = modalName
+        document.body.classList.add('overflow-hidden')
+      })
+      eventBus.$on('close-modal', () => {
+        this.openedModal = ''
+        document.body.classList.remove('overflow-hidden')
+      })
     },
   }
 </script>

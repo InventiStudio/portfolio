@@ -9,25 +9,24 @@
   height: 100%
   background-color: rgba($c-black, 0.6)
   transition: opacity $t-duration $t-easing
+  cursor: pointer
+  overflow-y: scroll
 
 .modal__container
   position: relative
   margin-top: 64px
-  padding-top: 64px
-  padding-bottom: 40px
+  margin-bottom: 64px
+  padding: 0
+  border-radius: 8px
   background-color: $c-white
   transition: transform $t-duration $t-easing
   box-shadow: 0 3px 12px 0 rgba($c-black, 0.1)
-
-  @media #{$medium-up}
-    padding-bottom: 48px
+  cursor: default
 
 svg.modal__icon
   position: absolute
   top: 16px
   right: 16px
-  width: 24px
-  height: 24px
   color: $c-black
   transition: transform $t-duration $t-easing
 

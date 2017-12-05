@@ -1,12 +1,13 @@
 <template lang="pug">
   transition(name="modal")
-    .modal__mask.small-12.columns(@click="closeModal()")
+    .modal__mask.small-12.columns(@mousedown.stop="closeModal()", @touchstart.stop="closeModal()")
       .row.expanded.align-center
-        .modal__container.small-12.medium-8.large-6.columns
-          icon.modal__icon(type="icon--close", :isPointer="true", @click="closeModal()")
-          .row.align-center
-            .small-12.medium-10.columns.u--txt-center
-              slot
+        .modal__container.small-12.medium-8.large-6.columns.max-w-560(
+          @mousedown.stop="",
+          @touchstart.stop="",
+        )
+          icon.modal__icon(type="icon--x", :is-pointer="true", @click="closeModal()")
+          slot
 </template>
 
 <script>
