@@ -27,9 +27,10 @@
   +o-btn--shadow($color)
   +o-btn--border($color)
   &:not(:disabled):hover
-    +o-btn--hover--bgcolor($color)
-    +o-btn--hover--shadow($color)
     +o-btn--hover--transform
+  &:not(:disabled):not(.o-btn--hollow):hover
+    +o-btn--hover--shadow($color)
+    +o-btn--hover--bgcolor($color)
   &:not(:disabled):active
     +o-btn--active--shadow($color)
     +o-btn--active--transform
