@@ -130,7 +130,6 @@
     },
     methods: {
       submit() {
-        console.log(this.q1)
         try {
           if (this.$v.surveyForm.$touch() || this.$v.surveyForm.$error) return null
           const { name, email, phone, message } = this
