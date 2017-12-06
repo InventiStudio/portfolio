@@ -18,11 +18,11 @@
             v-for="testimonial in testimonials",
             key="testimonial.key",
           )
-            article
+            article.pl-32.pr-32.large-pl-80.large-pr-80
               img.testimonials__avatar(:src="testimonial.avatarSrc")
               h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
               span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
-              p.o-paragraph.c-ship-gray.pl-32.pr-32.large-pl-80.large-pr-80 “{{ getTranslation(testimonial, 'text') }}”
+              p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
               a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
                 span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
 </template>

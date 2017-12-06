@@ -18,10 +18,10 @@
             v-for="post in posts",
             key="post.key",
           )
-            article
+            article.pl-32.pr-32.large-pl-80.large-pr-80
               img.posts__image(:src="post.image")
               h3.o-heading-3.c-ship-gray.mb-32 {{ getTranslation(post, 'title') }}
-              p.o-paragraph.c-ship-gray.pl-32.pr-32.large-pl-80.large-pr-80 {{ getTranslation(post, 'desc') }}
+              p.o-paragraph.c-ship-gray {{ getTranslation(post, 'desc') }}
               a.o-btn.o-btn--purple.mt-24(
                 v-if="getTranslation(post, 'url')",
                 :href="getTranslation(post, 'url')"
