@@ -6,7 +6,7 @@ export default {
     home: {
       services: 'home__services',
       testimonials: 'home__testimonials',
-      contact: 'home__contact',
+      posts: 'home__posts',
     },
   },
 }

@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.testimonials.text-center
+  section.testimonials.text-center.bg-alabaster
     .row.align-center
       .column.small-12
         h2.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
@@ -22,7 +22,7 @@
               img.testimonials__avatar(:src="testimonial.avatarSrc")
               h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
               span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
-              p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
+              p.o-paragraph.c-ship-gray.pl-32.pr-32.large-pl-80.large-pr-80 “{{ getTranslation(testimonial, 'text') }}”
               a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
                 span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
 </template>

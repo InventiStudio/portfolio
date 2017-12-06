@@ -1,0 +1,53 @@
+@import "~stylesheets/helpers"
+
+$gradient: #AC3CD9 0%, #E65FAD 50%, #E7AB80 100%
+
+.posts
+  position: relative
+  z-index: 1
+  padding-top: 170px
+  padding-bottom: 130px
+  background-image: linear-gradient(-135deg, $gradient)
+
+  @media #{$medium-up}
+    padding-top: 224px
+    padding-bottom: 160px
+
+  @media #{$large-up}
+    padding-top: 280px
+
+
+  &::after
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 120px
+    background-position: center top
+    background-image: url("~assets/images/wave--triple.svg")
+    background-size: 800px 100%
+    background-repeat: no-repeat
+    content: ""
+
+    @media #{$medium-up}
+      height: 170px
+      background-size: 100% 100%
+
+    @media #{$large-up}
+      height: 250px
+
+.posts__card
+  min-height: 240px
+
+.posts__image
+  position: absolute
+  top: 0
+  left: 50%
+  width: 80px
+  height: 80px
+  transform: translate(-50%, -50%)
+  border: 5px $c-white solid
+  border-radius: 100%
+
+.VueCarousel-slide // sass-lint:disable-line class-name-format
+  width: 100% // for Slides being bigger that overflow mask when the content's too long

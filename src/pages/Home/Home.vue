@@ -2,16 +2,18 @@
   div
     Landing
     Testimonials(:id="constants.sectionIds.home.testimonials")
-    Contact(:id="constants.sectionIds.home.contact")
+    Posts(:id="constants.sectionIds.home.posts")
+    HireUs
 </template>
 
 <script>
   import smoothScrollTo from 'services/scroll'
   import constants from 'src/constants'
   import head from 'src/head'
+  import HireUs from 'components/HireUs/HireUs'
   import Landing from './Landing/Landing'
   import Testimonials from './Testimonials/Testimonials'
-  import Contact from './Contact/Contact'
+  import Posts from './Posts/Posts'
 
   export default {
     head: head.set({
@@ -25,7 +27,8 @@
     components: {
       Landing,
       Testimonials,
-      Contact,
+      Posts,
+      HireUs,
     },
     computed: {
       constants: () => constants,

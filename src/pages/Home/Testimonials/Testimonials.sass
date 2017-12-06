@@ -4,17 +4,6 @@
   position: relative
   z-index: 1
   padding-top: 48px
-  padding-bottom: 96px
-  background-position: center bottom
-  background-image: url("~assets/images/Home/testimonials__bg.svg")
-  background-size: 170% 170%
-  background-repeat: no-repeat
-
-  @media #{$medium-up}
-    background-size: 100% 170%
-
-  @media #{$large-up}
-    background-size: 100% 200%
 
 .testimonials__card
   min-height: 240px
@@ -26,6 +15,7 @@
   width: 80px
   height: 80px
   transform: translate(-50%, -50%)
+  border: 5px $c-white solid
   border-radius: 100%
 
 .VueCarousel-slide // sass-lint:disable-line class-name-format
