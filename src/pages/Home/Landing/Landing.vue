@@ -8,7 +8,7 @@
         router-link.o-btn.o-btn--pink.mr-8(:to="{ name: 'Estimate' }")
           span.c-white.fs-16 {{ $t('common.estimateProject') }}
         button.o-link.c-white(type="button", @click="openContactModal()") {{ $t('common.orContactUs') }}
-    section.landing__content.row.align-center.pb-64
+    section.landing__content.row.align-center.pb-64.xlarge-pb-32
       .landing__services.column.small-12(:id="constants.sectionIds.home.services")
         h2.o-heading-1.c-white {{ $t('home.services.title') }}
         p.o-paragraph.c-white-60.mb-40.mobile-mb-48 {{ $t('home.services.desc') }}
