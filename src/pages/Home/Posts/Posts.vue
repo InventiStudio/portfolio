@@ -14,19 +14,20 @@
           pagination-color="#c9c9c9",
           :pagination-size="8",
         )
-          Slide.posts__card.o-card.relative.mt-40(
+          Slide.small-p-16.medium-p-32(
             v-for="post in posts",
             key="post.key",
           )
-            article.pl-32.pr-32.large-pl-80.large-pr-80
-              img.posts__image(:src="post.image")
-              h3.o-heading-3.c-ship-gray.mb-32 {{ getTranslation(post, 'title') }}
-              p.o-paragraph.c-ship-gray {{ getTranslation(post, 'desc') }}
-              a.o-btn.o-btn--purple.mt-24(
-                v-if="getTranslation(post, 'url')",
-                :href="getTranslation(post, 'url')"
-              )
-                span.c-white.fs-16 {{ $t('home.posts.cta') }}
+            .posts__card.o-card.relative.mt-40
+              article.pl-32.pr-32.large-pl-80.large-pr-80
+                img.posts__image(:src="post.image")
+                h3.o-heading-3.c-ship-gray.mb-32 {{ getTranslation(post, 'title') }}
+                p.o-paragraph.c-ship-gray {{ getTranslation(post, 'desc') }}
+                a.o-btn.o-btn--purple.mt-24(
+                  v-if="getTranslation(post, 'url')",
+                  :href="getTranslation(post, 'url')"
+                )
+                  span.c-white.fs-16 {{ $t('home.posts.cta') }}
 </template>
 
 <script>

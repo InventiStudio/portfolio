@@ -14,17 +14,18 @@
           pagination-color="#c9c9c9",
           :pagination-size="8",
         )
-          Slide.testimonials__card.o-card.relative.mt-40(
+          Slide.small-p-16.medium-p-32(
             v-for="testimonial in testimonials",
             key="testimonial.key",
           )
-            article.pl-32.pr-32.large-pl-80.large-pr-80
-              img.testimonials__avatar(:src="testimonial.avatarSrc")
-              h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
-              span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
-              p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
-              a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
-                span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
+            .testimonials__card.o-card.relative.mt-40
+              article.pl-32.pr-32.large-pl-80.large-pr-80
+                img.testimonials__avatar(:src="testimonial.avatarSrc")
+                h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
+                span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
+                p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
+                a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
+                  span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
 </template>
 
 <script>
