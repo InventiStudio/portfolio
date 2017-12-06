@@ -35,7 +35,7 @@
     watch: {
       $route(newRoute, oldRoute) {
         if (newRoute.path !== oldRoute.path) {
-          window.scrollTo(0, 0)
+          setTimeout(() => window.scrollTo(0, 0), 300)
         }
       },
     },
