@@ -5,11 +5,12 @@
         h2.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
         p.o-paragraph.c-ship-gray-40.mb-40 {{ $t('home.testimonials.desc') }}
       .column.small-hidden.medium-2.large-3.align-middle
-        button.testimonial__button(
+        button.testimonial__button.testimonial__button--prev(
           type="button",
           @click="prevSlide()",
           :class="{ 'testimonial__button--active': hasPrevSlide }",
-        ) {{ $t('common.previous ') }}
+        )
+          icon(type="icon--arrow")
       .column.small-12.medium-8.large-6
         Carousel(
           :per-page="1",
@@ -34,11 +35,12 @@
                 a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
                   span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
       .column.small-hidden.medium-2.large-3.align-middle
-        button.testimonial__button(
+        button.testimonial__button.testimonial__button--next(
           type="button",
           @click="nextSlide()",
           :class="{ 'testimonial__button--active': hasNextSlide }",
-        ) {{ $t('common.next ') }}
+        )
+          icon(type="icon--arrow")
 </template>
 
 <script>
@@ -84,21 +86,26 @@
       getTranslation({ key }, property) {
         return this.$t(`home.testimonials.cases.${key}.${property}`)
       },
-      updateIfHasPrevAndNextSlide() {
-        this.hasPrevSlide = this.$refs.carousel.canAdvanceBackward
-        this.hasNextSlide = this.$refs.carousel.canAdvanceForward
-      },
       prevSlide() {
         this.$refs.carousel.goToPage(this.$refs.carousel.getPreviousPage())
-        this.updateIfHasPrevAndNextSlide()
       },
       nextSlide() {
         this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage())
-        this.updateIfHasPrevAndNextSlide()
       },
     },
     mounted() {
-      this.$nextTick(this.updateIfHasPrevAndNextSlide)
+      this.$nextTick(() => {
+        this.hasPrevSlide = this.$refs.carousel.canAdvanceBackward
+        this.hasNextSlide = this.$refs.carousel.canAdvanceForward
+      })
+      this.$watch(
+        () => this.$refs.carousel.canAdvanceBackward,
+        canAdvanceBackward => (this.hasPrevSlide = canAdvanceBackward),
+      )
+      this.$watch(
+        () => this.$refs.carousel.canAdvanceForward,
+        canAdvanceForward => (this.hasNextSlide = canAdvanceForward),
+      )
     },
   }
 </script>
