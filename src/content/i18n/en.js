@@ -261,30 +261,30 @@ export default {
     title: 'Estimate project',
     desc: 'Fill in this form to get a free project estimation.<br>We’ll contact you within 1 week to discuss next steps.',
     survey: {
-      q1: {
+      questionStart: {
         title: 'Where do we start?',
         answers: {
-          a1: 'Start a new project',
-          a2: 'Continue an existing project',
+          answerNew: 'Start a new project',
+          answerContinue: 'Continue a project',
         },
       },
-      q2: {
+      questionScope: {
         title: 'What is the scope of your project?',
         answers: {
-          a1: 'Front-end',
-          a2: 'Back-end',
-          a3: 'UI & UX design',
+          answerFrontEnd: 'Front-end',
+          answerBackEnd: 'Back-end',
+          answerDesign: 'UI & UX design',
         },
       },
-      q3: {
+      questionPlatform: {
         title: 'What is the platform of your project?',
         answers: {
-          a1: 'Desktop',
-          a2: 'Mobile',
-          a3: 'Other',
+          answerDesktop: 'Desktop',
+          answerMobile: 'Mobile',
+          answerOther: 'Other',
         },
       },
-      q4: {
+      questionDetails: {
         title: 'Any more details about the project?',
         form: {
           namePlaceholder: 'Your name',

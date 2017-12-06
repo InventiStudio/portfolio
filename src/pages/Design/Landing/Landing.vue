@@ -30,11 +30,12 @@
 </template>
 
 <script>
-  import { openContactModal } from 'services/events'
+  import { openContactModal, setEstimationScope } from 'services/events'
 
   export default {
     methods: {
       openContactModal,
+      setEstimationScope,
     },
   }
 </script>

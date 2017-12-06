@@ -11,7 +11,7 @@
     input.card-input__input(
       v-if="type === 'checkbox'",
       type="checkbox",
-      v-model="innerValue",
+      :checked="innerValue",
       :id="id",
       @change="update",
       v-bind="$attrs",
@@ -45,6 +45,11 @@
     methods: {
       update() {
         this.$emit('input', this.$attrs.value || this.innerValue)
+      },
+    },
+    watch: {
+      value(value) {
+        this.innerValue = value
       },
     },
   }
