@@ -15,8 +15,8 @@
           | {{ $t('home.services.title') }}
         router-link.o-link.block(@click.native="scrollToSection('testimonials')", :to="$routeByName('Home', { hash: '#testimonials' })")
           | {{ $t('home.testimonials.title') }}
-        router-link.o-link.block(@click.native="scrollToSection('contact')", :to="$routeByName('Home', { hash: '#contact' })")
-          | {{ $t('contact.title') }}
+        router-link.o-link.block(@click.native="scrollToSection('posts')", :to="$routeByName('Home', { hash: '#posts' })")
+          | {{ $t('home.posts.title') }}
       nav.foot__column.small-8.medium-4.large-2.columns.small-mt-32.large-mt-0
         h2.m-0: router-link.o-link.c-white.mb-8.block(:to="$routeByName('Services')")
           | {{ $t('services.title') }}
