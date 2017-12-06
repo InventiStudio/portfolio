@@ -89,7 +89,7 @@ export default {
     ctaEstimate: 'Estimate front-end project',
     qualities: {
       title: 'Qualities of our front-end apps',
-      desc: 'We know to how to make great HTML5 applications. These are the highlight features that help us achieve so.',
+      desc: 'We know how to make great HTML5 applications. These are the highlight features that help us achieve so.',
       code: {
         title: 'Modern code',
         desc: 'Because of our care about code quality, we stick to the newest ECMAScript standards. We also try to keep our code as consistent with functional paradigm as possible, which makes our code modular and maintainable.',
@@ -129,7 +129,7 @@ export default {
     },
     inventiAndVue: {
       title: 'Us + Vue.js =',
-      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      desc: 'We know how to make great stuff with Vue.js. Take a look at these sources to see what we can do!',
       rocket: 'Awesomeness! 🚀',
       libraries: {
         title: 'Our Vue.js libraries',
@@ -149,7 +149,7 @@ export default {
     },
     technologies: {
       title: 'We use cutting-edge technologies',
-      desc: 'Take a look at the front-end tools we use on daily basis',
+      desc: 'Take a look at the front-end tools we use on daily basis.',
     },
   },
   node: {
@@ -160,7 +160,7 @@ export default {
     ctaEstimate: 'Estimate back-end project',
     qualities: {
       title: 'Qualities our back-end applications',
-      desc: 'TODO: We know to how to make great HTML5 applications. These are the highlight features that help us achieve so.',
+      desc: 'We know how to make outstanding Node.js applications. These are the highlight features that help us achieve so.',
       security: {
         title: 'Security',
         desc: 'We know that making your data safe is absolutely crucial and we take our responsibility seriously.',
@@ -180,7 +180,7 @@ export default {
     },
     whyWeChose: {
       title: 'Why we chose Node.js',
-      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      desc: 'Node.js is completely unopinionated, meaning it give us a great freedom of doing things our own way. Take a look at why it should be the main technology for your next back-end app!',
       ecosystem: {
         title: 'Largest ecosystem',
         desc: 'There are more than half a million libraries registered in node packages manager (npm). This world\'s largest software registry gives us an extraordinary ability to find ready-to-use modules that fit our needs.',
@@ -200,7 +200,7 @@ export default {
     },
     inventiAndNode: {
       title: 'Us + Node.js =',
-      desc: 'TODO: Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      desc: 'We know how to make great stuff using Node.js. Take a look at these sources to see how we do it!',
       rocket: 'Awesomeness! 🚀',
       packages: {
         title: 'Our Node.js packages',
@@ -215,7 +215,7 @@ export default {
     },
     technologies: {
       title: 'We use cutting-edge technologies',
-      desc: 'Take a look at the tools we use on daily basis',
+      desc: 'Take a look at the tools we use on daily basis.',
     },
   },
   design: {
@@ -234,7 +234,7 @@ export default {
     },
     tools: {
       title: 'Tools',
-      desc: 'Our main design tool is Sketch app. Sometimes we support us with Photoshop for images manipulation. To design\'s presentation we use Marvel.',
+      desc: 'Take a look at the tools we use to make those beautiful user interfaces!',
     },
     responsiveness: {
       title: 'Responsiveness',
@@ -259,7 +259,7 @@ export default {
   },
   estimate: {
     title: 'Estimate project',
-    desc: 'Fill in this form to get a free project estimation.<br>We’ll contact you within 1 week to discuss next steps.',
+    desc: 'Fill in this form to get a free project estimation. We’ll contact you within 1 week to discuss next steps.',
     survey: {
       questionStart: {
         title: 'Where do we start?',
