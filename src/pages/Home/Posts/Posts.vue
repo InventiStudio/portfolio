@@ -23,7 +23,7 @@
                 img.posts__image(:src="post.image")
                 h3.o-heading-3.c-ship-gray.mb-32 {{ getTranslation(post, 'title') }}
                 p.o-paragraph.c-ship-gray {{ getTranslation(post, 'desc') }}
-                a.o-btn.o-btn--purple.mt-24(
+                a.o-btn.o-btn--pink.mt-24(
                   v-if="getTranslation(post, 'url')",
                   :href="getTranslation(post, 'url')"
                 )
