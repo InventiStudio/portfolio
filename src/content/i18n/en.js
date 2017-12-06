@@ -7,6 +7,8 @@ export default {
     inventiStudio: 'InventiStudio',
     orContactUs: 'or contact us!',
     estimateProject: 'Estimate project',
+    previous: 'Previous',
+    next: 'Next',
   },
   navbar: {
     title: 'Menu',
