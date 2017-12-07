@@ -33,10 +33,12 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "body-parser": "^1.18.2",
     "foundation-sites": "6.2.4",
     "normalize.css": "^5.0.0",
     "ramda": "^0.24.1",
     "scroll-to": "^0.0.2",
+    "sparkpost": "^2.1.2",
     "vue": "^2.4.2",
     "vue-carousel": "^0.6.5",
     "vue-head": "^2.0.11",
