@@ -16,6 +16,10 @@ rules:
     -
       allow-single-line-rulesets: false
 
+  # https://github.com/sasstools/sass-lint/issues/950
+  force-element-nesting:
+    - 0
+
   force-pseudo-nesting:
     - 0
 
@@ -31,6 +35,9 @@ rules:
     -
       allow-rgba: true
 
+  no-css-comments:
+    - 0
+
   no-duplicate-properties:
     - 2
     -
@@ -39,6 +46,10 @@ rules:
 
   no-misspelled-properties:
     - 0
+
+  no-qualifying-elements:
+    -
+      allow-element-with-class: true
 
   quotes:
     - 2
