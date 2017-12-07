@@ -11,6 +11,7 @@
     input.card-input__input(
       v-if="type === 'checkbox'",
       type="checkbox",
+      v-model="innerValue",
       :checked="innerValue",
       :id="id",
       @change="update",
