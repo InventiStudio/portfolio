@@ -5,7 +5,7 @@
         h2.o-heading-1.c-white
           span.mr-8 {{ $t('vue.inventiAndVue.title') }}
           img.valign-middle(
-            src="~assets/icons/icon--rocket.svg",
+            src="~assets/images/icon--rocket.svg",
             :alt="$t('vue.inventiAndVue.rocket')",
             :title="$t('vue.inventiAndVue.rocket')",
           )
@@ -32,7 +32,7 @@
         )
       .column.small-12.medium-10.large-4
         Card(
-          icon-type="icon--message",
+          icon-type="icon--message-circle",
           title="vue.inventiAndVue.publications.title",
           desc="vue.inventiAndVue.publications.desc",
           :cta-to="$t('content.urls.blog')",

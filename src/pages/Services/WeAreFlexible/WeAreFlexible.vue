@@ -13,7 +13,7 @@
         h3.o-heading-3.c-white-90 {{ $t('services.flexible.subcontractor.title') }}
         p.o-paragraph.c-white-60.mt-4 {{ $t('services.flexible.subcontractor.desc') }}
       li.column.small-12.medium-6.large-4
-        icon.c-white-50(type="icon--fast-forward")
+        icon.c-white-50(type="icon--fast-forward", :is-full-width="true")
         h3.o-heading-3.c-white-90 {{ $t('services.flexible.project.title') }}
         p.o-paragraph.c-white-60.mt-4 {{ $t('services.flexible.project.desc') }}
 </template>

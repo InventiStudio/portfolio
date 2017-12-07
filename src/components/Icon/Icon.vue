@@ -1,5 +1,5 @@
 <template lang="pug">
-  svg.icon(:class="{ 'pointer': isPointer }", @click="onClick")
+  svg.icon(:class="{ 'pointer': isPointer, 'icon--w-full': isFullWidth }", @click="onClick")
     use(:xlink:href="href", :href="href")
 </template>
 
@@ -12,6 +12,10 @@
         required: true,
       },
       isPointer: {
+        type: Boolean,
+        default: false,
+      },
+      isFullWidth: {
         type: Boolean,
         default: false,
       },

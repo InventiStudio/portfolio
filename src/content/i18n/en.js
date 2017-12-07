@@ -42,7 +42,7 @@ export default {
     },
     posts: {
       title: 'Recent blog posts',
-      desc: 'We share our knowladge',
+      desc: 'We share our knowledge',
       cta: 'Read more',
       cases: {
         readability: {
@@ -177,7 +177,7 @@ export default {
       },
       technologies: {
         title: 'Best technologies',
-        desc: 'Node.js environment is full of great and mature libraries. The most important in our tech stack are Koa.js and Sequelize. Besides that we use PostgreSQL, MongoDB, Docker and much more!',
+        desc: 'Node.js environment is full of great and mature libraries. The most important ones in our tech stack are Koa.js and Sequelize. Besides that we use PostgreSQL, MongoDB, Docker and much more!',
       },
     },
     whyWeChose: {

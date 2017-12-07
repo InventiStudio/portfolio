@@ -3,7 +3,7 @@
     .row.align-center
       .column.small-12
         h2.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
-        p.o-paragraph.c-ship-gray-40.mb-40 {{ $t('home.testimonials.desc') }}
+        p.o-paragraph.c-ship-gray-40.mb-16 {{ $t('home.testimonials.desc') }}
       .column.small-hidden.medium-2.large-3.align-middle
         button.testimonial__button.testimonial__button--prev(
           type="button",

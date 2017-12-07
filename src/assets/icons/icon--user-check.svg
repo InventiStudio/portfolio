@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="28px" viewBox="0 0 34 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
-    <title>user-check</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.2" stroke-linejoin="round">
-        <g id="Services-/-UI/UX" transform="translate(-903.000000, -647.000000)" stroke="#000000" stroke-width="2">
-            <g id="Care" transform="translate(335.000000, 494.000000)">
-                <g id="Care/cards" transform="translate(0.000000, 104.000000)">
-                    <g id="Care/UX" transform="translate(400.000000, 0.000000)">
-                        <g id="user-check" transform="translate(169.000000, 50.000000)">
-                            <path d="M22,26 L22,23 C22,19.6862915 19.3734039,17 16.1333333,17 L5.86666667,17 C2.62659613,17 3.25665421e-16,19.6862915 0,23 L0,26" id="Shape"></path>
-                            <circle id="Oval" cx="11" cy="6" r="6"></circle>
-                            <polyline id="Shape" points="23 12 26 15 32 9"></polyline>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg viewBox="0 0 41 34" xmlns="http://www.w3.org/2000/svg">
+  <path d="M29.03125 15.7692308l3.65625 3.6923077L40 12.0769231M27.8125 33v-3.6923077c0-4.0784105-3.201164-7.3846154-7.15-7.3846154H8.15c-3.94883596 0-7.15 3.3062049-7.15 7.3846154V33m13.40625-17.2307692c4.0385822 0 7.3125-3.306205 7.3125-7.38461542C21.71875 4.30620492 18.4448322 1 14.40625 1c-4.03858223 0-7.3125 3.30620492-7.3125 7.38461538 0 4.07841042 3.27391777 7.38461542 7.3125 7.38461542z" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

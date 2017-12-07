@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
-  <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
-</svg>
+<svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><path d="M12.6363636 12.6363636h8.7272728v8.7272728h-8.7272728v-8.7272728zM7.36363636 5.36363636H26.6363636c1.1045695 0 2 .8954305 2 2V26.6363636c0 1.1045695-.8954305 2-2 2H7.36363636c-1.1045695 0-2-.8954305-2-2V7.36363636c0-1.1045695.8954305-2 2-2zM1 19.9090909h4.36363636H1zm0-7.2727273h4.36363636H1zm27.6363636 7.2727273H33h-4.3636364zm0-7.2727273H33h-4.3636364zm-7.2727272 16V33v-4.3636364zm-8.7272728 0V33v-4.3636364zm0-27.6363636v4.36363636V1zm8.7272728 0v4.36363636V1z" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"  stroke-linejoin="round"/></svg>

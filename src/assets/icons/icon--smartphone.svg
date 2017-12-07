@@ -1,4 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-  <line x1="12" y1="18" x2="12" y2="18"></line>
+<svg viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 28c1.1045695 0 2-.8954305 2-2s-.8954305-2-2-2-2 .8954305-2 2 .8954305 2 2 2zM3 2c-.55228475 0-1 .44771525-1 1v28c0 .5522847.44771525 1 1 1h18c.5522847 0 1-.4477153 1-1V3c0-.55228475-.4477153-1-1-1H3zm0-2h18c1.6568542 0 3 1.34314575 3 3v28c0 1.6568542-1.3431458 3-3 3H3c-1.65685425 0-3-1.3431458-3-3V3c0-1.65685425 1.34314575-3 3-3z" fill="currentColor" fill-rule="evenodd"/>
 </svg>

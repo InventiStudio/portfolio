@@ -5,7 +5,7 @@
         h2.o-heading-1.c-white
           span.mr-8 {{ $t('node.inventiAndNode.title') }}
           img.valign-middle(
-            src="~assets/icons/icon--rocket.svg",
+            src="~assets/images/icon--rocket.svg",
             :alt="$t('node.inventiAndNode.rocket')",
             :title="$t('node.inventiAndNode.rocket')",
           )
@@ -22,7 +22,7 @@
         )
       .column.small-12.medium-10.large-4
         Card(
-          icon-type="icon--message",
+          icon-type="icon--message-circle",
           title="node.inventiAndNode.publications.title",
           desc="node.inventiAndNode.publications.desc",
           :cta-to="$t('content.urls.blog')",

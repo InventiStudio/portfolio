@@ -3,7 +3,7 @@
     .row.align-center
       .column.small-12
         h2.o-heading-1.c-white {{ $t('home.posts.title') }}
-        p.o-paragraph.c-white-60.mb-40 {{ $t('home.posts.desc') }}
+        p.o-paragraph.c-white-60.mb-16 {{ $t('home.posts.desc') }}
       .column.small-12.medium-8.large-6
         Carousel(
           :per-page="1",
