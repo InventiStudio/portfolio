@@ -240,7 +240,7 @@ export default {
     },
     responsiveness: {
       title: 'Responsiveness',
-      desc: 'TODO: Every subtle detail can carry information. That\'s why it\'s important to use these details carefully and reasonably. For example, green color is associated with successful operation. Considering this, green notification about invalid data can be misleading. We know about all these subtle meanings and so that all possible semantic ambiguities - we turn into our strength.',
+      desc: 'We know that your app will be displayed on variety of different devices, that\'s why it is crucial to design having responsiveness in mind. Mobile, tablet, desktop and all the ones in between - we\'ve got that all covered! The rules of Responsive Web Design (RWD) are fundamental for the interfaces we create.',
       image: 'Smartphone, Tablet & Desktop PC',
     },
     semantics: {
@@ -250,7 +250,7 @@ export default {
     },
     rhythm: {
       title: 'Horizontal and vertical rhythm',
-      desc: 'TODO: In most cases, content defines value of your product. Even most beautiful design is worthless without substance. Design lives for the content, not vice versa. However, just putting text somewhere on your page doesn\'t make it valuable. It\'s important to take care about typography, i.e. give more focus to headlines, set proper line heights, choose best fonts for one-line labels, multi-line paragraphs and much much more.',
+      desc: 'Human eye likes consistency, that\'s why it is really important to maintain both horizontal and vertical rythms across elements. Grids and well defined typography help us archieve that in the apps we craft.',
       image: 'Grid & Rhythm',
     },
     typography: {
