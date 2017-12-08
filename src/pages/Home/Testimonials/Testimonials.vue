@@ -4,14 +4,14 @@
       .column.small-12
         h2.o-heading-1.c-ship-gray-80 {{ $t('home.testimonials.title') }}
         p.o-paragraph.c-ship-gray-40.mb-16 {{ $t('home.testimonials.desc') }}
-      .column.small-hidden.medium-2.large-3.align-middle
+      .column.small-hidden.medium-1.large-2.align-middle
         button.testimonial__button.testimonial__button--prev(
           type="button",
           @click="prevSlide()",
           :class="{ 'testimonial__button--active': hasPrevSlide }",
         )
           icon(type="icon--arrow")
-      .column.small-12.medium-8.large-6
+      .column.small-12.medium-10.large-8
         Carousel(
           :per-page="1",
           :min-swipe-distance="48",
@@ -34,7 +34,7 @@
                 p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
                 a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
                   span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
-      .column.small-hidden.medium-2.large-3.align-middle
+      .column.small-hidden.medium-1.large-2.align-middle
         button.testimonial__button.testimonial__button--next(
           type="button",
           @click="nextSlide()",

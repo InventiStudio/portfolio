@@ -4,7 +4,7 @@
       .column.small-12(:id="constants.sectionIds.home.posts")
         h2.o-heading-1.c-white {{ $t('home.posts.title') }}
         p.o-paragraph.c-white-60.mb-16 {{ $t('home.posts.desc') }}
-      .column.small-12.medium-8.large-6
+      .column.small-12.medium-10.large-8
         Carousel(
           :per-page="1",
           :min-swipe-distance="48",
