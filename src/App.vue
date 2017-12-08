@@ -31,7 +31,7 @@
     },
     data() {
       return {
-        isLoading: true,
+        isLoading: !this.$route.name,
         openedModal: '',
         estimationScope: '',
       }
