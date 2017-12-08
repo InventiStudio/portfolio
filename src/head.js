@@ -71,6 +71,7 @@ export default {
         }
       },
       meta() {
+        document.documentElement.setAttribute('lang', c.language.call(this))
         return [
           // Global
           { name: 'description',                content: c.description.call(this), id: '__head-description' },
