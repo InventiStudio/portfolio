@@ -19,3 +19,7 @@ export function setEstimationScope(estimationScope) {
 export function resetEstimationScope() {
   eventBus.$emit('reset-estimation-scope')
 }
+
+export function stopRootLoader() {
+  eventBus.$emit('stop-root-loader')
+}

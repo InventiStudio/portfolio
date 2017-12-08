@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import head from 'src/head'
 import i18n from 'src/content'
 import constants from 'src/constants'
+import { stopRootLoader } from 'services/events'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,11 @@ const commonOptions = {
 
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
+function resolver(resolveFunction) {
+  return function component(resolve) {
+    resolveFunction(resolve).then(stopRootLoader)
+  }
+}
 const routes = [
   {
     path: '/:lang',
@@ -22,49 +28,37 @@ const routes = [
       {
         path: '',
         name: 'Home',
-        component(resolve) {
-          require(['pages/Home/Home'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Home/Home'], resolve)),
         ...commonOptions,
       },
       {
         path: 'services',
         name: 'Services',
-        component(resolve) {
-          require(['pages/Services/Services'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Services/Services'], resolve)),
         ...commonOptions,
       },
       {
         path: 'services/vue-front-end',
         name: 'Vue',
-        component(resolve) {
-          require(['pages/Vue/Vue'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Vue/Vue'], resolve)),
         ...commonOptions,
       },
       {
         path: 'services/node-back-end',
         name: 'Node',
-        component(resolve) {
-          require(['pages/Node/Node'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Node/Node'], resolve)),
         ...commonOptions,
       },
       {
         path: 'services/ui-ux-design',
         name: 'Design',
-        component(resolve) {
-          require(['pages/Design/Design'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Design/Design'], resolve)),
         ...commonOptions,
       },
       {
         path: 'estimate-project',
         name: 'Estimate',
-        component(resolve) {
-          require(['pages/Estimate/Estimate'], resolve)
-        },
+        component: resolver(resolve => require(['pages/Estimate/Estimate'], resolve)),
         ...commonOptions,
       },
     ],

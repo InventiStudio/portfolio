@@ -1,5 +1,6 @@
 <template lang="pug">
   main
+    Loader(v-show="isLoading")
     Monster
     Navbar
     Modal(v-show="openedModal")
@@ -14,6 +15,7 @@
   import ContactCard from 'components/ContactCard/ContactCard'
   import Foot from 'components/Foot/Foot'
   import Monster from 'components/Monster/Monster'
+  import Loader from 'components/Loader/Loader'
   import i18n from 'src/content'
   import eventBus from 'services/eventBus'
 
@@ -25,9 +27,11 @@
       ContactCard,
       Foot,
       Monster,
+      Loader,
     },
     data() {
       return {
+        isLoading: true,
         openedModal: '',
         estimationScope: '',
       }
@@ -53,6 +57,9 @@
       })
       eventBus.$on('reset-estimation-scope', () => {
         this.estimationScope = ''
+      })
+      eventBus.$on('stop-root-loader', () => {
+        this.isLoading = false
       })
     },
   }
