@@ -2,7 +2,7 @@
   div
     Landing
     Testimonials(:id="constants.sectionIds.home.testimonials")
-    Posts(:id="constants.sectionIds.home.posts")
+    Posts
     HireUs
 </template>
 

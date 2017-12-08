@@ -1,7 +1,7 @@
 <template lang="pug">
   section.posts.text-center.bg-alabaster
     .row.align-center
-      .column.small-12
+      .column.small-12(:id="constants.sectionIds.home.posts")
         h2.o-heading-1.c-white {{ $t('home.posts.title') }}
         p.o-paragraph.c-white-60.mb-16 {{ $t('home.posts.desc') }}
       .column.small-12.medium-8.large-6
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+  import constants from 'src/constants'
   import { Carousel, Slide } from 'vue-carousel'
 
   export default {
@@ -39,6 +40,7 @@
       Slide,
     },
     computed: {
+      constants: () => constants,
       posts() {
         // TODO: Just for testing
         return [
