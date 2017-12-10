@@ -4,3 +4,5 @@ src
 test
 deploy/deploy.sh
 .editorconfig
+package.json
+yarn.lock
