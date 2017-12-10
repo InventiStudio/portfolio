@@ -12,4 +12,4 @@ RUN yarn add express compression sparkpost body-parser
 
 EXPOSE ${PORT}
 
-CMD ["yarn", "start"]
+CMD ["node", "build/prod-server.js"]
