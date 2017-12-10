@@ -85,8 +85,8 @@ export default {
   },
   vue: {
     title: 'Front-end we Vue.js',
-    shortTitle: 'Vue.js front-end',
-    desc: 'Jesteśmy ekspertami w tworzeniu pięknych i responsywnych aplikacji front-endowych przy użyciu Vue.js.',
+    shortTitle: 'Front-end we Vue.js',
+    desc: 'Jesteśmy ekspertami w tworzeniu responsywnych aplikacji front‑endowych przy użyciu Vue.js.',
     tags: 'FRONT-END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
     ctaEstimate: 'Wyestymuj projekt front-end',
     qualities: {
@@ -113,16 +113,16 @@ export default {
       title: 'Dlaczego wybraliśmy Vue.js',
       desc: 'Vue.js to najlżejszy i najbardziej elastyczny framework JavaScript. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji front-endowej!',
       component: {
-        title: 'Komponentowy',
+        title: 'Komponentowość',
         desc: 'We Vue.js wszystko jest komponentem. Budowanie aplikacji zorientowanych komponentowo umożliwia łatwe ponowne wykorzystanie już utworzonych elementów, dzięki czemu proces tworzenia zajmuje mniej czasu.',
       },
       fastSmall: {
-        title: 'Szybki i lekki',
+        title: 'Szybkość i lekkość',
         desc: 'Vue.js waży tylko ~30KB i sprawi, że aplikacja będzie działać szybciej niż kiedykolwiek!',
       },
       progressive: {
-        title: 'Elastyczny',
-      desc: 'Sam Vue.js koncentruje się na warstwie widoku, mimo to łatwo dodać bilbioteki takie, jak Vuex lub Vue-router kiedy zwiększa sie złożoność aplikacji.',
+        title: 'Elastyczność',
+        desc: 'Sam Vue.js koncentruje się na warstwie widoku, mimo to łatwo dodać bilbioteki takie, jak Vuex lub Vue-router kiedy zwiększa sie złożoność aplikacji.',
       },
       ecosystem: {
         title: 'Stabilny ekosystem',
@@ -131,7 +131,7 @@ export default {
     },
     inventiAndVue: {
       title: 'My + Vue.js =',
-      desc: 'Wiemy, jak tworzyć świetne rzeczy za pomocą Vue.js. Rzuć okiem na te źródła, aby zobaczyć, co możemy zrobić!',
+      desc: 'Wiemy, jak tworzyć świetne rzeczy za pomocą Vue.js. Sprawdź poniższe linki, aby zobaczyć, co możemy zrobić!',
       rocket: 'Odlot! 🚀',
       libraries: {
         title: 'Nasze bilbioteki Vue.js',
@@ -152,6 +152,72 @@ export default {
     technologies: {
       title: 'Używamy najnowszych technologii',
       desc: 'Narzędzia, które na co dzień używamy do tworzenia front-endu',
+    },
+  },
+  node: {
+    title: 'Back-end w Node.js',
+    shortTitle: 'Back-end w Node.js',
+    desc: 'Potrzebujesz niezawodnego API? Tworzymy superszybkie aplikacje przy użyciu Koa.js i PostgreSQL.',
+    tags: 'BACK-END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
+    ctaEstimate: 'Wyestymuj projekt back-end',
+    qualities: {
+      title: 'Zalety naszych back-endowych aplikacji',
+      desc: 'Wiemy, jak tworzyć wyjątkowe aplikacje Node.js. To najważniejsze cechy, które pomagają nam to osiągnąć.',
+      security: {
+        title: 'Bezpieczeństwo',
+        desc: 'Wiemy, że bezpieczeństwo Twoich danych jest absolutnie kluczowe i poważnie traktujemy naszą odpowiedzialność.',
+      },
+      code: {
+        title: 'Nowoczesny kod',
+        desc: 'Ze względu na naszą dbałość o jakość kodu, trzymamy się najnowszych standardów ECMAScript. Staramy się również, aby nasz kod był możliwie zgodny z paradygmatem funkcyjnym, dzięki czemu nasz kod jest modułowy i łatwy w utrzymaniu.',
+      },
+      tests: {
+        title: 'Testy',
+        desc: 'Wiemy, że dowody są silniejsze, niż przeczucia. Właśnie dlatego dostarczamy aplikacje sprawdzone w boju.',
+      },
+      technologies: {
+        title: 'Najlepsze technologie',
+        desc: 'Środowisko Node.js jest pełne wspaniałych i dojrzałych bibliotek. Najważniejsze w naszym stosie technologii to Koa.js i Sequelize. Poza tym używamy PostgreSQL, MongoDB, Docker i wiele więcej!',
+      },
+    },
+    whyWeChose: {
+      title: 'Dlaczego wybraliśmy Node.js',
+      desc: 'Node.js daje nam wielką swobodę robienia rzeczy po swojemu. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji back-endowej!',
+      ecosystem: {
+        title: 'Największy ekosystem',
+        desc: 'Ponad pół miliona bibliotek jest zarejestrowanych w menedżerze pakietów node (npm). Ten największy na świecie rejestr oprogramowania daje nam niezwykłą możliwość znalezienia gotowych modułów, które pasują do naszych potrzeb',
+      },
+      async: {
+        title: 'Asynchroniczność',
+        desc: 'Node.js jest asynchroniczny na wszystkich poziomach, począwszy od wątków I/O, na kodzie najwyższego poziomu kończąc. Dzięki temu łatwo jest pozbyć się przestojów spowodowanych blokowaniem operacji i optymalizować wykorzystanie zasobów.',
+      },
+      modularity: {
+        title: 'Modułowość',
+        desc: 'W Node.js każdy plik jest modułem. Dzięki tak banalnej enkapsulacji naprawdę łatwo jest stworzyć serwisy wielokrotnego użytku, które można zaimportować w dowolnej części aplikacji.',
+      },
+      javascript: {
+        title: 'JavaScript',
+        desc: 'Ten sam język programowania zarówno dla front-endu, jak i back-endu pozwala na wielokrotne użycie wspólnych modułów po obu stronach aplikacji. Z tego powodu projekty są łatwiejsze w tworzeniu oraz utrzymaniu.',
+      },
+    },
+    inventiAndNode: {
+      title: 'My + Node.js =',
+      desc: 'Wiemy, jak tworzyć świetne rzeczy za pomocą Node.js. Sprawdź poniższe linki, aby zobaczyć, co możemy zrobić!',
+      rocket: 'Odlot! 🚀',
+      packages: {
+        title: 'Nasze moduły Node.js',
+        desc: 'Jako część społeczności Node.js stworzyliśmy kilka modułów npm, które pomagają nam i innym programistom tworzyć świetne produkty.',
+        cta: 'Znajdź nas na GitHubie',
+      },
+      publications: {
+        title: 'Nasze publikacje',
+        desc: 'Dzielimy się wiedzą, doświadczonymi problemami i wypracowanymi rozwiązaniami za każdym razem, gdy znaleźliśmy coś wartego uwagi.',
+        cta: 'Zobacz nasz blog',
+      },
+    },
+    technologies: {
+      title: 'Używamy najnowszych technologii',
+      desc: 'Narzędzia, które na co dzień używamy do tworzenia back-endu',
     },
   },
 }

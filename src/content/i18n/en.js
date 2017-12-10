@@ -182,7 +182,7 @@ export default {
     },
     whyWeChose: {
       title: 'Why we chose Node.js',
-      desc: 'Node.js is completely unopinionated, meaning it give us a great freedom of doing things our own way. Take a look at why it should be the main technology for your next back-end app!',
+      desc: 'Node.js is completely unopinionated, meaning it gives us a great freedom of doing things our own way. Take a look at why it should be the main technology for your next back-end app!',
       ecosystem: {
         title: 'Largest ecosystem',
         desc: 'There are more than half a million libraries registered in node packages manager (npm). This world\'s largest software registry gives us an extraordinary ability to find ready-to-use modules that fit our needs.',
