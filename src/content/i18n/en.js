@@ -118,7 +118,7 @@ export default {
       },
       fastSmall: {
         title: 'Fast & Small',
-        desc: 'Vue.js weights only ~30kb and it\'ll make your app work faster then ever!',
+        desc: 'Vue.js weights only ~30KB and it\'ll make your app work faster then ever!',
       },
       progressive: {
         title: 'Progressive & Flexible',
