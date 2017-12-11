@@ -12,7 +12,7 @@ function api(baseUrl) {
 
   async function post(path, body) {
     try {
-      return request(`${baseUrl}${path}`, {
+      return await request(`${baseUrl}${path}`, {
         method: 'POST',
         headers: new Headers({ 'Content-Type': 'application/json' }),
         body: JSON.stringify(body),
