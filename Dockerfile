@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN yarn add express compression sparkpost body-parser
+RUN yarn add express compression sparkpost body-parser webpack-merge
 
 EXPOSE ${PORT}
 
