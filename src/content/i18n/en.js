@@ -161,7 +161,7 @@ export default {
     tags: 'BACK‑END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
     ctaEstimate: 'Estimate back‑end project',
     qualities: {
-      title: 'Qualities our back‑end applications',
+      title: 'Qualities of our back‑end applications',
       desc: 'We know how to make outstanding Node.js applications. These are the highlight features that help us achieve so.',
       security: {
         title: 'Security',
