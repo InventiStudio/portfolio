@@ -2,7 +2,6 @@ const express = require('express')
 const compression = require('compression')
 const path = require('path')
 const mailer = require('./mailer')
-const config = require('../config')
 
 const app = express()
 const port = process.env.PORT || 8000
