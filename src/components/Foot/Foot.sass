@@ -11,6 +11,14 @@
   @media #{$large-up}
     text-align: left
 
+    &:first-child
+      flex-shrink: 100
+
+    &:not(:first-child):not(:last-child)
+      flex-basis: 188px
+      flex-shrink: 0
+      min-width: 188px
+
 .foot__lang
   margin-left: 24px
   vertical-align: middle
