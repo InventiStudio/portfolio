@@ -220,4 +220,101 @@ export default {
       desc: 'Narzędzia, które na co dzień używamy do tworzenia back-endu',
     },
   },
+  design: {
+    title: 'Projektowanie UI & UX',
+    shortTitle: 'Projektowanie UI & UX',
+    desc: 'Uwielbiamy tworzyć responsywne, dokładne i intuicyjne interfejsy użytkownika.',
+    tags: 'WEB DESIGN · UI · UX · RESPONSYWNOŚĆ · PROTOTYPOWANIE · SZKICE',
+    ctaEstimate: 'Wyestymuj projekt UI/UX',
+    ui: {
+      title: 'UI design',
+      desc: 'Nowoczesna aplikacja internetowa nie tylko wyświetla informacje, ale także wchodzi w interakcję z użytkownikiem. Projektujemy interfejsy (UI) mając na uwadze, że to jedynie statyczna reprezentacja twojego dynamicznego produktu.',
+    },
+    ux: {
+      title: 'UX design',
+      desc: 'Doświadczenie użytkownika (UX) ma znacznie szersze znaczenie niż interfejs użytkownika (UI). Jest to suma zaistniałych zdarzeń i wyświetlanych rzeczy, które wpływają na odbiór. Wiemy, że nawet subtelne detale są istotne, więc dbamy o nie.',
+    },
+    tools: {
+      title: 'Narzędzia',
+      desc: 'Rzuć okiem na narzędzia, których używamy do tworzenia tych pięknych interfejsów użytkownika!',
+    },
+    responsiveness: {
+      title: 'Responsywność',
+      desc: 'Wiemy, że Twoja aplikacja będzie wyświetlana na wielu różnych urządzeniach, dlatego ważne jest zaprojektowanie jej mając na uwadze responsywność. Urządzenia mobilne, tablety, komputery stacjonarne i inne - dbamy o wszystkie! Reguły responsywnego projektowania aplikacji internetowych (RWD) mają fundamentalne znaczenie dla tworzonych przez nas interfejsów.',
+      image: 'Smartfon, Tablet i Komputer',
+    },
+    semantics: {
+      title: 'Dbałość o semantykę',
+      desc: 'Każdy subtelny detal może zawierać w sobie informacje. Dlatego ważne jest, aby używać tych detali ostrożnie i rozsądnie. Na przykład zielony kolor jest związany z pomyślnym wykonaniem jakiejś operacji. Biorąc to pod uwagę, zielone powiadomienie o nieprawidłowych danych może wprowadzać w błąd. Wiemy o tych wszystkich subtelnych znaczeniach, dzięki czemu wszystkie z możliwych semantycznych niejednoznaczności - zamieniamy się w naszą siłę.',
+      image: 'Dbałość o detale',
+    },
+    rhythm: {
+      title: 'Pozioma i pionowa spójność',
+      desc: 'Ludzkie oko lubi spójność, dlatego tak ważne jest utrzymanie rytmów horyzontalnych i wertykalnych pomiędzy elementami. Siatka (grid) i dobrze zdefiniowana typografia ułatwiają nam osiągnięcie tego w aplikacjach, które tworzymy.',
+      image: 'Siatka & Spójność',
+    },
+    typography: {
+      title: 'Przemyślana typografia',
+      desc: 'W większości przypadków treść określa wartość Twojego produktu. Nawet najpiękniejszy projekt jest bezwartościowy bez zawartości. Interfejs żyje dla treści, a nie na odwrót. Jednak umieszczenie tekstu na stronie nie czyni go wartościowym. Ważne jest, aby zadbać o typografię, tj. skupić się bardziej na nagłówkach, ustawić odpowiednie wysokości linii, wybrać najlepsze czcionki dla etykiet jednoliniowych, paragrafów wielowierszowych i wiele, wiele innych. Dokładamy wszelkich starań, aby Twoje treści były wygodne w odbiorze.',
+      image: 'Czcionki',
+    },
+  },
+  estimate: {
+    title: 'Wyestymuj projekt',
+    desc: 'Wypełnij ten formularz, aby uzyskać bezpłatną wycenę projektu. Skontaktujemy się z Tobą w ciągu tygodnia, aby omówić kolejne kroki.',
+    survey: {
+      questionStart: {
+        title: 'Od czego zaczynamy?',
+        answers: {
+          answerNew: 'Nowy projekt',
+          answerContinue: 'Kontynuacja projektu',
+        },
+      },
+      questionScope: {
+        title: 'Jaki jest zakres twojego projektu?',
+        answers: {
+          answerFrontEnd: 'Front-end',
+          answerBackEnd: 'Back-end',
+          answerDesign: 'Projekt UI & UX',
+        },
+      },
+      questionPlatform: {
+        title: 'Jakie urządzenia powinniśmy uwzględnić?',
+        answers: {
+          answerDesktop: 'Komputer stacjonarny',
+          answerMobile: 'Urządzenia mobilne',
+          answerOther: 'Inne',
+        },
+      },
+      questionDetails: {
+        title: 'Więcej szczegółów na temat projektu',
+        form: {
+          namePlaceholder: 'Imię i nazwisko',
+          emailPlaceholder: 'Adres e-mail',
+          phonePlaceholder: 'Numer telefonu (opcjonalnie)',
+          messagePlaceholder: 'Krótki opis Twojego projektu',
+        },
+      },
+      ctaSend: 'Estymuj',
+    },
+  },
+  contact: {
+    title: 'Kontakt',
+    desc: 'Niezależnie od tego, czy chcesz nas wynająć, czy po prostu poznać nas lepiej - skontaktuj się z nami!',
+    map: 'Jesteśmy z Wrocławia',
+    form: {
+      namePlaceholder: 'Imię i nazwisko',
+      emailPlaceholder: 'Adres e-mail',
+      messagePlaceholder: 'Jak możemy Ci pomóc',
+      ctaSend: 'Wyślij wiadomość',
+    },
+  },
+  workWithUs: {
+    title: 'Chcesz z nami współpracować?',
+  },
+  errors: {
+    name: 'Chcielibyśmy Cię poznać',
+    email: 'Przykro nam, ale nie jest to poprawny adres e-mail',
+    message: 'Ups, brak wiadomości?',
+  },
 }
