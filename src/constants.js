@@ -9,4 +9,7 @@ export default {
       posts: 'home__posts',
     },
   },
+  api: {
+    mailer: '/mailer',
+  },
 }
