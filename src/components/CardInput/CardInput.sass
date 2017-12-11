@@ -12,8 +12,14 @@ $gradient: #8f2edd 0%, #b03ad1 25%, #c841c0 50%, #da4daa 75%, #eb4b9f 100%
   .card-input__heading-3
     color: $c-white
 
+.card-input__input:not(:checked) + .card-input__label:hover
+  +lift--hover
+
 .card-input__label
   display: block
+  transition-duration: $t-duration
+  transition-property: transform
+  transition-timing-function: $t-easing
   cursor: pointer
 
 .card-input__icon
