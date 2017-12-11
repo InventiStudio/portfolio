@@ -6,7 +6,7 @@ export default {
   common: {
     inventiStudio: 'InventiStudio',
     orContactUs: 'lub napisz do nas!',
-    estimateProject: 'Wyestymuj projekt',
+    estimateProject: 'Wyceń projekt',
     previous: 'Poprzedni',
     next: 'Następny',
   },
@@ -88,7 +88,7 @@ export default {
     shortTitle: 'Front-end we Vue.js',
     desc: 'Jesteśmy ekspertami w tworzeniu responsywnych aplikacji front‑endowych przy użyciu Vue.js.',
     tags: 'FRONT-END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
-    ctaEstimate: 'Wyestymuj projekt front-end',
+    ctaEstimate: 'Wyceń projekt front-end',
     qualities: {
       title: 'Zalety naszych front-endowych aplikacji',
       desc: 'Wiemy, jak tworzyć świetne aplikacje HTML5. To cechy, które pozwalają nam to osiągnąć.',
@@ -159,7 +159,7 @@ export default {
     shortTitle: 'Back-end w Node.js',
     desc: 'Potrzebujesz niezawodnego API? Tworzymy superszybkie aplikacje przy użyciu Koa.js i PostgreSQL.',
     tags: 'BACK-END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
-    ctaEstimate: 'Wyestymuj projekt back-end',
+    ctaEstimate: 'Wyceń projekt back-end',
     qualities: {
       title: 'Zalety naszych back-endowych aplikacji',
       desc: 'Wiemy, jak tworzyć wyjątkowe aplikacje Node.js. To najważniejsze cechy, które pomagają nam to osiągnąć.',
@@ -221,11 +221,11 @@ export default {
     },
   },
   design: {
-    title: 'Projektowanie UI & UX',
-    shortTitle: 'Projektowanie UI & UX',
+    title: 'Projektowanie UI i UX',
+    shortTitle: 'Projektowanie UI i UX',
     desc: 'Uwielbiamy tworzyć responsywne, dokładne i intuicyjne interfejsy użytkownika.',
     tags: 'WEB DESIGN · UI · UX · RESPONSYWNOŚĆ · PROTOTYPOWANIE · SZKICE',
-    ctaEstimate: 'Wyestymuj projekt UI/UX',
+    ctaEstimate: 'Wyceń projekt UI i UX',
     ui: {
       title: 'UI design',
       desc: 'Nowoczesna aplikacja internetowa nie tylko wyświetla informacje, ale także wchodzi w interakcję z użytkownikiem. Projektujemy interfejsy (UI) mając na uwadze, że to jedynie statyczna reprezentacja twojego dynamicznego produktu.',
@@ -260,7 +260,7 @@ export default {
     },
   },
   estimate: {
-    title: 'Wyestymuj projekt',
+    title: 'Wyceń projekt',
     desc: 'Wypełnij ten formularz, aby uzyskać bezpłatną wycenę projektu. Skontaktujemy się z Tobą w ciągu tygodnia, aby omówić kolejne kroki.',
     survey: {
       questionStart: {
@@ -295,7 +295,7 @@ export default {
           messagePlaceholder: 'Krótki opis Twojego projektu',
         },
       },
-      ctaSend: 'Estymuj',
+      ctaSend: 'Wyceń',
     },
   },
   contact: {

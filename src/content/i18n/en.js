@@ -225,7 +225,7 @@ export default {
     shortTitle: 'UI & UX design',
     desc: 'We love to design responsive and pixel-perfect user interfaces with top-notch user experience.',
     tags: 'WEB DESIGN · UI · UX · RESPONSIVE · PROTOTYPE · WIREFRAME',
-    ctaEstimate: 'Estimate UI/UX project',
+    ctaEstimate: 'Estimate UI & UX project',
     ui: {
       title: 'UI design',
       desc: 'Modern web application doesn\'t just display things, but also interact with user. We design user interfaces keeping in mind, that it\'s just a static representation of your dynamic product.',
