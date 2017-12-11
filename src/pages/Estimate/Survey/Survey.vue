@@ -105,6 +105,8 @@
   import { required, email } from 'vuelidate/lib/validators'
   import SurveyProgress from 'components/SurveyProgress/SurveyProgress'
   import CardInput from 'components/CardInput/CardInput'
+  import { openSuccessModal } from 'services/events'
+  import sendMail from 'services/mailer'
 
   export default {
     components: {
@@ -131,25 +133,35 @@
       }
     },
     computed: {
+      locale() { return this.$i18n.locale },
       isNameValid() { return !this.$v.name.$error },
       isEmailValid() { return !this.$v.email.$error },
       isMessageValid() { return !this.$v.message.$error },
-      isFormValid() {
-        return this.isNameValid && this.isEmailValid && this.isMessageValid
-      },
-      estimationScope() {
-        return this.$root.$children[0].estimationScope
-      },
+      isFormValid() { return this.isNameValid && this.isEmailValid && this.isMessageValid },
+      estimationScope() { return this.$root.$children[0].estimationScope },
     },
     methods: {
-      submit() {
+      openSuccessModal,
+      async submit() {
         try {
           if (this.$v.surveyForm.$touch() || this.$v.surveyForm.$error) return null
           const { name, email, phone, message } = this
-          return { name, email, phone, message }
+          const { questionStart, questionScope, questionPlatform } = this
+          const survey = { questionStart, questionScope, questionPlatform }
+          await sendMail({
+            template_id: 'estimate-from-client',
+            email: 'hello@inventi.studio',
+            substitution_data: { name, email, phone, message, survey },
+          })
+          await sendMail({
+            template_id: `estimate-to-client-${this.locale}`,
+            email,
+            name,
+            substitution_data: { name, email, message, survey },
+          })
+          this.openSuccessModal()
         } catch (err) {
-          console.warn(err)
-          throw err
+          console.warn({ err })
         }
       },
     },

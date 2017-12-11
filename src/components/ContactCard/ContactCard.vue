@@ -43,6 +43,7 @@
 <script>
   import { required, email } from 'vuelidate/lib/validators'
   import SocialLinks from 'components/SocialLinks/SocialLinks'
+  import { openSuccessModal, closeModal } from 'services/events'
   import sendMail from 'services/mailer'
 
   export default {
@@ -64,6 +65,8 @@
       isFormValid() { return this.isNameValid && this.isEmailValid && this.isMessageValid },
     },
     methods: {
+      openSuccessModal,
+      closeModal,
       mailToUrl(mail) {
         return `mailto:${this.$t(mail)}`
       },
@@ -85,10 +88,10 @@
             name,
             substitution_data: { name, email, message },
           })
-          return null
+          this.closeModal()
+          this.openSuccessModal()
         } catch (err) {
-          console.warn(err)
-          throw err
+          console.warn({ err })
         }
       },
     },
