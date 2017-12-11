@@ -67,7 +67,7 @@
               :placeholder="$t('estimate.survey.questionDetails.form.namePlaceholder')",
               :class="{ 'o-input--error': !isNameValid }",
             )
-            small.o-form-error.survey__error
+            small.o-form-error
               span(v-show="!isEmailValid") {{ $t('errors.name') }}
           .column.small-12.medium-4
             input.o-input(
@@ -76,7 +76,7 @@
               :placeholder="$t('estimate.survey.questionDetails.form.emailPlaceholder')",
               :class="{ 'o-input--error': !isEmailValid }",
             )
-            small.o-form-error.survey__error
+            small.o-form-error
               span(v-show="!isEmailValid") {{ $t('errors.email') }}
           .column.small-12.medium-4.mb-16
             input.o-input(
@@ -90,15 +90,16 @@
               :placeholder="$t('estimate.survey.questionDetails.form.messagePlaceholder')",
               :class="{ 'o-input--error': !isMessageValid }",
             )
-            small.o-form-error.survey__error
+            small.o-form-error
               span(v-show="!isMessageValid") {{ $t('errors.message') }}
           .column.small-12.mt-24.large-mt-48.mb-24.text-center
             button.survey__btn.o-btn(
               type="button",
-              :disabled="!isFormValid",
+              :disabled="!isFormValid || isSending",
               @click="submit()",
             )
-              span.fs-16.c-white {{ $t('estimate.survey.ctaSend') }}
+              span.fs-16.c-white(v-if="!isSending") {{ $t('estimate.survey.ctaSend') }}
+              icon.survey__icon.c-white.a-spin(v-else="", type="icon--spinner")
 </template>
 
 <script>
@@ -130,6 +131,8 @@
         email: '',
         phone: '',
         message: '',
+        // ui
+        isSending: false,
       }
     },
     computed: {
@@ -148,6 +151,7 @@
           const { name, email, phone, message } = this
           const { questionStart, questionScope, questionPlatform } = this
           const survey = { questionStart, questionScope, questionPlatform }
+          this.isSending = true
           await sendMail({
             template_id: 'estimate-from-client',
             email: 'hello@inventi.studio',
@@ -161,6 +165,7 @@
           })
           this.openSuccessModal()
         } catch (err) {
+          this.isSending = false
           console.warn({ err })
         }
       },

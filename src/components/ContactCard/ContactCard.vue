@@ -32,12 +32,13 @@
       )
       small.o-form-error
         span(v-show="!isMessageValid") {{ $t('errors.message') }}
-      button.o-btn.o-btn--purple.mt-24(
+      button.contact-card__btn.o-btn.o-btn--purple.mt-24(
         type="button",
-        :disabled="!isFormValid",
+        :disabled="!isFormValid || isSending",
         @click="submit()",
       )
-        h3.m-0.fw-regular.fs-16.c-white {{ $t('contact.form.ctaSend') }}
+        h3.m-0.fw-regular.fs-16.c-white(v-if="!isSending") {{ $t('contact.form.ctaSend') }}
+        icon.contact-card__icon.c-white.a-spin(v-else="", type="icon--spinner")
 </template>
 
 <script>
@@ -55,6 +56,8 @@
         name: '',
         email: '',
         message: '',
+        // ui
+        isSending: false,
       }
     },
     computed: {
@@ -77,6 +80,7 @@
         try {
           if (this.$v.contactForm.$touch() || this.$v.contactForm.$error) return null
           const { name, email, message } = this
+          this.isSending = true
           await sendMail({
             template_id: 'contact-from-client',
             email: 'hello@inventi.studio',
@@ -91,6 +95,7 @@
           this.closeModal()
           this.openSuccessModal()
         } catch (err) {
+          this.isSending = false
           console.warn({ err })
         }
       },
@@ -107,3 +112,5 @@
     },
   }
 </script>
+
+<style src="./ContactCard.sass" lang="sass" scoped></style>

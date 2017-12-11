@@ -17,3 +17,11 @@
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.a-spin {
+  animation: spin 2s linear infinite;
+}
