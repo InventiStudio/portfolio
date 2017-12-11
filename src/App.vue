@@ -5,6 +5,7 @@
     Navbar
     Modal(v-show="openedModal")
       ContactCard(v-if="openedModal === 'contact'")
+      SuccessCard(v-if="openedModal === 'success'")
     router-view
     Foot
 </template>
@@ -13,6 +14,7 @@
   import Navbar from 'components/Navbar/Navbar'
   import Modal from 'components/Modal/Modal'
   import ContactCard from 'components/ContactCard/ContactCard'
+  import SuccessCard from 'components/SuccessCard/SuccessCard'
   import Foot from 'components/Foot/Foot'
   import Monster from 'components/Monster/Monster'
   import Loader from 'components/Loader/Loader'
@@ -25,6 +27,7 @@
       Navbar,
       Modal,
       ContactCard,
+      SuccessCard,
       Foot,
       Monster,
       Loader,

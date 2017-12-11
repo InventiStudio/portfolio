@@ -8,6 +8,10 @@ export function openContactModal() {
   openModal('contact')
 }
 
+export function openSuccessModal() {
+  openModal('success')
+}
+
 export function closeModal() {
   eventBus.$emit('close-modal')
 }

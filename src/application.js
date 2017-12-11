@@ -1,3 +1,4 @@
+import 'whatwg-fetch'
 // TODO: Investigate on importing only needed bits, by using core-js, instead whole bable-polyfill:
 // https://babeljs.io/docs/usage/polyfill/
 // https://github.com/zloirock/core-js#commonjs

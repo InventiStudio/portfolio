@@ -309,6 +309,10 @@ export default {
       ctaSend: 'Send a message',
     },
   },
+  success: {
+    title: 'Success!',
+    desc: 'Thank you for contacting us. We\'ll get back to you as soon as possible.',
+  },
   workWithUs: {
     title: 'Want to work with us?',
   },
