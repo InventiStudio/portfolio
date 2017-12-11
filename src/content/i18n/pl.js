@@ -91,7 +91,7 @@ export default {
     ctaEstimate: 'Wyceń projekt front‑end',
     qualities: {
       title: 'Zalety naszych front‑endowych aplikacji',
-      desc: 'Wiemy, jak tworzyć świetne aplikacje HTML5. To cechy, które pozwalają nam to osiągnąć.',
+      desc: 'Wiemy, jak tworzyć świetne aplikacje HTML5. Oto cechy, które pozwalają nam to osiągnąć.',
       code: {
         title: 'Nowoczesny kod',
         desc: 'Ze względu na naszą dbałość o jakość kodu, trzymamy się najnowszych standardów ECMAScript. Staramy się również, aby nasz kod był możliwie zgodny z paradygmatem funkcyjnym, co sprawia, że jest on modułowy i łatwy w utrzymaniu.',
@@ -122,25 +122,25 @@ export default {
       },
       progressive: {
         title: 'Elastyczność',
-        desc: 'Sam Vue.js koncentruje się na warstwie widoku, mimo to łatwo dodać bilbioteki takie, jak Vuex lub Vue-router kiedy zwiększa sie złożoność aplikacji.',
+        desc: 'Sam Vue.js koncentruje się na warstwie widoku, mimo to łatwo dodać bilbioteki takie, jak Vuex lub Vue-router kiedy rośnie złożoność aplikacji.',
       },
       ecosystem: {
         title: 'Stabilny ekosystem',
-        desc: 'Zarówno Vue.js, jak i powiązane z nim biblioteki są rozwijane i utrzymywane przez ten sam główny zespół Vue.js.',
+        desc: 'Zarówno Vue.js, jak i powiązane z nim biblioteki są rozwijane i utrzymywane przez ten sam, główny zespół Vue.js.',
       },
     },
     inventiAndVue: {
       title: 'My + Vue.js =',
-      desc: 'Wiemy, jak tworzyć świetne rzeczy za pomocą Vue.js. Sprawdź poniższe linki, aby zobaczyć, co możemy zrobić!',
+      desc: 'Wiemy, jak tworzyć świetne produkty przy pomocy Vue.js. Sprawdź poniższe linki, aby zobaczyć co potrafimy!',
       rocket: 'Odlot! 🚀',
       libraries: {
         title: 'Nasze bilbioteki Vue.js',
-        desc: 'Jako część sporej społeczności Vue.js, napisaliśmy kilka bibliotek Vue.js, które pomagają nam i innym programistom tworzyć niezawodne produkty.',
+        desc: 'Jako część sporej społeczności Vue.js, piszemy biblioteki, które pomagają nam i innym programistom tworzyć niezawodne produkty.',
         cta: 'Znajdź nas na Githubie',
       },
       website: {
         title: 'Nasza strona',
-        desc: 'Nasze portfolio napisane jest przy użyciu Vue.js i innych technologii, których używamy w komercyjnych projektach. Spójrz na nasz kod, jest otwarty!',
+        desc: 'Nasze portfolio napisane jest przy użyciu Vue.js i innych technologii, których używamy w komercyjnych projektach. Spójrz na nasz kod - jest otwarty!',
         cta: 'Zobacz kod tej strony',
       },
       publications: {
@@ -151,7 +151,7 @@ export default {
     },
     technologies: {
       title: 'Używamy najnowszych technologii',
-      desc: 'Narzędzia, które na co dzień używamy do tworzenia front‑endu',
+      desc: 'Narzędzia, które na co dzień używamy do tworzenia front‑endu.',
     },
   },
   node: {
@@ -162,7 +162,7 @@ export default {
     ctaEstimate: 'Wyceń projekt back‑end',
     qualities: {
       title: 'Zalety naszych back‑endowych aplikacji',
-      desc: 'Wiemy, jak tworzyć wyjątkowe aplikacje Node.js. To najważniejsze cechy, które pomagają nam to osiągnąć.',
+      desc: 'Wiemy, jak tworzyć wyjątkowe aplikacje Node.js. Oto najważniejsze cechy, które pomagają nam to osiągnąć.',
       security: {
         title: 'Bezpieczeństwo',
         desc: 'Wiemy, że bezpieczeństwo Twoich danych jest absolutnie kluczowe i poważnie traktujemy naszą odpowiedzialność.',
@@ -185,7 +185,7 @@ export default {
       desc: 'Node.js daje nam wielką swobodę robienia rzeczy po swojemu. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji back‑endowej!',
       ecosystem: {
         title: 'Największy ekosystem',
-        desc: 'Ponad pół miliona bibliotek jest zarejestrowanych w menedżerze pakietów node (npm). Ten największy na świecie rejestr oprogramowania daje nam niezwykłą możliwość znalezienia gotowych modułów, które pasują do naszych potrzeb',
+        desc: 'Ponad pół miliona bibliotek jest zarejestrowanych w menedżerze pakietów node (npm). Ten największy na świecie rejestr oprogramowania daje nam niezwykłą możliwość znalezienia gotowych modułów, które pasują do naszych potrzeb.',
       },
       async: {
         title: 'Asynchroniczność',
@@ -202,7 +202,7 @@ export default {
     },
     inventiAndNode: {
       title: 'My + Node.js =',
-      desc: 'Wiemy, jak tworzyć świetne rzeczy za pomocą Node.js. Sprawdź poniższe linki, aby zobaczyć, co możemy zrobić!',
+      desc: 'Wiemy, jak tworzyć świetne aplikacje przy pomocy Node.js. Sprawdź poniższe linki, aby zobaczyć co potrafimy!',
       rocket: 'Odlot! 🚀',
       packages: {
         title: 'Nasze moduły Node.js',
@@ -255,13 +255,13 @@ export default {
     },
     typography: {
       title: 'Przemyślana typografia',
-      desc: 'W większości przypadków treść określa wartość Twojego produktu. Nawet najpiękniejszy projekt jest bezwartościowy bez zawartości. Interfejs żyje dla treści, a nie na odwrót. Jednak umieszczenie tekstu na stronie nie czyni go wartościowym. Ważne jest, aby zadbać o typografię, tj. skupić się bardziej na nagłówkach, ustawić odpowiednie wysokości linii, wybrać najlepsze czcionki dla etykiet jednoliniowych, paragrafów wielowierszowych i wiele, wiele innych. Dokładamy wszelkich starań, aby Twoje treści były wygodne w odbiorze.',
+      desc: 'W większości przypadków treść określa wartość Twojego produktu. Nawet najpiękniejszy projekt jest bezwartościowy bez zawartości. Interfejs żyje dla treści, a nie na odwrót. Jednak umieszczenie tekstu na stronie nie czyni go wartościowym. Ważne jest, aby zadbać o typografię, tj. skupić się bardziej na nagłówkach, ustawić odpowiednie wysokości linii, wybrać najlepsze fonty dla etykiet jednoliniowych, paragrafów wielowierszowych i wiele, wiele innych. Dokładamy wszelkich starań, aby Twoje treści były wygodne w odbiorze.',
       image: 'Czcionki',
     },
   },
   estimate: {
     title: 'Wyceń projekt',
-    desc: 'Wypełnij ten formularz, aby uzyskać bezpłatną wycenę projektu. Skontaktujemy się z Tobą w ciągu tygodnia, aby omówić kolejne kroki.',
+    desc: 'Wypełnij ten prosty formularz, aby uzyskać bezpłatną wycenę projektu. Skontaktujemy się z Tobą w ciągu tygodnia, aby omówić kolejne kroki.',
     survey: {
       questionStart: {
         title: 'Od czego zaczynamy?',
@@ -300,14 +300,16 @@ export default {
   },
   contact: {
     title: 'Kontakt',
-    desc: 'Niezależnie od tego, czy chcesz nas wynająć, czy po prostu poznać nas lepiej - skontaktuj się z nami!',
-    map: 'Jesteśmy z Wrocławia',
     form: {
       namePlaceholder: 'Imię i nazwisko',
       emailPlaceholder: 'Adres e-mail',
-      messagePlaceholder: 'Jak możemy Ci pomóc',
+      messagePlaceholder: 'Jak możemy Ci pomóc?',
       ctaSend: 'Wyślij wiadomość',
     },
+  },
+  success: {
+    title: 'Sukces!',
+    desc: 'Dziękujemy za kontakt. Odezwiemy się do Ciebie najszybciej jak to możliwe.',
   },
   workWithUs: {
     title: 'Skontaktuj się z nami',

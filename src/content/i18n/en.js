@@ -300,8 +300,6 @@ export default {
   },
   contact: {
     title: 'Contact',
-    desc: 'Whether you want to hire us or simply get to know us better - feel free to get in touch!',
-    map: 'We are from Wrocław, Poland',
     form: {
       namePlaceholder: 'Your name',
       emailPlaceholder: 'Your e-mail address',
