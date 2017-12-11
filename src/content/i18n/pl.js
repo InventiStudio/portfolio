@@ -310,7 +310,7 @@ export default {
     },
   },
   workWithUs: {
-    title: 'Chcesz z nami współpracować?',
+    title: 'Skontaktuj się z nami',
   },
   errors: {
     name: 'Chcielibyśmy Cię poznać',
