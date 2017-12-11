@@ -43,6 +43,7 @@
 <script>
   import { required, email } from 'vuelidate/lib/validators'
   import SocialLinks from 'components/SocialLinks/SocialLinks'
+  import sendMail from 'services/mailer'
 
   export default {
     components: {
@@ -56,12 +57,11 @@
       }
     },
     computed: {
+      locale() { return this.$i18n.locale },
       isNameValid() { return !this.$v.name.$error },
       isEmailValid() { return !this.$v.email.$error },
       isMessageValid() { return !this.$v.message.$error },
-      isFormValid() {
-        return this.isNameValid && this.isEmailValid && this.isMessageValid
-      },
+      isFormValid() { return this.isNameValid && this.isEmailValid && this.isMessageValid },
     },
     methods: {
       mailToUrl(mail) {
@@ -70,11 +70,22 @@
       phoneToUrl(phone) {
         return `tel:${this.$t(phone)}`.replace(/\s/g, '')
       },
-      submit() {
+      async submit() {
         try {
           if (this.$v.contactForm.$touch() || this.$v.contactForm.$error) return null
           const { name, email, message } = this
-          return { name, email, message }
+          await sendMail({
+            template_id: 'contact-from-client',
+            email: 'hello@inventi.studio',
+            substitution_data: { name, email, message },
+          })
+          await sendMail({
+            template_id: `contact-to-client-${this.locale}`,
+            email,
+            name,
+            substitution_data: { name, email, message },
+          })
+          return null
         } catch (err) {
           console.warn(err)
           throw err
