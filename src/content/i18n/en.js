@@ -250,7 +250,7 @@ export default {
     },
     rhythm: {
       title: 'Horizontal and vertical rhythm',
-      desc: 'Human eye likes consistency, that\'s why it is really important to maintain both horizontal and vertical rythms across elements. Grids and well defined typography help us archieve that in the apps we craft.',
+      desc: 'Human eye likes consistency, that\'s why it is really important to maintain both horizontal and vertical rythms across elements. Grids and well defined typography help us achieve that in the apps we craft.',
       image: 'Grid & Rhythm',
     },
     typography: {
@@ -289,9 +289,9 @@ export default {
       questionDetails: {
         title: 'Any more details about the project?',
         form: {
-          namePlaceholder: 'Your name',
-          emailPlaceholder: 'Your e-mail address',
-          phonePlaceholder: 'Your phone number (optional)',
+          namePlaceholder: 'Name',
+          emailPlaceholder: 'E-mail address',
+          phonePlaceholder: 'Phone number (optional)',
           messagePlaceholder: 'Short description of your project',
         },
       },
