@@ -26,6 +26,7 @@ module.exports = {
   },
   // custom rules
   rules: {
+    'consistent-return': 0,
     quotes: [ 2, 'single' ],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
