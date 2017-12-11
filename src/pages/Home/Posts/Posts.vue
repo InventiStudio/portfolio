@@ -19,7 +19,7 @@
             key="post.key",
           )
             .posts__card.o-card.relative.mt-40
-              article.pl-32.pr-32.large-pl-80.large-pr-80
+              article.pl-24.pr-24.medium-pl-32.medium-pr-32.large-pl-80.large-pr-80
                 img.posts__image(:src="post.image")
                 h3.o-heading-3.c-ship-gray.mb-32 {{ getTranslation(post, 'title') }}
                 p.o-paragraph.c-ship-gray {{ getTranslation(post, 'desc') }}
@@ -42,7 +42,6 @@
     computed: {
       constants: () => constants,
       posts() {
-        // TODO: Just for testing
         return [
           {
             key: 'readability',

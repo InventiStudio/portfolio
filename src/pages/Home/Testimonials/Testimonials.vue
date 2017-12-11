@@ -27,7 +27,7 @@
             key="testimonial.key",
           )
             .testimonials__card.o-card.relative.mt-40
-              article.pl-32.pr-32.large-pl-80.large-pr-80
+              article.pl-24.pr-24.medium-pl-32.medium-pr-32.large-pl-80.large-pr-80
                 img.testimonials__avatar(:src="testimonial.avatarSrc")
                 h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
                 span.fs-16.c-ship-gray-40.mb-16.block {{ getTranslation(testimonial, 'position') }}
