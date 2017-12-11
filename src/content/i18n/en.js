@@ -1,7 +1,7 @@
 export default {
   meta: {
     sitename: 'InventiStudio: Vue.js & Node.js development agency - Wrocław',
-    description: 'InventiStudio is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front-end, Node.js back-end and UI/UX design services for enterprises, companies and startups. Get in touch with us!',
+    description: 'InventiStudio is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front‑end, Node.js back‑end and UI/UX design services for enterprises, companies and startups. Get in touch with us!',
   },
   common: {
     inventiStudio: 'InventiStudio',
@@ -55,7 +55,7 @@ export default {
   },
   services: {
     title: 'Services',
-    desc: 'We provide Vue.js front-end, Node.js back-end and UI/UX design services. Whether you’re enterprise, company or startup - we can certainly help you!',
+    desc: 'We provide Vue.js front‑end, Node.js back‑end and UI/UX design services. Whether you’re enterprise, company or startup - we can certainly help you!',
     landing: {
       title: 'Our expertise',
     },
@@ -84,13 +84,13 @@ export default {
     },
   },
   vue: {
-    title: 'Vue.js front-end development',
-    shortTitle: 'Vue.js front-end',
-    desc: 'We are experts at creating beautiful and responsive front-end applications using Vue.js.',
-    tags: 'FRONT-END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSIVE',
-    ctaEstimate: 'Estimate front-end project',
+    title: 'Vue.js front‑end development',
+    shortTitle: 'Vue.js front‑end',
+    desc: 'We are experts at creating beautiful and responsive front‑end applications using Vue.js.',
+    tags: 'front‑end · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSIVE',
+    ctaEstimate: 'Estimate front‑end project',
     qualities: {
-      title: 'Qualities of our front-end apps',
+      title: 'Qualities of our front‑end apps',
       desc: 'We know how to make great HTML5 applications. These are the highlight features that help us achieve so.',
       code: {
         title: 'Modern code',
@@ -106,12 +106,12 @@ export default {
       },
       technologies: {
         title: 'Best technologies',
-        desc: 'To deliver best solutions, we use top-notch front-end technologies. Major part of our tech stack is Vue.js framework descripted below. Besides that we use Sass, Webpack, Yarn, Docker, Bootstrap and many more!',
+        desc: 'To deliver best solutions, we use top-notch front‑end technologies. Major part of our tech stack is Vue.js framework descripted below. Besides that we use Sass, Webpack, Yarn, Docker, Bootstrap and many more!',
       },
     },
     whyWeChose: {
       title: 'Why we chose Vue.js',
-      desc: 'Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front-end app!',
+      desc: 'Vue.js is the most lightweight and flexible JavaScript framework there is. Take a look at why it should be the main technology for your next front‑end app!',
       component: {
         title: 'Component based',
         desc: 'In Vue.js everything is a component. Component-oriented pattern allows to easily reuse already created elements, so that development process takes much less time.',
@@ -151,17 +151,17 @@ export default {
     },
     technologies: {
       title: 'We use cutting-edge technologies',
-      desc: 'Take a look at the front-end tools we use on daily basis.',
+      desc: 'Take a look at the front‑end tools we use on daily basis.',
     },
   },
   node: {
-    title: 'Node.js back-end development',
-    shortTitle: 'Node.js back-end',
+    title: 'Node.js back‑end development',
+    shortTitle: 'Node.js back‑end',
     desc: 'Need a powerful API? We make blazing fast Koa.js applications backed by PostgreSQL databases.',
-    tags: 'BACK-END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
-    ctaEstimate: 'Estimate back-end project',
+    tags: 'back‑end · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
+    ctaEstimate: 'Estimate back‑end project',
     qualities: {
-      title: 'Qualities our back-end applications',
+      title: 'Qualities our back‑end applications',
       desc: 'We know how to make outstanding Node.js applications. These are the highlight features that help us achieve so.',
       security: {
         title: 'Security',
@@ -182,7 +182,7 @@ export default {
     },
     whyWeChose: {
       title: 'Why we chose Node.js',
-      desc: 'Node.js is completely unopinionated, meaning it gives us a great freedom of doing things our own way. Take a look at why it should be the main technology for your next back-end app!',
+      desc: 'Node.js is completely unopinionated, meaning it gives us a great freedom of doing things our own way. Take a look at why it should be the main technology for your next back‑end app!',
       ecosystem: {
         title: 'Largest ecosystem',
         desc: 'There are more than half a million libraries registered in node packages manager (npm). This world\'s largest software registry gives us an extraordinary ability to find ready-to-use modules that fit our needs.',
@@ -197,7 +197,7 @@ export default {
       },
       javascript: {
         title: 'JavaScript',
-        desc: 'The same programming language for front-end and back-end allows to reuse common modules on both sides. Because of that, projects are easier to develop and maintain.',
+        desc: 'The same programming language for front‑end and back‑end allows to reuse common modules on both sides. Because of that, projects are easier to develop and maintain.',
       },
     },
     inventiAndNode: {
@@ -273,8 +273,8 @@ export default {
       questionScope: {
         title: 'What is the scope of your project?',
         answers: {
-          answerFrontEnd: 'Front-end',
-          answerBackEnd: 'Back-end',
+          answerFrontEnd: 'front‑end',
+          answerBackEnd: 'back‑end',
           answerDesign: 'UI & UX design',
         },
       },

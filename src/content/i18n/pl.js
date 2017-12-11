@@ -55,7 +55,7 @@ export default {
   },
   services: {
     title: 'Usługi',
-    desc: 'Tworzymy front-end we Vue.js, back-end w Node.js oraz zajmujemy się projektowaniem UI/UX. Niezależnie od tego, czy jesteś przedsiębiorcą, firmą czy startupem - z pewnością możemy Ci pomóc!',
+    desc: 'Tworzymy front‑end we Vue.js, back‑end w Node.js oraz zajmujemy się projektowaniem UI/UX. Niezależnie od tego, czy jesteś przedsiębiorcą, firmą czy startupem - z pewnością możemy Ci pomóc!',
     landing: {
       title: 'Nasz warsztat',
     },
@@ -84,13 +84,13 @@ export default {
     },
   },
   vue: {
-    title: 'Front-end we Vue.js',
-    shortTitle: 'Front-end we Vue.js',
+    title: 'front‑end we Vue.js',
+    shortTitle: 'front‑end we Vue.js',
     desc: 'Jesteśmy ekspertami w tworzeniu responsywnych aplikacji front‑endowych przy użyciu Vue.js.',
-    tags: 'FRONT-END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
-    ctaEstimate: 'Wyceń projekt front-end',
+    tags: 'front‑end · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
+    ctaEstimate: 'Wyceń projekt front‑end',
     qualities: {
-      title: 'Zalety naszych front-endowych aplikacji',
+      title: 'Zalety naszych front‑endowych aplikacji',
       desc: 'Wiemy, jak tworzyć świetne aplikacje HTML5. To cechy, które pozwalają nam to osiągnąć.',
       code: {
         title: 'Nowoczesny kod',
@@ -106,12 +106,12 @@ export default {
       },
       technologies: {
         title: 'Najlepsze technologie',
-        desc: 'Aby dostarczać najlepsze rozwiązania, używamy technologi front-endowych najwyższej klasy. Najważniejszą częścią naszego stosu jest framework Vue.js opisany poniżej. Oprócz tego używamy technologii Sass, Webpack, Yarn, Docker, Bootstrap i wielu innych!',
+        desc: 'Aby dostarczać najlepsze rozwiązania, używamy technologi front‑endowych najwyższej klasy. Najważniejszą częścią naszego stosu jest framework Vue.js opisany poniżej. Oprócz tego używamy technologii Sass, Webpack, Yarn, Docker, Bootstrap i wielu innych!',
       },
     },
     whyWeChose: {
       title: 'Dlaczego wybraliśmy Vue.js',
-      desc: 'Vue.js to najlżejszy i najbardziej elastyczny framework JavaScript. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji front-endowej!',
+      desc: 'Vue.js to najlżejszy i najbardziej elastyczny framework JavaScript. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji front‑endowej!',
       component: {
         title: 'Komponentowość',
         desc: 'We Vue.js wszystko jest komponentem. Budowanie aplikacji zorientowanych komponentowo umożliwia łatwe ponowne wykorzystanie już utworzonych elementów, dzięki czemu proces tworzenia zajmuje mniej czasu.',
@@ -151,17 +151,17 @@ export default {
     },
     technologies: {
       title: 'Używamy najnowszych technologii',
-      desc: 'Narzędzia, które na co dzień używamy do tworzenia front-endu',
+      desc: 'Narzędzia, które na co dzień używamy do tworzenia front‑endu',
     },
   },
   node: {
-    title: 'Back-end w Node.js',
-    shortTitle: 'Back-end w Node.js',
+    title: 'back‑end w Node.js',
+    shortTitle: 'back‑end w Node.js',
     desc: 'Potrzebujesz niezawodnego API? Tworzymy superszybkie aplikacje przy użyciu Koa.js i PostgreSQL.',
-    tags: 'BACK-END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
-    ctaEstimate: 'Wyceń projekt back-end',
+    tags: 'back‑end · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
+    ctaEstimate: 'Wyceń projekt back‑end',
     qualities: {
-      title: 'Zalety naszych back-endowych aplikacji',
+      title: 'Zalety naszych back‑endowych aplikacji',
       desc: 'Wiemy, jak tworzyć wyjątkowe aplikacje Node.js. To najważniejsze cechy, które pomagają nam to osiągnąć.',
       security: {
         title: 'Bezpieczeństwo',
@@ -182,7 +182,7 @@ export default {
     },
     whyWeChose: {
       title: 'Dlaczego wybraliśmy Node.js',
-      desc: 'Node.js daje nam wielką swobodę robienia rzeczy po swojemu. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji back-endowej!',
+      desc: 'Node.js daje nam wielką swobodę robienia rzeczy po swojemu. Zobacz, dlaczego powinna to być główna technologia Twojej następnej aplikacji back‑endowej!',
       ecosystem: {
         title: 'Największy ekosystem',
         desc: 'Ponad pół miliona bibliotek jest zarejestrowanych w menedżerze pakietów node (npm). Ten największy na świecie rejestr oprogramowania daje nam niezwykłą możliwość znalezienia gotowych modułów, które pasują do naszych potrzeb',
@@ -197,7 +197,7 @@ export default {
       },
       javascript: {
         title: 'JavaScript',
-        desc: 'Ten sam język programowania zarówno dla front-endu, jak i back-endu pozwala na wielokrotne użycie wspólnych modułów po obu stronach aplikacji. Z tego powodu projekty są łatwiejsze w tworzeniu oraz utrzymaniu.',
+        desc: 'Ten sam język programowania zarówno dla front‑endu, jak i back‑endu pozwala na wielokrotne użycie wspólnych modułów po obu stronach aplikacji. Z tego powodu projekty są łatwiejsze w tworzeniu oraz utrzymaniu.',
       },
     },
     inventiAndNode: {
@@ -217,7 +217,7 @@ export default {
     },
     technologies: {
       title: 'Używamy najnowszych technologii',
-      desc: 'Narzędzia, które na co dzień używamy do tworzenia back-endu',
+      desc: 'Narzędzia, które na co dzień używamy do tworzenia back‑endu',
     },
   },
   design: {
@@ -273,8 +273,8 @@ export default {
       questionScope: {
         title: 'Jaki jest zakres twojego projektu?',
         answers: {
-          answerFrontEnd: 'Front-end',
-          answerBackEnd: 'Back-end',
+          answerFrontEnd: 'front‑end',
+          answerBackEnd: 'back‑end',
           answerDesign: 'Projekt UI & UX',
         },
       },
