@@ -67,7 +67,7 @@
               :placeholder="$t('estimate.survey.questionDetails.form.namePlaceholder')",
               :class="{ 'o-input--error': !isNameValid }",
             )
-            small.o-form-error
+            small.o-form-error.survey__error
               span(v-show="!isEmailValid") {{ $t('errors.name') }}
           .column.small-12.medium-4
             input.o-input(
@@ -76,7 +76,7 @@
               :placeholder="$t('estimate.survey.questionDetails.form.emailPlaceholder')",
               :class="{ 'o-input--error': !isEmailValid }",
             )
-            small.o-form-error
+            small.o-form-error.survey__error
               span(v-show="!isEmailValid") {{ $t('errors.email') }}
           .column.small-12.medium-4.mb-16
             input.o-input(
@@ -90,7 +90,7 @@
               :placeholder="$t('estimate.survey.questionDetails.form.messagePlaceholder')",
               :class="{ 'o-input--error': !isMessageValid }",
             )
-            small.o-form-error
+            small.o-form-error.survey__error
               span(v-show="!isMessageValid") {{ $t('errors.message') }}
           .column.small-12.mt-24.large-mt-48.mb-24.text-center
             button.survey__btn.o-btn(
