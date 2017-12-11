@@ -12,7 +12,7 @@
   transition-duration: $t-duration
   transition-property: transform, background-color, padding
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     padding-top: 24px
     padding-bottom: 24px
 
@@ -20,7 +20,7 @@
   transform: translateY(-85%)
   background-color: $c-ship-gray
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     transform: translateY(-90%)
 
 .navbar--filled
@@ -32,7 +32,7 @@
   color: $c-white
   vertical-align: middle
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     width: 43px
     height: 40px
 
@@ -84,7 +84,7 @@
       transition: bottom $t-duration, transform $t-duration
       transition-delay: $t-duration, 0s
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     display: none
 
 .navbar__nav-button--active
@@ -123,7 +123,7 @@
     content: ""
     opacity: 0.99
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     position: static
     display: inline-block
 
@@ -149,7 +149,7 @@
   transform: translate(-50%, -50%)
   text-align: center
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     position: static
     display: flex
     align-items: baseline
@@ -169,7 +169,7 @@
   &:not(.navbar__link--active):hover
     text-decoration: underline
 
-  @media #{$medium-up}
+  +breakpoint(700px up)
     display: inline-block
     margin-right: 24px
     margin-bottom: 0
