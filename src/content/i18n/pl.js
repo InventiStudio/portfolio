@@ -87,7 +87,7 @@ export default {
     title: 'Front‑end we Vue.js',
     shortTitle: 'Front‑end we Vue.js',
     desc: 'Jesteśmy ekspertami w tworzeniu responsywnych aplikacji front‑endowych przy użyciu Vue.js.',
-    tags: 'front‑end · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
+    tags: 'FRONT‑END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
     ctaEstimate: 'Wyceń projekt front‑end',
     qualities: {
       title: 'Zalety naszych front‑endowych aplikacji',
@@ -158,7 +158,7 @@ export default {
     title: 'Back‑end w Node.js',
     shortTitle: 'Back‑end w Node.js',
     desc: 'Potrzebujesz niezawodnego API? Tworzymy superszybkie aplikacje przy użyciu Koa.js i PostgreSQL.',
-    tags: 'back‑end · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
+    tags: 'BACK‑END · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
     ctaEstimate: 'Wyceń projekt back‑end',
     qualities: {
       title: 'Zalety naszych back‑endowych aplikacji',
@@ -273,8 +273,8 @@ export default {
       questionScope: {
         title: 'Jaki jest zakres twojego projektu?',
         answers: {
-          answerFrontEnd: 'front‑end',
-          answerBackEnd: 'back‑end',
+          answerFrontEnd: 'Front‑end',
+          answerBackEnd: 'Back‑end',
           answerDesign: 'Projekt UI & UX',
         },
       },
