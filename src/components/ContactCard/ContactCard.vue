@@ -1,11 +1,11 @@
 <template lang="pug">
   article.o-card.o-wave--gray.bg-alabaster.text-center
     h2.o-heading-1.c-ship-gray-80.mb-16 {{ $t('contact.title') }}
-    a.o-link.fw-medium.block.c-purple.underline(:href="mailToUrl('content.contact.emailAddress')")
+    a.o-link.fw-medium.block.c-purple(:href="mailToUrl('content.contact.emailAddress')")
       | {{ $t('content.contact.emailAddress') }}
-    a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone1')")
+    a.o-link.fw-medium.block.c-ship-gray(:href="phoneToUrl('content.contact.phone1')")
       | {{ $t('content.contact.phone1') }}
-    a.o-link.fw-medium.block.c-ship-gray.underline(:href="phoneToUrl('content.contact.phone2')")
+    a.o-link.fw-medium.block.c-ship-gray(:href="phoneToUrl('content.contact.phone2')")
       | {{ $t('content.contact.phone2') }}
     SocialLinks.mt-32
     form.max-w-370.mt-48
