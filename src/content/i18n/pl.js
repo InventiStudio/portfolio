@@ -84,8 +84,8 @@ export default {
     },
   },
   vue: {
-    title: 'front‑end we Vue.js',
-    shortTitle: 'front‑end we Vue.js',
+    title: 'Front‑end we Vue.js',
+    shortTitle: 'Front‑end we Vue.js',
     desc: 'Jesteśmy ekspertami w tworzeniu responsywnych aplikacji front‑endowych przy użyciu Vue.js.',
     tags: 'front‑end · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSYWNOŚĆ',
     ctaEstimate: 'Wyceń projekt front‑end',
@@ -155,8 +155,8 @@ export default {
     },
   },
   node: {
-    title: 'back‑end w Node.js',
-    shortTitle: 'back‑end w Node.js',
+    title: 'Back‑end w Node.js',
+    shortTitle: 'Back‑end w Node.js',
     desc: 'Potrzebujesz niezawodnego API? Tworzymy superszybkie aplikacje przy użyciu Koa.js i PostgreSQL.',
     tags: 'back‑end · WEB APP · NODE.JS · KOA.JS · JAVASCRIPT · API · REST · POSTGRESQL',
     ctaEstimate: 'Wyceń projekt back‑end',
