@@ -5,7 +5,7 @@
   )
     .row.align-middle.align-justify
       .shrink.columns
-        router-link(:to="$routeByName('Home')", data-navbar="link--home")
+        router-link(:to="$routeByName('Home')", data-navbar="link--home-1")
           img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
       .shrink.columns
         button.navbar__nav-button(
@@ -20,7 +20,7 @@
               :to="$routeByName('Home')",
               :exact="true",
               active-class="navbar__link--active",
-              data-navbar="link--home",
+              data-navbar="link--home-2",
             ) {{ $t('home.title') }}
             router-link.navbar__link(
               :to="$routeByName('Services')",
