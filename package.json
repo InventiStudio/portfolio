@@ -26,7 +26,7 @@
     "docker": "./deploy/docker.sh",
     "deploy": "./deploy/deploy.sh",
     "lint:sass": "sass-lint --config .sass-lint.yml -v -q",
-    "lint:es": "eslint --ext .js,.vue src test/unit/specs",
+    "lint:es": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "lint": "yarn lint:sass && yarn lint:es",
     "test:unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test:e2e": "node test/e2e/runner.js",
