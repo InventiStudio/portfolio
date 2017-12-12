@@ -34,9 +34,9 @@ export default {
       cta: 'See case study',
       cases: {
         smokefree: {
-          author: 'Jon Doe',
-          position: 'CEO at DoeApp',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a dictum ex. Aenean vitae consequat purus. Fusce tristique massa sit amet justo feugiat, at ullamcorper lectus euismod. Vestibulum ante metus, placerat non sem ac, suscipit mattis ligula. Quisque elementum tortor mauris, vel scelerisque neque ultrices sit amet. Donec a consequat lorem. Nullam tempor porttitor sem at volutpat.',
+          author: 'Leszek Wiland',
+          position: 'Smokefree',
+          text: 'Our work together has been nothing but professional and flawless. We have successfully completed development of a single page website and working currently on a large scale web application. They are an experienced team ready to take on all kinds of projects and see them to their successful end. Most of our work has been carried out remotely and despite the distance, all technical issues were communicated well and deadlines easily met without any disruptions. They are true professionals, able to take feedback well, work independently and suggest alternative solutions where necessary. I highly recommend InventiStudio for all your web development projects.',
         },
       },
     },
