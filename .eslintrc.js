@@ -37,6 +37,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
     }],
+    'import/no-unresolved': 0,
     'key-spacing': 0,
     // no limit for line length
     'max-len': 0,
@@ -47,9 +48,6 @@ module.exports = {
     ],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-     // does not understand Webpack's aliases
-    'import/no-extraneous-dependencies': 0,
-    'import/no-unresolved': 0,
     // for Piteł ;*
     'no-multi-spaces': 0,
     // allow to reasign object keys, e.g *.prototype
@@ -60,6 +58,7 @@ module.exports = {
     'no-shadow': 0,
     // allow e.g 'window.__example' name
     'no-underscore-dangle': 0,
+    'object-shorthand': ['error', 'always', { 'avoidQuotes': false }],
     semi: ["error", "never"]
   }
 }
