@@ -30,7 +30,7 @@
     "lint": "yarn lint:sass && yarn lint:es",
     "test:unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test:e2e": "node test/e2e/runner.js",
-    "test": "yarn test:unit"
+    "test": "yarn test:unit && yarn test:e2e"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
