@@ -1,8 +1,11 @@
 <template lang="pug">
-  header.navbar(:class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }")
+  header.navbar(
+    :class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }",
+    data-navbar="",
+  )
     .row.align-middle.align-justify
       .shrink.columns
-        router-link(:to="$routeByName('Home')")
+        router-link(:to="$routeByName('Home')", data-navbar="link--home")
           img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
       .shrink.columns
         button.navbar__nav-button(
@@ -17,17 +20,20 @@
               :to="$routeByName('Home')",
               :exact="true",
               active-class="navbar__link--active",
+              data-navbar="link--home",
             ) {{ $t('home.title') }}
             router-link.navbar__link(
               :to="$routeByName('Services')",
               :exact="true",
               active-class="navbar__link--active",
+              data-navbar="link--services",
             ) {{ $t('services.title') }}
             a.navbar__link(:href="$t('content.urls.blog')") {{ $t('navbar.blog') }}
             router-link.navbar__cta.o-btn.transition(
               :to="$routeByName('Estimate')",
               :exact="true",
               active-class="navbar__cta--active",
+              data-navbar="link--estimate",
             )
               span.fs-16.transition {{ $t('common.estimateProject') }}
 </template>
