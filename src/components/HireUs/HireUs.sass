@@ -1,5 +1,4 @@
 @import "~stylesheets/helpers"
-@import "~stylesheets/mixins/btn"
 
 .hire-us
   padding: 80px 0
@@ -23,20 +22,20 @@
 
     &:not(:disabled):hover
       +o-btn--hover--shadow($c-purple)
-      +lift--hover
+      +m-lift--hover
 
     &:not(:disabled):active
       +o-btn--active--shadow($c-purple)
-      +lift--active
+      +m-lift--active
 
   .hire-us__contact
     +o-btn--border($c-violet)
 
     &:not(:disabled):hover
-      +lift--hover
+      +m-lift--hover
 
     &:not(:disabled):active
-      +lift--active
+      +m-lift--active
 
     span
       color: $c-violet
@@ -63,10 +62,10 @@
     border-color: $c-white
 
     &:not(:disabled):hover
-      +lift--hover
+      +m-lift--hover
 
     &:not(:disabled):active
-      +lift--active
+      +m-lift--active
 
     span
       color: $c-white
