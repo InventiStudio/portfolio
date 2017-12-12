@@ -4,6 +4,7 @@ import 'whatwg-fetch'
 // https://github.com/zloirock/core-js#commonjs
 import 'babel-polyfill'
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import Vuelidate from 'vuelidate'
 import VueHead from 'vue-head'
 import VueI18n from 'vue-i18n'
@@ -14,6 +15,7 @@ import Icon from 'components/Icon/Icon'
 
 Vue.config.productionTip = false
 
+Vue.use(VueRouter)
 Vue.use(Vuelidate)
 Vue.use(VueHead)
 Vue.use(VueI18n)

@@ -3,6 +3,7 @@ import 'es6-promise/auto'
 import Vue from 'vue'
 
 Vue.config.productionTip = false
+Vue.config.ignoredElements = ['Card', 'Icon', 'icon']
 
 // Polyfill fn.bind() for PhantomJS
 /* eslint-disable no-extend-native */

@@ -5,8 +5,6 @@ import i18n from 'src/content'
 import constants from 'src/constants'
 import { stopRootLoader } from 'services/events'
 
-Vue.use(VueRouter)
-
 const commonOptions = {
   // It helps to get rid of slash-ended routes (for SEO purposes)
   pathToRegexpOptions: { strict: true },
@@ -76,23 +74,39 @@ const router = new VueRouter({
   routes,
 })
 
+// This is helper for router-link component that allows
+// to write links without repeating current language all
+function $routeByName(name, opts = {}) {
+  const { route } = this.$router.resolve({ name, params: { lang: i18n.locale }, exact: true, ...opts })
+  return {
+    path: route.path.replace(constants.regex.lastUrlBackslash, ''),
+    ...opts,
+  }
+}
+Vue.mixin({
+  methods: {
+    $routeByName,
+  },
+})
+
+
 router.beforeEach((to, from, next) => {
-  // Refex for detecting slash-ended path
   // Helper for redirections
-  const defaultRoute = router.resolve({
+  const defaultRoute = opts => router.resolve({
     name: 'Home',
     params: { lang: to.params.lang || from.params.lang || i18n.fallbackLocale },
     exact: true,
+    ...opts,
   }).href.replace(constants.regex.lastUrlBackslash, '')
   // When language is not specified
   if (to.path === '/') {
     head.responseCode.code = 302
-    head.responseCode.location = `${window.location.origin}${defaultRoute}`
-    next({ path: defaultRoute, replace: true })
+    head.responseCode.location = `${window.location.origin}${defaultRoute()}`
+    next({ path: defaultRoute(), replace: true })
   // When page is not found
   } else if (to.name === 'Error404') {
     head.responseCode.code = 404
-    next({ path: defaultRoute, replace: true })
+    next({ path: defaultRoute(), replace: true })
   // When language has been changed
   } else if (to.params.lang !== i18n.locale) {
     if (Object.keys(i18n.messages).find(locale => to.params.lang === locale)) {
@@ -100,29 +114,15 @@ router.beforeEach((to, from, next) => {
       next()
     } else {
       head.responseCode.code = 404
-      next({ path: defaultRoute, params: { lang: i18n.fallbackLocale }, replace: true })
+      next({ path: defaultRoute({ params: { lang: i18n.fallbackLocale } }), replace: true })
     }
   } else if (to.path.match(constants.regex.lastUrlBackslash)) {
     head.responseCode.code = 301
     head.responseCode.location = `${window.location.origin}${to.path.replace(constants.regex.lastUrlBackslash, '')}`
-    next()
+    next($routeByName.call({ $router: router }, to.name, { query: to.query, hash: to.hash, params: to.params }))
   } else {
     next()
   }
-})
-
-// This is helper for router-link component that allows
-// to write links without repeating current language all
-Vue.mixin({
-  methods: {
-    $routeByName(name, opts = {}) {
-      const { route } = this.$router.resolve({ name, params: { lang: i18n.locale }, exact: true, ...opts })
-      return {
-        path: route.path.replace(constants.regex.lastUrlBackslash, ''),
-        ...opts,
-      }
-    },
-  },
 })
 
 export default router
