@@ -59,4 +59,4 @@
   }
 </script>
 
-<style src="./posts.sass" lang="sass" scoped></style>
+<style src="./Posts.sass" lang="sass" scoped></style>
