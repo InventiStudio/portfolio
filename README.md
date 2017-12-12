@@ -41,6 +41,9 @@ yarn lint
 ```bash
 # Run Unit tests
 yarn test:unit
+
+# Run e2e tests
+yarn test:e2e
 ```
 
 ## Production
