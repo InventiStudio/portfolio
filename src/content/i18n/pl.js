@@ -34,9 +34,14 @@ export default {
       cta: 'Dowiedz się więcej',
       cases: {
         smokefree: {
-          author: 'Janusz Piechociński',
-          position: 'Szef w DoeApp',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a dictum ex. Aenean vitae consequat purus. Fusce tristique massa sit amet justo feugiat, at ullamcorper lectus euismod. Vestibulum ante metus, placerat non sem ac, suscipit mattis ligula. Quisque elementum tortor mauris, vel scelerisque neque ultrices sit amet. Donec a consequat lorem. Nullam tempor porttitor sem at volutpat.',
+          author: 'Leszek Wiland',
+          position: 'CEO, Smokefree',
+          text: 'Nasza wspólna praca była profesjonalna i bezbłędna. Dotychczas stworzyliśmy razem jedną mniejszą aplikację webową, a obecnie pracujemy nad kolejną, dużo większą aplikacją. Są doświadczonym zespołem, gotowym do podjęcia wszelkiego rodzaju projektów. Większość naszej pracy jest prowadzona zdalnie i pomimo odległości, wszystkie kwestie techniczne zostały dobrze przekazane, a terminy dotrzymane bez żadnych zakłóceń. Są prawdziwymi profesjonalistami, potrafią dobrze odbierać opinie, pracują niezależnie i proponują alternatywne rozwiązania tam, gdzie to konieczne. Gorąco polecam InventiStudio dla wszystkich Twoich projektów internetowych',
+        },
+        zapytajcoacha: {
+          author: 'Henryk Pepliński',
+          position: 'Menadżer transportu, Transport Gronek',
+          text: 'Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z InventiStudio sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.',
         },
       },
     },
