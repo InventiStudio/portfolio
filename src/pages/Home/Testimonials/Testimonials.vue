@@ -28,10 +28,17 @@
           )
             .testimonials__card.o-card.relative.mt-40
               article.pl-24.pr-24.medium-pl-32.medium-pr-32.large-pl-80.large-pr-80
-                img.testimonials__avatar(:src="testimonial.avatarSrc")
+                img.testimonials__avatar(
+                  v-if="testimonial.avatarSrc",
+                  :src="`/static/${testimonial.avatarSrc}`",
+                )
                 h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
-                a.fs-16.c-ship-gray-40.mb-16.block(:href="testimonial.positionUrl")
+                a.o-link.c-ship-gray-40.mb-16.block(
+                  v-if="testimonial.positionUrl",
+                  :href="testimonial.positionUrl",
+                )
                   span {{ getTranslation(testimonial, 'position') }}
+                span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
                 p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
                 a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
                   span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
@@ -60,25 +67,14 @@
     },
     computed: {
       testimonials() {
-        // TODO: Just for testing
         return [
           {
             key: 'smokefree',
-            avatarSrc: 'http://lorempixel.com/400/200/',
-            positionUrl: ' https://smokefree.place/62nxc1',
+            positionUrl: 'https://smokefree.place/62nxc1',
           },
           {
             key: 'zapytajcoacha',
-            avatarSrc: 'http://lorempixel.com/400/200/',
-            caseUrl: 'https://someurl.com',
-          },
-          {
-            key: 'test1',
-            avatarSrc: 'http://lorempixel.com/400/200/',
-          },
-          {
-            key: 'test2',
-            avatarSrc: 'http://lorempixel.com/400/200/',
+            avatarSrc: 'henrykpeplinski.jpg',
           },
         ]
       },
