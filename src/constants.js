@@ -13,4 +13,7 @@ export default {
     mailer: '/api/mailer',
     blog: '/api/blog',
   },
+  blog: {
+    imagesDir: 'static/blog',
+  },
 }
