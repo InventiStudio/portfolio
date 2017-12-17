@@ -8,6 +8,7 @@
 <script>
   import head from 'src/head'
   import { getBlogPostBySlug } from 'services/blog'
+  import { updateHead } from 'services/events'
 
   export default {
     head: head.set({
@@ -65,7 +66,7 @@
     },
     async mounted() {
       this.post = await getBlogPostBySlug(this.$route.params.slug)
-      this.$emit('updateHead')
+      updateHead(this)
     },
   }
 </script>

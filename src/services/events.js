@@ -27,3 +27,8 @@ export function resetEstimationScope() {
 export function stopRootLoader() {
   eventBus.$emit('stop-root-loader')
 }
+
+export function updateHead(instance) {
+  instance.$emit('updateHead')
+  eventBus.$emit('updateHead')
+}

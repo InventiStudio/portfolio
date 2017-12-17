@@ -41,10 +41,16 @@
   import smoothScrollTo from 'services/scroll'
   import constants from 'src/constants'
   import SocialLinks from 'components/SocialLinks/SocialLinks'
+  import eventBus from 'services/eventBus'
 
   export default {
     components: {
       SocialLinks,
+    },
+    data() {
+      return {
+        alternate: '',
+      }
     },
     computed: {
       constants: () => constants,
@@ -59,8 +65,16 @@
         return this.$t(`content.languages.${this.secondLanguageLocale}`)
       },
       secondLanguageRoute() {
+        if (this.alternate) {
+          return {
+            path: this.alternate.replace(window.location.origin, ''),
+          }
+        }
         return this.$route.name
-          ? this.$routeByName(this.$route.name, { params: { lang: this.secondLanguageLocale } })
+          ? this.$routeByName(this.$route.name, { params: {
+            ...this.$route.params,
+            lang: this.secondLanguageLocale,
+          } })
           : ''
       },
     },
@@ -73,6 +87,22 @@
       },
       scrollToSection(name) {
         smoothScrollTo(this.constants.sectionIds.home[name])
+      },
+      getAlternateLink() {
+        return (document.querySelectorAll(`link[hreflang=${this.secondLanguageLocale}]`)[0] || {}).href
+      },
+    },
+    mounted() {
+      this.alternate = this.getAlternateLink()
+      eventBus.$on('updateHead', () => {
+        this.alternate = this.getAlternateLink()
+      })
+    },
+    watch: {
+      $route(newRoute, oldRoute) {
+        if (newRoute.path !== oldRoute.path) {
+          this.alternate = this.getAlternateLink()
+        }
       },
     },
   }
