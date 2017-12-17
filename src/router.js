@@ -59,6 +59,12 @@ const routes = [
         component: resolver(resolve => require(['pages/Estimate/Estimate'], resolve)),
         ...commonOptions,
       },
+      {
+        path: 'blog',
+        name: 'Blog',
+        component: resolver(resolve => require(['pages/Blog/Blog'], resolve)),
+        ...commonOptions,
+      },
     ],
   },
   {

@@ -12,7 +12,6 @@ export default {
   },
   navbar: {
     title: 'Menu',
-    blog: 'Blog',
   },
   social: {
     title: 'Our social profiles',
@@ -302,6 +301,9 @@ export default {
       },
       ctaSend: 'Estimate',
     },
+  },
+  blog: {
+    title: 'Blog',
   },
   contact: {
     title: 'Contact',
