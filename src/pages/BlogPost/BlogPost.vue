@@ -41,7 +41,7 @@
         }))
       },
       image() {
-        return `${window.location.origin}${this.post.data.cover}`
+        return this.post.data.coverPath
       },
     }, {
       meta() {
