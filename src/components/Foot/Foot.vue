@@ -5,7 +5,7 @@
         router-link.align-middle.valign-middle(:to="$routeByName('Home')")
           img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
         nav.inline-block.valign-middle
-          h2.m-0.inline-block: router-link.foot__lang.o-link.c-white(:to="secondLanguageRoute")
+          h2.m-0.inline-block: a.foot__lang.o-link.c-white(:href="alternate")
             | {{ secondLanguageName }}
         SocialLinks.mt-24
       nav.foot__column.small-8.medium-4.large-2.columns.small-mt-32.large-mt-0
@@ -64,19 +64,6 @@
       secondLanguageName() {
         return this.$t(`content.languages.${this.secondLanguageLocale}`)
       },
-      secondLanguageRoute() {
-        if (this.alternate) {
-          return {
-            path: this.alternate.replace(window.location.origin, ''),
-          }
-        }
-        return this.$route.name
-          ? this.$routeByName(this.$route.name, { params: {
-            ...this.$route.params,
-            lang: this.secondLanguageLocale,
-          } })
-          : ''
-      },
     },
     methods: {
       mailToUrl(mail) {
@@ -88,22 +75,14 @@
       scrollToSection(name) {
         smoothScrollTo(this.constants.sectionIds.home[name])
       },
-      getAlternateLink() {
-        return (document.querySelectorAll(`link[hreflang=${this.secondLanguageLocale}]`)[0] || {}).href
+      getAlternateLink(links) {
+        this.alternate = (links.find(link => link.hreflang === this.secondLanguageLocale) || {}).href
       },
     },
     mounted() {
-      this.alternate = this.getAlternateLink()
-      eventBus.$on('updateHead', () => {
-        this.alternate = this.getAlternateLink()
+      eventBus.$on('updateAlternateLink', (links) => {
+        this.getAlternateLink(links)
       })
-    },
-    watch: {
-      $route(newRoute, oldRoute) {
-        if (newRoute.path !== oldRoute.path) {
-          this.alternate = this.getAlternateLink()
-        }
-      },
     },
   }
 </script>

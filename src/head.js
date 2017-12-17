@@ -1,5 +1,6 @@
 import R from 'ramda'
 import constants from 'src/constants'
+import { updateAlternateLink } from 'services/events'
 
 function getConfig(customParameters = {}) {
   return R.merge({
@@ -100,8 +101,10 @@ export default {
         )
       },
       link() {
+        const alternate = c.alternate.call(this) || generateAlternateLinks(this, ['en', 'pl'], 'en')
+        updateAlternateLink(alternate)
         return [
-          ...(c.alternate.call(this) || generateAlternateLinks(this, ['en', 'pl'], 'en')),
+          ...alternate,
         ]
       },
       script() {

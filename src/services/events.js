@@ -28,7 +28,6 @@ export function stopRootLoader() {
   eventBus.$emit('stop-root-loader')
 }
 
-export function updateHead(instance) {
-  instance.$emit('updateHead')
-  eventBus.$emit('updateHead')
+export function updateAlternateLink(links) {
+  eventBus.$emit('updateAlternateLink', links)
 }
