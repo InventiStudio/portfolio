@@ -5,6 +5,7 @@ export default {
   },
   common: {
     inventiStudio: 'InventiStudio',
+    readMore: 'Read more',
     orContactUs: 'or contact us!',
     estimateProject: 'Estimate project',
     previous: 'Previous',
@@ -34,12 +35,12 @@ export default {
       cases: {
         smokefree: {
           author: 'Leszek Wiland',
-          position: 'CEO, Smokefree',
+          position: 'Smokefree',
           text: 'Our work together has been nothing but professional and flawless. We have successfully completed development of a single page website and working currently on a large scale web application. They are an experienced team ready to take on all kinds of projects and see them to their successful end. Most of our work has been carried out remotely and despite the distance, all technical issues were communicated well and deadlines easily met without any disruptions. They are true professionals, able to take feedback well, work independently and suggest alternative solutions where necessary. I highly recommend InventiStudio for all your web development projects.',
         },
         zapytajcoacha: {
           author: 'Henryk Pepliński',
-          position: 'Logistics manager, Transport Gronek',
+          position: 'ZapytajCoacha',
           text: 'Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from InventiStudio means that I will always come back to them if in need of a new web application or other IT service.',
         },
       },
