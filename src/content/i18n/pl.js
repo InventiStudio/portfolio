@@ -62,7 +62,7 @@ export default {
     title: 'Usługi',
     desc: 'Tworzymy front‑end we Vue.js, back‑end w Node.js oraz zajmujemy się projektowaniem UI/UX. Niezależnie od tego, czy jesteś przedsiębiorcą, firmą czy startupem - z pewnością możemy Ci pomóc!',
     landing: {
-      title: 'Nasz warsztat',
+      title: 'Usługi',
     },
     whatWeDo: {
       title: 'Czym się zajmujemy',

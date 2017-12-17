@@ -61,7 +61,7 @@ export default {
     title: 'Services',
     desc: 'We provide Vue.js front‑end, Node.js back‑end and UI/UX design services. Whether you’re enterprise, company or startup - we can certainly help you!',
     landing: {
-      title: 'Our expertise',
+      title: 'Services',
     },
     whatWeDo: {
       title: 'What we do',
