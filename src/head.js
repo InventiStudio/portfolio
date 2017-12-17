@@ -10,6 +10,7 @@ function getConfig(customParameters = {}) {
     image()       { return this.$t('content.meta.image') },
     language()    { return this.$route.params.lang || 'en' },
     breadcrumb()  { return undefined },
+    alternate()   { return undefined },
   }, customParameters)
 }
 
@@ -60,9 +61,11 @@ export default {
   },
 
   set(customParameters = {}, additionalMetaTags = {}) {
+    additionalMetaTags.meta = additionalMetaTags.meta || (() => [])
+
     const c         = getConfig(customParameters)
     const prerender = generatePrerenderResponseCodeTags.bind(this)
-    return R.merge({
+    return {
       title() {
         return {
           inner: parseTitle(c.sitename.call(this), c.title.call(this)),
@@ -93,11 +96,12 @@ export default {
           { property: 'og:description',         content: c.description.call(this) },
         ].concat(
           prerender(),
+          additionalMetaTags.meta.call(this),
         )
       },
       link() {
         return [
-          ...generateAlternateLinks(this, ['en', 'pl'], 'en'),
+          ...(c.alternate.call(this) || generateAlternateLinks(this, ['en', 'pl'], 'en')),
         ]
       },
       script() {
@@ -105,6 +109,6 @@ export default {
           { type: 'application/ld+json', inner: generateBreadcrumbJson(this, c.breadcrumb.call(this)) },
         ]
       },
-    }, additionalMetaTags)
+    }
   },
 }
