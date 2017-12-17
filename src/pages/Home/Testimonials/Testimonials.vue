@@ -70,6 +70,7 @@
         return [
           {
             key: 'smokefree',
+            avatarSrc: 'leszekwiland.jpg',
             positionUrl: 'https://smokefree.place/62nxc1',
           },
           {
