@@ -2,10 +2,13 @@ import constants from 'src/constants'
 import api from 'services/api'
 import i18n from 'src/content'
 
-function decorateWithCoverPath(post) {
+function decorateWithCoverPath({ html, data }) {
   return {
-    coverPath: `${window.location.origin}/${constants.blog.imagesDir}/${post.data.cover}`,
-    ...post,
+    html,
+    data: {
+      ...data,
+      coverPath: `${window.location.origin}/${constants.blog.imagesDir}/${data.cover}`,
+    },
   }
 }
 
