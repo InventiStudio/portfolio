@@ -1,9 +1,9 @@
 ---
 title:       Dlaczego piszemy?
-permalink:   dlaczego-piszemy
-hreflang:    why-do-we-write
+slug:        dlaczego-piszemy
+alternate:
+  en:        why-do-we-write
 cover:       /images/why-do-we-write__cover.jpg
-share_cover: /images/why-do-we-write__cover.jpg
 date:        2017-06-15
 description: Po wielu latach korzystania z dobrodziejstw czyjejś pracy przychodzi moment, w którym chcielibyśmy podzielić się zdobytym doświadczeniem ze społecznością, której jesteśmy częścią.
 ---
