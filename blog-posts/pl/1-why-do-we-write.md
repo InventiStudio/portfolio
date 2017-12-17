@@ -3,7 +3,7 @@ title:       Dlaczego piszemy?
 slug:        dlaczego-piszemy
 alternate:
   en:        why-do-we-write
-cover:       /images/why-do-we-write__cover.jpg
+cover:       why-do-we-write__cover.jpg
 date:        2017-06-15
 description: Po wielu latach korzystania z dobrodziejstw czyjejś pracy przychodzi moment, w którym chcielibyśmy podzielić się zdobytym doświadczeniem ze społecznością, której jesteśmy częścią.
 ---
