@@ -21,7 +21,7 @@ module.exports = function() {
           .map(filename => matter.read(path.join(dir, filename)))
           .map(({ content, data }) => ({ data, md: content }))
         if (slug) {
-          const post = posts.find(post => post.data.permalink === slug)
+          const post = posts.find(post => post.data.slug === slug)
           if (!post) return res.status(404).end()
           return res.end(JSON.stringify({
             data: post.data,
