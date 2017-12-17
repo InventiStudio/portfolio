@@ -20,6 +20,7 @@ module.exports = function() {
           .map(filename => filename.replace(dir, ''))
           .map(filename => matter.read(path.join(dir, filename)))
           .map(({ content, data }) => ({ data, md: content }))
+          .sort((a,b) => new Date(b.data.date) - new Date(a.data.date))
         if (slug) {
           const post = posts.find(post => post.data.slug === slug)
           if (!post) return res.status(404).end()
