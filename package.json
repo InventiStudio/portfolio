@@ -35,8 +35,11 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "foundation-sites": "6.2.4",
+    "gray-matter": "^3.1.1",
+    "markdown-it": "^8.4.0",
     "normalize.css": "^5.0.0",
     "ramda": "^0.24.1",
+    "read-dir-files": "^0.1.1",
     "scroll-to": "^0.0.2",
     "vue": "^2.4.2",
     "vue-carousel": "^0.6.5",

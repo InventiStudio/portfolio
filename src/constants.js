@@ -10,6 +10,7 @@ export default {
     },
   },
   api: {
-    mailer: '/mailer',
+    mailer: '/api/mailer',
+    blog: '/api/blog',
   },
 }
