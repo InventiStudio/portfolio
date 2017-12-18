@@ -1,5 +1,5 @@
 <template lang="pug">
-  .design
+  div
     article.design__landing
       Landing
     article.design__responsiveness
