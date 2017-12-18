@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing
+  .landing
     .row.column.text-center
       icon.c-white-80.mb-32.medium-mb-40(type="icon--watch")
       h1.o-heading-1.c-white {{ $t('estimate.title') }}

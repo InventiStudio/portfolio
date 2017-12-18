@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    article.design__landing
+    .design__landing
       Landing
     article.design__responsiveness
       .row.align-center.design__section.design__section--reverse

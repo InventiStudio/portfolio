@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.landing.o-wave--sinus
+  .landing.o-wave--sinus
     .row.column.text-center
       icon.c-white-80.mb-32.medium-mb-40(type="icon--feather")
       h1.o-heading-1.c-white {{ $t('blog.title') }}

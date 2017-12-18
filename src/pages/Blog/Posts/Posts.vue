@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.posts.bg-alabaster
+  .posts.bg-alabaster
     .row.column.align-center
       BlogCard.posts__post(
         v-for="post in posts",
