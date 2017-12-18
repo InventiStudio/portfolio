@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.bg-alabaster
+  div.bg-alabaster(itemscope, itemtype="https://schema.org/Article")
     .blog-post__landing.o-wave--sinus(:style="{ 'background-image': coverCss }")
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
@@ -8,14 +8,19 @@
     .blog-post__content
       .row
         .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2
-          article.blog-post(itemscope, itemtype="https://schema.org/Article", v-html="post.html")
+          .blog-post__article(v-html="post.html")
+    HireUs.hire-us--dark
 </template>
 
 <script>
   import head from 'src/head'
   import { getBlogPostBySlug } from 'services/blog'
+  import HireUs from 'components/HireUs/HireUs'
 
   export default {
+    components: {
+      HireUs,
+    },
     head: head.set({
       title() {
         return this.$t(this.post.data.title)
@@ -82,3 +87,4 @@
 </script>
 
 <style src="./BlogPost.sass" lang="sass" scoped></style>
+<style src="./Article.sass" lang="sass"></style>
