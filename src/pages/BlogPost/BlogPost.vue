@@ -7,8 +7,10 @@
           h1.o-heading-1.c-white.mb-40 {{ post.data.title }}
     .blog-post__content
       .row
-        .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2
-          .blog-post__article(v-html="post.html")
+        .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
+          ShareButtons
+          .blog-post__article.mt-40.mb-40(v-html="post.html")
+          ShareButtons
     HireUs.hire-us--dark
 </template>
 
@@ -16,10 +18,12 @@
   import head from 'src/head'
   import { getBlogPostBySlug } from 'services/blog'
   import HireUs from 'components/HireUs/HireUs'
+  import ShareButtons from 'components/ShareButtons/ShareButtons'
 
   export default {
     components: {
       HireUs,
+      ShareButtons,
     },
     head: head.set({
       title() {

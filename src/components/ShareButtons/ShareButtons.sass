@@ -1,0 +1,21 @@
+@import "~stylesheets/helpers"
+
+.share-buttons__button.button-social
+  margin: 0
+  margin-right: 8px
+  padding: 11px 24px
+  border-radius: 20px
+  color: $c-white
+  font-size: $fs-16
+  transition-duration: $t-duration
+  transition-property: transform box-shadow background-color
+  transition-timing-function: $t-easing
+
+  &[has-counter]
+    min-width: 100px
+
+  &:not(:disabled):hover
+    +m-lift--hover
+
+  &:not(:disabled):active
+    +m-lift--active
