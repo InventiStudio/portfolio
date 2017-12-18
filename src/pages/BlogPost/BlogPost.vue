@@ -1,8 +1,14 @@
 <template lang="pug">
-  article.blog-post(itemscope, itemtype="https://schema.org/Article")
-    pre {{ post }}
-    div(v-html="post.html")
-
+  div.bg-alabaster
+    .blog-post__landing.o-wave--sinus(:style="{ 'background-image': coverCss }")
+      .row.align-center
+        .column.small-12.medium-10.large-8.text-center
+          p.fs-11.c-white-60.mb-16.medium-mb-8 {{ post.data.date }}
+          h1.o-heading-1.c-white.mb-40 {{ post.data.title }}
+    .blog-post__content
+      .row
+        .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2
+          article.blog-post(itemscope, itemtype="https://schema.org/Article", v-html="post.html")
 </template>
 
 <script>
@@ -62,6 +68,11 @@
           html: '',
         },
       }
+    },
+    computed: {
+      coverCss() {
+        return `url(${this.post.data.coverPath})`
+      },
     },
     async mounted() {
       this.post = await getBlogPostBySlug(this.$route.params.slug)
