@@ -45,7 +45,7 @@ ctx.send(
 )
 ```
 
-We don't need an explanation of why this code is not the best (an most readable) solution by any means.
+We don't need an explanation of why this code is not the best (and the most readable) solution by any means.
 
 ## 2. Use of temporary variables / constants
 
