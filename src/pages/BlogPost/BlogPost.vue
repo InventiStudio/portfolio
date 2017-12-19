@@ -1,5 +1,11 @@
 <template lang="pug">
-  div.bg-alabaster(itemscope, itemtype="https://schema.org/Article")
+  div.bg-alabaster#blog-post-content(itemscope, itemtype="https://schema.org/Article")
+    LoadingBar.blog-post__progress(
+      id="blog-post-loading-bar"
+      :progress="progress"
+      :onErrorDone="()=>{}"
+      :onProgressDone="()=>{}"
+    )
     .blog-post__landing.o-wave--sinus(:style="{ 'background-image': coverCss }")
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
@@ -19,11 +25,13 @@
   import { getBlogPostBySlug, getFormattedDate } from 'services/blog'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
+  import LoadingBar from 'vue2-loading-bar'
 
   export default {
     components: {
       HireUs,
       ShareButtons,
+      LoadingBar,
     },
     head: head.set({
       title() {
@@ -72,6 +80,7 @@
     }),
     data() {
       return {
+        progress: 0,
         post: {
           data: {},
           html: '',
@@ -86,9 +95,21 @@
         return getFormattedDate(this.post.data.date)
       },
     },
+    methods: {
+      handleScroll() {
+        this.progress = Math.min(
+          (100 * document.documentElement.scrollTop) / (document.getElementById('blog-post-content').scrollHeight - window.innerHeight),
+          99.999,
+        )
+      },
+    },
     async mounted() {
       this.post = await getBlogPostBySlug(this.$route.params.slug)
       this.$emit('updateHead')
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.handleScroll)
     },
   }
 </script>
