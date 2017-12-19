@@ -1,10 +1,14 @@
 <template lang="pug">
   .share-buttons
-    VueGoodshareFacebook.share-buttons__button.o-btn(has_icon, has_counter)
-    VueGoodshareLinkedin.share-buttons__button(has_icon, has_counter)
-    VueGoodshareReddit.share-buttons__button(has_icon, has_counter)
-    VueGoodshareTwitter.share-buttons__button(has_icon, has_counter)
-    VueGoodshareGoogle.share-buttons__button(has_icon, has_counter)
+    .row
+      .column
+        VueGoodshareFacebook.share-buttons__button.o-btn(has_icon, has_counter)
+        VueGoodshareLinkedin.share-buttons__button(has_icon, has_counter)
+        VueGoodshareReddit.share-buttons__button(has_icon, has_counter)
+        VueGoodshareTwitter.share-buttons__button(has_icon, has_counter)
+        VueGoodshareGoogle.share-buttons__button(has_icon, has_counter)
+        a.o-btn.share-buttons__button.share-buttons__button--rss(:href="rss")
+          icon.c-white.fs-16(type="icon--rss")
 </template>
 
 <script>
@@ -21,6 +25,11 @@
       VueGoodshareTwitter,
       VueGoodshareGoogle,
       VueGoodshareReddit,
+    },
+    computed: {
+      rss() {
+        return `${window.location.origin}/${this.$route.params.lang}/feed/rss`
+      },
     },
   }
 </script>
