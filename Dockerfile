@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN yarn add express compression sparkpost body-parser read-dir-files markdown-it gray-matter
+RUN yarn add express compression sparkpost body-parser read-dir-files markdown-it gray-matter feed
 
 EXPOSE ${PORT}
 

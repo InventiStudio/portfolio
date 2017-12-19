@@ -29,9 +29,10 @@ module.exports = function serve() {
           return res.end(JSON.stringify({
             data: post.data,
             html: markdown.render(post.md),
+            additional: files.additionalData(req, post),
           }))
         } else {
-          return res.end(JSON.stringify(posts.map(({ data }) => ({ data }))))
+          return res.end(JSON.stringify(posts.map(post => ({ data: post.data, additional: files.additionalData(req, post) }))))
         }
       })
     },

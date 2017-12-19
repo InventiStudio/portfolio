@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "feed": "^1.1.1",
     "foundation-sites": "6.2.4",
     "gray-matter": "^3.1.1",
     "highlight.js": "^9.12.0",

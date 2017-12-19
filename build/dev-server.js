@@ -10,6 +10,7 @@ var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
 var blog = require('./blog/serve')
+var feed = require('./blog/feed')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
@@ -27,6 +28,7 @@ var app = express()
 var compiler = webpack(webpackConfig)
 
 app.get('/api/blog/:lang/:slug?', ...blog())
+app.get('/:lang/feed/:format', ...feed())
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
