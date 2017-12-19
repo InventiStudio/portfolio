@@ -18,7 +18,6 @@ export default {
       linkedin: 'https://www.linkedin.com/company/inventistudio',
       github: 'https://github.com/InventiStudio',
       repository: 'https://github.com/InventiStudio/portfolio',
-      blog: 'https://blog.inventi.studio',
       dribbble: 'https://dribbble.com/inventistudio',
       behance: 'https://www.behance.net/inventistudio',
       instagram: 'https://www.instagram.com/inventistudio',
