@@ -49,13 +49,6 @@ export default {
       title: 'Recent blog posts',
       desc: 'We share our knowledge',
       cta: 'Read more',
-      cases: {
-        readability: {
-          title: 'How we improved readability of our functional code',
-          desc: 'One of the most important rules for writing a deterministic, easy-to-debug code is avoiding side effects. The obvious choice if we want to meet this assumption is to use the functional paradigm. This, however, poseses a risk of poor code readability. This problem is especially evident in situations where we perform a series of transformations on the input data.',
-          url: 'https://blog.inventi.studio/en/how-we-improved-readability-of-our-functional-code/',
-        },
-      },
     },
   },
   services: {

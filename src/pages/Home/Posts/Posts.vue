@@ -65,9 +65,6 @@
       constants: () => constants,
     },
     methods: {
-      getTranslation({ key }, property) {
-        return this.$t(`home.posts.cases.${key}.${property}`)
-      },
       prevSlide() {
         this.$refs.carousel.goToPage(this.$refs.carousel.getPreviousPage())
       },

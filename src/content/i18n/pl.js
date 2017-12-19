@@ -50,13 +50,6 @@ export default {
       title: 'Ostatnie publikacje',
       desc: 'Dzielimy się wiedzą',
       cta: 'Czytaj więcej',
-      cases: {
-        readability: {
-          title: 'Jak poprawiliśmy czytelność naszego funkcyjnego kodu',
-          desc: 'Jedną z ważniejszych zasad pozwalających na pisanie deterministycznego, łatwego w debugowaniu kodu, jest unikanie efektów ubocznych. Oczywistym wyborem, jeżeli chcemy owe założenie spełnić, jest korzystanie z paradygmatu funkcyjnego. Ten jednak niesie ze sobą zagrożenie w postaci nieczytelności kodu. Problem ten jest szczególnie widoczny w sytuacjach, w których na danych wejściowych wykonujemy serie transformacji.',
-          url: 'https://blog.inventi.studio/pl/jak-poprawilismy-czytelnosc-naszego-funkcyjnego-kodu/',
-        },
-      },
     },
   },
   services: {
