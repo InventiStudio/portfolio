@@ -1,7 +1,7 @@
 export default {
   content: {
     meta: {
-      image: 'https://unsplash.it/810/800?image=10',
+      image: 'https://inventi.studio/static/social.png',
     },
     languages: {
       pl: 'Polski',

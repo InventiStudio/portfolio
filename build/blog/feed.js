@@ -5,7 +5,7 @@ const Feed       = require('feed')
 const config = lang => ({
   title:    'InventiStudio Blog',
   id:       'https://inventi.studio/',
-  image:    'https://inventi.studio/', // TODO: Add when image ready
+  image:    'https://inventi.studio/static/social.png',
   favicon:  'https://inventi.studio/static/favicon.ico',
   feedLinks: {
     json:   `https://inventi.studio/${lang}/feed/json`,
