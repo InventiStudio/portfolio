@@ -6,10 +6,10 @@
       :onErrorDone="()=>{}"
       :onProgressDone="()=>{}"
     )
-    .blog-post__landing.o-wave--sinus(:style="{ 'background-image': coverCss }")
+    .blog-post__landing.o-wave--sinus(:style="{ 'background-image': `url(${post.additional.coverFullUrl})` }")
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
-          p.fs-11.c-white.mb-16.medium-mb-8 {{ date }}
+          p.fs-11.c-white.mb-16.medium-mb-8 {{ post.additional.formattedDate }}
           h1.o-heading-1.c-white.mb-40 {{ post.data.title }}
     .blog-post__content
       .row
@@ -22,7 +22,7 @@
 
 <script>
   import head from 'src/head'
-  import { getBlogPostBySlug, getFormattedDate } from 'services/blog'
+  import { getBlogPostBySlug } from 'services/blog'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
   import LoadingBar from 'vue2-loading-bar'
@@ -64,7 +64,7 @@
         }))
       },
       image() {
-        return this.post.data.coverPath
+        return this.post.additional.coverFullUrl
       },
     }, {
       meta() {
@@ -82,18 +82,11 @@
       return {
         progress: 0,
         post: {
+          additional: {},
           data: {},
           html: '',
         },
       }
-    },
-    computed: {
-      coverCss() {
-        return `url(${this.post.data.coverPath})`
-      },
-      date() {
-        return getFormattedDate(this.post.data.date)
-      },
     },
     methods: {
       handleScroll() {

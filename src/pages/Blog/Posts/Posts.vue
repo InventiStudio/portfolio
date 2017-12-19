@@ -6,8 +6,8 @@
         :key="post.data.slug",
         :title="post.data.title",
         :description="post.data.description",
-        :date="post.data.date",
-        :cover="post.data.cover",
+        :date="post.additional.formattedDate",
+        :cover-url="`url(${post.additional.coverFullUrl})`",
         :slug="post.data.slug",
         :color="post.data.color",
       )
