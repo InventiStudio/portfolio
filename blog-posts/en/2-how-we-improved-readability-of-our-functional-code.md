@@ -293,5 +293,3 @@ Try it yourself!
 ## Summary
 
 One code can be written in many ways. And while the readability of particular solutions is above all a matter of taste, it seems to us that some are better than others. We are counting heavily (and looking forward to) the pipeline operator in JavaScript. But while it is not available, we will use the proposed solution. It seems to us the best way out for now.
-
-**We are web development agency based in beautiful Wrocław. Want to work with us? [Get in touch!](https://inventi.studio/en/contact)**

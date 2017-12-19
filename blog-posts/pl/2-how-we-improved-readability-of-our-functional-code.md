@@ -292,5 +292,3 @@ Zapraszamy do **[przetestowania](https://github.com/InventiStudio/using-js)**!
 ## Podsumowanie
 
 Jeden kod można napisać na wiele sposobów. I choć czytelność poszczególnych rozwiązań jest przede wszystkim kwestią gustu, to jednak wydaje nam się, że niektóre wypadają lepiej od reszty. Liczymy mocno (i z niecierpliwością czekamy) na pipeline operator w JavaScripcie. Póki jednak nie jest on dostępny będziemy korzystać z zaproponowanego na końcu rozwiązania. Nam wydaje się to najlepszym wyjściem.
-
-**Tworzymy aplikacje webowe we Wrocławiu. Chcesz z nami współpracować? [Napisz do nas!](https://inventi.studio/pl/contact)**
