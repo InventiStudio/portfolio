@@ -9,7 +9,7 @@
 
 <script>
   import VueGoodshareFacebook from 'vue-goodshare/src/providers/Facebook'
-  import VueGoodshareLinkedin from 'vue-goodshare/src/providers/Linkedin'
+  import VueGoodshareLinkedin from 'vue-goodshare/src/providers/LinkedIn'
   import VueGoodshareTwitter  from 'vue-goodshare/src/providers/Twitter'
   import VueGoodshareGoogle   from 'vue-goodshare/src/providers/GooglePlus'
   import VueGoodshareReddit   from 'vue-goodshare/src/providers/Reddit'
