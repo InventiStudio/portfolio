@@ -15,6 +15,7 @@ install:
   - npm i -g yarn && yarn
 
 script:
+  - npm rebuild node-sass
   - yarn lint
   - yarn test
 
