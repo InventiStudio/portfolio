@@ -29,6 +29,10 @@
 @import "utils/text"
 @import "utils/valign"
 
+@import "~prismjs/themes/prism.css"
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css"
+
+// page transitions
 .fade-enter-active,
 .fade-leave-active
   transition-duration: 250ms
@@ -48,3 +52,12 @@
 .fade-enter,
 .fade-leave-to
   opacity: 0
+
+// syntax highlight in blog-posts
+.highlight
+  display: block
+  padding: 8px 16px
+  border: 1px solid #ddd // sass-lint:disable-line no-color-literals
+  background: #f6f6f6 // sass-lint:disable-line no-color-literals
+  color: #333 // sass-lint:disable-line no-color-literals
+  overflow-x: auto
