@@ -28,7 +28,7 @@
           )
             .posts__card.o-card.relative.mt-40
               article.pl-24.pr-24.medium-pl-32.medium-pr-32.large-pl-80.large-pr-80
-                img.posts__image(:src="post.additional.miniCoverFullUrl")
+                img.posts__image(:src="post.additional.miniCoverFullUrl", :alt="post.data.title")
                 h3.o-heading-3.c-ship-gray.mb-32 {{ post.data.title }}
                 p.o-paragraph.c-ship-gray {{ post.data.description }}
                 router-link.o-btn.o-btn--pink.mt-24(

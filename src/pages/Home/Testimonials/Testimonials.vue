@@ -31,6 +31,7 @@
                 img.testimonials__avatar(
                   v-if="testimonial.avatarSrc",
                   :src="`/static/testimonials/${testimonial.avatarSrc}`",
+                  :alt="getTranslation(testimonial, 'author')",
                 )
                 h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
                 a.o-link.c-ship-gray-40.mb-16.block(
