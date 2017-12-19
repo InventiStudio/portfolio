@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.bg-alabaster#blog-post-content(itemscope, itemtype="https://schema.org/Article")
+  div.bg-alabaster#blog-post-content
     LoadingBar.blog-post__progress(
       id="blog-post-loading-bar"
       :progress="progress"
@@ -73,8 +73,8 @@
       meta() {
         return [
           { property: 'og:type', content: 'article' },
-          { property: 'article:published_time', content: this.post.data.date },
-          { itemprop: 'datePublished', content: this.post.data.date },
+          { property: 'article:published_time', content: this.post.additional.formattedDate },
+          { itemprop: 'datePublished', content: this.post.additional.formattedDate },
           { name: 'author', content: this.$t('common.inventiStudio') },
           { itemprop: 'author', content: this.$t('common.inventiStudio') },
           { itemprop: 'headline', content: this.post.data.title },
