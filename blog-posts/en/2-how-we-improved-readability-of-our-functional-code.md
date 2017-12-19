@@ -130,7 +130,7 @@ a |> b |> c => c(b(a))
 This way we can replace the composition with the following code:
 
 ```javascript
-const result = response        // dane
+const result = response        // data
   |> parseData                 // 1
   |> getOnlyAdults             // 2
   |> mapWithArticles(articles) // 3
