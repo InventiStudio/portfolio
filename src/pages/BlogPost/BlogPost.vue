@@ -6,7 +6,10 @@
       :onErrorDone="()=>{}"
       :onProgressDone="()=>{}"
     )
-    .blog-post__landing.o-wave--sinus(:style="{ 'background-image': `url(${post.additional.coverFullUrl})` }")
+    .blog-post__landing.o-wave--sinus(
+      v-if="post.additional.coverFullUrl",
+      :style="{ 'background-image': `url(${post.additional.coverFullUrl})` }",
+    )
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
           p.fs-11.c-white.mb-16.medium-mb-8 {{ post.additional.formattedDate }}
