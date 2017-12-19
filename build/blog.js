@@ -2,15 +2,18 @@ const files      = require('read-dir-files')
 const path       = require('path')
 const bodyParser = require('body-parser')
 const matter     = require('gray-matter')
-const hljs       = require('highlight.js')
+const Prism      = require('prismjs')
+require('prismjs/components/prism-elixir')
+require('prismjs/plugins/line-numbers/prism-line-numbers')
+
 const markdown   = require('markdown-it')({
   highlight(str, lang) {
-    if (lang && hljs.getLanguage(lang)) {
+    if (lang && Prism.languages[lang]) {
       try {
-        return `<pre class="hljs"><code>${hljs.highlight(lang, str, true).value}</code></pre>`
+        return `<pre class="highlight"><code>${Prism.highlight(str, Prism.languages[lang])}</code></pre>`
       } catch (err) {}
     }
-    return `<pre class="hljs"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
+    return `<pre class="highlight"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
   },
 })
 
