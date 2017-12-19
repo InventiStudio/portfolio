@@ -3,7 +3,7 @@
     .blog-post__landing.o-wave--sinus(:style="{ 'background-image': coverCss }")
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
-          p.fs-11.c-white-60.mb-16.medium-mb-8 {{ post.data.date }}
+          p.fs-11.c-white.mb-16.medium-mb-8 {{ date }}
           h1.o-heading-1.c-white.mb-40 {{ post.data.title }}
     .blog-post__content
       .row
@@ -16,7 +16,7 @@
 
 <script>
   import head from 'src/head'
-  import { getBlogPostBySlug } from 'services/blog'
+  import { getBlogPostBySlug, getFormattedDate } from 'services/blog'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
 
@@ -81,6 +81,9 @@
     computed: {
       coverCss() {
         return `url(${this.post.data.coverPath})`
+      },
+      date() {
+        return getFormattedDate(this.post.data.date)
       },
     },
     async mounted() {
