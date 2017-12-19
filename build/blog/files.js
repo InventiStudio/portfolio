@@ -2,7 +2,7 @@ const files  = require('read-dir-files')
 const path   = require('path')
 const matter = require('gray-matter')
 
-const fullUrl = (req, path) => `${req.protocol}://${req.get('host')}${path}`
+const fullUrl = (req, path) => `${req.protocol}://${req.get('origin') || req.get('host')}${path}`
 
 function getFormattedDate(unformattedDate) {
   const date = new Date(unformattedDate)
