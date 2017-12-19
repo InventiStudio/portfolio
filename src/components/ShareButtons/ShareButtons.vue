@@ -7,7 +7,7 @@
         VueGoodshareReddit.share-buttons__button(has_icon, has_counter)
         VueGoodshareTwitter.share-buttons__button(has_icon, has_counter)
         VueGoodshareGoogle.share-buttons__button(has_icon, has_counter)
-        a.o-btn.share-buttons__button.share-buttons__button--rss(:href="rss")
+        a.o-btn.share-buttons__button.share-buttons__button--rss(:href="rss", target="_blank")
           icon.c-white.fs-16(type="icon--rss")
 </template>
 
