@@ -5,7 +5,7 @@
         router-link.align-middle.valign-middle(:to="$routeByName('Home')")
           img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
         nav.inline-block.valign-middle
-          h2.m-0.inline-block: router-link.foot__lang.o-link.c-white(:to="secondLanguageRoute")
+          h2.m-0.inline-block: a.foot__lang.o-link.c-white(:href="alternate")
             | {{ secondLanguageName }}
         SocialLinks.mt-24
       nav.foot__column.small-8.medium-4.large-2.columns.small-mt-32.large-mt-0
@@ -41,10 +41,16 @@
   import smoothScrollTo from 'services/scroll'
   import constants from 'src/constants'
   import SocialLinks from 'components/SocialLinks/SocialLinks'
+  import eventBus from 'services/eventBus'
 
   export default {
     components: {
       SocialLinks,
+    },
+    data() {
+      return {
+        alternate: '',
+      }
     },
     computed: {
       constants: () => constants,
@@ -58,11 +64,6 @@
       secondLanguageName() {
         return this.$t(`content.languages.${this.secondLanguageLocale}`)
       },
-      secondLanguageRoute() {
-        return this.$route.name
-          ? this.$routeByName(this.$route.name, { params: { lang: this.secondLanguageLocale } })
-          : ''
-      },
     },
     methods: {
       mailToUrl(mail) {
@@ -74,6 +75,14 @@
       scrollToSection(name) {
         smoothScrollTo(this.constants.sectionIds.home[name])
       },
+      getAlternateLink(links) {
+        this.alternate = (links.find(link => link.hreflang === this.secondLanguageLocale) || {}).href
+      },
+    },
+    mounted() {
+      eventBus.$on('updateAlternateLink', (links) => {
+        this.getAlternateLink(links)
+      })
     },
   }
 </script>

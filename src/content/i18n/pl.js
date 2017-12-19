@@ -5,6 +5,7 @@ export default {
   },
   common: {
     inventiStudio: 'InventiStudio',
+    readMore: 'Czytaj więcej',
     orContactUs: 'lub napisz do nas!',
     estimateProject: 'Wyceń projekt',
     previous: 'Poprzedni',
@@ -35,12 +36,12 @@ export default {
       cases: {
         smokefree: {
           author: 'Leszek Wiland',
-          position: 'CEO, Smokefree',
+          position: 'Smokefree',
           text: 'Nasza wspólna praca była profesjonalna i bezbłędna. Dotychczas stworzyliśmy razem jedną mniejszą aplikację webową, a obecnie pracujemy nad kolejną, dużo większą aplikacją. Są doświadczonym zespołem, gotowym do podjęcia wszelkiego rodzaju projektów. Większość naszej pracy jest prowadzona zdalnie i pomimo odległości, wszystkie kwestie techniczne zostały dobrze przekazane, a terminy dotrzymane bez żadnych zakłóceń. Są prawdziwymi profesjonalistami, potrafią dobrze odbierać opinie, pracują niezależnie i proponują alternatywne rozwiązania tam, gdzie to konieczne. Gorąco polecam InventiStudio dla wszystkich Twoich projektów internetowych',
         },
         zapytajcoacha: {
           author: 'Henryk Pepliński',
-          position: 'Menadżer transportu, Transport Gronek',
+          position: 'ZapytajCoacha',
           text: 'Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z InventiStudio sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.',
         },
       },
@@ -62,7 +63,7 @@ export default {
     title: 'Usługi',
     desc: 'Tworzymy front‑end we Vue.js, back‑end w Node.js oraz zajmujemy się projektowaniem UI/UX. Niezależnie od tego, czy jesteś przedsiębiorcą, firmą czy startupem - z pewnością możemy Ci pomóc!',
     landing: {
-      title: 'Nasz warsztat',
+      title: 'Usługi',
     },
     whatWeDo: {
       title: 'Czym się zajmujemy',
@@ -302,6 +303,10 @@ export default {
       },
       ctaSend: 'Wyceń',
     },
+  },
+  blog: {
+    title: 'Blog',
+    desc: 'Piszemy o tworzeniu aplikacji internetowych, Vue.js, Node.js oraz projektowaniu UI i UX. Przeczytaj niektóre posty na blogu, aby poznać naszą wiedzę!',
   },
   contact: {
     title: 'Kontakt',

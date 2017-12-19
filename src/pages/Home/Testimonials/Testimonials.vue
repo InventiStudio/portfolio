@@ -30,7 +30,7 @@
               article.pl-24.pr-24.medium-pl-32.medium-pr-32.large-pl-80.large-pr-80
                 img.testimonials__avatar(
                   v-if="testimonial.avatarSrc",
-                  :src="`/static/${testimonial.avatarSrc}`",
+                  :src="`/static/testimonials/${testimonial.avatarSrc}`",
                 )
                 h3.o-heading-3.c-ship-gray {{ getTranslation(testimonial, 'author') }}
                 a.o-link.c-ship-gray-40.mb-16.block(
@@ -70,11 +70,13 @@
         return [
           {
             key: 'smokefree',
+            avatarSrc: 'leszekwiland.jpg',
             positionUrl: 'https://smokefree.place/62nxc1',
           },
           {
             key: 'zapytajcoacha',
             avatarSrc: 'henrykpeplinski.jpg',
+            positionUrl: 'https://zapytajcoacha.pl',
           },
         ]
       },

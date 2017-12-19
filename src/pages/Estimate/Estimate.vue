@@ -1,5 +1,5 @@
 <template lang="pug">
-  article.estimate
+  div
     Landing
     Survey
 </template>

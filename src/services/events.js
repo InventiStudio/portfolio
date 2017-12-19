@@ -27,3 +27,7 @@ export function resetEstimationScope() {
 export function stopRootLoader() {
   eventBus.$emit('stop-root-loader')
 }
+
+export function updateAlternateLink(links) {
+  eventBus.$emit('updateAlternateLink', links)
+}

@@ -1,0 +1,45 @@
+@import "~stylesheets/helpers"
+
+.share-buttons__button
+  box-shadow: none
+
+  &:not(:disabled):hover
+    box-shadow: none
+
+.share-buttons__button.button-social
+  margin: 0
+  margin-right: 8px
+  margin-bottom: 8px
+  padding: 11px 24px
+  border-radius: 20px
+  color: $c-white
+  font-size: $fs-16
+  transition-duration: $t-duration
+  transition-property: transform box-shadow background-color
+  transition-timing-function: $t-easing
+
+  &[has-counter]
+    min-width: 100px
+
+  &:not(:disabled):hover
+    +m-lift--hover
+
+  &:not(:disabled):active
+    +m-lift--active
+
+.share-buttons__button--rss
+  $color: #ec9c3f
+  padding: 11px 24px
+  border: 0
+  background-color: $color
+
+  &:not(:disabled):hover
+    +o-btn--hover--bgcolor($color)
+    +m-lift--hover
+
+  &:not(:disabled):active
+    +m-lift--active
+
+  svg
+    width: 22px
+    height: 17px

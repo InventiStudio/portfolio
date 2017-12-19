@@ -1,0 +1,27 @@
+@import "~stylesheets/helpers"
+
+.blog-post__landing
+  position: relative
+  padding-top: 120px
+  padding-bottom: 104px
+  background-color: rgba($c-ship-gray, 0.3)
+  background-position: center center
+  background-size: cover
+  background-blend-mode: overlay
+
+  @media #{$medium-up}
+    padding-top: 144px
+    padding-bottom: 180px
+
+  @media #{$large-up}
+    padding-top: 160px
+    padding-bottom: 240px
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 250px
+    background: linear-gradient(to bottom, rgba($c-black, 0.4) 0%, rgba($c-black, 0) 100%);
+    content: ""

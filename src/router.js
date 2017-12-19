@@ -59,6 +59,18 @@ const routes = [
         component: resolver(resolve => require(['pages/Estimate/Estimate'], resolve)),
         ...commonOptions,
       },
+      {
+        path: 'blog',
+        name: 'Blog',
+        component: resolver(resolve => require(['pages/Blog/Blog'], resolve)),
+        ...commonOptions,
+      },
+      {
+        path: 'blog/:slug',
+        name: 'BlogPost',
+        component: resolver(resolve => require(['pages/BlogPost/BlogPost'], resolve)),
+        ...commonOptions,
+      },
     ],
   },
   {
@@ -77,7 +89,8 @@ const router = new VueRouter({
 // This is helper for router-link component that allows
 // to write links without repeating current language all
 function $routeByName(name, opts = {}) {
-  const { route } = this.$router.resolve({ name, params: { lang: i18n.locale }, exact: true, ...opts })
+  const params = { lang: i18n.locale, ...opts.params }
+  const { route } = this.$router.resolve({ name, exact: true, ...opts, params })
   return {
     path: route.path.replace(constants.regex.lastUrlBackslash, ''),
     ...opts,

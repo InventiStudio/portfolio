@@ -2,6 +2,9 @@ import 'babel-polyfill'
 import 'es6-promise/auto'
 import Vue from 'vue'
 
+window.Headers = function Headers() {}
+window.fetch = () => (new Promise(r => r({ ok: true, status: 200, json: () => {} })))
+
 Vue.config.productionTip = false
 Vue.config.ignoredElements = ['Card', 'Icon', 'icon']
 

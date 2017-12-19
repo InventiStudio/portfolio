@@ -28,7 +28,12 @@
               active-class="navbar__link--active",
               data-navbar="link--services",
             ) {{ $t('services.title') }}
-            a.navbar__link(:href="$t('content.urls.blog')") {{ $t('navbar.blog') }}
+            router-link.navbar__link(
+              :to="$routeByName('Blog')",
+              :exact="true",
+              active-class="navbar__link--active",
+              data-navbar="link--services",
+            ) {{ $t('blog.title') }}
             router-link.navbar__cta.o-btn.transition(
               :to="$routeByName('Estimate')",
               :exact="true",

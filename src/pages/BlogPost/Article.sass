@@ -1,0 +1,64 @@
+@import "~stylesheets/helpers"
+
+.blog-post__article
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    color: $c-ship-gray
+    font-family: $ff-roboto
+    font-weight: $fw-black
+
+  h2
+    font-size: $fs-28
+    line-height: $lh-28
+
+  h3
+    font-size: $fs-24
+    line-height: $lh-24
+
+  h4
+    font-size: $fs-18
+    line-height: $lh-18
+
+  p,
+  li
+    color: $c-ship-gray
+    font-family: $ff-lora
+    font-size: $fs-20
+    line-height: $lh-32
+    -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
+
+  *:not(.highlight) code
+    padding: 2px 4px
+    border-radius: 4px
+    background-color: #f9f2f4 // sass-lint:disable-line no-color-literals
+    color: #c7254e // sass-lint:disable-line no-color-literals
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+    font-size: 90%
+    -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
+
+  a
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+
+  strong,
+  b
+    font-weight: $fw-black
+
+.blog-post__progress div
+  position: fixed
+  z-index: 1000
+  height: 9px
+  background-color: $c-pink
+  background-image: linear-gradient(-90deg, #ac3cd9 0%, #e65fad 50%, #e7ab80 100%) // sass-lint:disable-line no-color-literals
+  pointer-events: none
+
+
+.highlight
+  line-height: $lh-18

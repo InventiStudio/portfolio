@@ -1,5 +1,5 @@
 <template lang="pug">
-  .node
+  div
     .node__landing.o-wave--sinus
       Landing
       .node__qualities
