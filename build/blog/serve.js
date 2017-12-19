@@ -15,7 +15,7 @@ const markdown   = require('markdown-it')({
   },
 })
 
-module.exports = function serve() {
+module.exports = function serve(env) {
   return [
     bodyParser.urlencoded({ extended: true }),
     bodyParser.json(),
@@ -29,10 +29,10 @@ module.exports = function serve() {
           return res.end(JSON.stringify({
             data: post.data,
             html: markdown.render(post.md),
-            additional: files.additionalData(req, post),
+            additional: files.additionalData(env, req, post),
           }))
         } else {
-          return res.end(JSON.stringify(posts.map(post => ({ data: post.data, additional: files.additionalData(req, post) }))))
+          return res.end(JSON.stringify(posts.map(post => ({ data: post.data, additional: files.additionalData(env, req, post) }))))
         }
       })
     },

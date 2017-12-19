@@ -11,9 +11,9 @@ const port = process.env.PORT || 8000
 app.use(compression())
 app.use('/static', express.static(path.join(__dirname, '../dist', '/static')))
 
-app.post('/api/mailer', ...mailer())
-app.get('/api/blog/:lang/:slug?', ...blog())
-app.get('/:lang/feed/:format', ...feed())
+app.post('/api/mailer', ...mailer('production'))
+app.get('/api/blog/:lang/:slug?', ...blog('production'))
+app.get('/:lang/feed/:format', ...feed('production'))
 
 app.get('*', (req, res) => {
   res.sendFile('index.html', { root: path.join(__dirname, '../dist') })

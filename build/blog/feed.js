@@ -19,7 +19,7 @@ const config = lang => ({
   },
 })
 
-module.exports = function serve() {
+module.exports = function serve(env) {
   return [
     bodyParser.urlencoded({ extended: true }),
     bodyParser.json(),
@@ -30,7 +30,7 @@ module.exports = function serve() {
         const conf = config(lang)
         const feed = new Feed(conf)
         posts.forEach((post) => {
-          const additionalData = files.additionalData(req, post)
+          const additionalData = files.additionalData(env, req, post)
           feed.addItem({
             title:       post.data.title,
             description: post.data.description,

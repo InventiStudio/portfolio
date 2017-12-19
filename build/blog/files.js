@@ -2,7 +2,9 @@ const files  = require('read-dir-files')
 const path   = require('path')
 const matter = require('gray-matter')
 
-const fullUrl = (req, path) => `${req.protocol}://${req.get('origin') || req.get('host')}${path}`
+const fullUrl = (env, req, path) => (env === 'production'
+  ? `https://inventi.studio${path}`
+  : `${req.protocol}://${req.get('host')}${path}`)
 
 function getFormattedDate(unformattedDate) {
   const date = new Date(unformattedDate)
@@ -31,11 +33,11 @@ module.exports = {
     })
   },
 
-  additionalData(req, { lang, data }) {
+  additionalData(env, req, { lang, data }) {
     return {
-      coverFullUrl:       fullUrl(req, `/static/blog/${data.cover}`),
-      miniCoverFullUrl:   fullUrl(req, `/static/blog/${data.miniCover}`),
-      postFullUrl:        fullUrl(req, `/${lang}/blog/${data.slug}`),
+      coverFullUrl:       fullUrl(env, req, `/static/blog/${data.cover}`),
+      miniCoverFullUrl:   fullUrl(env, req, `/static/blog/${data.miniCover}`),
+      postFullUrl:        fullUrl(env, req, `/${lang}/blog/${data.slug}`),
       formattedDate:      getFormattedDate(data.date),
     }
   },

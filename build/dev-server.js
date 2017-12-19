@@ -27,8 +27,8 @@ var proxyTable = config.dev.proxyTable
 var app = express()
 var compiler = webpack(webpackConfig)
 
-app.get('/api/blog/:lang/:slug?', ...blog())
-app.get('/:lang/feed/:format', ...feed())
+app.get('/api/blog/:lang/:slug?', ...blog('development'))
+app.get('/:lang/feed/:format', ...feed('development'))
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
