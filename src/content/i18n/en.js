@@ -305,6 +305,7 @@ export default {
   },
   blog: {
     title: 'Blog',
+    desc: 'We blog about web development, Vue.js, Node.js and UI & UX design. Read some of the blog posts to get to know our expertise!',
   },
   contact: {
     title: 'Contact',

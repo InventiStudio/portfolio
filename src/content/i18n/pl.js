@@ -304,6 +304,10 @@ export default {
       ctaSend: 'Wyceń',
     },
   },
+  blog: {
+    title: 'Blog',
+    desc: 'Piszemy o tworzeniu aplikacji internetowych, Vue.js, Node.js oraz projektowaniu UI i UX. Przeczytaj niektóre posty na blogu, aby poznać naszą wiedzę!',
+  },
   contact: {
     title: 'Kontakt',
     form: {
