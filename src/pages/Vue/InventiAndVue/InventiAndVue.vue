@@ -35,7 +35,7 @@
           icon-type="icon--message-circle",
           title="vue.inventiAndVue.publications.title",
           desc="vue.inventiAndVue.publications.desc",
-          :cta-to="$t('content.urls.blog')",
+          :cta-to="{ name: 'Blog' }",
           cta-text="vue.inventiAndVue.publications.cta",
           :contact-us="false",
           color="blue",

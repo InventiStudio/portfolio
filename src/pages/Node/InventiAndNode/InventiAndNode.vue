@@ -25,7 +25,7 @@
           icon-type="icon--message-circle",
           title="node.inventiAndNode.publications.title",
           desc="node.inventiAndNode.publications.desc",
-          :cta-to="$t('content.urls.blog')",
+          :cta-to="{ name: 'Blog' }",
           cta-text="node.inventiAndNode.publications.cta",
           :contact-us="false",
           color="blue",
