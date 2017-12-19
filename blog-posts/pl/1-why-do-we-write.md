@@ -4,6 +4,7 @@ slug:        dlaczego-piszemy
 alternate:
   en:        why-do-we-write
 cover:       why-do-we-write__cover.jpg
+miniCover:   why-do-we-write__cover--mini.jpg
 date:        2017-06-15
 description: Po wielu latach korzystania z dobrodziejstw czyjejś pracy przychodzi moment, w którym chcielibyśmy podzielić się zdobytym doświadczeniem ze społecznością, której jesteśmy częścią.
 ---

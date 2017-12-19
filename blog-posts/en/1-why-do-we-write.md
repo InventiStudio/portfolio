@@ -4,6 +4,7 @@ slug:        why-do-we-write
 alternate:
   pl:        dlaczego-piszemy
 cover:       why-do-we-write__cover.jpg
+miniCover:   why-do-we-write__cover--mini.jpg
 date:        2017-06-15
 description: After many years of using the fruit of someone's work, it is time to share our experience with the community we are part of.
 ---

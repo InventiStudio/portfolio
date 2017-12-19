@@ -33,9 +33,10 @@ module.exports = {
 
   additionalData(req, { lang, data }) {
     return {
-      coverFullUrl:   fullUrl(req, `/static/blog/${data.cover}`),
-      postFullUrl:    fullUrl(req, `/${lang}/blog/${data.slug}`),
-      formattedDate:  getFormattedDate(data.date),
+      coverFullUrl:       fullUrl(req, `/static/blog/${data.cover}`),
+      miniCoverFullUrl:   fullUrl(req, `/static/blog/${data.miniCover}`),
+      postFullUrl:        fullUrl(req, `/${lang}/blog/${data.slug}`),
+      formattedDate:      getFormattedDate(data.date),
     }
   },
 }

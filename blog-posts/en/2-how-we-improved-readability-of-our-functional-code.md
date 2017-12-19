@@ -4,6 +4,7 @@ slug:        how-we-improved-readability-of-our-functional-code
 alternate:
   pl:        jak-poprawilismy-czytelnosc-naszego-funkcyjnego-kodu
 cover:       how-we-improved-readability-of-our-functional-code__cover.jpg
+miniCover:   how-we-improved-readability-of-our-functional-code__cover--mini.jpg
 date:        2017-09-21
 description: One of the most important rules for writing a deterministic, easy-to-debug code is avoiding side effects. The obvious choice if we want to meet this assumption is to use the functional paradigm. This, however, poseses a risk of poor code readability.
 ---
