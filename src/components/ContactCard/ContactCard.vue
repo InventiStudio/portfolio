@@ -84,7 +84,8 @@
           await sendMail({
             template_id: 'contact-from-client',
             email: 'hello@inventi.studio',
-            substitution_data: { name, email, message },
+            // just 'email' does not work in substitution_data, as it gets email field from above
+            substitution_data: { name, email_address: email, message },
           })
           await sendMail({
             template_id: `contact-to-client-${this.locale}`,

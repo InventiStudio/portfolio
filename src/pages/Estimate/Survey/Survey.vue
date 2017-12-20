@@ -148,14 +148,21 @@
       async submit() {
         try {
           if (this.$v.surveyForm.$touch() || this.$v.surveyForm.$error) return null
-          const { name, email, phone, message } = this
-          const { questionStart, questionScope, questionPlatform } = this
-          const survey = { questionStart, questionScope, questionPlatform }
+          const { questionStart, name, email, phone, message } = this
+          const { answerFrontEnd, answerBackEnd, answerDesign } = this.questionScope
+          const { answerDesktop, answerMobile, answerOther } = this.questionPlatform
+          const survey = {
+            questionStart,
+            // TODO: Temporary solution
+            questionScope: `${answerFrontEnd}, ${answerBackEnd}, ${answerDesign}`,
+            questionPlatform: `${answerDesktop}, ${answerMobile}, ${answerOther}`,
+          }
           this.isSending = true
           await sendMail({
             template_id: 'estimate-from-client',
             email: 'hello@inventi.studio',
-            substitution_data: { name, email, phone, message, survey },
+            // just 'email' does not work in substitution_data, as it gets email field from above
+            substitution_data: { name, email_address: email, phone, message, survey },
           })
           await sendMail({
             template_id: `estimate-to-client-${this.locale}`,
