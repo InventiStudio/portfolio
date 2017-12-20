@@ -171,6 +171,7 @@
             substitution_data: { name, email, message, survey },
           })
           this.openSuccessModal()
+          this.isSending = false
         } catch (err) {
           this.isSending = false
           console.warn({ err })
