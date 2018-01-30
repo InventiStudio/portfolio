@@ -25,6 +25,7 @@
 
 <script>
   import head from 'src/head'
+  import router from 'src/router'
   import { getBlogPostBySlug } from 'services/blog'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
@@ -100,9 +101,14 @@
       },
     },
     async mounted() {
-      this.post = await getBlogPostBySlug(this.$route.params.slug)
-      this.$emit('updateHead')
-      window.addEventListener('scroll', this.handleScroll)
+      try {
+        this.post = await getBlogPostBySlug(this.$route.params.slug)
+        this.$emit('updateHead')
+        window.addEventListener('scroll', this.handleScroll)
+      } catch (err) {
+        head.responseCode.code = 404
+        router.push({ name: 'Blog' })
+      }
     },
     beforeDestroy() {
       window.removeEventListener('scroll', this.handleScroll)
