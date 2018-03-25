@@ -5,6 +5,7 @@ require('prismjs/components/prism-elixir')
 require('prismjs/plugins/line-numbers/prism-line-numbers')
 
 const markdown   = require('markdown-it')({
+  html: true,
   highlight(str, lang) {
     if (lang && Prism.languages[lang]) {
       try {
