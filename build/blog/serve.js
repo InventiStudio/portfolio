@@ -2,6 +2,7 @@ const files      = require('./files')
 const bodyParser = require('body-parser')
 const Prism      = require('prismjs')
 require('prismjs/components/prism-elixir')
+require('prismjs/components/prism-pug')
 require('prismjs/plugins/line-numbers/prism-line-numbers')
 
 const markdown   = require('markdown-it')({
