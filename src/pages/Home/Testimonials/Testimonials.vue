@@ -41,7 +41,10 @@
                   span {{ getTranslation(testimonial, 'position') }}
                 span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
                 p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
-                a.o-btn.o-btn--purple.mt-24(v-if="testimonial.caseUrl", :href="testimonial.caseUrl")
+                router-link.o-btn.o-btn--purple.mt-24(
+                  v-if="testimonial.postSlug",
+                  :to="$routeByName('BlogPost', { params: { slug: testimonial.postSlug } })",
+                )
                   span.c-white.fs-16 {{ $t('home.testimonials.cta') }}
       .column.small-hidden.medium-1.large-2.align-middle
         button.testimonial__button.testimonial__button--next(
@@ -78,6 +81,7 @@
             key: 'zapytajcoacha',
             avatarSrc: 'henrykpeplinski.jpg',
             positionUrl: 'https://zapytajcoacha.pl',
+            postSlug: 'zapytajcoacha',
           },
         ]
       },
