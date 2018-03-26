@@ -44,12 +44,19 @@
   a
     text-decoration: underline
 
-    &:hover
-      text-decoration: none
-
   strong,
   b
     font-weight: $fw-black
+
+// E.g for 100vw images 
+.blog-post__section--full-w
+  width: 100vw
+  // TODO: Test if that works in all of suppoerted browsers
+  margin-left: calc(-1 * ((100vw - 100%) / 2))
+
+  img
+    margin-top: 24px
+    margin-bottom: 24px
 
 .blog-post__progress div
   position: fixed
@@ -59,6 +66,14 @@
   background-image: linear-gradient(-90deg, #ac3cd9 0%, #e65fad 50%, #e7ab80 100%) // sass-lint:disable-line no-color-literals
   pointer-events: none
 
-
+// Prism sythax highlight
 .highlight
   line-height: $lh-18
+
+.blog-post__client-feedback
+  text-align: center
+
+  img
+    width: 80px
+    height: 80px
+    border-radius: 100%
