@@ -2,7 +2,7 @@
 title:       We are hiring!
 slug:        we-are-hiring
 alternate:
-  pl:        zatrudniamy
+  pl:        dolacz-do-nas
 cover:       we-are-hiring__cover.jpg
 miniCover:   we-are-hiring__cover--mini.jpg
 date:        2018-04-10
@@ -19,16 +19,16 @@ We are InventiStudio - Vue.js and Node.js web development agency based in beauti
 
 ## Your ideal skills
 
-- **Experience with Vue.js**
+- **Experience with Vue.js**  
 We don't expect you to know the whole API by heart, but experience with using Vue.js and it's ecosystem parts (e.g Vuex, Vue-Router) is really appreciated!
 
-- **Solid basics of HTML5 & CSS3**
+- **Solid basics of HTML5 & CSS3**  
 You should have a knowledge of HTML - we usually use Pug for templates, and CSS - Sass, Responsive Web Design, good architecture practices.
 
-- **Familiarity with Bootstrap 4 and/or Vuetify**
-It's OK if you're familiar with some other CSS/Vue.js frameworks. Ability to work with grids and using available components is main point here!
+- **Familiarity with Bootstrap 4 and/or Vuetify**  
+It's OK if you're familiar with some other CSS/Vue.js frameworks. Ability to work with grids and usage of available components is the main point here!
 
-- **Good english skills (both written and spoken)**
+- **Good english skills (both written and spoken)**  
 We communicate with our clients on a daily basis, so it's important to be fluent english speaker.
 
 ## What do we offer

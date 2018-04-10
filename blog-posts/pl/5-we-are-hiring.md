@@ -20,25 +20,28 @@ Nazywamy się InventiStudio i jesteśmy mieszącą się we Wrocławiu agencją i
 
 ## Twoje umiejętności
 
-- **Solidne podstawy HTML5 i CSS3**
-  Powinienaś/eś mieć wiedzę z zakresu HTML (zazwyczaj używamy biblioteki Pug dla templatek) i CSSa (Sass, responsywność, dobre praktyki).
+- **Experience with Vue.js**  
+Nie oczekujemy od Ciebie znajomości całego API na pamięć, ale docenimy doświadczenie w pracy z Vue.js i częściami tego ekosystemu, takimi jak Vuex czy Vue-Router!
 
-- **Znajomość Bootstrap 4 i/lub Vuetify**
-  Nie ma problemu, jeżeli znasz inną bibliotekę CSS. Istotne jest, że wiesz jak pracować z gridami korzystać z dostępnych komponentów.
+- **Solidne podstawy HTML5 i CSS3**  
+Powinienaś/eś mieć wiedzę z zakresu HTML (zazwyczaj używamy biblioteki Pug dla templatek) i CSSa (Sass, responsywność, dobre praktyki).
 
-- **Dobra znajomość j. angielskiego**
-  Rozmawiamy z naszymi klientami codziennie, dlatego ważne jest, aby płynnie mówić po angielsku.
+- **Znajomość Bootstrap 4 i/lub Vuetify**  
+Nie ma problemu, jeżeli znasz inną bibliotekę CSS. Istotne jest, że wiesz jak pracować z gridami korzystać z dostępnych komponentów.
+
+- **Dobra znajomość j. angielskiego**  
+Rozmawiamy z naszymi klientami codziennie, dlatego ważne jest, aby płynnie mówić po angielsku.
 
 ## Co oferujemy
 
-- **30-55 PLN/godz. netto B2B (możliwa jest też umowa-zlecenie)**
-  Stawka zależna jest od Twoich umiejętności i potencjału.
+- **30-55 PLN/godz. netto B2B (możliwa jest też umowa-zlecenie)**  
+Stawka zależna jest od Twoich umiejętności i potencjału.
 
-- **Praca zdalna**
-  Pracuj skąd chcesz!
+- **Praca zdalna**  
+Pracuj skąd chcesz!
 
-- **Nienormowany czas pracy**
-  Nie mamy ustalonych godzin pracy, więc możesz pracować kiedy chcesz!
+- **Nienormowany czas pracy**  
+Nie mamy ustalonych godzin pracy, więc możesz pracować kiedy chcesz!
 
 ## Jesteś osobą, której szukamy?
 
