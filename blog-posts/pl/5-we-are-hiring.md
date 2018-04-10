@@ -24,7 +24,7 @@ Nazywamy się InventiStudio i jesteśmy mieszącą się we Wrocławiu agencją i
 You should have a knowledge of semantic HTML - we usually use pug for templates, and CSS - Sass, Responsive Web Design, good architecture practices.
 
 - **Solidne podstawy HTML5 i CSS3**
-  Powinienaś/eś mieć wiedzę z zakresu HTML (zazwyczaj używamy biblioteki Pug dla templatek) i CSSa (specyfika, responsywność)
+  Powinienaś/eś mieć wiedzę z zakresu HTML (zazwyczaj używamy biblioteki Pug dla templatek) i CSSa (Sass, responsywność, dobre praktyki).
 
 - **Znajomość Bootstrap 4 i/lub Vuetify**
 
