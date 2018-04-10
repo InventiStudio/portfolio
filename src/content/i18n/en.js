@@ -33,6 +33,11 @@ export default {
       desc: 'Meet the people who trusted us',
       cta: 'See case study',
       cases: {
+        promis: {
+          author: 'Vincent Stammbach',
+          position: 'Promis',
+          text: 'Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match: 1) Very good communication (both written and spoken) in English with the appropriate level of questions / feedback / reporting. 2) Awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! 3) Very reliable transcription of the design (Sketch files) to web pages. 4) Excellent understanding of the instructions and challenge of the guidelines when required with a true UI & UX design view and opinion. PS. We have just started a second project together. Hope it will be as good as the first one!',
+        },
         smokefree: {
           author: 'Leszek Wiland',
           position: 'Smokefree',
