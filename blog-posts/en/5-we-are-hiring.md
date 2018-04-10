@@ -34,7 +34,7 @@ You should ideally be able to solve most of  the problems on your own, be it sea
 - **Good english skills (both written and spoken)**  
 We communicate with our clients on a daily basis, so it's important to be fluent english speaker.
 
-## What do we offer:
+## What do we offer
 
 - **30-55 PLN/h netto B2B (free-for-task agreement is also possible!)**  
 Depending on your experience and potential.
