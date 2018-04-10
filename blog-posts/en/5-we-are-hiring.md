@@ -11,7 +11,7 @@ description: We are InventiStudio - Vue.js and Node.js web development agency ba
 
 ## Position
 
-Front-End developer
+Front-End Developer
 
 ## A few words about us
 
