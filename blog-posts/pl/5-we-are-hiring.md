@@ -23,7 +23,7 @@ We are InventiStudio - Vue.js and Node.js web development agency based in beauti
 We don't expect you to know the whole API by heart, but experience with using Vue.js and it's ecosystem parts (e.g Vuex, Vue-Router) is really appreciated!
 
 - **Solid basics of HTML5 & CSS3**  
-You should have a knowledge of semantic HTML (we usually use pug for templates) and CSS (specificity, Responsive Web Design).
+You should have a knowledge of semantic HTML - we usually use pug for templates, and CSS - Sass, Responsive Web Design, good architecture practices.
 
 - **Familiarity with Bootstrap 4 and/or Vuetify**  
 It's OK if you're familiar with some other CSS/Vue.js frameworks. Ability of using a documentation is the main point here!
