@@ -1,50 +1,51 @@
 ---
-title:       We are hiring!
-slug:        zatrudniamy
+title:       Dołącz do nas!
+slug:        dolacz-do-nas
 alternate:
   en:        we-are-hiring
 cover:       we-are-hiring__cover.jpg
 miniCover:   we-are-hiring__cover--mini.jpg
 date:        2018-04-10
-description: We are InventiStudio - Vue.js and Node.js web development agency based in beautiful Wrocław... and we are hiring talented Front-End developers!
+description: Nazywamy się InventiStudio i jesteśmy mieszącą się we Wrocławiu agencją interaktywną tworzącą aplikacje Vue.js i Node.js. Poszukujemy utalentowanych Front-End developerów!
 ---
 
-## Position
 
-Front-End developer
+## Stanowisko
 
-## A few words about us
+Front-End Developer
 
-We are InventiStudio - Vue.js and Node.js web development agency based in beautiful Wrocław... and we're hiring! There are two of us — [Kamil](https://www.linkedin.com/in/kamil-borkowski/) and [Piotrek](https://www.linkedin.com/in/piotrekfracek/). We're both Full-Stack JavaScript developers and UI&UX designers, and for the past "almost a year" we've been building our brand, working for clients from all over the world — Japan, France, Denmark, Austria and counting! The time to scale-up has come  though, and we're currently in the lookout for a talented Front-End developer to join our team!
+## Kilka słów o nas
 
-## Your ideal skills
+Nazywamy się InventiStudio i jesteśmy mieszącą się we Wrocławiu agencją interaktywną tworzącą aplikacje Vue.js i Node.js. Poszukujemy utalentowanych Front-end developerów. Obecnie jest nas dwóch - [Kamil](https://www.linkedin.com/in/kamil-borkowski/) and [Piotrek](https://www.linkedin.com/in/piotrekfracek/). Oboje jesteśmy Full-Stackami Javascript i Designerami UI&UX. Przez ostatni rok budowaliśmy naszą markę pracując dla klientów z całego świata - Japonii, Francji, Danii, Austrii i nie tylko! Nadszedł jednak czas na powiększenie zespołu i obecnie poszukujemy utalentowanego Front-End developera, który chciałby dołączyć do naszego zespołu!
 
-- **Proven work experience with Vue.js**  
-We don't expect you to know the whole API by heart, but experience with using Vue.js and it's ecosystem parts (e.g Vuex, Vue-Router) is really appreciated!
+## Twoje umiejętności
 
-- **Solid basics of HTML5 & CSS3**  
+- **Solid basics of HTML5 & CSS3**
 You should have a knowledge of semantic HTML - we usually use pug for templates, and CSS - Sass, Responsive Web Design, good architecture practices.
 
-- **Familiarity with Bootstrap 4 and/or Vuetify**  
-It's OK if you're familiar with some other CSS/Vue.js frameworks. Ability of using a documentation is the main point here!
+- **Solidne podstawy HTML5 i CSS3**
+  Powinienaś/eś mieć wiedzę z zakresu HTML (zazwyczaj używamy biblioteki Pug dla templatek) i CSSa (specyfika, responsywność)
 
-- **Ability to solve problems on your own (searching for a solution and/or talking with a client)**  
-You should ideally be able to solve most of  the problems on your own, be it searching for the solution on-line, talking with a client - you name it!
+- **Znajomość Bootstrap 4 i/lub Vuetify**
 
-- **Good english skills (both written and spoken)**  
-We communicate with our clients on a daily basis, so it's important to be fluent english speaker.
+  Nie ma problemu, jeżeli znasz inną bibliotekę CSS. Istotne jest, że wiesz jak pracować z gridami korzystać z dostępnych komponentów.
 
-## What do we offer:
+- **Dobra znajomość j. angielskiego**
 
-- **30-55 PLN/h netto B2B (free-for-task agreement is also possible!)**  
-Depending on your experience and potential.
+  Codziennie rozmawiamy z naszymi klientami, więc ważne jest aby płynnie używać j. angielskiego.
 
-- **Remote job**  
-Work from wherever you want!
+## Co oferujemy
 
-- **Flexible working hours**  
-We don't have fixed working hours, so you can do your job whenever you like!
+- **30-55 PLN/godz. netto B2B (możliwa jest też umowa-zlecenie)**
+  W zależności od Twoich umiejętności i potencjału.
 
-## Sounds like you?
+- **Praca zdalna**
+  Pracuj skąd chcesz!
 
-Drop us a line at [hello@inventi.studio](mailto:hello@inventi.studio)!
+- **Nienormowany czas pracy**
+
+  Nie mamy ustalonych godzin pracy, więc możesz pracować kiedy chcesz!
+
+## Jesteś osobą, której szukamy?
+
+Napisz do nas na [hello@inventi.studio](mailto:hello@inventi.studio)!
