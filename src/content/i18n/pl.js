@@ -34,6 +34,16 @@ export default {
       desc: 'Poznaj ludzi, którzy nam zaufali',
       cta: 'Dowiedz się więcej',
       cases: {
+        promis: {
+          author: 'Vincent Stammbach',
+          position: 'Promis',
+          text: 'Świetna robota w Promis - gratulacje! To pierwszy raz kiedy outsourcujemy projekt IT poza Francję i był to idealny wybór! '
+            + 'Mieliśmy bardzo dobrą komunikację (pisemną i ustną) w języku angielskim, z odpowiednim poziomem pytań / informacji zwrotnych / raportowania. '
+            + 'InventiStudio posiadają niesamowite umiejętności w zakresie programowania front-endu (HTML / CSS / JS ES6 / Vue.js / Webpack), a było kilka naprawdę trudnych aspektów! '
+            + 'Bardzo dokładne przełożyli projekty graficzne (pliki Sketch) na właściwą aplikację. '
+            + 'Doskonale też rozumieją wytyczne i kwestionują zastosowane rozwiązania, z profesjonalnymi opiniami w kwestii UI i UX. '
+            + '<br><br>PS. Właśnie rozpoczęliśmy kolejny wspólny projekt. Mamy nadzieję, że współpraca będzie tak dobra jak w poprzednim!',
+        },
         smokefree: {
           author: 'Leszek Wiland',
           position: 'Smokefree',

@@ -36,17 +36,27 @@ export default {
         promis: {
           author: 'Vincent Stammbach',
           position: 'Promis',
-          text: 'Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match: 1) Very good communication (both written and spoken) in English with the appropriate level of questions / feedback / reporting. 2) Awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! 3) Very reliable transcription of the design (Sketch files) to web pages. 4) Excellent understanding of the instructions and challenge of the guidelines when required with a true UI & UX design view and opinion. PS. We have just started a second project together. Hope it will be as good as the first one!',
+          text: 'Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match! '
+            + 'We had a very good communication (both written and spoken) in English, with the appropriate level of questions / feedback / reporting. '
+            + 'InventiStudio have an awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! '
+            + 'They did a very reliable transcription of the design (Sketch files) to web pages and have excellent understanding of the instructions and challenge of the guidelines when required, with a true UI & UX design view and opinion. '
+            + '<br><br>PS. We have just started a second project together. Hope it will be as good as the first one!',
         },
         smokefree: {
           author: 'Leszek Wiland',
           position: 'Smokefree',
-          text: 'Our work together has been nothing but professional and flawless. We have successfully completed development of a single page website and working currently on a large scale web application. They are an experienced team ready to take on all kinds of projects and see them to their successful end. Most of our work has been carried out remotely and despite the distance, all technical issues were communicated well and deadlines easily met without any disruptions. They are true professionals, able to take feedback well, work independently and suggest alternative solutions where necessary. I highly recommend InventiStudio for all your web development projects.',
+          text: 'Our work together has been nothing but professional and flawless. We have successfully completed development of a single page website and working currently on a large scale web application. '
+            + 'They are an experienced team ready to take on all kinds of projects and see them to their successful end. '
+            + 'Most of our work has been carried out remotely and despite the distance, all technical issues were communicated well and deadlines easily met without any disruptions. '
+            + 'They are true professionals, able to take feedback well, work independently and suggest alternative solutions where necessary. '
+            + 'I highly recommend InventiStudio for all your web development projects.',
         },
         zapytajcoacha: {
           author: 'Henryk Pepliński',
           position: 'ZapytajCoacha',
-          text: 'Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from InventiStudio means that I will always come back to them if in need of a new web application or other IT service.',
+          text: 'Professionals looking for very challenging tasks! They are not afraid of anything related to their work. '
+            + 'Punctuality and flexibility ideally suited to the customer. '
+            + 'The experience and knowledge of people from InventiStudio means that I will always come back to them if in need of a new web application or other IT service.',
         },
       },
     },

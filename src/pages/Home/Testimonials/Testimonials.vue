@@ -40,7 +40,7 @@
                 )
                   span {{ getTranslation(testimonial, 'position') }}
                 span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
-                p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
+                p.o-paragraph.c-ship-gray(v-html="`“${getTranslation(testimonial, 'text')}”`")
                 router-link.o-btn.o-btn--purple.mt-24(
                   v-if="testimonial.postSlug",
                   :to="$routeByName('BlogPost', { params: { slug: testimonial.postSlug } })",
@@ -75,7 +75,7 @@
           {
             key: 'promis',
             avatarSrc: 'vincentstammbach.jpeg',
-            positionUrl: '',
+            positionUrl: 'https://promis.netlify.com/',
             postSlug: 'promis',
           },
           {
