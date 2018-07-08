@@ -15,10 +15,6 @@ For coach Marzena Peplińska we have designed and developed three applications -
 
 [Here's the live site](https://zapytajcoacha.pl) if you want to take a look!
 
-## Scope of the project
-
-![Vue.js front-end, Node.js back-end, UI & UX design](/static/blog/zco/scope.png)
-
 ## Client's feedback
 
 <div class="blog-post__client-feedback">
@@ -30,7 +26,11 @@ For coach Marzena Peplińska we have designed and developed three applications -
   </p>
 </div>
 
-“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from InventiStudio means that I will always come back to them if in need of a new web application or other IT service.”
+“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from [InventiStudio](https://inventi.studio) means that I will always come back to them if in need of a new web application or other IT service.”
+
+## Scope of the project
+
+![Vue.js front-end, Node.js back-end, UI & UX design](/static/blog/zco/scope.png)
 
 ## Colors
 
@@ -57,7 +57,7 @@ As **responsiveness** is a major part of a good **user experience**, we've put a
 
 Major part of all three applications is the **custom booking system**. User is presented with a simple form, where she can book an online meeting.  
 
-We've used great 3rd party library for **datepicker** component - [vuejs-datepicker](https://github.com/charliekassel/vuejs-datepicker). It supports a variety of languages, which was a crucial requirement, as the website's default language is polish.
+We've used great a 3rd party library for **datepicker** component - [vuejs-datepicker](https://github.com/charliekassel/vuejs-datepicker). It supports a variety of languages, which was a crucial requirement, as the website's default language is polish.
 
 ```pug
 .small-12.medium-3.columns
@@ -80,7 +80,7 @@ We've used great 3rd party library for **datepicker** component - [vuejs-datepic
   small.error(v-if="!isDateFromValid") Data konsultacji jest wymagana 
 ```
 
-For the **form validation** we're using fantastic [vuelidate](https://github.com/monterail/vuelidate) lib, which is a core of [our Vue.js starter kit](https://github.com/InventiStudio/vue-starter-kit) we use for every project!
+For the **form validation** we're using a fantastic [vuelidate](https://github.com/monterail/vuelidate) lib, which is a core of [our Vue.js starter kit](https://github.com/InventiStudio/vue-starter-kit) we use for every project!
 
 ```javascript
 validations: {
@@ -123,7 +123,7 @@ Here's a peak at admin's part of booking system...
 
 Blog is one of the best resources for **great SEO**, that's why we put a great focus on building robust, custom blogging system.  
 
-We usualy use [Prerender](https://prerender.io/) for making webapp's content fully accessible for crawlers. There's of course also [Nuxt.js](https://nuxtjs.org/), which is a powerful tool for not only better SEO, but also for better user experience. For this case however, we decided it would have been a bit of an overkill. ;)
+We usualy use [Prerender](https://prerender.io/) for making webapp's content fully accessible for crawlers. There's of course also [Nuxt.js](https://nuxtjs.org/), which is a powerful tool for not only better SEO, but also for better user experience. For this case however, we decided it would have been a bit of an overkill to use Nuxt.js. ;)
 
 ![Vue.js marketing website - Blog](/static/blog/zco/vuejs-marketing-page-blog.png)
 
