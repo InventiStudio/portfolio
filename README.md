@@ -1,4 +1,10 @@
-# [InventiStudio Portfolio](https://inventi.studio)
+<p align="center">
+  <img alt="InventiStudio Portfolio" src="static/logo-trans-white.png" />
+  <br>
+  <br>
+</p>
+
+# [InventiStudio](https://inventi.studio) Portfolio
 
 ![https://img.shields.io/travis/InventiStudio/portfolio.svg](https://img.shields.io/travis/InventiStudio/portfolio.svg)
 
