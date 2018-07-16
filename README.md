@@ -4,7 +4,7 @@
 
 # [InventiStudio](https://inventi.studio) Portfolio
 
-InventiStudio is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front‑end, Node.js back‑end and UI/UX design services for enterprises, companies and startups. Get in touch with us!  
+<p><a href="https://inventi.studio" target="_blank">InventiStudio</a> is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front‑end, Node.js back‑end and UI/UX design services for enterprises, companies and startups. <a href="mailto:hello@inventi.studio">Get in touch with us</a>!<p>
 
 ![https://img.shields.io/travis/InventiStudio/portfolio.svg](https://img.shields.io/travis/InventiStudio/portfolio.svg)
 
