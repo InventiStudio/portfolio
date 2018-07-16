@@ -5,7 +5,7 @@ alternate:
   pl:        zapytajcoacha
 cover:       zco/cover.png
 miniCover:   zco/cover--mini.png
-date:        2018-03-27
+date:        2018-07-17
 description: Case study of the project we've made for coach Marzena Peplińska. The goal was to create custom booking management system and admin panel for writing blog posts. We have designed and developed three applications - Vue.js marketing website, Vue.js admin panel and Node.js back-end API.
 ---
 
@@ -18,7 +18,7 @@ For coach Marzena Peplińska we have designed and developed three applications -
 ## Client's feedback
 
 <div class="blog-post__client-feedback">
-  <img src="/static/testimonials/henrykpeplinski.jpg" alt="ZapytajCoacha" />
+  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Client's photo" />
   <p>
     Henryk Pepliński
     <br>
@@ -61,12 +61,12 @@ We've used great a 3rd party library for **datepicker** component - [vuejs-datep
 
 ```pug
 .small-12.medium-3.columns
-  label(for="dateFrom") Data konsultacji
+  label(for="dateFrom") Date of consultation
   Datepicker(
     v-model="dateFrom",
     id="dateFrom",
     name="dateFrom",
-    placeholder="1 Wrzesień 2017",
+    placeholder="1 September 2017",
     language="pl",
     format="d MMMM yyyy",
     :full-month-name="true",
@@ -77,7 +77,7 @@ We've used great a 3rd party library for **datepicker** component - [vuejs-datep
     @changedMonth="getNewAvailabilities",
     @changedYear="getNewAvailabilities",
   )
-  small.error(v-if="!isDateFromValid") Data konsultacji jest wymagana 
+  small.error(v-if="!isDateFromValid") Date of consultation is required.
 ```
 
 For the **form validation** we're using a fantastic [vuelidate](https://github.com/monterail/vuelidate) lib, which is a core of [our Vue.js starter kit](https://github.com/InventiStudio/vue-starter-kit) we use for every project!
@@ -133,7 +133,7 @@ We've also built an admin panel section for writing blog posts. We used Quill's 
   <img src="/static/blog/zco/vuejs-admin-panel-blog.png" alt="Vue.js admin panel - Blog" />
 </div>
 
-## Rest API
+## Node.js Rest API
 
 We have developed a **Node.js back-end** JSON Rest API for "gluing" both front-end apps together.  
 
