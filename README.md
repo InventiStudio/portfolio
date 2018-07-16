@@ -1,7 +1,5 @@
 <p align="center">
   <img alt="InventiStudio Portfolio" src="static/logo-trans-white.svg" />
-  <br>
-  <br>
 </p>
 
 # [InventiStudio](https://inventi.studio) Portfolio
