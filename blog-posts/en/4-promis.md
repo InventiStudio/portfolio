@@ -5,7 +5,7 @@ alternate:
   pl:        promis
 cover:       promis/cover.png
 miniCover:   promis/cover--mini.png
-date:        2018-07-17
+date:        2018-07-18
 description: Case study of the project we've made for Promis - French insurtech platform. The goal was to design and develop a Vue.js front-end of insurtech platform. We have designed and developed Vue.js marketing website.
 ---
 
@@ -38,6 +38,8 @@ PS. We have just started a second project together. Hope it will be as good as t
 
 ## Colors
 
+Here's the color palette!
+
 ![Colors](/static/blog/promis/colors.png)
 
 ## Typography
@@ -45,3 +47,11 @@ PS. We have just started a second project together. Hope it will be as good as t
 **Barlow** sans-serif font has been used for the whole app's content.
 
 ![Typography](/static/blog/promis/typography.png)
+
+## Responsiveness
+
+We always put a great effort in making the app **responsive**. This time it was no different - we made sure Promis looks perfect on **all devices**. 
+
+<div class="blog-post__section--full-w">
+  <img src="/static/blog/promis/vuejs-front-end-responsiveness.jpg" alt="Vue.js front-end - Responsiveness" />
+</div>
