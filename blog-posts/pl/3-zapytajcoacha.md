@@ -1,11 +1,11 @@
 ---
-title:       ZapytajCoacha
-slug:        zapytajcoacha
+title:       'Case study projektu: ZapytajCoacha'
+slug:        projekt-zapytajcoacha
 alternate:
-  pl:        zapytajcoacha
+  en:        project-zapytajcoacha
 cover:       zco/cover.png
 miniCover:   zco/cover--mini.png
-date:        2018-07-17
+date:        2018-07-23
 description: Case study projektu, który wykonaliśmy dla pani Marzeny Peplińskiej. Naszym zadaniem było stworzenie spersonalizowanego systemu zarządzania rezerwacjami i panelu administracyjnego do pisania postów na blogu. Zaprojektowaliśmy i wdrożylismy trzy aplikacje - stronę marketingową Vue.js, panel administracyjny Vue.js i back-end API Node.js.
 ---
 
