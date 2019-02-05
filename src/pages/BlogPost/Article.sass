@@ -15,14 +15,25 @@
   h2
     font-size: $fs-28
     line-height: $lh-28
+    margin-top: 40px
+    margin-bottom: 8px
 
   h3
     font-size: $fs-24
     line-height: $lh-24
+    margin-top: 32px
+    margin-bottom: 8px
 
   h4
     font-size: $fs-18
     line-height: $lh-18
+
+  h2 + p,
+  h3 + p
+    margin-top: 0
+
+  h2 + h3
+    margin-top: 0
 
   p,
   li
@@ -48,7 +59,28 @@
   b
     font-weight: $fw-black
 
-// E.g for 100vw images 
+.blog-post__browser-frame
+  border-top: 32px solid #eaeaea
+  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.1)
+  position: relative
+  border-radius: 5px 5px 0 0
+
+  img
+    display: block
+
+.blog-post__browser-frame:before
+  display: block
+  position: absolute
+  content: ""
+  top: -19px
+  left: 16px
+  width: 6px
+  height: 6px
+  border-radius: 50%
+  background-color: #fc605c
+  box-shadow: 0 0 0 2px #fc605c, 18px 0 0 2px #fdbc40, 36px 0 0 2px #34c749
+
+// E.g for 100vw images
 .blog-post__section--full-w
   width: 100vw
   // TODO: Test if that works in all of suppoerted browsers
