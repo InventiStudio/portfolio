@@ -18,21 +18,61 @@
       .row
         .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
           ShareButtons
-          .blog-post__article.mt-40.mb-40(v-html="post.html")
+          DynamicHTML.blog-post__article.mt-40.mb-40(:template="post.html")
           ShareButtons
     HireUs.hire-us--dark
 </template>
 
 <script>
+  import Vue from 'vue'
   import head from 'src/head'
   import router from 'src/router'
   import { getBlogPostBySlug } from 'services/blog'
+  import BlogScope from 'components/BlogScope/BlogScope'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
   import LoadingBar from 'vue2-loading-bar'
 
+  // We need this to be able to inject Vue components into BlogPost (like e.g <router-link>). Wouldn't work with (v-html="").
+  // https://stackoverflow.com/questions/37133282/how-to-use-components-in-v-html
+  // https://jsfiddle.net/Linusborg/1zdzu7k1/
+  const DynamicHTML = {
+    props: {
+      template: {
+        type: String,
+        required: true,
+      },
+    },
+    components: {
+      BlogScope,
+    },
+    data() {
+      return {
+        templateRender: null,
+      }
+    },
+    render(h) {
+      return this.templateRender()
+    },
+    watch: {
+      template:{
+        immediate: true,
+        handler() {
+          const res = Vue.compile(`<article>${this.template}</article>`)
+          this.templateRender = res.render
+          this.$options.staticRenderFns = []
+          this._staticTrees = []
+          for (let i in res.staticRenderFns) { // eslint-disable-line
+            this.$options.staticRenderFns.push(res.staticRenderFns[i])
+          }
+        },
+      },
+    },
+  }
+
   export default {
     components: {
+      DynamicHTML,
       HireUs,
       ShareButtons,
       LoadingBar,
