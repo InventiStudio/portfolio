@@ -15,22 +15,11 @@ Dla pani Marzeny Peplińskiej zaprojektowaliśmy i wdrożyliśmy trzy aplikacje 
 
 [Tutaj](https://zapytajcoacha.pl) możesz zobaczyć stronę na żywo!
 
-## Opinia klienta
-
-<div class="blog-post__client-feedback">
-  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Zdjęcie klienta" />
-  <p>
-    Henryk Pepliński
-    <br>
-    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
-  </p>
-</div>
-
-“Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z [InventiStudio](https://inventi.studio) sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.”
-
 ## Zakres projektu
 
-![Vue.js front-end, Node.js back-end, projekt UI i UX](/static/blog/zco/scope.png)
+Zapewnilismy usługi z zakresu front-endu Vue.js, back-endu Node.js oraz projektowania UI i UX.
+
+<blog-scope v-bind:active-scopes="['vue', 'node', 'design']"></blog-scope>
 
 ## Kolory
 
@@ -183,3 +172,16 @@ export default router.controller('/availabilities', (ctrl) => {
         .then(await next)
     })
 ```
+
+## Opinia klienta
+
+<div class="blog-post__client-feedback">
+  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Zdjęcie klienta" />
+  <p>
+    Henryk Pepliński
+    <br>
+    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
+  </p>
+</div>
+
+“Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z [InventiStudio](https://inventi.studio) sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.”

@@ -15,22 +15,11 @@ For coach Marzena Peplińska we have designed and developed three applications -
 
 [Here's the live site](https://zapytajcoacha.pl) if you want to take a look!
 
-## Client's feedback
-
-<div class="blog-post__client-feedback">
-  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Client's photo" />
-  <p>
-    Henryk Pepliński
-    <br>
-    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
-  </p>
-</div>
-
-“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from [InventiStudio](https://inventi.studio) means that I will always come back to them if in need of a new web application or other IT service.”
-
 ## Scope of the project
 
-![Vue.js front-end, Node.js back-end, UI & UX design](/static/blog/zco/scope.png)
+We provided Vue.js front-end, Node.js back-end development and UI & UX design services.
+
+<blog-scope v-bind:active-scopes="['vue', 'node', 'design']"></blog-scope>
 
 ## Colors
 
@@ -183,3 +172,16 @@ export default router.controller('/availabilities', (ctrl) => {
         .then(await next)
     })
 ```
+
+## Client's feedback
+
+<div class="blog-post__client-feedback">
+  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Client's photo" />
+  <p>
+    Henryk Pepliński
+    <br>
+    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
+  </p>
+</div>
+
+“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from [InventiStudio](https://inventi.studio) means that I will always come back to them if in need of a new web application or other IT service.”

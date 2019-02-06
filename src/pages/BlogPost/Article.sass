@@ -1,5 +1,10 @@
 @import "~stylesheets/helpers"
 
+$c-browser-red: #fc605c
+$c-browser-yellow: #fdbc40
+$c-browser-green: #34c749
+$c-browser-gray: #eaeaea
+
 .blog-post__article
 
   h1,
@@ -13,16 +18,16 @@
     font-weight: $fw-black
 
   h2
+    margin-top: 48px
+    margin-bottom: 8px
     font-size: $fs-28
     line-height: $lh-28
-    margin-top: 40px
-    margin-bottom: 8px
 
   h3
-    font-size: $fs-24
-    line-height: $lh-24
     margin-top: 32px
     margin-bottom: 8px
+    font-size: $fs-24
+    line-height: $lh-24
 
   h4
     font-size: $fs-18
@@ -59,26 +64,38 @@
   b
     font-weight: $fw-black
 
+  figure
+    margin: 32px 0
+
+  figcaption
+    margin-top: 8px
+    color: rgba($c-ship-gray, 0.6)
+    font-family: $ff-lora
+    font-size: $fs-16
+    line-height: $lh-24
+    text-align: center
+
+
 .blog-post__browser-frame
-  border-top: 32px solid #eaeaea
-  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.1)
   position: relative
+  border-top: 32px solid $c-browser-gray
   border-radius: 5px 5px 0 0
+  box-shadow: 0 16px 48px 0 rgba($c-black, 0.1)
+
+  &::before
+    position: absolute
+    top: -19px
+    left: 16px
+    display: block
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background-color: $c-browser-red
+    box-shadow: 0 0 0 2px $c-browser-red, 18px 0 0 2px $c-browser-yellow, 36px 0 0 2px $c-browser-green
+    content: ""
 
   img
     display: block
-
-.blog-post__browser-frame:before
-  display: block
-  position: absolute
-  content: ""
-  top: -19px
-  left: 16px
-  width: 6px
-  height: 6px
-  border-radius: 50%
-  background-color: #fc605c
-  box-shadow: 0 0 0 2px #fc605c, 18px 0 0 2px #fdbc40, 36px 0 0 2px #34c749
 
 // E.g for 100vw images
 .blog-post__section--full-w
@@ -87,8 +104,7 @@
   margin-left: calc(-1 * ((100vw - 100%) / 2))
 
   img
-    margin-top: 24px
-    margin-bottom: 24px
+    display: block
 
 .blog-post__progress div
   position: fixed
