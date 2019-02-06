@@ -47,10 +47,11 @@
     color: rgba($c-ship-gray, 0.2)
     font-weight: $fw-black
 
+  &:hover
+    text-decoration: none
+
 .blog-scope--active
   .blog-scope__circle
-    box-shadow: 0 2px 30px 0 rgba($c-black, 0.2)
-
     &::after
       position: absolute
       top: 50%
@@ -67,18 +68,21 @@
 
   .blog-scope__circle--vue
     background-color: $c-green
+    box-shadow: 0 2px 20px 0 rgba($c-green, 0.2)
 
     &::after
       border-color: rgba($c-green, 0.2)
 
   .blog-scope__circle--node
     background-color: $c-blue
+    box-shadow: 0 2px 20px 0 rgba($c-blue, 0.2)
 
     &::after
       border-color: rgba($c-blue, 0.2)
 
   .blog-scope__circle--design
     background-color: $c-orange
+    box-shadow: 0 2px 20px 0 rgba($c-orange, 0.2)
 
     &::after
       border-color: rgba($c-orange, 0.2)

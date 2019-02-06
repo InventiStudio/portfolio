@@ -6,6 +6,8 @@ $c-browser-green: #34c749
 $c-browser-gray: #eaeaea
 
 .blog-post__article
+  margin-top: 48px
+  margin-bottom: 80px
 
   h1,
   h2,
@@ -18,13 +20,13 @@ $c-browser-gray: #eaeaea
     font-weight: $fw-black
 
   h2
-    margin-top: 48px
+    margin-top: 56px
     margin-bottom: 8px
     font-size: $fs-28
     line-height: $lh-28
 
   h3
-    margin-top: 32px
+    margin-top: 40px
     margin-bottom: 8px
     font-size: $fs-24
     line-height: $lh-24
@@ -58,7 +60,11 @@ $c-browser-gray: #eaeaea
     -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
 
   a
-    text-decoration: underline
+    color: $c-violet
+    font-weight: $fw-black
+
+    &:hover
+      text-decoration: underline
 
   strong,
   b
@@ -119,9 +125,12 @@ $c-browser-gray: #eaeaea
   line-height: $lh-18
 
 .blog-post__client-feedback
+  margin-top: 24px
   text-align: center
 
   img
-    width: 80px
-    height: 80px
+    width: 100px
+    height: 100px
     border-radius: 100%
+    border: 5px solid $c-white
+    box-shadow: 0 2px 30px 0 rgba($c-black, 0.2)

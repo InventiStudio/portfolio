@@ -76,7 +76,7 @@
             key: 'promis',
             avatarSrc: 'vincentstammbach.jpeg',
             positionUrl: 'https://promis.netlify.com/',
-            postSlug: 'promis',
+            postSlug: 'project-promis',
           },
           {
             key: 'smokefree',
@@ -87,7 +87,7 @@
             key: 'zapytajcoacha',
             avatarSrc: 'henrykpeplinski.jpg',
             positionUrl: 'https://zapytajcoacha.pl',
-            postSlug: 'zapytajcoacha',
+            postSlug: 'project-zapytajcoacha',
           },
         ]
       },

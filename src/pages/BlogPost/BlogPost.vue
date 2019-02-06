@@ -18,7 +18,7 @@
       .row
         .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
           ShareButtons
-          DynamicHTML.blog-post__article.mt-40.mb-40(:template="post.html")
+          DynamicHTML.blog-post__article(:template="post.html")
           ShareButtons
     HireUs.hire-us--dark
 </template>
@@ -28,6 +28,7 @@
   import head from 'src/head'
   import router from 'src/router'
   import { getBlogPostBySlug } from 'services/blog'
+  import BlogColorPalette from 'components/BlogColorPalette/BlogColorPalette'
   import BlogScope from 'components/BlogScope/BlogScope'
   import HireUs from 'components/HireUs/HireUs'
   import ShareButtons from 'components/ShareButtons/ShareButtons'
@@ -44,6 +45,7 @@
       },
     },
     components: {
+      BlogColorPalette,
       BlogScope,
     },
     data() {
@@ -51,7 +53,7 @@
         templateRender: null,
       }
     },
-    render(h) {
+    render() {
       return this.templateRender()
     },
     watch: {

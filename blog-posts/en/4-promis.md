@@ -27,7 +27,8 @@ We provided Vue.js front-end development and UI & UX design services.
 
 ### Color palette
 
-![Colors](/static/blog/promis/colors.png)
+<blog-color-palette v-bind:colors="[{ name: 'Chateau Green', hex: '#37b64d' }, { name: 'Portage', hex: '#8582f3' }, { name: 'Scorpion', hex: '#5c5c5c' }, { name: 'Red', hex: '#e40000' }]">
+</blog-color-palette>
 
 ### Typography
 
