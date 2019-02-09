@@ -1,4 +1,5 @@
 @import "~stylesheets/helpers"
+@import "./drakula-theme.css"
 
 $c-browser-red: #fc605c
 $c-browser-yellow: #fdbc40
@@ -6,7 +7,6 @@ $c-browser-green: #34c749
 $c-browser-gray: #eaeaea
 
 .blog-post__article
-  margin-top: 48px
   margin-bottom: 80px
 
   h1,
@@ -20,13 +20,15 @@ $c-browser-gray: #eaeaea
     font-weight: $fw-black
 
   h2
-    margin-top: 56px
     margin-bottom: 8px
     font-size: $fs-28
     line-height: $lh-28
 
+  h2:not(:first-of-type)
+    margin-top: 64px
+
   h3
-    margin-top: 40px
+    margin-top: 48px
     margin-bottom: 8px
     font-size: $fs-24
     line-height: $lh-24
@@ -49,6 +51,14 @@ $c-browser-gray: #eaeaea
     font-size: $fs-20
     line-height: $lh-32
     -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
+
+  pre
+    margin-top: 24px
+    margin-bottom: 32px
+
+  code
+    font-size: 14px
+    color: $c-mercury
 
   *:not(.highlight) code
     padding: 2px 4px
@@ -81,7 +91,6 @@ $c-browser-gray: #eaeaea
     line-height: $lh-24
     text-align: center
 
-
 .blog-post__browser-frame
   position: relative
   border-top: 32px solid $c-browser-gray
@@ -102,6 +111,12 @@ $c-browser-gray: #eaeaea
 
   img
     display: block
+
+.blog-post__editor-frame
+  border: none
+  border-radius: 3px
+  box-shadow: 0 16px 48px 0 rgba($c-black, 0.15)
+  background-color: $c-bright-gray
 
 // E.g for 100vw images
 .blog-post__section--full-w
@@ -124,6 +139,9 @@ $c-browser-gray: #eaeaea
 .highlight
   line-height: $lh-18
 
+  .token.operator
+    background: none
+
 .blog-post__client-feedback
   margin-top: 24px
   text-align: center
@@ -133,4 +151,4 @@ $c-browser-gray: #eaeaea
     height: 100px
     border-radius: 100%
     border: 5px solid $c-white
-    box-shadow: 0 2px 30px 0 rgba($c-black, 0.2)
+    box-shadow: 0 2px 30px 0 rgba($c-black, 0.17)
