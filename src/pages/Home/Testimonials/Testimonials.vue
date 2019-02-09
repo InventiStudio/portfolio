@@ -37,6 +37,7 @@
                 a.o-link.c-ship-gray-40.mb-16.block(
                   v-if="testimonial.positionUrl",
                   :href="testimonial.positionUrl",
+                  target="_blank",
                 )
                   span {{ getTranslation(testimonial, 'position') }}
                 span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
@@ -72,6 +73,11 @@
     computed: {
       testimonials() {
         return [
+          {
+            key: 'leanfocus',
+            avatarSrc: 'martinkinitzki.png',
+            positionUrl: 'https://leanfocus.de/',
+          },
           {
             key: 'promis',
             avatarSrc: 'vincentstammbach.jpeg',

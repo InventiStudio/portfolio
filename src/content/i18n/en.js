@@ -33,9 +33,16 @@ export default {
       desc: 'Meet the people who trusted us',
       cta: 'See case study',
       cases: {
+        leanfocus: {
+          author: 'Martin Kinitzki',
+          position: 'CEO, Leanfocus',
+          text: 'InventiStudio has proven to be a reliable partner in the full range of development of our complex software in the field of industrial production management systems. '
+            + 'They are characterized not only by punctuality in delivering further features, but also quality, which can now be regarded as quite rare. '
+            + 'Many thanks for the wonderful work you have done and will do for us - with us.',
+        },
         promis: {
           author: 'Vincent Stammbach',
-          position: 'Promis',
+          position: 'Co-Founder & CTO, Promis',
           text: 'Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match! '
             + 'We had a very good communication (both written and spoken) in English, with the appropriate level of questions / feedback / reporting. '
             + 'InventiStudio have an awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! '
