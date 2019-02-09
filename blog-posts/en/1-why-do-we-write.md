@@ -1,6 +1,7 @@
 ---
 title:       Why do we write?
 slug:        why-do-we-write
+tags:        'VUE.JS · NODE.JS · UI · UX'
 alternate:
   pl:        dlaczego-piszemy
 cover:       why-do-we-write__cover.jpg

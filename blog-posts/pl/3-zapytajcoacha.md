@@ -1,6 +1,7 @@
 ---
 title:       'Case study projektu: ZapytajCoacha'
 slug:        projekt-zapytajcoacha
+tags:        'VUE.JS · NODE.JS · FRONT‑END · BACK-END · UI · UX'
 alternate:
   en:        project-zapytajcoacha
 cover:       zco/cover.png

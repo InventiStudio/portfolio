@@ -12,13 +12,12 @@
     )
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
-          p.fs-11.fw-medium.c-white.mb-16 {{ post.additional.formattedDate }}
+          p.fs-11.fw-medium.c-white.mb-16.letter-1 {{ post.additional.formattedDate }}
           h1.o-heading-1.c-white {{ post.data.title }}
-          p.fs-11.fw-medium.c-white-80.mt-8.mb-40.letter-3 {{ post.data.tags }}
+          p.fs-11.fw-medium.c-white-90.mt-8.mb-40.letter-3 {{ post.data.tags }}
     .blog-post__content
       .row
         .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
-          ShareButtons
           DynamicHTML.blog-post__article(:template="post.html")
           ShareButtons
     HireUs.hire-us--dark

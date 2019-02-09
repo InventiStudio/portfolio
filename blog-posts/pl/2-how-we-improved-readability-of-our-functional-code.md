@@ -1,6 +1,7 @@
 ---
 title:       Jak poprawiliśmy czytelność naszego funkcyjnego kodu
 slug:        jak-poprawilismy-czytelnosc-naszego-funkcyjnego-kodu
+tags:        'JAVASCRIPT · PROGRAMOWANIE FUNKCYJNE'
 alternate:
   en:        how-we-improved-readability-of-our-functional-code
 cover:       how-we-improved-readability-of-our-functional-code__cover.jpg
