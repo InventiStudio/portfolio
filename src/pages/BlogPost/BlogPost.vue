@@ -12,8 +12,9 @@
     )
       .row.align-center
         .column.small-12.medium-10.large-8.text-center
-          p.fs-11.c-white.mb-16.medium-mb-8 {{ post.additional.formattedDate }}
-          h1.o-heading-1.c-white.mb-40 {{ post.data.title }}
+          p.fs-11.fw-medium.c-white.mb-16 {{ post.additional.formattedDate }}
+          h1.o-heading-1.c-white {{ post.data.title }}
+          p.fs-11.fw-medium.c-white-80.mt-8.mb-40.letter-3 {{ post.data.tags }}
     .blog-post__content
       .row
         .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
