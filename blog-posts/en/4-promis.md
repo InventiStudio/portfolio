@@ -1,6 +1,7 @@
 ---
 title:       'Project case study: Promis'
 slug:        project-promis
+tags:        'VUE.JS · SVG · RESPONSIVE · FRONT‑END · UI · UX'
 alternate:
   pl:        projekt-promis
 cover:       promis/cover.png
@@ -44,42 +45,56 @@ One of the requirements was to make Promis **responsive**, as majority of users 
 
 <figure>
   <div class="blog-post__section--full-w">
-    <img src="/static/blog/promis/vuejs-front-end-responsiveness.jpg" alt="Vue.js front-end - Responsiveness" />
+    <img src="/static/blog/promis/vuejs-front-end-responsiveness.png" alt="Vue.js front-end - Responsiveness" />
   </div>
   <figcaption>Vue.js front-end app responsiveness on mobile, tablet and desktop.</figcaption>
 </figure>
 
 ### SVG progress circle
 
-The "Our Assets" section was one of the trickiest (and fun!) parts of the interface implementation. It consists of a slider on the left side and an **SVG progress circle** on the right.
+The "Our Assets" section was one of the trickiest (and fun!) parts of the interface implementation. It consists of a slider on the left side and an **SVG progress circle** on the right, representing the assets of Promis in four points.
 
 <figure>
   <div class="blog-post__browser-frame">
-    <img src="/static/blog/promis/circle.gif" alt="SVG progress circle" />
+    <img src="/static/blog/promis/svg-progress-circle.png" alt="SVG progress circle" />
   </div>
-  <!-- <figcaption>Assets of Promis represented in four points.</figcaption> -->
+  <figcaption>Custom SVG progress circle.</figcaption>
 </figure>
 
-Lorem ipsum..
+It's all about the `stroke-dasharray` and `stroke-dashoffset` attributes, which we can easily bind to component data:
 
-### Test
+```html
+<!-- template -->
+<circle
+  :class="['our-assets__circle--filled', isCircleTransitioned && 'our-assets__circle--filled-transitioned']"
+  :stroke-dasharray="circleDashArray"
+  :stroke-dashoffset="circleDashOffset"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="3.5"
+  r="208"
+  cx="210"
+  cy="210"
+></circle>
+```
 
-(..) colours intensity representing the importance of given insurance field.
+### SVG donut pie chart
 
-<div class="blog-post__browser-frame">
-  <img src="/static/blog/promis/test.png" alt="Vue.js front-end - Responsiveness" />
-</div>
+Yet another SVG-powered piece of UI - this time **SVG donut pie chart**. We've made this one using <a href="//d3js.org/" target="_blank">d3.js library</a>, which, because of it's imperative nature, is really helpful in such a custom cases.
 
-Lorem ipsum..
+The pie chart consists of various types of insurances, with colour intensity representing the importance of given insurance field.
 
-### Chat bot
-
-Lore ipsum..
+<figure>
+  <div class="blog-post__browser-frame">
+    <img src="/static/blog/promis/svg-donut-pie-chart.png" alt="SVG donut pie chart" />
+  </div>
+  <figcaption>SVG donut pie chart made with d3.js.</figcaption>
+</figure>
 
 ## Client's feedback
 
 <div class="blog-post__client-feedback">
-  <img src="/static/testimonials/vincentstammbach.jpeg" alt="Promis" />
+  <img src="/static/testimonials/vincentstammbach.jpeg" alt="Co-Founder & CTO, Promis" />
   <p>
     <strong>Vincent Stammbach</strong>
     <br>
@@ -87,6 +102,6 @@ Lore ipsum..
   </p>
 </div>
 
-“Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match! We had a very good communication (both written and spoken) in English, with the appropriate level of questions / feedback / reporting. InventiStudio have an awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! They did a very reliable transcription of the design (Sketch files) to web pages and have excellent understanding of the instructions and challenge of the guidelines when required, with a true UI & UX design view and opinion.  
+<p class="indent">“Excellent job done on Promis - congratulations! It is the first time I am outsourcing IT jobs outside of France and it was a perfect match! We had a very good communication (both written and spoken) in English, with the appropriate level of questions / feedback / reporting. InventiStudio have an awesome skills in front development (HTML / CSS / JS ES6 / Vue.js / Webpack) and there were some really tricky parts! They did a very reliable transcription of the design (Sketch files) to web pages and have excellent understanding of the instructions and challenge of the guidelines when required, with a true UI & UX design view and opinion.</p>
 
-PS. We have just started a second project together. Hope it will be as good as the first one!”
+<p class="indent">PS. We have just started a second project together. Hope it will be as good as the first one!”</p>
