@@ -74,15 +74,15 @@
       testimonials() {
         return [
           {
-            key: 'leanfocus',
-            avatarSrc: 'martinkinitzki.png',
-            positionUrl: 'https://leanfocus.de/',
-          },
-          {
             key: 'promis',
             avatarSrc: 'vincentstammbach.jpeg',
             positionUrl: 'https://promis.netlify.com/',
             postSlug: 'project-promis',
+          },
+          {
+            key: 'leanfocus',
+            avatarSrc: 'martinkinitzki.png',
+            positionUrl: 'https://leanfocus.de/',
           },
           {
             key: 'smokefree',
