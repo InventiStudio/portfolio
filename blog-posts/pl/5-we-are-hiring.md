@@ -1,6 +1,7 @@
 ---
 title:       Dołącz do nas!
 slug:        dolacz-do-nas
+tags:        'FRONT-END · VUE.JS'
 alternate:
   en:        we-are-hiring
 cover:       we-are-hiring__cover.jpg

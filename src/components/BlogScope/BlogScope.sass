@@ -1,0 +1,92 @@
+@import "~stylesheets/helpers"
+
+@keyframes pulsate
+  0%
+    transform: translate(-50%, -50%) scale(1, 1)
+    opacity: 0
+
+  50%
+    opacity: 1
+
+  100%
+    transform: translate(-50%, -50%) scale(1.3, 1.3)
+    opacity: 0
+
+.blog-scope
+  display: inline-block
+  margin-top: 24px
+  margin-right: 20px
+  margin-left: 20px
+
+.blog-scope__circle
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 75px
+  height: 75px
+  margin: 0 auto
+  border-radius: 100%
+  background-color: $c-mercury
+  transition-duration: $t-duration
+  transition-property: background-color
+  transition-timing-function: $t-easing
+  cursor: pointer
+
+.blog-scope__icon
+  width: 28px
+  height: 28px
+
+.blog-scope__text
+  display: block
+  margin-top: 16px
+  text-align: center
+  text-decoration: none
+
+  span
+    color: rgba($c-ship-gray, 0.2)
+    font-weight: $fw-black
+
+  &:hover
+    text-decoration: none
+
+.blog-scope--active
+  .blog-scope__circle
+    &::after
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 100%
+      height: 100%
+      border-width: 10px
+      border-style: solid
+      border-radius: 100%
+      content: ""
+      opacity: 0
+      animation: pulsate 2s $t-easing
+      animation-iteration-count: infinite
+
+  .blog-scope__circle--vue
+    background-color: $c-green
+    box-shadow: 0 2px 20px 0 rgba($c-green, 0.2)
+
+    &::after
+      border-color: rgba($c-green, 0.2)
+
+  .blog-scope__circle--node
+    background-color: $c-blue
+    box-shadow: 0 2px 20px 0 rgba($c-blue, 0.2)
+
+    &::after
+      border-color: rgba($c-blue, 0.2)
+
+  .blog-scope__circle--design
+    background-color: $c-orange
+    box-shadow: 0 2px 20px 0 rgba($c-orange, 0.2)
+
+    &::after
+      border-color: rgba($c-orange, 0.2)
+
+  .blog-scope__text
+    span
+      color: $c-ship-gray

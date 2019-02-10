@@ -1,6 +1,7 @@
 ---
 title:       'Case study projektu: ZapytajCoacha'
 slug:        projekt-zapytajcoacha
+tags:        'VUE.JS · NODE.JS · FRONT‑END · BACK-END · UI · UX'
 alternate:
   en:        project-zapytajcoacha
 cover:       zco/cover.png
@@ -15,28 +16,18 @@ Dla pani Marzeny Peplińskiej zaprojektowaliśmy i wdrożyliśmy trzy aplikacje 
 
 [Tutaj](https://zapytajcoacha.pl) możesz zobaczyć stronę na żywo!
 
-## Opinia klienta
-
-<div class="blog-post__client-feedback">
-  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Zdjęcie klienta" />
-  <p>
-    Henryk Pepliński
-    <br>
-    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
-  </p>
-</div>
-
-“Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z [InventiStudio](https://inventi.studio) sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.”
-
 ## Zakres projektu
 
-![Vue.js front-end, Node.js back-end, projekt UI i UX](/static/blog/zco/scope.png)
+Zapewnilismy usługi z zakresu front-endu Vue.js, back-endu Node.js oraz projektowania UI i UX.
+
+<blog-scope v-bind:active-scopes="['vue', 'node', 'design']"></blog-scope>
 
 ## Kolory
 
 Oto paleta kolorów, z której korzystaliśmy!  
 
-![Kolory](/static/blog/zco/colors.png)
+<blog-color-palette v-bind:colors="[{ name: 'Java', hex: '#1ccea0' }, { name: 'Tarawera', hex: '#0d415b' }, { name: 'Amaranth', hex: '#ef2d56' }, { name: 'Orange peel', hex: '#ffa001' }]">
+</blog-color-palette>
 
 ## Typografia
 
@@ -49,9 +40,12 @@ Szeryfowa czcionka **Lora** została użyta do zawartości blog postów, aby zap
 
 Jako, że **responsywność** jest głównym czynnikiem zapewniającym dobry **UX**, dołożyliśmy wszelkich starań, aby zaprojektować stronę marketingową tak, aby wyglądała idealnie na **wszystkich urządzeniach**.
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-marketing-page-responsiveness.png" alt="Strona marketingowa Vue.js - Responsywność" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-marketing-page-responsiveness.png" alt="Strona marketingowa Vue.js - Responsywność" />
+  </div>
+  <figcaption>Responsywność na telefonach, tabletach i dużych ekranach.</figcaption>
+</figure>
 
 ## System zarządzania rezerwacjami 
 
@@ -115,9 +109,11 @@ Oto urywek części administracyjnej systemu zarządzania rezerwacjami...
 
 ...a tutaj część kliencka:
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-marketing-page-booking.png" alt="Strona marketingowa Vue.js - System zarządzania rezerwacjami" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-marketing-page-booking.png" alt="Strona marketingowa Vue.js - System zarządzania rezerwacjami" />
+  </div>
+</figure>
 
 ## Blog
  
@@ -129,9 +125,11 @@ Zazwyczaj używamy [Prerender'a](https://prerender.io/), aby zawartość aplikac
 
 Zbudowaliśmy również sekcję panelu administracyjnego do pisania postów na blogu. Użyliśmy Quilla [(implementacja we Vue.js)](https://github.com/surmon-china/vue-quill-editor) dla edytora WYSIWYG.  
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-admin-panel-blog.png" alt="Panel administracyjny Vue.js - Blog" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-admin-panel-blog.png" alt="Panel administracyjny Vue.js - Blog" />
+  </div>
+</figure>
 
 ## Restowe API Node.js
 
@@ -183,3 +181,16 @@ export default router.controller('/availabilities', (ctrl) => {
         .then(await next)
     })
 ```
+
+## Opinia klienta
+
+<div class="blog-post__client-feedback">
+  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Zdjęcie klienta" />
+  <p>
+    <strong>Henryk Pepliński</strong>
+    <br>
+    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
+  </p>
+</div>
+
+“Profesjonaliści, szukający bardzo wymagających zadań! Nie boją się niczego, co związane jest z ich pracą. Terminowość i elastyczność idealnie dopasowana pod klienta. Doświadczenie i wiedza ludzi z [InventiStudio](https://inventi.studio) sprawia, że zawsze będę do nich wracał w razie potrzeby nowej aplikacji webowej lub innej usługi IT.”

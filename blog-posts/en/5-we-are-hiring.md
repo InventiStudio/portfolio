@@ -1,6 +1,7 @@
 ---
 title:       We are hiring!
 slug:        we-are-hiring
+tags:        'FRONT-END · VUE.JS'
 alternate:
   pl:        dolacz-do-nas
 cover:       we-are-hiring__cover.jpg

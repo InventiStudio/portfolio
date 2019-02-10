@@ -1,6 +1,7 @@
 ---
 title:       How we improved readability of our functional code
 slug:        how-we-improved-readability-of-our-functional-code
+tags:        'JAVASCRIPT · FUNCTIONAL PROGRAMMING'
 alternate:
   pl:        jak-poprawilismy-czytelnosc-naszego-funkcyjnego-kodu
 cover:       how-we-improved-readability-of-our-functional-code__cover.jpg
@@ -202,7 +203,7 @@ function using(data) {
 }
 ```
 
-At this point, by typing `.value ()` at the end of the call, we get the actual result. Let's rewrite the example from the beginning of the article then.
+At this point, by typing `.value()` at the end of the call, we get the actual result. Let's rewrite the example from the beginning of the article then.
 
 ```javascript
 const result = using(response)   // data

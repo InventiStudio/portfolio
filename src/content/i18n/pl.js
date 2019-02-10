@@ -34,6 +34,23 @@ export default {
       desc: 'Poznaj ludzi, którzy nam zaufali',
       cta: 'Dowiedz się więcej',
       cases: {
+        leanfocus: {
+          author: 'Martin Kinitzki',
+          position: 'CEO, Leanfocus',
+          text: 'InventiStudio udowodniło, że jest niezawodnym partnerem w pełnym zakresie rozwoju naszego złożonego oprogramowania w dziedzinie przemysłowych systemów zarządzania produkcją. '
+            + 'Cechuje ich nie tylko punktualność w dostarczaniu kolejnych funkcjonalności, ale także jakość, którą obecnie można uznać za dość rzadką. '
+            + 'Wielkie dzięki za wspaniałą pracę, którą wykonaliście i zrobicie dla nas - u nas.',
+        },
+        promis: {
+          author: 'Vincent Stammbach',
+          position: 'Założyciel i CTO, Promis',
+          text: 'Świetna robota w Promis - gratulacje! To pierwszy raz kiedy outsourcujemy projekt IT poza Francję i był to idealny wybór! '
+            + 'Mieliśmy bardzo dobrą komunikację (pisemną i ustną) w języku angielskim, z odpowiednim poziomem pytań / informacji zwrotnych / raportowania. '
+            + 'InventiStudio posiadają niesamowite umiejętności w zakresie programowania front-endu (HTML / CSS / JS ES6 / Vue.js / Webpack), a było kilka naprawdę trudnych aspektów! '
+            + 'Bardzo dokładne przełożyli projekty graficzne (pliki Sketch) na właściwą aplikację. '
+            + 'Doskonale też rozumieją wytyczne i kwestionują zastosowane rozwiązania, z profesjonalnymi opiniami w kwestii UI i UX. '
+            + '<br><br>PS. Właśnie rozpoczęliśmy kolejny wspólny projekt. Mamy nadzieję, że współpraca będzie tak dobra jak w poprzednim!',
+        },
         smokefree: {
           author: 'Leszek Wiland',
           position: 'Smokefree',

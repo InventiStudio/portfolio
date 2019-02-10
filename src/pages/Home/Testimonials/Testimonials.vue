@@ -37,10 +37,11 @@
                 a.o-link.c-ship-gray-40.mb-16.block(
                   v-if="testimonial.positionUrl",
                   :href="testimonial.positionUrl",
+                  target="_blank",
                 )
                   span {{ getTranslation(testimonial, 'position') }}
                 span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
-                p.o-paragraph.c-ship-gray “{{ getTranslation(testimonial, 'text') }}”
+                p.o-paragraph.c-ship-gray(v-html="`“${getTranslation(testimonial, 'text')}”`")
                 router-link.o-btn.o-btn--purple.mt-24(
                   v-if="testimonial.postSlug",
                   :to="$routeByName('BlogPost', { params: { slug: testimonial.postSlug } })",
@@ -73,6 +74,17 @@
       testimonials() {
         return [
           {
+            key: 'promis',
+            avatarSrc: 'vincentstammbach.jpeg',
+            positionUrl: 'https://promis.netlify.com/',
+            postSlug: 'project-promis',
+          },
+          {
+            key: 'leanfocus',
+            avatarSrc: 'martinkinitzki.png',
+            positionUrl: 'https://leanfocus.de/',
+          },
+          {
             key: 'smokefree',
             avatarSrc: 'leszekwiland.jpg',
             positionUrl: 'https://smokefree.place/62nxc1',
@@ -81,7 +93,7 @@
             key: 'zapytajcoacha',
             avatarSrc: 'henrykpeplinski.jpg',
             positionUrl: 'https://zapytajcoacha.pl',
-            postSlug: 'zapytajcoacha',
+            postSlug: 'project-zapytajcoacha',
           },
         ]
       },

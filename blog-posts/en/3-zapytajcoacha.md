@@ -1,6 +1,7 @@
 ---
 title:       'Project case study: ZapytajCoacha'
 slug:        project-zapytajcoacha
+tags:        'VUE.JS · NODE.JS · FRONT‑END · BACK-END · UI · UX'
 alternate:
   pl:        projekt-zapytajcoacha
 cover:       zco/cover.png
@@ -15,28 +16,18 @@ For coach Marzena Peplińska we have designed and developed three applications -
 
 [Here's the live site](https://zapytajcoacha.pl) if you want to take a look!
 
-## Client's feedback
-
-<div class="blog-post__client-feedback">
-  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Client's photo" />
-  <p>
-    Henryk Pepliński
-    <br>
-    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
-  </p>
-</div>
-
-“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from [InventiStudio](https://inventi.studio) means that I will always come back to them if in need of a new web application or other IT service.”
-
 ## Scope of the project
 
-![Vue.js front-end, Node.js back-end, UI & UX design](/static/blog/zco/scope.png)
+We provided Vue.js front-end, Node.js back-end development and UI & UX design services.
+
+<blog-scope v-bind:active-scopes="['vue', 'node', 'design']"></blog-scope>
 
 ## Colors
 
 Here's the color palette we've used!
 
-![Colors](/static/blog/zco/colors.png)
+<blog-color-palette v-bind:colors="[{ name: 'Java', hex: '#1ccea0' }, { name: 'Tarawera', hex: '#0d415b' }, { name: 'Amaranth', hex: '#ef2d56' }, { name: 'Orange peel', hex: '#ffa001' }]">
+</blog-color-palette>
 
 ## Typography
 
@@ -49,9 +40,12 @@ We've used sans-serif **Lato** font for majority of the apps' content.
 
 As **responsiveness** is a major part of a good **user experience**, we've put a great effort in desiging the marketing website so that it looks perfect on **all devices**. 
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-marketing-page-responsiveness.png" alt="Vue.js marketing website - Responsiveness" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-marketing-page-responsiveness.png" alt="Vue.js marketing website - Responsiveness" />
+  </div>
+  <figcaption>Vue.js front-end app responsiveness on mobile, tablet and desktop.</figcaption>
+</figure>
 
 ## Booking system
 
@@ -115,9 +109,11 @@ Here's a peak at admin's part of booking system...
 
 ...and here's the client part:
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-marketing-page-booking.png" alt="Vue.js marketing website - Booking system" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-marketing-page-booking.png" alt="Vue.js marketing website - Booking system" />
+  </div>
+</figure>
 
 ## Blog
 
@@ -129,9 +125,11 @@ We usualy use [Prerender](https://prerender.io/) for making webapp's content ful
 
 We've also built an admin panel section for writing blog posts. We used Quill's [Vue.js implementation](https://github.com/surmon-china/vue-quill-editor) for WYSIWYG editor.
 
-<div class="blog-post__section--full-w">
-  <img src="/static/blog/zco/vuejs-admin-panel-blog.png" alt="Vue.js admin panel - Blog" />
-</div>
+<figure>
+  <div class="blog-post__section--full-w">
+    <img src="/static/blog/zco/vuejs-admin-panel-blog.png" alt="Vue.js admin panel - Blog" />
+  </div>
+</figure>
 
 ## Node.js Rest API
 
@@ -183,3 +181,16 @@ export default router.controller('/availabilities', (ctrl) => {
         .then(await next)
     })
 ```
+
+## Client's feedback
+
+<div class="blog-post__client-feedback">
+  <img src="/static/testimonials/henrykpeplinski.jpg" alt="Client's photo" />
+  <p>
+    <strong>Henryk Pepliński</strong>
+    <br>
+    <a href="https://zapytajcoacha.pl" target="_blank">ZapytajCoacha</a>
+  </p>
+</div>
+
+“Professionals looking for very challenging tasks! They are not afraid of anything related to their work. Punctuality and flexibility ideally suited to the customer. The experience and knowledge of people from [InventiStudio](https://inventi.studio) means that I will always come back to them if in need of a new web application or other IT service.”

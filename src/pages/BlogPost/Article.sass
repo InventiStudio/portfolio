@@ -1,6 +1,13 @@
 @import "~stylesheets/helpers"
+@import "./drakula-theme.css"
+
+$c-browser-red: #fc605c
+$c-browser-yellow: #fdbc40
+$c-browser-green: #34c749
+$c-browser-gray: #eaeaea
 
 .blog-post__article
+  margin-bottom: 80px
 
   h1,
   h2,
@@ -13,16 +20,29 @@
     font-weight: $fw-black
 
   h2
+    margin-bottom: 8px
     font-size: $fs-28
     line-height: $lh-28
 
+  h2:not(:first-of-type)
+    margin-top: 64px
+
   h3
+    margin-top: 48px
+    margin-bottom: 8px
     font-size: $fs-24
     line-height: $lh-24
 
   h4
     font-size: $fs-18
     line-height: $lh-18
+
+  h2 + p,
+  h3 + p
+    margin-top: 0
+
+  h2 + h3
+    margin-top: 0
 
   p,
   li
@@ -31,6 +51,14 @@
     font-size: $fs-20
     line-height: $lh-32
     -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
+
+  pre
+    margin-top: 24px
+    margin-bottom: 32px
+
+  code
+    color: $c-mercury
+    font-size: 14px
 
   *:not(.highlight) code
     padding: 2px 4px
@@ -42,21 +70,62 @@
     -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
 
   a
-    text-decoration: underline
+    color: $c-violet
+    font-weight: $fw-black
+
+    &:hover
+      text-decoration: underline
 
   strong,
   b
     font-weight: $fw-black
 
-// E.g for 100vw images 
+  figure
+    margin: 32px 0
+
+  figcaption
+    margin-top: 8px
+    color: rgba($c-ship-gray, 0.6)
+    font-family: $ff-lora
+    font-size: $fs-16
+    line-height: $lh-24
+    text-align: center
+
+.blog-post__browser-frame
+  position: relative
+  border-top: 32px solid $c-browser-gray
+  border-radius: 5px 5px 0 0
+  box-shadow: 0 16px 48px 0 rgba($c-black, 0.1)
+
+  &::before
+    position: absolute
+    top: -19px
+    left: 16px
+    display: block
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background-color: $c-browser-red
+    box-shadow: 0 0 0 2px $c-browser-red, 18px 0 0 2px $c-browser-yellow, 36px 0 0 2px $c-browser-green
+    content: ""
+
+  img
+    display: block
+
+.blog-post__editor-frame
+  border: 0
+  border-radius: 3px
+  background-color: $c-bright-gray
+  box-shadow: 0 16px 48px 0 rgba($c-black, 0.15)
+
+// E.g for 100vw images
 .blog-post__section--full-w
   width: 100vw
   // TODO: Test if that works in all of suppoerted browsers
   margin-left: calc(-1 * ((100vw - 100%) / 2))
 
   img
-    margin-top: 24px
-    margin-bottom: 24px
+    display: block
 
 .blog-post__progress div
   position: fixed
@@ -70,10 +139,16 @@
 .highlight
   line-height: $lh-18
 
+  .token.operator
+    background: none
+
 .blog-post__client-feedback
+  margin-top: 24px
   text-align: center
 
   img
-    width: 80px
-    height: 80px
+    width: 100px
+    height: 100px
+    border: 5px solid $c-white
     border-radius: 100%
+    box-shadow: 0 2px 30px 0 rgba($c-black, 0.17)

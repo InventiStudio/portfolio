@@ -10,10 +10,10 @@ const markdown   = require('markdown-it')({
   highlight(str, lang) {
     if (lang && Prism.languages[lang]) {
       try {
-        return `<pre class="highlight"><code>${Prism.highlight(str, Prism.languages[lang])}</code></pre>`
+        return `<pre class="blog-post__editor-frame highlight"><code>${Prism.highlight(str, Prism.languages[lang])}</code></pre>`
       } catch (err) {}
     }
-    return `<pre class="highlight"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
+    return `<pre class="blog-post__editor-frame highlight"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
   },
 })
 

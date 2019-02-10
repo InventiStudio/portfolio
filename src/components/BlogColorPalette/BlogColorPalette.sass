@@ -1,0 +1,51 @@
+@import "~stylesheets/helpers"
+
+.blog-color
+  display: inline-block
+  width: 115px
+  margin-top: 40px
+  margin-right: 20px
+  margin-left: 20px
+
+.blog-color__circle
+  position: relative
+  z-index: 15
+  width: 60px
+  height: 60px
+  margin: 0 auto
+  border-radius: 100%
+
+  &::before,
+  &::after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 100%
+    background-color: inherit
+    content: ""
+
+  &::before
+    z-index: 10
+    width: 78px
+    height: 78px
+    opacity: 0.35
+
+  &::after
+    z-index: 5
+    width: 96px
+    height: 96px
+    opacity: 0.1
+
+.blog-color__text
+  display: block
+  font-weight: $fw-black
+  text-align: center
+  text-decoration: none
+
+.blog-color__text--name
+  margin-top: 32px
+  color: $c-ship-gray
+
+.blog-color__text--hex
+  color: rgba($c-ship-gray, 0.3)
