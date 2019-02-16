@@ -10,6 +10,8 @@ date:        2017-09-21
 description: One of the most important rules for writing a deterministic, easy-to-debug code is avoiding side effects. The obvious choice if we want to meet this assumption is to use the functional paradigm. This, however, poseses a risk of poor code readability.
 ---
 
+## The problem
+
 One of the most important rules for writing a deterministic, easy-to-debug code is avoiding side effects. The obvious choice if we want to meet this assumption is to use the functional paradigm. This, however, poseses a risk of poor code readability. This problem is especially evident in situations where we perform a series of transformations on the input data.
 
 Let's take a look at the available solutions and point out pros and cons of these.

@@ -17,7 +17,7 @@
           p.fs-11.fw-medium.c-white-90.mt-8.mb-40.letter-3 {{ post.data.tags }}
     .blog-post__content
       .row
-        .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mt-64.mb-64
+        .column.small-12.medium-10.medium-offset-1.large-8.large-offset-2.mb-64
           DynamicHTML.blog-post__article(:template="post.html")
           ShareButtons
     HireUs.hire-us--dark

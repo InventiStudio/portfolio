@@ -10,6 +10,8 @@ date:        2017-09-21
 description: Jedną z ważniejszych zasad pozwalających na pisanie deterministycznego, łatwego w debugowaniu kodu, jest unikanie efektów ubocznych. Oczywistym wyborem, jeżeli chcemy owe założenie spełnić, jest korzystanie z paradygmatu funkcyjnego. Ten jednak niesie ze sobą zagrożenie w postaci nieczytelności kodu.
 ---
 
+## Problem
+
 Jedną z ważniejszych zasad pozwalających na pisanie deterministycznego, łatwego w debugowaniu kodu, jest unikanie efektów ubocznych. Oczywistym wyborem, jeżeli chcemy owe założenie spełnić, jest korzystanie z paradygmatu funkcyjnego. Ten jednak niesie ze sobą zagrożenie w postaci nieczytelności kodu. Problem ten jest szczególnie widoczny w sytuacjach, w których na danych wejściowych wykonujemy serie transformacji.
 
 W tym artykule chcielibyśmy przyjrzeć się dostępnym rozwiązaniom i wymienić ich wady oraz zalety.
