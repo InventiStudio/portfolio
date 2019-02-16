@@ -14,7 +14,7 @@ pre::-webkit-scrollbar-thumb {
 }
 
 .token.comment {
-  color: rgba(98, 114, 164, 1);
+  color: rgb(112, 128, 179);
 }
 
 .token.prolog {
