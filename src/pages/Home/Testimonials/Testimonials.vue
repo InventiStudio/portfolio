@@ -38,6 +38,7 @@
                   v-if="testimonial.positionUrl",
                   :href="testimonial.positionUrl",
                   target="_blank",
+                  rel="noopener",
                 )
                   span {{ getTranslation(testimonial, 'position') }}
                 span.o-paragraph.c-ship-gray-40.mb-16(v-else="") {{ getTranslation(testimonial, 'position') }}
