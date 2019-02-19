@@ -5,14 +5,17 @@ tags:        'JAVASCRIPT · VUE.JS · DESIGN PATTERNS · OOP'
 alternate:
   pl:        to-do
 cover:       vuejs-with-constructor-pattern__cover.png
-miniCover:   vuejs-with-constructor-pattern__cover--mini.jpg
+miniCover:   vuejs-with-constructor-pattern__cover--mini.png
 date:        2019-02-16
 description: Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created using the same interface, providing a true consistency. It can be used to create components, plugins, etc, but we find it especially useful in a case of API resources management in our Vue.js front-end applications!
 ---
 
 ## The problem
 
-Have you ever caught yourself with some type errors, because the structure of your client-side objects didn't match the ones from API? Or maybe the structure of API resource changed and you had to change your code in multiple, sometimes difficult to find, places? Well, we have a solution for that!
+TODO:
+
+Image you're building an app, where
+
 
 ## What is a Constructor Pattern?
 
@@ -64,12 +67,13 @@ console.log(ferrariDaytona.brand)     // > ""
 console.log(ferrariDaytona.getName()) // > " "
 ```
 
-TODOOO
+1. `brand || ""` will protect us when `brand` argument won't be provided. It won't though for truthy values like empty Array or positive Number — keep on reading for that!
+2. Defining `getName()` function on `Car.prototype` will result in every Car instance just referencing this function, instead of re-defining it.
 
 ## Constructor using class syntax
 
 ***Disclaimer***:
-We're not really a fans of using `class` anywhere else beside the Constructor Pattern described in here, as there are [many dangers](https://twitter.com/_ericelliott/status/573090480004591617) connected with doing so. What's even more - we're totally against building client-side apps using **class inheritance**! In this case though, `class` provides a nice syntax sugar which in our opinion improves readability of the code (which [we care about](https://inventi.studio/en/blog/how-we-improved-readability-of-our-functional-code) a lot!)
+We're not really fans of using `class` anywhere else beside the Constructor Pattern described in here, as there are [many dangers](https://twitter.com/_ericelliott/status/573090480004591617) connected with doing so. What's even more - we're totally against building client-side apps using **class inheritance**! In this case though, `class` provides a nice syntactic sugar which, in our opinion, improves readability of the code (which [we care about](https://inventi.studio/en/blog/how-we-improved-readability-of-our-functional-code) a lot!)
 
 Alright, so here's how our example Car constructor looks like using class syntax:
 
@@ -144,7 +148,7 @@ export default {
 ```
 
 The issues with this solution that we can see are:
-1. Whole component's code can grow pretty quickly, if we had more properties on Car (let's face it — API resources in real case scenarios usually have more properties than just two).
+1. Component's code can grow pretty quickly, if we had more properties on Car (let's face it — API resources in real case scenarios usually have more properties than just two).
 2. There are a lot of `this.car` repetitive code, that can lead to some unexpected bugs — it's easy to omit one of the properties when there are so many of them.
 3. There's no way of reusing some of that logic in other components (or Vuex store!), like properties and default values of them, or `carName` which is defined on the component.
 
