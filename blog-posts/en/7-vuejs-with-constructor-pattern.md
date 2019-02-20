@@ -12,7 +12,7 @@ description: Constructor is a design pattern that allows us to create multiple o
 
 ## The problem
 
-TODO:
+<bar-chart v-bind:data="{ labels: ['Moment.js', 'Luxon', 'Day.js', 'Date-Fns', 'JS-Joda', 'Spacetime'], series: [[232, 64, 6, 30, 208, 50], [66, 18, 3, 7, 39, 16]] }"></bar-chart>
 
 Image you're building an app, where
 
