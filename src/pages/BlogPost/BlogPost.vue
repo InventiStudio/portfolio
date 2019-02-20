@@ -28,6 +28,7 @@
   import head from 'src/head'
   import router from 'src/router'
   import { getBlogPostBySlug } from 'services/blog'
+  import BarChart from 'components/BarChart/BarChart'
   import BlogColorPalette from 'components/BlogColorPalette/BlogColorPalette'
   import BlogScope from 'components/BlogScope/BlogScope'
   import HireUs from 'components/HireUs/HireUs'
@@ -45,6 +46,7 @@
       },
     },
     components: {
+      BarChart,
       BlogColorPalette,
       BlogScope,
     },
