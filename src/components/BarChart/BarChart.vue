@@ -14,22 +14,11 @@
     },
 
     mounted() {
-      var options = {
-        seriesBarDistance: 30
-      };
+      const options = {
+        seriesBarDistance: 30,
+      }
 
-      // var responsiveOptions = [
-      //   ['screen and (max-width: 640px)', {
-      //     seriesBarDistance: 5,
-      //     axisX: {
-      //       labelInterpolationFnc: function (value) {
-      //         return value[0];
-      //       }
-      //     }
-      //   }]
-      // ];
-
-      new Chartist.Bar('.ct-chart', this.data, options);
+      new Chartist.Bar('.ct-chart', this.data, options) // eslint-disable-line no-new
     },
   }
 </script>
