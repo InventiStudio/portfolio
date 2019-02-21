@@ -318,6 +318,10 @@ export default {
       ctaSend: 'Estimate',
     },
   },
+  projects: {
+    title: 'Projects',
+    desc: 'Take a look at case-studies of some of the projects we\'ve done!',
+  },
   blog: {
     title: 'Blog',
     desc: 'We blog about web development, Vue.js, Node.js and UI & UX design. Read some of the blog posts to get to know our expertise!',

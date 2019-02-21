@@ -314,6 +314,10 @@ export default {
       ctaSend: 'Wyceń',
     },
   },
+  projects: {
+    title: 'Projekty',
+    desc: 'Zobacz case-study projektów, które zrobiliśmy!',
+  },
   blog: {
     title: 'Blog',
     desc: 'Piszemy o tworzeniu aplikacji internetowych, Vue.js, Node.js oraz projektowaniu UI i UX. Przeczytaj niektóre posty na blogu, aby poznać naszą wiedzę!',

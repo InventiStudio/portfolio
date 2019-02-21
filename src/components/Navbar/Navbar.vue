@@ -29,6 +29,12 @@
               data-navbar="link--services",
             ) {{ $t('services.title') }}
             router-link.navbar__link(
+              :to="$routeByName('Projects')",
+              :exact="true",
+              active-class="navbar__link--active",
+              data-navbar="link--services",
+            ) {{ $t('projects.title') }}
+            router-link.navbar__link(
               :to="$routeByName('Blog')",
               :exact="true",
               active-class="navbar__link--active",

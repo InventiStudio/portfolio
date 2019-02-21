@@ -8,6 +8,7 @@ cover:       zco/cover.png
 miniCover:   zco/cover--mini.png
 date:        2018-07-23
 description: Case study of the project we've made for coach Marzena Peplińska. The goal was to create custom booking management system and admin panel for writing blog posts. We have designed and developed three applications - Vue.js marketing website, Vue.js admin panel and Node.js back-end API.
+isProject:   true
 ---
 
 ## The goal was to create custom booking management system and admin panel for writing blog posts.

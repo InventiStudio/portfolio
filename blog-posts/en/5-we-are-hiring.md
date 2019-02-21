@@ -8,6 +8,7 @@ cover:       we-are-hiring__cover.jpg
 miniCover:   we-are-hiring__cover--mini.jpg
 date:        2018-06-13
 description: We are InventiStudio - Vue.js and Node.js web development agency based in beautiful Wrocław... and we are hiring talented Front-End developers!
+isProject:   false
 ---
 
 ## Position
