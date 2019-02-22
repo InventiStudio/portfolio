@@ -11,7 +11,9 @@ const markdown   = require('markdown-it')({
     if (lang && Prism.languages[lang]) {
       try {
         return `<pre class="blog-post__editor-frame highlight"><code>${Prism.highlight(str, Prism.languages[lang])}</code></pre>`
-      } catch (err) {}
+      } catch (err) {
+        console.error(err)
+      }
     }
     return `<pre class="blog-post__editor-frame highlight"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
   },
@@ -33,9 +35,8 @@ module.exports = function serve(env) {
             html: markdown.render(post.md),
             additional: files.additionalData(env, req, post),
           }))
-        } else {
-          return res.end(JSON.stringify(posts.map(post => ({ data: post.data, additional: files.additionalData(env, req, post) }))))
         }
+        return res.end(JSON.stringify(posts.map(post => ({ data: post.data, additional: files.additionalData(env, req, post) }))))
       })
     },
   ]

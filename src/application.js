@@ -12,6 +12,7 @@ import App from 'src/App'
 import router from 'src/router'
 import Card from 'components/Card/Card'
 import Icon from 'components/Icon/Icon'
+import { getAllBlogPosts } from 'services/blog'
 
 Vue.config.productionTip = false
 
@@ -28,6 +29,25 @@ const files = require.context('!svg-sprite-loader!./assets/icons', false, /.*\.s
 files.keys().forEach(files)
 
 new Vue({
-  render: h => h(App),
   router,
+
+  data: () => ({
+    posts: [],
+  }),
+
+  // Used in various views with `$root` (we don't want to fetch in multiple places, as it's a really small request - for now!)
+  computed: {
+    blogposts() {
+      return this.posts.filter(post => !post.data.isProject)
+    },
+    projects() {
+      return this.posts.filter(post => post.data.isProject)
+    },
+  },
+
+  async mounted() {
+    this.posts = await getAllBlogPosts()
+  },
+
+  render: h => h(App),
 }).$mount('#app')

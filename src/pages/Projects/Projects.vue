@@ -8,7 +8,7 @@
     .projects__projects.bg-alabaster
       .row.column.align-center
         BlogCard.projects__project(
-          v-for="project in projects",
+          v-for="project in $root.projects",
           :key="project.data.slug",
           :title="project.data.title",
           :description="project.data.description",
@@ -24,7 +24,6 @@
   import head from 'src/head'
   import BlogCard from 'components/BlogCard/BlogCard'
   import HireUs from 'components/HireUs/HireUs'
-  import { getAllBlogPosts } from 'services/blog'
 
   export default {
     head: head.set({
@@ -45,22 +44,6 @@
     components: {
       BlogCard,
       HireUs,
-    },
-
-    data() {
-      return {
-        posts: [],
-      }
-    },
-
-    computed: {
-      projects() {
-        return this.posts.filter(post => post.data.isProject)
-      },
-    },
-
-    async mounted() {
-      this.posts = await getAllBlogPosts()
     },
   }
 </script>
