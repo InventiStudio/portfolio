@@ -1,24 +1,40 @@
 @import "~stylesheets/helpers"
 
-.projects__landing
+.projects
   position: relative
+  background-image: linear-gradient(128deg, $c-emperor 0%, $c-ship-gray 100%)
+
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    height: 800px
+    background-position: center top
+    background-image: url("~assets/images/confetti--white.svg")
+    background-size: 200px
+    content: ""
+    opacity: 0.05
+
+// For confetti being above without these styles
+.projects__landing,
+.projects__projects
+  position: relative
+  z-index: 5
+
+.projects__landing
   padding-top: 120px
-  padding-bottom: 104px
   background-position: center center
-  background-image: url("~assets/images/Blog/landing__bg.svg")
   background-size: cover
 
   @media #{$medium-up}
     padding-top: 144px
-    padding-bottom: 180px
 
   @media #{$large-up}
     padding-top: 160px
-    padding-bottom: 240px
-
 
 .projects__projects
-  padding-top: 48px
   padding-bottom: 64px
 
 .projects__project:not(:last-of-type)

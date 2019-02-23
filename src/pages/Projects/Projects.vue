@@ -1,14 +1,13 @@
 <template lang="pug">
-  div
-    .projects__landing.o-wave--sinus
-      .row.column.text-center
-        icon.c-white-80.mb-32.medium-mb-40(type="icon--feather")
+  .projects
+    .projects__landing
+      .row.column
         h1.o-heading-1.c-white {{ $t('projects.title') }}
-        p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40.max-w-560 {{ $t('projects.desc') }}
-    .projects__projects.bg-alabaster
+        p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40 {{ $t('projects.desc') }}
+    .projects__projects
       .row.column.align-center
         BlogCard.projects__project(
-          v-for="project in $root.projects",
+          v-for="(project, index) in $root.projects",
           :key="project.data.slug",
           :title="project.data.title",
           :description="project.data.description",
@@ -16,6 +15,8 @@
           :cover-url="`url(${project.additional.coverFullUrl})`",
           :slug="project.data.slug",
           :color="project.data.color",
+          :triangle-direction="index % 2 === 0 ? 'right' : 'left'",
+          :is-dark="true",
         )
     HireUs.hire-us--dark
 </template>
