@@ -1,10 +1,10 @@
 <template lang="pug">
-  .projects
-    .projects__landing
+  main.projects
+    section.projects__landing
       .row.column
         h1.o-heading-1.c-white {{ $t('projects.title') }}
         p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40 {{ $t('projects.desc') }}
-    .projects__projects
+    section.projects__projects
       .row.column.align-center
         BlogCard.projects__project(
           v-for="(project, index) in $root.projects",

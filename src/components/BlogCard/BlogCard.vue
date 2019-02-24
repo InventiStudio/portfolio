@@ -1,10 +1,13 @@
 <template lang="pug">
   article.o-card.row.p-0.overflow-hidden.u-no-nest(:class="[isDark ? 'blog__card--dark bg-mine-shaft' : 'bg-white']")
     .blog-card__content.column.small-12.medium-6.small-order-2.medium-order-1
-      p.fs-11.mb-16(:class="[isDark ? 'c-white-50' : 'c-ship-gray-40']") {{ date }}
+      time.fs-11.mb-8.mt-8.block(
+        :class="[isDark ? 'c-white-50' : 'c-ship-gray-40']",
+        :datetime="date",
+      ) {{ date }}
       router-link(:to="$routeByName('BlogPost', { params: { slug } })")
         h2.fs-28.fw-black.mb-16.mt-0(:class="[isDark ? 'c-white-80' : 'c-ship-gray-80']") {{ title }}
-      h3.o-paragraph.ff-lora.mb-24.medium-mb-32(:class="[isDark ? 'c-white-50' : 'c-ship-gray-50']") {{ description }}
+      p.o-paragraph.ff-lora.mb-24.medium-mb-32(:class="[isDark ? 'c-white-50' : 'c-ship-gray-50']") {{ description }}
       router-link.o-btn.o-btn--tundora.c-white(:to="$routeByName('BlogPost', { params: { slug } })")
         span.fs-16 {{ $t('common.readMore') }}
     .blog-card__cover.column.small-12.medium-6.relative.small-order-1.medium-order-2
