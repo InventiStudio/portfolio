@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.bg-alabaster#blog-post-content
+  main.bg-alabaster#blog-post-content
     LoadingBar.blog-post__progress(
       id="blog-post-loading-bar"
       :progress="progress"

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  main
     Landing
     Testimonials(:id="constants.sectionIds.home.testimonials")
     Posts

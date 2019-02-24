@@ -1,5 +1,5 @@
 <template lang="pug">
-  main
+  div
     Loader(v-show="isLoading")
     Monster
     Navbar
