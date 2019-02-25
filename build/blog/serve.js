@@ -18,6 +18,7 @@ const markdown   = require('markdown-it')({
     return `<pre class="blog-post__editor-frame highlight"><code>${markdown.utils.escapeHtml(str)}</code></pre>`
   },
 })
+  .use(require('markdown-it-footnote'))
 
 module.exports = function serve(env) {
   return [
