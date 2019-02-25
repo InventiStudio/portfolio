@@ -3,23 +3,23 @@ title:       Vue.js with Constructor Pattern
 slug:        vuejs-with-constructor-pattern
 tags:        'JAVASCRIPT · VUE.JS · DESIGN PATTERNS · OOP'
 alternate:
-  pl:        to-do
+  pl:        vuejs-ze-wzorcem-projektowym-konstruktor
 cover:       vuejs-with-constructor-pattern__cover.png
 miniCover:   vuejs-with-constructor-pattern__cover--mini.png
-date:        2019-02-16
-description: Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created using the same interface, providing a true consistency. It can be used to create components, plugins, etc, but we find it especially useful in a case of API resources management in our Vue.js front-end applications!
+date:        2019-02-24
+description: Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created by using the same interface, providing a great consistency. It can be used to create components, plugins, but we find it especially useful in a case of API resources management in our Vue.js front-end applications!
+isProject:   false
 ---
 
 ## The problem
 
-<bar-chart v-bind:data="{ labels: ['Moment.js', 'Luxon', 'Day.js', 'Date-Fns', 'JS-Joda', 'Spacetime'], series: [[232, 64, 6, 30, 208, 50], [66, 18, 3, 7, 39, 16]] }"></bar-chart>
+Imagine you're building an app, where one of the API resources is a car. It has a `brand` and a `model` fields. You're creating a few forms with `brand` and `model` inputs. You sometimes also want to show car's full name, which is basically `brand.concat(" ", model)`. How do you approach such a case — repeat the code across multiple files? Create a component our of it, which might not always be flexible enough and easily testable? What if API suddenly changes the `model` property name to `type`? Would you search across the whole project for a word "model"?
 
-Image you're building an app, where
-
+Fortunately — we have a solution for that!
 
 ## What is a Constructor Pattern?
 
-Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created using the same interface, providing a true consistency. It can be used to create components, plugins, etc, but we find it especially useful in a case of API resources management in our **Vue.js front-end** applications!
+Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created by using the same interface, providing a great consistency. It can be used to create components, plugins, but we find it especially useful in a case of API resources management in our **Vue.js front-end** applications!
 
 ## Basic Constructor
 
@@ -86,6 +86,7 @@ class Car {
     this.model = R.is(String, opts.model) ? opts.model : ""
   }
   
+  // This will be compiled into `Car.prototype.getName`
   getName() {
     return this.brand.concat(" ", this.model)
   }
@@ -181,7 +182,7 @@ class Car {
 ```
 
 What we did here is:
-1. We changed `getName()` function to just `name` getter - we don't really need a function for such case, a simple getter will do the thing (like computed properties in Vue components!)
+1. We changed `getName()` function to just `name` getter - we don't really need a function for such case, a simple getter will do the thing - it will work just like computed properties in Vue components!
 2. We've added `toCreatePayload` function, which will return an Object that is ready to be send to API endpoint, when we need to create a new Car.
 
 Ok, back to our component:
