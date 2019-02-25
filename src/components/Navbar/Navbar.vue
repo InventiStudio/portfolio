@@ -1,9 +1,19 @@
 <template lang="pug">
   header.navbar(
-    :class="{ 'navbar--hidden': isNavbarHidden, 'navbar--filled': isNavbarFilled }",
+    :class="{ 'navbar--hidden': isNavbarHidden, 'navbar--hidden-blog': isNavbarHiddenBlog, 'navbar--filled': isNavbarFilled }",
     data-navbar="",
   )
-    .row.align-middle.align-justify
+    .navbar__top
+      .row.align-middle.align-justify
+        .shrink.columns
+          p
+            span {{ $t('navbar.blog') }}:
+            =" "
+            router-link(v-if="recentBlogPost", :to="$routeByName('BlogPost', { params: { slug: recentBlogPost.data.slug } })")
+              strong {{ recentBlogPost.data.title }}
+        .shrink.columns
+          SocialLinks
+    .navbar__bottom.row.align-middle.align-justify
       .shrink.columns
         router-link(:to="$routeByName('Home')", data-navbar="link--home-1")
           img(src="~assets/inventi__name.svg", :alt="$t('common.inventiStudio')")
@@ -50,15 +60,29 @@
 </template>
 
 <script>
+  import SocialLinks from 'components/SocialLinks/SocialLinks'
+
   export default {
+    components: {
+      SocialLinks,
+    },
+
     data() {
       return {
         isNavOpen: false,
         isNavbarHidden: false,
+        isNavbarHiddenBlog: false,
         isNavbarFilled: false,
         scrollPosition: 0,
       }
     },
+
+    computed: {
+      recentBlogPost() {
+        return this.$root.blogposts[0]
+      },
+    },
+
     methods: {
       getScrollPosition() {
         return window.scrollY || document.documentElement.scrollTop
@@ -70,8 +94,13 @@
         if (scrollPosition > this.scrollPosition && scrollPosition > 70 && !this.isNavOpen) {
           this.isNavbarHidden = true
           this.scrollPosition = scrollPosition
+        } else if (scrollPosition > 70 && !this.isNavOpen) {
+          this.isNavbarHidden = false
+          this.isNavbarHiddenBlog = true
+          this.scrollPosition = scrollPosition
         } else {
           this.isNavbarHidden = false
+          this.isNavbarHiddenBlog = false
           this.scrollPosition = scrollPosition
         }
       },
@@ -85,14 +114,17 @@
         this.toggleNavbarTransparency(scrollPosition)
       },
     },
+
     watch: {
       '$route.path': function $routePath() {
         this.isNavOpen = false
       },
     },
+
     mounted() {
       window.addEventListener('scroll', this.handleNavbarOnScroll)
     },
+
     beforeDestroy() {
       window.removeEventListener('scroll', this.handleNavbarOnScroll)
     },

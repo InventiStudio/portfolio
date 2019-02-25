@@ -12,6 +12,7 @@ export default {
     next: 'Next',
   },
   navbar: {
+    blog: 'See our recent blog post',
     title: 'Menu',
   },
   social: {

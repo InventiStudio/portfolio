@@ -12,8 +12,8 @@ export default {
     next: 'Następny',
   },
   navbar: {
+    blog: 'Zobacz nasz najnowszy artykuł',
     title: 'Menu',
-    blog: 'Blog',
   },
   social: {
     title: 'Nasze profile społecznościowe',

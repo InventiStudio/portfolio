@@ -6,15 +6,9 @@
   right: 0
   left: 0
   z-index: 900
-  padding-top: 16px
-  padding-bottom: 16px
   color: $c-white
   transition-duration: $t-duration
   transition-property: transform, background-color, padding
-
-  +breakpoint(700px up)
-    padding-top: 24px
-    padding-bottom: 24px
 
 .navbar--hidden:not(:hover)
   transform: translateY(-85%)
@@ -23,8 +17,30 @@
   +breakpoint(700px up)
     transform: translateY(-90%)
 
+  @media #{$large-up}
+    transform: translateY(-129px)
+
+.navbar--hidden-blog
+  @media #{$large-up}
+    transform: translateY(-50px)
+
 .navbar--filled
   background-color: $c-ship-gray
+
+.navbar__top
+  display: none
+
+  @media #{$large-up}
+    display: block
+    background-color: rgba($c-black, 0.15)
+
+.navbar__bottom
+  padding-top: 16px
+  padding-bottom: 16px
+
+  +breakpoint(700px up)
+    padding-top: 24px
+    padding-bottom: 24px
 
 .navbar__icon
   width: 35px
