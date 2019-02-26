@@ -32,7 +32,7 @@
                 router-link(
                   :to="$routeByName('BlogPost', { params: { slug: post.data.slug } })"
                 )
-                  h3.o-heading-3.c-ship-gray.mb-32 {{ post.data.title }}
+                  h3.o-heading-3.c-ship-gray.mb-16 {{ post.data.title }}
                 p.o-paragraph.c-ship-gray {{ post.data.description }}
                 router-link.o-btn.o-btn--pink.mt-24(
                   :to="$routeByName('BlogPost', { params: { slug: post.data.slug } })"
