@@ -267,7 +267,7 @@ class Car {
     }
   }
     
-  // Static properties allow you use some logic
+  // Static properties allow you to use some logic
   // without instantiating the constructor => Car.errors 
   static get errors() {
     return {
@@ -278,7 +278,7 @@ class Car {
     }
   }
     
-  // Want to have your vuelidate validations in one place? No problem!
+  // Want to have your Vuelidate validations in one place? No problem!
   static get validations() {
     return {
       brand: { required, alpha }
