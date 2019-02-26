@@ -227,8 +227,7 @@ Here's a bit more complex example, of what else could we manage using Constructo
 
 ```javascript
 import R from "ramda"
-import isValid from "date-fns/is_valid"
-import format from "date-fns/is_valid"
+import { isValid, format } from "date-fns"
 import { required, alpha } from "vuelidate/lib/validators"
 import ContentService from "services/content"
 import Driver from "constructors/Driver"
