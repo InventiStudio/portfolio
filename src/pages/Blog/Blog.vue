@@ -1,14 +1,14 @@
 <template lang="pug">
-  div
-    .blog__landing.o-wave--sinus
-      .row.column.text-center
-        icon.c-white-80.mb-32.medium-mb-40(type="icon--feather")
+  main.bg-gallery.relative
+    .blog__bg
+    section.blog__landing
+      .row.column
         h1.o-heading-1.c-white {{ $t('blog.title') }}
-        p.o-paragraph.c-white-60.mt-16.medium-mt-4.mb-40.max-w-560 {{ $t('blog.desc') }}
-    .blog__posts.bg-alabaster
+        p.o-paragraph.c-white-60.mt-16.medium-mt-4 {{ $t('blog.desc') }}
+    section.blog__posts
       .row.column.align-center
         BlogCard.blog__post(
-          v-for="post in $root.blogposts",
+          v-for="(post, index) in $root.blogposts",
           :key="post.data.slug",
           :title="post.data.title",
           :description="post.data.description",
@@ -16,6 +16,7 @@
           :cover-url="`url(${post.additional.coverFullUrl})`",
           :slug="post.data.slug",
           :color="post.data.color",
+          :triangle-direction="index % 2 === 0 ? 'right' : 'left'",
         )
     HireUs.hire-us--dark
 </template>
