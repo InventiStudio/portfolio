@@ -11,6 +11,6 @@ description: Konstruktor to wzorzec projektowy, który pozwala nam tworzyć wiel
 isProject:   false
 ---
 
-## 404
+## Polacy nie gęsi, iż swój język mają, lecz...
 
-Przepraszamy, ale ten post dostępny jest tylko w [wersji po angielsku](/en/blog/vuejs-with-constructor-pattern). 😬
+...niestety, ten post dostępny jest tylko w [wersji po angielsku](/en/blog/vuejs-with-constructor-pattern). 😬
