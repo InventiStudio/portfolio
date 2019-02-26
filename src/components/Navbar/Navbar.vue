@@ -60,6 +60,7 @@
 </template>
 
 <script>
+  import throttle from 'lodash/throttle'
   import SocialLinks from 'components/SocialLinks/SocialLinks'
 
   export default {
@@ -74,6 +75,7 @@
         isNavbarHiddenBlog: false,
         isNavbarFilled: false,
         scrollPosition: 0,
+        throttleNavbarOnScroll: null,
       }
     },
 
@@ -116,17 +118,19 @@
     },
 
     watch: {
-      '$route.path': function $routePath() {
+      '$route.path'() {
         this.isNavOpen = false
       },
     },
 
     mounted() {
-      window.addEventListener('scroll', this.handleNavbarOnScroll)
+      this.throttleNavbarOnScroll = throttle(this.handleNavbarOnScroll, 20)
+      window.addEventListener('scroll', this.throttleNavbarOnScroll)
     },
 
     beforeDestroy() {
-      window.removeEventListener('scroll', this.handleNavbarOnScroll)
+      window.removeEventListener('scroll', this.throttleNavbarOnScroll)
+      this.throttleNavbarOnScroll = null
     },
   }
 </script>
