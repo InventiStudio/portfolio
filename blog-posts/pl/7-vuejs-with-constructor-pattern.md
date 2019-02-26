@@ -3,7 +3,7 @@ title:       Vue.js ze wzorcem projektowym Konstruktor
 slug:        vuejs-ze-wzorcem-projektowym-konstruktor
 tags:        'JAVASCRIPT · VUE.JS · WZORCE PROJEKTOWE · OOP'
 alternate:
-  pl:        vuejs-with-constructor-pattern
+  en:        vuejs-with-constructor-pattern
 cover:       vuejs-with-constructor-pattern__cover.png
 miniCover:   vuejs-with-constructor-pattern__cover--mini.png
 date:        2019-02-26
