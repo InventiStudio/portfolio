@@ -60,7 +60,7 @@
 </template>
 
 <script>
-  import throttle from 'lodash/throttle'
+  import throttle from 'lodash/throttle' // eslint-disable-line import/no-extraneous-dependencies
   import SocialLinks from 'components/SocialLinks/SocialLinks'
 
   export default {
