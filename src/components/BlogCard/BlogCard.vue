@@ -1,6 +1,6 @@
 <template lang="pug">
   article.o-card.row.p-0.overflow-hidden.u-no-nest(:class="[isDark ? 'blog__card--dark bg-mine-shaft' : 'bg-white']")
-    .blog-card__content.column.small-12.medium-6.small-order-2.medium-order-1
+    .blog-card__content.column.small-12.large-6.small-order-2.large-order-1
       time.fs-11.mb-8.mt-8.block(
         :class="[isDark ? 'c-white-50' : 'c-ship-gray-40']",
         :datetime="date",
@@ -10,7 +10,7 @@
       p.o-paragraph.ff-lora.mb-24.medium-mb-32(:class="[isDark ? 'c-white-50' : 'c-ship-gray-50']") {{ description }}
       router-link.o-btn.o-btn--tundora.c-white(:to="$routeByName('BlogPost', { params: { slug } })")
         span.fs-16 {{ $t('common.readMore') }}
-    .blog-card__cover.column.small-12.medium-6.relative.small-order-1.medium-order-2
+    .blog-card__cover.column.small-12.large-6.relative.small-order-1.large-order-2
       router-link.blog-card__img(
         :to="$routeByName('BlogPost', { params: { slug } })",
         :style="{ backgroundImage: coverUrl }",

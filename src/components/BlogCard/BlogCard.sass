@@ -6,14 +6,14 @@
 .blog-card__content
   padding: 24px 32px 40px
 
-  @media #{$medium-up}
+  @media #{$large-up}
     padding: 48px
 
 .blog-card__cover
   height: 200px
   padding: 0
 
-  @media #{$medium-up}
+  @media #{$large-up}
     height: auto
 
 .blog-card__img
@@ -28,7 +28,7 @@
 .blog-card__triangle--right--dark,
 .blog-card__triangle--left--light,
 .blog-card__triangle--left--dark
-  @media #{$medium-up}
+  @media #{$large-up}
     &::after
       position: absolute
       bottom: 0
@@ -38,21 +38,21 @@
       content: ""
 
 .blog-card__triangle--right--light
-  @media #{$medium-up}
+  @media #{$large-up}
     &::after
       background: linear-gradient(to right bottom, $c-white 50%, transparent 50%)
 
 .blog-card__triangle--right--dark
-  @media #{$medium-up}
+  @media #{$large-up}
     &::after
       background: linear-gradient(to right bottom, $c-mine-shaft 50%, transparent 50%)
 
 .blog-card__triangle--left--light
-  @media #{$medium-up}
+  @media #{$large-up}
     &::after
       background: linear-gradient(to left bottom, transparent 50%, $c-white 50%)
 
 .blog-card__triangle--left--dark
-  @media #{$medium-up}
+  @media #{$large-up}
     &::after
       background: linear-gradient(to left bottom, transparent 50%, $c-mine-shaft 50%)
