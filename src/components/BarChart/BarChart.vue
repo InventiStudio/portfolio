@@ -1,6 +1,6 @@
 <template lang="pug">
   .ct-chart-container
-    .ct-chart
+    .ct-chart(:class="`ct-chart--${_uid}`")
     .ct-chart-legend(v-if="data.series.length > 1")
       .ct-chart-legend__serie(v-for="(serie, index) in data.series", v-if="serie.name")
         .ct-chart-legend__serie-color(:style="{ 'background-color': colors[index], 'box-shadow': `0 4px 14px -4px ${colors[index]}` }")
@@ -18,7 +18,9 @@
   ]
 
   const options = {
-    plugins: [ChartistTooltip()],
+    plugins: [ChartistTooltip({
+      appendToBody: true,
+    })],
     seriesBarDistance: 31,
     axisX: {
       showGrid: false,
@@ -56,7 +58,7 @@
     },
 
     mounted() {
-      new Chartist.Bar('.ct-chart', this.data, options, rwd) // eslint-disable-line no-new
+      new Chartist.Bar(`.ct-chart--${this._uid}`, this.data, options, rwd) // eslint-disable-line no-new
     },
   }
 </script>
@@ -137,7 +139,7 @@
 
   .chartist-tooltip
     background-color: $c-bright-gray
-    padding: 0 8px
+    padding: 8px
     border-radius: 4px
     color: $c-white
     font-size: $fs-12
