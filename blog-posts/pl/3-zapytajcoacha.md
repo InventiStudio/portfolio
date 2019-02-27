@@ -8,6 +8,7 @@ cover:       zco/cover.png
 miniCover:   zco/cover--mini.png
 date:        2018-07-23
 description: Case study projektu, który wykonaliśmy dla pani Marzeny Peplińskiej. Naszym zadaniem było stworzenie spersonalizowanego systemu zarządzania rezerwacjami i panelu administracyjnego do pisania postów na blogu. Zaprojektowaliśmy i wdrożylismy trzy aplikacje - stronę marketingową Vue.js, panel administracyjny Vue.js i back-end API Node.js.
+isProject:   true
 ---
 
 ## Naszym zadaniem było stworzenie spersonalizowanego systemu zarządzania rezerwacjami i panelu administracyjnego do pisania postów na blogu.

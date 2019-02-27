@@ -1,22 +1,66 @@
 @import "~stylesheets/helpers"
 
+.blog-card:hover
+  .blog-card__img
+    transform: scale(1.03)
+
+.blog__card--dark
+  box-shadow: 0 24px 48px 0 rgba($c-ship-gray, 0.45)
+
 .blog-card__content
   padding: 24px 32px 40px
 
-  @media #{$medium-up}
+  @media #{$large-up}
     padding: 48px
 
 .blog-card__cover
   height: 200px
   padding: 0
+  // Has to be for `blog-card__img` scaling on hover
+  overflow: hidden
 
-  @media #{$medium-up}
+  @media #{$large-up}
     height: auto
 
 .blog-card__img
-  position: absolute
   width: 100%
   height: 100%
   background-position: center
   background-size: cover
   background-repeat: no-repeat
+  transition-duration: $t-duration
+  transition-property: transform
+  transition-timing-function: $t-easing
+
+.blog-card__triangle--right--light,
+.blog-card__triangle--right--dark,
+.blog-card__triangle--left--light,
+.blog-card__triangle--left--dark
+  @media #{$large-up}
+    &::after
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 90px
+      height: 100%
+      content: ""
+
+.blog-card__triangle--right--light
+  @media #{$large-up}
+    &::after
+      background: linear-gradient(to right bottom, $c-white 50%, transparent 50%)
+
+.blog-card__triangle--right--dark
+  @media #{$large-up}
+    &::after
+      background: linear-gradient(to right bottom, $c-mine-shaft 50%, transparent 50%)
+
+.blog-card__triangle--left--light
+  @media #{$large-up}
+    &::after
+      background: linear-gradient(to left bottom, transparent 50%, $c-white 50%)
+
+.blog-card__triangle--left--dark
+  @media #{$large-up}
+    &::after
+      background: linear-gradient(to left bottom, transparent 50%, $c-mine-shaft 50%)

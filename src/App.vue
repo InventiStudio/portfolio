@@ -1,5 +1,5 @@
 <template lang="pug">
-  main
+  div
     Loader(v-show="isLoading")
     Monster
     Navbar
@@ -23,6 +23,7 @@
 
   export default {
     i18n,
+
     components: {
       Navbar,
       Modal,
@@ -32,6 +33,7 @@
       Monster,
       Loader,
     },
+
     data() {
       return {
         isLoading: !this.$route.name,
@@ -39,6 +41,7 @@
         estimationScope: '',
       }
     },
+
     watch: {
       $route(newRoute, oldRoute) {
         if (newRoute.path !== oldRoute.path) {
@@ -46,6 +49,7 @@
         }
       },
     },
+
     mounted() {
       eventBus.$on('open-modal', (modalName) => {
         this.openedModal = modalName

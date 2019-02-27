@@ -1,5 +1,5 @@
 <template lang="pug">
-  .vue
+  main.vue
     .vue__landing.o-wave--sinus
       Landing
       .vue__qualities

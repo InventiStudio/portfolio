@@ -17,6 +17,7 @@ function resolver(resolveFunction) {
     resolveFunction(resolve).then(stopRootLoader)
   }
 }
+
 const routes = [
   {
     path: '/:lang',
@@ -57,6 +58,12 @@ const routes = [
         path: 'estimate-project',
         name: 'Estimate',
         component: resolver(resolve => require(['pages/Estimate/Estimate'], resolve)),
+        ...commonOptions,
+      },
+      {
+        path: 'projects',
+        name: 'Projects',
+        component: resolver(resolve => require(['pages/Projects/Projects'], resolve)),
         ...commonOptions,
       },
       {

@@ -12,8 +12,8 @@ export default {
     next: 'Następny',
   },
   navbar: {
+    blog: 'Zobacz nasz najnowszy artykuł',
     title: 'Menu',
-    blog: 'Blog',
   },
   social: {
     title: 'Nasze profile społecznościowe',
@@ -313,6 +313,10 @@ export default {
       },
       ctaSend: 'Wyceń',
     },
+  },
+  projects: {
+    title: 'Projekty',
+    desc: 'Zobacz case-study projektów, które zrobiliśmy!',
   },
   blog: {
     title: 'Blog',

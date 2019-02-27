@@ -8,6 +8,7 @@ cover:       promis/cover.png
 miniCover:   promis/cover--mini.png
 date:        2019-01-29
 description: Case study projektu, który stworzyliśmy dla Promis - francuskiej platformy ubezpieczeniowej. Celem było zaprojektowanie i wdrożenie front-endowej aplikacji Vue.js.
+isProject:   true
 ---
 
 ## Cel

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.bg-alabaster#blog-post-content
+  main.bg-alabaster#blog-post-content
     LoadingBar.blog-post__progress(
       id="blog-post-loading-bar"
       :progress="progress"
@@ -160,5 +160,7 @@
   }
 </script>
 
+<style src="prismjs/themes/prism.css"></style>
+<style src="prismjs/plugins/line-numbers/prism-line-numbers.css"></style>
 <style src="./BlogPost.sass" lang="sass" scoped></style>
 <style src="./Article.sass" lang="sass"></style>

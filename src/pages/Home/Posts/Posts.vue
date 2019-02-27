@@ -23,7 +23,7 @@
           ref="carousel",
         )
           Slide.small-p-16.medium-p-32(
-            v-for="post in posts",
+            v-for="post in $root.blogposts",
             key="post.key",
           )
             .posts__card.o-card.relative.mt-40
@@ -32,7 +32,7 @@
                 router-link(
                   :to="$routeByName('BlogPost', { params: { slug: post.data.slug } })"
                 )
-                  h3.o-heading-3.c-ship-gray.mb-32 {{ post.data.title }}
+                  h3.o-heading-3.c-ship-gray.mb-16 {{ post.data.title }}
                 p.o-paragraph.c-ship-gray {{ post.data.description }}
                 router-link.o-btn.o-btn--pink.mt-24(
                   :to="$routeByName('BlogPost', { params: { slug: post.data.slug } })"
@@ -50,23 +50,24 @@
 <script>
   import constants from 'src/constants'
   import { Carousel, Slide } from 'vue-carousel'
-  import { getAllBlogPosts } from 'services/blog'
 
   export default {
     components: {
       Carousel,
       Slide,
     },
+
     data() {
       return {
-        posts: [],
         hasPrevSlide: false,
         hasNextSlide: false,
       }
     },
+
     computed: {
       constants: () => constants,
     },
+
     methods: {
       prevSlide() {
         this.$refs.carousel.goToPage(this.$refs.carousel.getPreviousPage())
@@ -75,8 +76,8 @@
         this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage())
       },
     },
-    async mounted() {
-      this.posts = await getAllBlogPosts()
+
+    mounted() {
       this.$nextTick(() => {
         this.hasPrevSlide = this.$refs.carousel.canAdvanceBackward
         this.hasNextSlide = this.$refs.carousel.canAdvanceForward

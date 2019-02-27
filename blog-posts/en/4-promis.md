@@ -8,6 +8,7 @@ cover:       promis/cover.png
 miniCover:   promis/cover--mini.png
 date:        2019-01-29
 description: Case study of the project we've made for Promis - French insurtech platform. The goal was to design and develop a Vue.js front-end application of insurtech platform.
+isProject:   true
 ---
 
 ## Goal

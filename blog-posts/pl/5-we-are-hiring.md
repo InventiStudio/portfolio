@@ -8,6 +8,7 @@ cover:       we-are-hiring__cover.jpg
 miniCover:   we-are-hiring__cover--mini.jpg
 date:        2018-06-13
 description: Nazywamy się InventiStudio i jesteśmy mieszącą się we Wrocławiu agencją interaktywną tworzącą aplikacje Vue.js i Node.js. Poszukujemy utalentowanych Front-End developerów!
+isProject:   false
 ---
 
 
