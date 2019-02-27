@@ -6,7 +6,7 @@ alternate:
   pl:        vuejs-ze-wzorcem-projektowym-konstruktor
 cover:       vuejs-with-constructor-pattern__cover.jpg
 miniCover:   vuejs-with-constructor-pattern__cover--mini.jpg
-date:        2019-02-26
+date:        2019-02-27
 description: Constructor is a design pattern that allows us to create multiple object instances, which share some common functionalities and are created by the same interface, providing a better code consistency. It can be used to create components, plugins, but we find it especially useful in a case of API resources management in our Vue.js front-end applications!
 isProject:   false
 ---
