@@ -1,6 +1,6 @@
 ---
 title:       Dlaczego nie powinieneś używać Moment.js...
-slug:        dlaczego-nie-powinienes-używac-moment-js
+slug:        dlaczego-nie-powinienes-uzywac-moment-js
 tags:        'JAVASCRIPT · MOMENT.JS · DATE · TIME'
 alternate:
   en:        why-you-shouldnt-use-moment-js

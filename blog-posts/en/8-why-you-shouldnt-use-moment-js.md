@@ -3,7 +3,7 @@ title:       Why you shouldn't use Moment.js...
 slug:        why-you-shouldnt-use-moment-js
 tags:        'JAVASCRIPT · MOMENT.JS · DATE · TIME'
 alternate:
-  pl:        dlaczego-nie-powinienes-używac-moment-js
+  pl:        dlaczego-nie-powinienes-uzywac-moment-js
 cover:       why-you-shouldnt-use-moment-js__cover.jpg
 miniCover:   why-you-shouldnt-use-moment-js__cover--mini.jpg
 date:        2019-03-07
@@ -17,7 +17,7 @@ JavaScript's built-in Date object is far from ideal, let's face it. We could spe
 
 If it is much better than native API, why do we tell you not to use it?
 
-# 1. It's slow
+## 1. It's slow
 
 Some time ago we've been working on our client's project optimization. Without delving into details, we had an function that had to be able to process more than 10 000 short timeframes. We found quickly that most burdensome part of whole loop is parsing ISO8601 dates that we got from database, literally `moment(ISO8601_DATE_HERE)`. It was quite shocking since we weren't using any custom format, just typical ISO. It became even more shocking when we noticed that `moment(new Date(ISO8601_DATE_HERE))` is actually faster... about 7 times faster. Wait, what?
 
@@ -59,7 +59,7 @@ It's quite strange to me that Luxon did so bad here. We did some basic perf test
 
 When it comes to the `Is before` test, which should be easy we can notice, that Day.js is struggling with it. It's because [it uses](https://github.com/iamkun/dayjs/blob/dev/src/index.js#L109) `endOf` inside its `isBefore` function and doesn't check if second parameter `unit` has been passed, unlike moment, which [does it](https://github.com/moment/moment/blob/develop/src/lib/moment/compare.js#L23).
 
-# 2. It's heavy
+## 2. It's heavy
 
 Moment.js by default weights 232 kB (66 kB gzipped), which - according to the analysis by [Yoshihide Jimbo](https://github.com/jmblog/how-to-optimize-momentjs-with-webpack) - can be reduced to about 68 kB (23 kB gzipped) by ignoring locales using Webpack. It doesn't support tree-shaking because of its design so it doesn't seem that we can reduce it more.
 
@@ -74,7 +74,7 @@ The difference is even bigger when it comes to Luxon, Day.js and Date-Fns. The l
 
 It doesn't really matter if we're talking about Back-End usage, but for sure it should be taken into consideration when it comes to the Front-End. Long loading time means lower user satisfaction and worse SEO.
 
-# 3. It's mutable
+## 3. It's mutable
 
 Let's say that you are building calendar app and you want to create timeframe to fetch incoming events.
 
@@ -108,7 +108,7 @@ const endedAt   = moment(startedAt).add(1, 'year')
 
 Passing Moment.js object as an argument to `moment()` method creates new instance. Keep in mind that every time you are using Moment.js.
 
-# 4. It's hard to debug
+## 4. It's hard to debug
 
 If input data are good everything is fully predictable and works nice (skipping situations in which we forget about mutating functions, of course). However, sometimes we are making mistakes, we are humans after all. It would be nice to be warned by library that something is not ok with our data.
 
@@ -162,11 +162,11 @@ moment(0)         // >  moment("1970-01-01T01:00:00.000")
 
 To summarize: `Undefined` is not invalid attribute for `moment()` function, but `null` is. Anyway Moment.js won't throw you an error even if you'll pass `null`. Instead of that you'll get native Invalid Date object, null or custom object, depends on the situation. 🤯
 
-# On the other hand...
+## On the other hand...
 
 ...moment.js has a lot of advantages that we can't omit. It has big community which leads to fast bug detecting and fixing. Moreover you can find a lot of external libraries that add various functionalities (e.g [moment-business-days](https://github.com/kalmecak/moment-business-days)). Another thing is wide timezone support, which is better than in other DateTime libraries.
 
-# Alternatives
+## Alternatives
 
 Upgrading from native Date API to Moment.js was a big improvement, there is no doubt, but does it mean it can't be better? Of course not, but hey... what actually does it mean "better"? Well, that depends on your needs.
 
@@ -245,7 +245,7 @@ console.log(str) // > From 2011-10-11 at 13:00 to 2012-04-11 at 13:00
 
 Of course, we don't take into consideration a lot of things that can do the difference, e.g license or popularity, however we believe that amount of informations is a good start!
 
-# TL;DR
+## TL;DR
 
 Moment.js is heavy, slow, mutable and hard to debug, still yet it has some advantages. However you should consider using different library, e.g JS-Joda, Luxon, Date-Fns or Day.js, depending on your needs. And even if you decide to stick with Moment.js, be aware of few things, e.g `moment(undefined)` will give you valid date.
 
