@@ -3,11 +3,11 @@ title:       Why you shouldn't use Moment.js...
 slug:        why-you-shouldnt-use-moment-js
 tags:        'JAVASCRIPT · MOMENT.JS · DATE · TIME'
 alternate:
-  pl:        to-do
+  pl:        dlaczego-nie-powinienes-używac-moment-js
 cover:       why-you-shouldnt-use-moment-js__cover.jpg
 miniCover:   why-you-shouldnt-use-moment-js__cover--mini.jpg
-date:        2019-03-01
-description: ...or, at least, what you should remember when using it. - The most popular JS DateTime library that gave us everything we wanted so much from native Date API. If it is much better than native API, why do I tell you not to use it?
+date:        2019-03-07
+description: ...or, at least, what you should remember when using it. The most popular JS DateTime library that gave us everything we wanted so much from native Date API. If it is much better than native API, why do we tell you not to use it?
 isProject:   false
 ---
 
