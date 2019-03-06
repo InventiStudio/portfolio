@@ -1,10 +1,11 @@
 <template lang="pug">
   .ct-chart-container
-    .ct-chart(:class="`ct-chart--${_uid}`")
-    .ct-chart-legend(v-if="data.series.length > 1")
-      .ct-chart-legend__serie(v-for="(serie, index) in data.series", v-if="serie.name")
-        .ct-chart-legend__serie-color(:style="{ 'background-color': colors[index], 'box-shadow': `0 4px 14px -4px ${colors[index]}` }")
-        .ct-chart-legend__serie-name {{ serie.name }}
+    .ct-chart-container__minwidth
+      .ct-chart(:class="`ct-chart--${_uid}`")
+      .ct-chart-legend(v-if="data.series.length > 1")
+        .ct-chart-legend__serie(v-for="(serie, index) in data.series", v-if="serie.name")
+          .ct-chart-legend__serie-color(:style="{ 'background-color': colors[index], 'box-shadow': `0 4px 14px -4px ${colors[index]}` }")
+          .ct-chart-legend__serie-name {{ serie.name }}
 
 </template>
 
@@ -13,7 +14,11 @@
   import ChartistTooltip from 'chartist-plugin-tooltips-updated'
 
   const colors = [
+    '#684bc6',
+    '#bd2daa',
     '#f8188e',
+    '#e46d75',
+    '#2ec4b6',
     '#1869e5',
   ]
 
@@ -21,7 +26,7 @@
     plugins: [ChartistTooltip({
       appendToBody: true,
     })],
-    seriesBarDistance: 31,
+    seriesBarDistance: 12,
     axisX: {
       showGrid: false,
     },
@@ -35,7 +40,6 @@
 
   const rwd = [
     ['screen and (max-width: 700px)', {
-      seriesBarDistance: 0,
       chartPadding: {
         top: 20,
         right: 15,
@@ -71,23 +75,35 @@
   .ct-chart-container
     position: relative
     border-radius: 4px
-    min-height: 400px
     background-color: $c-white
     width: 100%
     box-shadow: 0 16px 48px 0 rgba($c-black, 0.05)
-    margin: 48px 0
+    display: block
+    overflow-x: auto
+
+    &::-webkit-scrollbar // sass-lint:disable-line no-vendor-prefixes
+      height: 12px
+
+    &::-webkit-scrollbar-track // sass-lint:disable-line no-vendor-prefixes
+      border-radius: 0
+
+    &::-webkit-scrollbar-thumb // sass-lint:disable-line no-vendor-prefixes
+      border-radius: 0
+      background-color: $c-mercury
+
+  .ct-chart-container__minwidth
+    min-width: 600px
 
   .ct-chart
     position: relative
     height: 400px
+    max-height: 80vh
+    width: 100%
 
   .ct-chart-legend
     text-align: center
     padding-bottom: 40px
-
-    @media screen and (min-width: 1055px)
-      text-align: left
-      padding: 0 40px 40px
+    width: 100%
 
   .ct-chart-legend__serie
     display: inline-block
@@ -113,15 +129,27 @@
 
   .ct-series-a
     .ct-bar
-      stroke-linecap: 4
-      stroke: $c-pink
+      stroke: $c-purple
 
   .ct-series-b
     .ct-bar
-      stroke: $c-blue
+      stroke: $c-violet
 
-  .ct-bar
-    stroke-width: 30px
+  .ct-series-c
+    .ct-bar
+      stroke: $c-pink
+
+  .ct-series-d
+    .ct-bar
+      stroke: $c-orange
+
+  .ct-series-e
+    .ct-bar
+      stroke: $c-green
+
+  .ct-series-f
+    .ct-bar
+      stroke: $c-blue
 
   .ct-grid
     stroke-dasharray: 0px
@@ -130,9 +158,9 @@
   .ct-label
     font-family: $ff-roboto
     font-weight: $fw-medium
-    word-break: break-word
 
     &.ct-horizontal
+      word-break: break-word
       margin-top: 4px
     &.ct-vertical
       margin-top: 6px

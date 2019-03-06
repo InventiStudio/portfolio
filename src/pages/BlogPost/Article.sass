@@ -169,13 +169,30 @@ $c-browser-gray: #eaeaea
 
 // Table
 table
+  display: block
   width: 100%
   margin: 48px 0
   border-radius: 4px
   background-color: $c-white
   font-size: $fs-14
+  white-space: nowrap
   border-collapse: collapse
   box-shadow: 0 16px 48px 0 rgba($c-black, 0.05)
+  overflow-x: auto
+
+  &::-webkit-scrollbar // sass-lint:disable-line no-vendor-prefixes
+    height: 12px
+
+  &::-webkit-scrollbar-track // sass-lint:disable-line no-vendor-prefixes
+    border-radius: 0
+
+  &::-webkit-scrollbar-thumb // sass-lint:disable-line no-vendor-prefixes
+    border-radius: 0
+    background-color: $c-mercury
+
+  @media screen and (min-width: 1100px)
+    display: table
+    white-space: initial
 
   th
     padding: 16px
@@ -192,3 +209,6 @@ table
 
     &:hover
       background-color: rgba($c-black, 0.01)
+
+video
+  box-shadow: 0 16px 48px 0 rgba($c-black, 0.1)
