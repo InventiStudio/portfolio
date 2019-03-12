@@ -6,7 +6,7 @@ alternate:
   en:        why-you-shouldnt-use-moment-js
 cover:       why-you-shouldnt-use-moment-js__cover.jpg
 miniCover:   why-you-shouldnt-use-moment-js__cover--mini.jpg
-date:        2019-03-07
+date:        2019-03-13
 description: ...lub przynajmniej, co powinieneś pamiętać podczas używania jej. Najpopularniejsza biblioteka do manipulacji czasem, która dała nam wszystko czego pragneliśmy tak bardzo od natywnego API. Skoro jest znacznie lepsza, to dlaczego nie powinniśmy jej używać?
 isProject:   false
 ---
