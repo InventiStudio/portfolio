@@ -28,7 +28,7 @@ Some time ago, we've been working on optimizing our client's project. Without de
   <figcaption>Source: Imgur</figcaption>
 </figure>
 
-After that we decided to do more Moment.js performance testing and compare it with orther solutions. Take a look:
+After that we decided to do more Moment.js performance testing and compare it with other solutions. Take a look:
 
 <figure>
   <bar-chart v-bind:data="{ labels: ['Parse ISO', 'Parse EPOCH', 'Format', 'Add 6 months', 'Is same day', 'Is before'], series: [{ name: 'Moment.js', data: [ 8.633, 0.971, 4.644, 0.849, 1.253, 0.177 ] }, { name: 'Day.js', data: [ 0.529, 0.560, 2.841, 3.044, 1.117, 1.128 ] }, { name: 'Luxon', data: [ 4.536, 1.215, 3.440, 3.141, 2.897, 0.177 ] }, { name: 'JS-Joda', data: [ 8.295, 0.691 , 1.423, 0.180, 0.679, 0.129 ] }, { name: 'Date-Fns', data: [ 1.144, 0.166 , 2.315, 0.693, 0.518, 0.339 ] }, { name: 'Native API', data: [ 0.268, 0.212, 0.613, 0.082, 0.035, 0.087 ] }] }"></bar-chart>
