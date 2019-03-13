@@ -46,9 +46,12 @@ $c-browser-gray: #eaeaea
   li
     color: $c-ship-gray
     font-family: $ff-lora
-    font-size: $fs-20
+    font-size: $fs-18
     line-height: $lh-32
     -webkit-font-smoothing: auto // sass-lint:disable-line no-vendor-prefixes
+
+    @media screen and (min-width: 640px)
+      font-size: $fs-20
 
   pre
     margin-top: 24px
