@@ -19,6 +19,10 @@ const markdown   = require('markdown-it')({
   },
 })
   .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-link-attributes'), { attrs: {
+    target: '_blank',
+    rel: 'noopener',
+  } })
 
 module.exports = function serve(env) {
   return [

@@ -35,8 +35,8 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "chartist": "^0.11.0",
-    "date-fns": "^2.0.0-alpha.27",
     "chartist-plugin-tooltips-updated": "^0.0.20",
+    "date-fns": "^2.0.0-alpha.27",
     "feed": "1.1.1",
     "foundation-sites": "6.2.4",
     "gray-matter": "^3.1.1",
@@ -44,6 +44,7 @@
     "lodash.throttle": "^4.1.1",
     "markdown-it": "^8.4.0",
     "markdown-it-footnote": "^3.0.1",
+    "markdown-it-link-attributes": "^2.1.0",
     "normalize.css": "^5.0.0",
     "ramda": "^0.24.1",
     "read-dir-files": "^0.1.1",
