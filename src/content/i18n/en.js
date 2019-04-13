@@ -34,6 +34,13 @@ export default {
       desc: 'Meet the people who trusted us',
       cta: 'See case study',
       cases: {
+        curaytor: {
+          author: 'Julee Smith',
+          position: 'Director, Technology Systems - Curaytor',
+          text: 'Collaborating with InventiStudio has been an excellent experience. '
+            + 'They have provided timely and thorough communication to our remote teams (across time zones), '
+            + 'and have consistently delivered superior quality work - on time, every time.',
+        },
         leanfocus: {
           author: 'Martin Kinitzki',
           position: 'CEO, Leanfocus',

@@ -34,6 +34,12 @@ export default {
       desc: 'Poznaj ludzi, którzy nam zaufali',
       cta: 'Dowiedz się więcej',
       cases: {
+        curaytor: {
+          author: 'Julee Smith',
+          position: 'Dyrektor, Systemy Technologiczne - Curaytor',
+          text: 'Współpraca z InventiStudio była doskonałym doświadczeniem. Zapewnili terminową i dokładną komunikację z naszymi zdalnymi zespołami (w różnych strefach czasowych) '
+            + 'i konsekwentnie dostarczali najwyższej jakości pracę - na czas, za każdym razem.',
+        },
         leanfocus: {
           author: 'Martin Kinitzki',
           position: 'CEO, Leanfocus',

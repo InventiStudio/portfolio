@@ -75,6 +75,11 @@
       testimonials() {
         return [
           {
+            key: 'curaytor',
+            avatarSrc: 'juleesmith.jpg',
+            positionUrl: 'https://www.curaytor.com/',
+          },
+          {
             key: 'promis',
             avatarSrc: 'vincentstammbach.jpeg',
             positionUrl: 'https://promis.netlify.com/',
