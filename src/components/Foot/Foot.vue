@@ -30,10 +30,6 @@
         h2.m-0: span.fs-16.fw-regular.c-white.mb-8.block {{ $t('contact.title') }}
         a.o-link.block.fw-medium.c-white(:href="mailToUrl('content.contact.emailAddress')")
           | {{ $t('content.contact.emailAddress') }}
-        a.o-link.block.fw-medium.c-white(:href="phoneToUrl('content.contact.phone1')")
-          | {{ $t('content.contact.phone1') }}
-        a.o-link.block.fw-medium.c-white(:href="phoneToUrl('content.contact.phone2')")
-          | {{ $t('content.contact.phone2') }}
         span.fs-16.block {{ $t('content.contact.place') }}
 </template>
 
@@ -68,9 +64,6 @@
     methods: {
       mailToUrl(mail) {
         return `mailto:${this.$t(mail)}`
-      },
-      phoneToUrl(phone) {
-        return `tel:${this.$t(phone)}`.replace(/\s/g, '')
       },
       scrollToSection(name) {
         smoothScrollTo(this.constants.sectionIds.home[name])

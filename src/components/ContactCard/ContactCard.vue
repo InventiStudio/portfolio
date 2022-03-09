@@ -3,10 +3,6 @@
     h2.o-heading-1.c-ship-gray-80.mb-16 {{ $t('contact.title') }}
     a.o-link.fw-medium.block.c-purple(:href="mailToUrl('content.contact.emailAddress')")
       | {{ $t('content.contact.emailAddress') }}
-    a.o-link.fw-medium.block.c-ship-gray(:href="phoneToUrl('content.contact.phone1')")
-      | {{ $t('content.contact.phone1') }}
-    a.o-link.fw-medium.block.c-ship-gray(:href="phoneToUrl('content.contact.phone2')")
-      | {{ $t('content.contact.phone2') }}
     SocialLinks.mt-32
     form.max-w-370.mt-48
       input.o-input(
@@ -72,9 +68,6 @@
       closeModal,
       mailToUrl(mail) {
         return `mailto:${this.$t(mail)}`
-      },
-      phoneToUrl(phone) {
-        return `tel:${this.$t(phone)}`.replace(/\s/g, '')
       },
       async submit() {
         try {
