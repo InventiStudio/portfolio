@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="InventiStudio Portfolio" src="static/logo-trans-white.svg" />
+  <img alt="InventiStudio Portfolio" src="public/logo-trans-white.svg" />
   <br>
   <br>
 </p>
