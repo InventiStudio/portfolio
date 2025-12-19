@@ -5,9 +5,3 @@ dist/
 # Ignore all logfiles and tempfiles
 .DS_Store
 npm-debug.log
-yarn-error.log
-selenium-debug.log
-
-# Ignore test reports
-test/unit/coverage
-test/e2e/reports

@@ -1,3 +1,0 @@
-module.exports = {
-  SPARKPOST_KEY: 'PASTE_KEY_HERE',
-}

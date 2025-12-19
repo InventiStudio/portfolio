@@ -1,8 +1,0 @@
-.git
-node_modules
-src
-test
-deploy/deploy.sh
-.editorconfig
-package.json
-yarn.lock
