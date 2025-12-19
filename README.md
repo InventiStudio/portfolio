@@ -8,60 +8,36 @@
 
 <p><a href="https://inventi.studio" target="_blank">InventiStudio</a> is a web development agency based in Wrocław, Poland. We excel at building modern web applications, providing Vue.js front‑end, Node.js back‑end and UI/UX design services for enterprises, companies and startups. <a href="mailto:hello@inventi.studio">Get in touch with us</a>!<p>  
 
-![https://img.shields.io/travis/InventiStudio/portfolio.svg](https://img.shields.io/travis/InventiStudio/portfolio.svg)
-
-#### Table of Contents
-- [Setup](#setup)
-- [Development](#development)
-- [Production](#production)
-
 ## Setup
-#### Requirements
-- [NodeJS](https://nodejs.org), *>= 8.0.0*
-- [Yarn](https://yarnpkg.com/lang/en/), *>= 0.21.3*
 
-## Development
+Make sure to install dependencies:
+
 ```bash
-# Clone repo and install deps
-$ git clone git@github.com:InventiStudio/portfolio.git
-$ cd portfolio
-$ yarn
+# npm
+npm ci
 ```
 
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
 ```bash
-# Run dev server with hot reload at localhost:8080
-yarn dev
-```
-
-#### Linters
-```bash
-# Run Sass linter
-yarn lint:sass
-
-# Run JavaScript linter
-yarn lint:es
-
-# Run all linters
-yarn lint
-```
-
-#### Tests
-```bash
-# Run Unit tests
-yarn test:unit
-
-# Run e2e tests
-yarn test:e2e
+# npm
+npm run dev
 ```
 
 ## Production
+
+Build the application for production:
+
 ```bash
-# Build for production with minification
-yarn build
+# npm
+npm run build
+```
 
-# Build for production and view the bundle analyzer report
-yarn build --report
+Locally preview production build:
 
-# Run production server at localhost:8080
-yarn start
+```bash
+# npm
+npm run preview
 ```

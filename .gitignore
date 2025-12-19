@@ -1,7 +1,24 @@
-# Ignore those dirs
-node_modules/
-dist/
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
 
-# Ignore all logfiles and tempfiles
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
-npm-debug.log
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
