@@ -1,0 +1,44 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v11/terminal-keeper.json",
+  "theme": "neon",
+  "active": "nuxt",
+  "activateOnStartup": false,
+  "keepExistingTerminals": true,
+  "sessions": {
+    "default": [
+      {
+        "name": "Terminal",
+        "autoExecuteCommands": true,
+        "icon": "pencil",
+        "color": "terminal.ansiWhite",
+        "focus": true,
+        "commands": [
+          "clear"
+        ]
+      }
+    ],
+    "nuxt": [
+      [
+        {
+          "name": "Nuxt",
+          "autoExecuteCommands": true,
+          "icon": "server",
+          "color": "terminal.ansiGreen",
+          "commands": [
+            "npm run dev"
+          ]
+        }
+      ],
+      {
+        "name": "Terminal",
+        "autoExecuteCommands": false,
+        "icon": "terminal",
+        "color": "terminal.ansiWhite",
+        "focus": true,
+        "commands": [
+          "clear"
+        ]
+      }
+    ]
+  }
+}
