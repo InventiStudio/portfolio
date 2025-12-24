@@ -101,16 +101,32 @@ useHead({
 }
 
 .blog-post-content :deep(pre) {
-  background: #f5f5f5;
-  padding: 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   overflow-x: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.blog-post-content :deep(pre code) {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  background: transparent;
+  padding: 0;
 }
 
 .blog-post-content :deep(code) {
-  font-family: 'Courier New', monospace;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
   font-size: 0.9em;
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.blog-post-content :deep(pre code) {
+  background: transparent;
+  padding: 0;
 }
 
 .blog-post-content :deep(img) {

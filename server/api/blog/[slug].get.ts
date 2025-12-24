@@ -3,18 +3,32 @@ import { join } from 'path'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 import footnote from 'markdown-it-footnote'
+import Shiki from '@shikijs/markdown-it'
+// @ts-expect-error - no type definitions available
 import linkAttributes from 'markdown-it-link-attributes'
 
-const markdown = new MarkdownIt({
-  html: true,
-})
-  .use(footnote)
-  .use(linkAttributes, {
-    attrs: {
-      target: '_blank',
-      rel: 'noopener',
-    },
-  })
+let markdownRenderer: MarkdownIt | null = null
+
+async function getMarkdownRenderer() {
+  if (!markdownRenderer) {
+    markdownRenderer = MarkdownIt({ html: true })
+      .use(await Shiki({
+        themes: {
+          light: 'github-light',
+          dark: 'github-dark',
+        },
+        defaultColor: 'dark',
+      }))
+      .use(footnote)
+      .use(linkAttributes, {
+        attrs: {
+          target: '_blank',
+          rel: 'noopener',
+        },
+      })
+  }
+  return markdownRenderer
+}
 
 interface BlogPostDetail {
   slug: string
@@ -28,7 +42,7 @@ interface BlogPostDetail {
   html: string
 }
 
-export default defineEventHandler((event): BlogPostDetail => {
+export default defineEventHandler(async (event): Promise<BlogPostDetail> => {
   const slug = getRouterParam(event, 'slug')
   
   if (!slug) {
@@ -42,6 +56,8 @@ export default defineEventHandler((event): BlogPostDetail => {
   
   const files = readdirSync(blogPostsDir)
     .filter(filename => filename.endsWith('.md'))
+  
+  const markdown = await getMarkdownRenderer()
   
   for (const filename of files) {
     const filePath = join(blogPostsDir, filename)
